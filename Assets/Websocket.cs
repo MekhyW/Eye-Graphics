@@ -1,14 +1,27 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Websockettest : MonoBehaviour
+public class Websocket : MonoBehaviour
 {
     private const int port = 8765;
     private TcpListener listener;
+
+    public Slider xSlider;
+    public Slider ySlider;
+    public Toggle leftEyeClosedToggle;
+    public Toggle rightEyeClosedToggle;
+    public Slider angrySlider;
+    public Slider disgustedSlider;
+    public Slider fearfulSlider;
+    public Slider happySlider;
+    public Slider neutralSlider;
+    public Slider sadSlider;
+    public Slider surprisedSlider;
 
     private bool ValidateMessage(string message)
     {
@@ -46,10 +59,21 @@ public class Websockettest : MonoBehaviour
                 bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
                 string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                 string response;
-                Debug.Log("Received: " + message);
                 if (ValidateMessage(message))
                 {
                     response = "Acknowledged: " + message;
+                    string[] terms = message.Split(' ');
+                    xSlider.value = (float.Parse(terms[0]) + 1) / 2 * (xSlider.maxValue - xSlider.minValue) + xSlider.minValue;
+                    ySlider.value = (float.Parse(terms[1]) + 1) / 2 * (ySlider.maxValue - ySlider.minValue) + ySlider.minValue;
+                    leftEyeClosedToggle.isOn = terms[2] == "True";
+                    rightEyeClosedToggle.isOn = terms[3] == "True";
+                    angrySlider.value = float.Parse(terms[4]);
+                    disgustedSlider.value = float.Parse(terms[5]);
+                    fearfulSlider.value = float.Parse(terms[6]);
+                    happySlider.value = float.Parse(terms[7]);
+                    neutralSlider.value = float.Parse(terms[8]);
+                    sadSlider.value = float.Parse(terms[9]);
+                    surprisedSlider.value = float.Parse(terms[10]);
                 }
                 else
                 {
@@ -61,7 +85,6 @@ public class Websockettest : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     private async void Start()
     {
         listener = new TcpListener(IPAddress.Any, port);
@@ -70,7 +93,6 @@ public class Websockettest : MonoBehaviour
         await StartListening();
     }
 
-    // Update is called once per frame
     void Update() {}
 
     private void OnApplicationQuit()
