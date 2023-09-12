@@ -13,12 +13,12 @@ public class Websockettest : MonoBehaviour
     private bool ValidateMessage(string message)
     {
         string[] terms = message.Split(' ');
-        if (terms.Length < 11) {return false;}
+        if (terms.Length < 10) {return false;}
         if (!float.TryParse(terms[0], out _)) {return false;}
         if (!float.TryParse(terms[1], out _)) {return false;}
         if (terms[2] != "True" && terms[2] != "False") {return false;}
         if (terms[3] != "True" && terms[3] != "False") {return false;}
-        for (int i = 4; i < 11; i++)
+        for (int i = 4; i < 10; i++)
         {
             if (!float.TryParse(terms[i], out float value)) { return false;}
             if (value > 1) { return false;}
