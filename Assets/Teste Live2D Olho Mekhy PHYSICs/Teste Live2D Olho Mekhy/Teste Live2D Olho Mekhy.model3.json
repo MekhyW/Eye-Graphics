@@ -1,0 +1,26 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "Teste Live2D Olho Mekhy.moc3",
+		"Textures": [
+			"Teste Live2D Olho Mekhy.1024/texture_00.png"
+		],
+		"Physics": "Teste Live2D Olho Mekhy.physics3.json",
+		"DisplayInfo": "Teste Live2D Olho Mekhy.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	]
+}

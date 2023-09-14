@@ -1,0 +1,90 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "EyeL Open"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "EyeR Open"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "Eyeball X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "Eyeball Y"
+		},
+		{
+			"Id": "ParamHappy",
+			"GroupId": "",
+			"Name": "Happy"
+		},
+		{
+			"Id": "ParamSad",
+			"GroupId": "",
+			"Name": "Sad"
+		},
+		{
+			"Id": "ParamSurprise",
+			"GroupId": "",
+			"Name": "Surprise"
+		},
+		{
+			"Id": "ParamAngry",
+			"GroupId": "",
+			"Name": "Angry"
+		},
+		{
+			"Id": "ParamPhyEyeLOpen1",
+			"GroupId": "",
+			"Name": "Phy EyeL Open 1"
+		},
+		{
+			"Id": "ParamPhyEyeLOpen2",
+			"GroupId": "",
+			"Name": "Phy EyeL Open 2"
+		},
+		{
+			"Id": "ParamPhyEyeLOpenPos1",
+			"GroupId": "",
+			"Name": "Phy EyeL Open Pos1"
+		},
+		{
+			"Id": "ParamPhyEyeLOpenPos2",
+			"GroupId": "",
+			"Name": "Phy EyeL Open Pos2"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Cilios",
+			"Name": "Cilios"
+		},
+		{
+			"Id": "Part",
+			"Name": "Fundo Olhi"
+		},
+		{
+			"Id": "Texture_Eyes",
+			"Name": "Texture_Eyes"
+		},
+		{
+			"Id": "Part2",
+			"Name": "Pupila e Iris"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamEyeBallX",
+			"ParamEyeBallY"
+		]
+	]
+}
