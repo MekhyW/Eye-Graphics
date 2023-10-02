@@ -13,8 +13,8 @@ public class Websocket : MonoBehaviour
 
     public Slider xSlider;
     public Slider ySlider;
-    public Toggle leftEyeClosedToggle;
-    public Toggle rightEyeClosedToggle;
+    public Slider leftEyeClosenessSlider;
+    public Slider rightEyeClosenessSlider;
     public Slider angrySlider;
     public Slider disgustedSlider;
     public Slider happySlider;
@@ -26,14 +26,10 @@ public class Websocket : MonoBehaviour
     {
         string[] terms = message.Split(' ');
         if (terms.Length < 10) {return false;}
-        if (!float.TryParse(terms[0], out _)) {return false;}
-        if (!float.TryParse(terms[1], out _)) {return false;}
-        if (terms[2] != "True" && terms[2] != "False") {return false;}
-        if (terms[3] != "True" && terms[3] != "False") {return false;}
-        for (int i = 4; i < 10; i++)
+        for (int i = 0; i < 10; i++)
         {
             if (!float.TryParse(terms[i], out float value)) { return false;}
-            if (value > 1) { return false;}
+            if (value > 1 || value < -1) { return false;}
         }
         return true;
     }
@@ -64,8 +60,8 @@ public class Websocket : MonoBehaviour
                     string[] terms = message.Split(' ');
                     xSlider.value = (float.Parse(terms[0]) + 1) / 2 * (xSlider.maxValue - xSlider.minValue) + xSlider.minValue;
                     ySlider.value = (float.Parse(terms[1]) + 1) / 2 * (ySlider.maxValue - ySlider.minValue) + ySlider.minValue;
-                    leftEyeClosedToggle.isOn = terms[2] == "True";
-                    rightEyeClosedToggle.isOn = terms[3] == "True";
+                    leftEyeClosenessSlider.value = 1 - float.Parse(terms[2]);
+                    rightEyeClosenessSlider.value = 1 - float.Parse(terms[3]);
                     angrySlider.value = float.Parse(terms[4]);
                     disgustedSlider.value = float.Parse(terms[5]);
                     happySlider.value = float.Parse(terms[6]);
