@@ -68,10 +68,7 @@ public class Websocket : MonoBehaviour
                     sadSlider.value = float.Parse(terms[8]);
                     surprisedSlider.value = float.Parse(terms[9]);
                 }
-                else
-                {
-                    response = "Invalid message format!";
-                }
+                else { response = "Invalid message format!";}
                 byte[] responseMessage = Encoding.UTF8.GetBytes(response);
                 stream.Write(responseMessage, 0, responseMessage.Length);
             }
