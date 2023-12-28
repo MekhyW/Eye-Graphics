@@ -3,22 +3,21 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SliderController : MonoBehaviour
+public class EyeController_controltest : MonoBehaviour
 {
-    public Slider xSlider;
-    public Slider ySlider;
+    public Slider xSlider, ySlider;
     public Transform objectToMove;
 
     public float offsetX = 0;
     public float offsetY = 0;
     public float xCurrent = 0;
     public float yCurrent = 0;
-    public float speed = 0;
+    public float speed = 25;
     double[] X_SET = { -1, -0.8, -0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8, 1 };
     double[] Y_SET = { -1, -0.5, 0, 0.5, 1 };
     public double X_DELTA_LIMIT = 2.0 / (11 - 1) * 0.75;
     public double Y_DELTA_LIMIT = 2.0 / (5 - 1) * 0.75;
-    public float TIMER_IDLE_RAND_LIMIT = 4.0f;
+    public float TIMER_IDLE_RAND_LIMIT = 2.0f;
     static float timer_idle = 0;
     static float offsetX_idle = 0;
     static float offsetY_idle = 0;

@@ -10,16 +10,8 @@ public class Websocket : MonoBehaviour
     private const int port = 8765;
     private TcpListener listener;
 
-    public Slider xSlider;
-    public Slider ySlider;
-    public Slider leftEyeClosenessSlider;
-    public Slider rightEyeClosenessSlider;
-    public Slider angrySlider;
-    public Slider disgustedSlider;
-    public Slider happySlider;
-    public Slider neutralSlider;
-    public Slider sadSlider;
-    public Slider surprisedSlider;
+    public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider;
+    public Slider angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider;
 
     private bool ValidateMessage(string message)
     {
