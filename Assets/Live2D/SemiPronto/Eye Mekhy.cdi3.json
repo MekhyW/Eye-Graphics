@@ -1,0 +1,381 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "Breath"
+		},
+		{
+			"Id": "AtivSpace",
+			"GroupId": "",
+			"Name": "Ativar Espaço"
+		},
+		{
+			"Id": "AtivHipno",
+			"GroupId": "",
+			"Name": "Ativar Hipnosis"
+		},
+		{
+			"Id": "AtivaHeart",
+			"GroupId": "",
+			"Name": "Ativar Coração"
+		},
+		{
+			"Id": "AtivaRainbow",
+			"GroupId": "",
+			"Name": "Ativar Rainbow"
+		},
+		{
+			"Id": "AtivFogo",
+			"GroupId": "",
+			"Name": "Ativar Fogo"
+		},
+		{
+			"Id": "AtivNightmare",
+			"GroupId": "",
+			"Name": "Ativar Nightmare"
+		},
+		{
+			"Id": "AtivaEngrenagens",
+			"GroupId": "",
+			"Name": "Ativar Engrenagens"
+		},
+		{
+			"Id": "AtivaRainbowEffect",
+			"GroupId": "",
+			"Name": "Ativar Rainbow Effect"
+		},
+		{
+			"Id": "Deform",
+			"GroupId": "",
+			"Name": "Deform"
+		},
+		{
+			"Id": "GiraGira1",
+			"GroupId": "",
+			"Name": "GiraGira 1"
+		},
+		{
+			"Id": "GiraGira2",
+			"GroupId": "",
+			"Name": "GiraGira 2"
+		},
+		{
+			"Id": "SpaceImersion1",
+			"GroupId": "",
+			"Name": "Space Imersion 1"
+		},
+		{
+			"Id": "SpaceImersion2",
+			"GroupId": "",
+			"Name": "Space Imersion 2"
+		},
+		{
+			"Id": "RainbowEffect1",
+			"GroupId": "",
+			"Name": "RainbowEffect 1"
+		},
+		{
+			"Id": "RainbowEffect2",
+			"GroupId": "",
+			"Name": "RainbowEffect 2"
+		},
+		{
+			"Id": "Engrenagem1",
+			"GroupId": "",
+			"Name": "Engrenagem 1"
+		},
+		{
+			"Id": "Engrenagem2",
+			"GroupId": "",
+			"Name": "Engrenagem 2"
+		},
+		{
+			"Id": "Engrenagem2_1",
+			"GroupId": "",
+			"Name": "Engrenagem 2_1"
+		},
+		{
+			"Id": "Engrenagem2_2",
+			"GroupId": "",
+			"Name": "Engrenagem 2_2"
+		},
+		{
+			"Id": "Fire1",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire1"
+		},
+		{
+			"Id": "Fire2",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire2"
+		},
+		{
+			"Id": "FirePhy1",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire Phy 1"
+		},
+		{
+			"Id": "FirePhy2",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire Phy 2"
+		},
+		{
+			"Id": "FirePhy3",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire Phy 3"
+		},
+		{
+			"Id": "FirePhy4",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire Phy 4"
+		},
+		{
+			"Id": "Fire2_1",
+			"GroupId": "ParamGroup4",
+			"Name": "Fire2_1"
+		},
+		{
+			"Id": "Fire2_2",
+			"GroupId": "ParamGroup4",
+			"Name": "Fire2_2"
+		},
+		{
+			"Id": "FirePhy2_1",
+			"GroupId": "ParamGroup4",
+			"Name": "Fire Phy 2_1"
+		},
+		{
+			"Id": "FirePhy2_2",
+			"GroupId": "ParamGroup4",
+			"Name": "Fire Phy 2_2"
+		},
+		{
+			"Id": "FirePhy2_3",
+			"GroupId": "ParamGroup4",
+			"Name": "Fire Phy 2_3"
+		},
+		{
+			"Id": "FirePhy2_4",
+			"GroupId": "ParamGroup4",
+			"Name": "Fire Phy 2_4"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "EyeL Open"
+		},
+		{
+			"Id": "EyeLOPhy1",
+			"GroupId": "ParamGroup",
+			"Name": "EyeLOPhy 1"
+		},
+		{
+			"Id": "EyeLOPhy2",
+			"GroupId": "ParamGroup",
+			"Name": "EyeLOPhy 2"
+		},
+		{
+			"Id": "EyeLOpPhy1",
+			"GroupId": "ParamGroup",
+			"Name": "EyeLOpPhy 1"
+		},
+		{
+			"Id": "EyeLOpPhy2",
+			"GroupId": "ParamGroup",
+			"Name": "EyeLOpPhy 2"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "EyeR Open"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "EyeR Smile"
+		},
+		{
+			"Id": "ParamEyeBallXL",
+			"GroupId": "",
+			"Name": "Eyeball X L"
+		},
+		{
+			"Id": "ParamEyeBallYL",
+			"GroupId": "",
+			"Name": "Eyeball Y L"
+		},
+		{
+			"Id": "ParamEyeBallXPhy1",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball X Phy1"
+		},
+		{
+			"Id": "ParamEyeBallYPhy1",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball Y Phy 1"
+		},
+		{
+			"Id": "ParamEyeBallXNPhy1",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball X N Phy1"
+		},
+		{
+			"Id": "ParamEyeBallYNPhy1",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball Y N Phy 1"
+		},
+		{
+			"Id": "ParamEyeBallX2",
+			"GroupId": "",
+			"Name": "Eyeball X"
+		},
+		{
+			"Id": "ParamEyeBallY2",
+			"GroupId": "",
+			"Name": "Eyeball Y"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "BrowL Y"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "",
+			"Name": "BrowL Angle"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "EyeL Smile"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "",
+			"Name": "BrowL Form"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "BrowR Y"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "",
+			"Name": "BrowR Angle"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "",
+			"Name": "BrowR Form"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "Fogo"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "Fogo"
+		},
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "Blink Phy"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "EyePhy"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Crys",
+			"Name": "Crys"
+		},
+		{
+			"Id": "Hearts",
+			"Name": "Hearts"
+		},
+		{
+			"Id": "Cilios",
+			"Name": "Cilios"
+		},
+		{
+			"Id": "Fogos3",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos2",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Brilhos",
+			"Name": "Brilhos"
+		},
+		{
+			"Id": "Sombras",
+			"Name": "Sombras"
+		},
+		{
+			"Id": "Rayraybow",
+			"Name": "Rayraybow"
+		},
+		{
+			"Id": "Part",
+			"Name": "Iris e Pupil"
+		},
+		{
+			"Id": "Palps",
+			"Name": "Palps"
+		},
+		{
+			"Id": "MaskFire14",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire7",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "Engrenagens",
+			"Name": "Engrenagens"
+		},
+		{
+			"Id": "Engrenagens2",
+			"Name": "Engrenagens"
+		},
+		{
+			"Id": "Spcaace",
+			"Name": "Spcaace"
+		},
+		{
+			"Id": "Iris_Conjunto",
+			"Name": "Iris_Conjunto"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"GiraGira1",
+			"GiraGira2"
+		],
+		[
+			"ParamEyeBallXNPhy1",
+			"ParamEyeBallYNPhy1"
+		]
+	]
+}
