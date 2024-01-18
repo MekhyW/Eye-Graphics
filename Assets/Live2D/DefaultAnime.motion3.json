@@ -1,0 +1,76 @@
+{
+	"Version": 3,
+	"Meta": {
+		"Duration": 4,
+		"Fps": 60.0,
+		"Loop": true,
+		"AreBeziersRestricted": true,
+		"CurveCount": 3,
+		"TotalSegmentCount": 12,
+		"TotalPointCount": 15,
+		"UserDataCount": 0,
+		"TotalUserDataSize": 0
+	},
+	"Curves": [
+		{
+			"Target": "Parameter",
+			"Id": "ParamBreath",
+			"Segments": [
+				0,
+				0,
+				0,
+				1,
+				1,
+				0,
+				2,
+				0,
+				0,
+				3,
+				1,
+				0,
+				4,
+				0
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Id": "Engrenagem1",
+			"Segments": [
+				0,
+				0,
+				0,
+				1,
+				1,
+				0,
+				2,
+				1,
+				0,
+				3,
+				0,
+				0,
+				4,
+				0
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Id": "Engrenagem2",
+			"Segments": [
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				2,
+				1,
+				0,
+				3,
+				1,
+				0,
+				4,
+				0
+			]
+		}
+	]
+}
