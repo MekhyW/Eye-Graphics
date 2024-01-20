@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class EyeController_main : MonoBehaviour
 {
     public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider,
-        angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider;
+        angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider,
+        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider;
     public CubismParameter eyeballX, eyeballY, eyeOpenL, eyeOpenR, eyeSmileL, eyeSmileR, eyeDeform,
         browYL, browYR, browAngleL, browAngleR,
         activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
@@ -65,6 +66,12 @@ public class EyeController_main : MonoBehaviour
         activSpace.Value = Mathf.Lerp(activSpace.Value, happySlider.value - neutralSlider.value, Time.deltaTime * speed);
         activCry.Value = Mathf.Lerp(activCry.Value, sadSlider.value - neutralSlider.value, Time.deltaTime * speed);
         activFire.Value = Mathf.Lerp(activFire.Value, angrySlider.value - neutralSlider.value, Time.deltaTime * speed);
+        activHypno.Value = Mathf.Lerp(activHypno.Value, hypnoticSlider.value, Time.deltaTime * speed);
+        activHeart.Value = Mathf.Lerp(activHeart.Value, heartSlider.value, Time.deltaTime * speed);
+        activRainbow.Value = Mathf.Lerp(activRainbow.Value, rainbowSlider.value, Time.deltaTime * speed);
+        activNightmare.Value = Mathf.Lerp(activNightmare.Value, nightmareSlider.value, Time.deltaTime * speed);
+        activGears.Value = Mathf.Lerp(activGears.Value, gearsSlider.value, Time.deltaTime * speed);
+        activSans.Value = Mathf.Lerp(activSans.Value, sansSlider.value, Time.deltaTime * speed);
     }
 
     private void Update()

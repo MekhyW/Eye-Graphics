@@ -10,17 +10,18 @@ public class Websocket : MonoBehaviour
     private const int port = 8765;
     private TcpListener listener;
 
-    public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider;
-    public Slider angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider;
+    public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider,
+        angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider,
+        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider;
 
     private bool ValidateMessage(string message)
     {
         string[] terms = message.Split(' ');
-        if (terms.Length < 10) {return false;}
-        for (int i = 0; i < 10; i++)
+        if (terms.Length < 11) { return false;}
+        for (int i = 0; i < 11; i++)
         {
             if (!float.TryParse(terms[i], out float value)) { return false;}
-            if (value > 1 || value < -1) { return false;}
+            if (value < -1) { return false;}
         }
         return true;
     }
@@ -59,6 +60,13 @@ public class Websocket : MonoBehaviour
                     neutralSlider.value = float.Parse(terms[7]);
                     sadSlider.value = float.Parse(terms[8]);
                     surprisedSlider.value = float.Parse(terms[9]);
+                    int manual_expression = int.Parse(terms[10]);
+                    hypnoticSlider.value = manual_expression == 6 ? 1 : 0;
+                    heartSlider.value = manual_expression == 7 ? 1 : 0;
+                    rainbowSlider.value = manual_expression == 8 ? 1 : 0;
+                    nightmareSlider.value = manual_expression == 9 ? 1 : 0;
+                    gearsSlider.value = manual_expression == 10 ? 1 : 0;
+                    sansSlider.value = manual_expression == 11 ? 1 : 0;
                 }
                 else { response = "Invalid message format!";}
                 byte[] responseMessage = Encoding.UTF8.GetBytes(response);

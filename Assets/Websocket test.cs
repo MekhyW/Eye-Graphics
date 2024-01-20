@@ -13,11 +13,11 @@ public class Websockettest : MonoBehaviour
     private bool ValidateMessage(string message)
     {
         string[] terms = message.Split(' ');
-        if (terms.Length < 10) {return false;}
-        for (int i = 0; i < 10; i++)
+        if (terms.Length < 11) { Debug.Log("not enough terms"); return false;}
+        for (int i = 0; i < 11; i++)
         {
-            if (!float.TryParse(terms[i], out float value)) { return false;}
-            if (value > 1 || value < -1) { return false;}
+            if (!float.TryParse(terms[i], out float value)) { Debug.Log("value not a number"); return false;}
+            if (value < -1) { Debug.Log("value out of range"); return false;}
         }
         return true;
     }
@@ -57,7 +57,6 @@ public class Websockettest : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     private async void Start()
     {
         listener = new TcpListener(IPAddress.Any, port);
@@ -66,7 +65,6 @@ public class Websockettest : MonoBehaviour
         await StartListening();
     }
 
-    // Update is called once per frame
     void Update() {}
 
     private void OnApplicationQuit()
