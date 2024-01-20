@@ -6,9 +6,11 @@ using UnityEngine.UI;
 
 public class EyeController_main : MonoBehaviour
 {
-    public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider;
-    public Slider angrySlider, disgustedSlider, happySlider, sadSlider, surprisedSlider;
-    public CubismParameter eyeX, eyeY, eyeClosenessL, eyeClosenessR, eyeAngry, eyeHappy, eyeSad, eyeSurprised;
+    public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider,
+        angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider;
+    public CubismParameter eyeballX, eyeballY, eyeOpenL, eyeOpenR, eyeSmileL, eyeSmileR, eyeDeform,
+        browYL, browYR, browAngleL, browAngleR,
+        activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
 
     float xCurrent = 0;
     float yCurrent = 0;
@@ -28,8 +30,12 @@ public class EyeController_main : MonoBehaviour
         return set[Array.IndexOf(c, c.Min())];
     };
 
-    private void IdleMovement()
+    private void MoveEyes()
     {
+        if (Math.Abs(xSlider.value - xCurrent) > X_DELTA_LIMIT)
+            xCurrent = (float)closest(xSlider.value, X_SET);
+        if (Math.Abs(ySlider.value - yCurrent) > Y_DELTA_LIMIT)
+            yCurrent = (float)closest(ySlider.value, Y_SET);
         if (timer_idle <= 0)
         {
             offsetX_idle = UnityEngine.Random.Range((float)-xSlider.maxValue / 20, (float)xSlider.maxValue / 20);
@@ -37,23 +43,34 @@ public class EyeController_main : MonoBehaviour
             timer_idle = UnityEngine.Random.Range(0.0f, TIMER_IDLE_RAND_LIMIT);
         }
         else { timer_idle -= Time.deltaTime; }
+        eyeballX.Value = Mathf.Lerp(eyeballX.Value, xCurrent + offsetX_idle, Time.deltaTime * speed);
+        eyeballY.Value = Mathf.Lerp(eyeballY.Value, yCurrent + offsetY_idle, Time.deltaTime * speed);
+    }
+
+    private void MoveEyelids()
+    {
+        eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, 1 - leftEyeClosenessSlider.value, Time.deltaTime * speed);
+        eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, 1 - rightEyeClosenessSlider.value, Time.deltaTime * speed);
+    }
+
+    private void ApplyExpressions()
+    {
+        eyeSmileL.Value = Mathf.Lerp(eyeSmileL.Value, happySlider.value, Time.deltaTime * speed);
+        eyeSmileR.Value = Mathf.Lerp(eyeSmileR.Value, happySlider.value, Time.deltaTime * speed);
+        eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, surprisedSlider.value, Time.deltaTime * speed);
+        browYL.Value = Mathf.Lerp(browYL.Value, surprisedSlider.value - sadSlider.value, Time.deltaTime * speed);
+        browYR.Value = Mathf.Lerp(browYR.Value, surprisedSlider.value - sadSlider.value, Time.deltaTime * speed);
+        browAngleL.Value = Mathf.Lerp(browAngleL.Value, angrySlider.value - sadSlider.value, Time.deltaTime * speed);
+        browAngleR.Value = Mathf.Lerp(browAngleR.Value, angrySlider.value - sadSlider.value, Time.deltaTime * speed);
+        activSpace.Value = Mathf.Lerp(activSpace.Value, happySlider.value - neutralSlider.value, Time.deltaTime * speed);
+        activCry.Value = Mathf.Lerp(activCry.Value, sadSlider.value - neutralSlider.value, Time.deltaTime * speed);
+        activFire.Value = Mathf.Lerp(activFire.Value, angrySlider.value - neutralSlider.value, Time.deltaTime * speed);
     }
 
     private void Update()
     {
-        if (Math.Abs(xSlider.value - xCurrent) > X_DELTA_LIMIT)
-            xCurrent = (float)closest(xSlider.value, X_SET);
-        if (Math.Abs(ySlider.value - yCurrent) > Y_DELTA_LIMIT)
-            yCurrent = (float)closest(ySlider.value, Y_SET);
-        IdleMovement();
-        eyeX.Value = Mathf.Lerp(eyeX.Value, xCurrent + offsetX_idle, Time.deltaTime * speed);
-        eyeY.Value = Mathf.Lerp(eyeY.Value, yCurrent + offsetY_idle, Time.deltaTime * speed);
-        eyeClosenessL.Value = Mathf.Lerp(eyeClosenessL.Value, 1 - leftEyeClosenessSlider.value, Time.deltaTime * speed);
-        eyeClosenessR.Value = Mathf.Lerp(eyeClosenessR.Value, 1 - rightEyeClosenessSlider.value, Time.deltaTime * speed);
-        eyeAngry.Value = Mathf.Lerp(eyeAngry.Value, angrySlider.value, Time.deltaTime * speed);
-        //eyeDisgusted.Value = Mathf.Lerp(eyeDisgusted.Value, disgustedSlider.value, Time.deltaTime * speed);
-        eyeHappy.Value = Mathf.Lerp(eyeHappy.Value, happySlider.value, Time.deltaTime * speed);
-        eyeSad.Value = Mathf.Lerp(eyeSad.Value, sadSlider.value, Time.deltaTime * speed);
-        eyeSurprised.Value = Mathf.Lerp(eyeSurprised.Value, surprisedSlider.value, Time.deltaTime * speed);
+        MoveEyes();
+        MoveEyelids();
+        ApplyExpressions();
     }
 }
