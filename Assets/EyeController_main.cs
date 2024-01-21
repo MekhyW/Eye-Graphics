@@ -37,7 +37,7 @@ public class EyeController_main : MonoBehaviour
             xCurrent = (float)closest(xSlider.value, X_SET);
         if (Math.Abs(ySlider.value - yCurrent) > Y_DELTA_LIMIT)
             yCurrent = (float)closest(ySlider.value, Y_SET);
-        if (timer_idle <= 0)
+        if (timer_idle <= 0 && hypnoticSlider.value < hypnoticSlider.maxValue/2)
         {
             offsetX_idle = UnityEngine.Random.Range((float)-xSlider.maxValue / 20, (float)xSlider.maxValue / 20);
             offsetY_idle = UnityEngine.Random.Range((float)-ySlider.maxValue / 20, (float)ySlider.maxValue / 20);
@@ -50,8 +50,8 @@ public class EyeController_main : MonoBehaviour
 
     private void MoveEyelids()
     {
-        eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, 1 - leftEyeClosenessSlider.value, Time.deltaTime * speed);
-        eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, 1 - rightEyeClosenessSlider.value, Time.deltaTime * speed);
+        eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.maxValue - leftEyeClosenessSlider.value, Time.deltaTime * speed);
+        eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.maxValue - rightEyeClosenessSlider.value, Time.deltaTime * speed);
     }
 
     private void ApplyExpressions()
