@@ -52,8 +52,8 @@ public class Websocket : MonoBehaviour
                     string[] terms = message.Split(' ');
                     xSlider.value = (float.Parse(terms[0]) + 1) / 2 * (xSlider.maxValue - xSlider.minValue) + xSlider.minValue;
                     ySlider.value = (float.Parse(terms[1]) + 1) / 2 * (ySlider.maxValue - ySlider.minValue) + ySlider.minValue;
-                    leftEyeClosenessSlider.value = 1 - float.Parse(terms[2]);
-                    rightEyeClosenessSlider.value = 1 - float.Parse(terms[3]);
+                    leftEyeClosenessSlider.value = float.Parse(terms[2]);
+                    rightEyeClosenessSlider.value = float.Parse(terms[3]);
                     angrySlider.value = float.Parse(terms[4]);
                     disgustedSlider.value = float.Parse(terms[5]);
                     happySlider.value = float.Parse(terms[6]);
