@@ -64,13 +64,15 @@ public class EyeController_main : MonoBehaviour
 
     private void ApplyExpressions()
     {
-        eyeSmileL.Value = Mathf.Lerp(eyeSmileL.Value, happySlider.value, Time.deltaTime * speed);
+        eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, eyeOpenL.Value + (disgustedSlider.value * (float)0.5), Time.deltaTime * speed);
+        eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, eyeOpenR.Value + (disgustedSlider.value * (float)0.5), Time.deltaTime * speed);
+        eyeSmileL.Value = Mathf.Lerp(eyeSmileL.Value, happySlider.value + disgustedSlider.value, Time.deltaTime * speed);
         eyeSmileR.Value = Mathf.Lerp(eyeSmileR.Value, happySlider.value, Time.deltaTime * speed);
         eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, surprisedSlider.value, Time.deltaTime * speed);
-        browYL.Value = Mathf.Lerp(browYL.Value, surprisedSlider.value - sadSlider.value, Time.deltaTime * speed);
-        browYR.Value = Mathf.Lerp(browYR.Value, surprisedSlider.value - sadSlider.value, Time.deltaTime * speed);
-        browAngleL.Value = Mathf.Lerp(browAngleL.Value, angrySlider.value - sadSlider.value, Time.deltaTime * speed);
-        browAngleR.Value = Mathf.Lerp(browAngleR.Value, angrySlider.value - sadSlider.value, Time.deltaTime * speed);
+        browYL.Value = Mathf.Lerp(browYL.Value, surprisedSlider.value - sadSlider.value - angrySlider.value - disgustedSlider.value, Time.deltaTime * speed);
+        browYR.Value = Mathf.Lerp(browYR.Value, surprisedSlider.value - sadSlider.value - angrySlider.value + disgustedSlider.value, Time.deltaTime * speed);
+        browAngleL.Value = Mathf.Lerp(browAngleL.Value, angrySlider.value - sadSlider.value + disgustedSlider.value, Time.deltaTime * speed);
+        browAngleR.Value = Mathf.Lerp(browAngleR.Value, angrySlider.value - sadSlider.value + disgustedSlider.value, Time.deltaTime * speed);
         activSpace.Value = Mathf.Lerp(activSpace.Value, happySlider.value - neutralSlider.value, Time.deltaTime * speed);
         activCry.Value = Mathf.Lerp(activCry.Value, sadSlider.value - neutralSlider.value, Time.deltaTime * speed);
         activFire.Value = Mathf.Lerp(activFire.Value, angrySlider.value - neutralSlider.value, Time.deltaTime * speed);
