@@ -1,0 +1,620 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "Breath"
+		},
+		{
+			"Id": "AjusteEyeLX",
+			"GroupId": "",
+			"Name": "Ajuste Eye L X"
+		},
+		{
+			"Id": "AjusteEyeLY",
+			"GroupId": "",
+			"Name": "Ajuste Eye L Y"
+		},
+		{
+			"Id": "AjusteEyeRX",
+			"GroupId": "",
+			"Name": "Ajuste Eye R X"
+		},
+		{
+			"Id": "AjusteEyeRY",
+			"GroupId": "",
+			"Name": "Ajuste Eye R Y"
+		},
+		{
+			"Id": "ParamBreath2",
+			"GroupId": "",
+			"Name": "Breath2"
+		},
+		{
+			"Id": "Nada",
+			"GroupId": "",
+			"Name": "NADA"
+		},
+		{
+			"Id": "Deform",
+			"GroupId": "",
+			"Name": "Deform"
+		},
+		{
+			"Id": "AtivSpace",
+			"GroupId": "ParamGroup5",
+			"Name": "Ativar Espaço"
+		},
+		{
+			"Id": "AtivCry",
+			"GroupId": "ParamGroup5",
+			"Name": "Ativar Chorar"
+		},
+		{
+			"Id": "AtivHipno",
+			"GroupId": "ParamGroup5",
+			"Name": "Ativar Hipnosis"
+		},
+		{
+			"Id": "AtivaHeart",
+			"GroupId": "ParamGroup5",
+			"Name": "Ativar Coração"
+		},
+		{
+			"Id": "AtivaRainbow",
+			"GroupId": "ParamGroup5",
+			"Name": "Ativar Rainbow"
+		},
+		{
+			"Id": "AtivNightmare",
+			"GroupId": "ParamGroup5",
+			"Name": "Ativar Nightmare"
+		},
+		{
+			"Id": "AtivaEngrenagens",
+			"GroupId": "ParamGroup5",
+			"Name": "Ativar Engrenagens"
+		},
+		{
+			"Id": "AtivFogo",
+			"GroupId": "ParamGroup5",
+			"Name": "Ativar Fogo"
+		},
+		{
+			"Id": "AtivaSANS",
+			"GroupId": "ParamGroup5",
+			"Name": "Ativar SANS"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup13",
+			"Name": "EyeL Open"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup13",
+			"Name": "EyeR Open"
+		},
+		{
+			"Id": "ParamEyeBallXL",
+			"GroupId": "ParamGroup13",
+			"Name": "Eyeball X L"
+		},
+		{
+			"Id": "ParamEyeBallYL",
+			"GroupId": "ParamGroup13",
+			"Name": "Eyeball Y L"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "ParamGroup13",
+			"Name": "BrowL Y"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "ParamGroup13",
+			"Name": "BrowL Angle"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "ParamGroup13",
+			"Name": "EyeL Smile"
+		},
+		{
+			"Id": "ParamEyeLSmile2",
+			"GroupId": "ParamGroup13",
+			"Name": "EyeL Smile2"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "ParamGroup13",
+			"Name": "BrowR Y"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "ParamGroup13",
+			"Name": "BrowR Angle"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "ParamGroup13",
+			"Name": "EyeR Smile"
+		},
+		{
+			"Id": "ParamEyeRSmile2",
+			"GroupId": "ParamGroup13",
+			"Name": "EyeR Smile2"
+		},
+		{
+			"Id": "SpaceImersion1",
+			"GroupId": "ParamGroup10",
+			"Name": "Space Imersion 1"
+		},
+		{
+			"Id": "SpaceImersion2",
+			"GroupId": "ParamGroup10",
+			"Name": "Space Imersion 2"
+		},
+		{
+			"Id": "HeartPhy1",
+			"GroupId": "ParamGroup6",
+			"Name": "HeartPhy1"
+		},
+		{
+			"Id": "HeartPhy2",
+			"GroupId": "ParamGroup6",
+			"Name": "HeartPhy2"
+		},
+		{
+			"Id": "HeartPhy3",
+			"GroupId": "ParamGroup6",
+			"Name": "HeartPhy3"
+		},
+		{
+			"Id": "Engrenagem1",
+			"GroupId": "ParamGroup7",
+			"Name": "Engrenagem 1"
+		},
+		{
+			"Id": "Engrenagem2",
+			"GroupId": "ParamGroup7",
+			"Name": "Engrenagem 2"
+		},
+		{
+			"Id": "RainbowEffect1",
+			"GroupId": "ParamGroup8",
+			"Name": "RainbowEffect 1"
+		},
+		{
+			"Id": "RainbowEffect2",
+			"GroupId": "ParamGroup8",
+			"Name": "RainbowEffect 2"
+		},
+		{
+			"Id": "GiraGira1",
+			"GroupId": "ParamGroup9",
+			"Name": "GiraGira 1"
+		},
+		{
+			"Id": "GiraGira2",
+			"GroupId": "ParamGroup9",
+			"Name": "GiraGira 2"
+		},
+		{
+			"Id": "ParamEyeLCryAnime",
+			"GroupId": "ParamGroup4",
+			"Name": "EyeL Cry Anime"
+		},
+		{
+			"Id": "ParamEyeLCryAtiva",
+			"GroupId": "ParamGroup4",
+			"Name": "EyeL Cry Ativa"
+		},
+		{
+			"Id": "EyeLCryPhy1",
+			"GroupId": "ParamGroup4",
+			"Name": "EyeLCryPhy 1"
+		},
+		{
+			"Id": "EyeLCryPhy2",
+			"GroupId": "ParamGroup4",
+			"Name": "EyeLCryPhy 2"
+		},
+		{
+			"Id": "EyeRCryPhy1",
+			"GroupId": "ParamGroup12",
+			"Name": "EyeRCryPhy 1"
+		},
+		{
+			"Id": "EyeRCryPhy2",
+			"GroupId": "ParamGroup12",
+			"Name": "EyeRCryPhy 2"
+		},
+		{
+			"Id": "ParamEyeRCryAnime",
+			"GroupId": "ParamGroup12",
+			"Name": "EyeR Cry Anime"
+		},
+		{
+			"Id": "ParamEyeRCryAtiva",
+			"GroupId": "ParamGroup12",
+			"Name": "EyeR Cry Ativa"
+		},
+		{
+			"Id": "Fire1",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire1"
+		},
+		{
+			"Id": "Fire2",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire2"
+		},
+		{
+			"Id": "FirePhy1",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire Phy 1"
+		},
+		{
+			"Id": "FirePhy2",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire Phy 2"
+		},
+		{
+			"Id": "FirePhy3",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire Phy 3"
+		},
+		{
+			"Id": "FirePhy4",
+			"GroupId": "ParamGroup3",
+			"Name": "Fire Phy 4"
+		},
+		{
+			"Id": "EyeLOPhy1",
+			"GroupId": "ParamGroup",
+			"Name": "EyeLOPhy 1"
+		},
+		{
+			"Id": "EyeLOPhy2",
+			"GroupId": "ParamGroup",
+			"Name": "EyeLOPhy 2"
+		},
+		{
+			"Id": "EyeLOpPhy1",
+			"GroupId": "ParamGroup",
+			"Name": "EyeLOpPhy 1"
+		},
+		{
+			"Id": "EyeLOpPhy2",
+			"GroupId": "ParamGroup",
+			"Name": "EyeLOpPhy 2"
+		},
+		{
+			"Id": "EyeROPhy1",
+			"GroupId": "ParamGroup11",
+			"Name": "EyeROPhy 1"
+		},
+		{
+			"Id": "EyeROPhy2",
+			"GroupId": "ParamGroup11",
+			"Name": "EyeROPhy 2"
+		},
+		{
+			"Id": "EyeROpPhy1",
+			"GroupId": "ParamGroup11",
+			"Name": "EyeROpPhy 1"
+		},
+		{
+			"Id": "EyeROpPhy2",
+			"GroupId": "ParamGroup11",
+			"Name": "EyeROpPhy 2"
+		},
+		{
+			"Id": "ParamEyeBallXPhy1",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball X Phy1"
+		},
+		{
+			"Id": "ParamEyeBallXPhy2",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball X Phy2"
+		},
+		{
+			"Id": "ParamEyeBallYPhy1",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball Y Phy 1"
+		},
+		{
+			"Id": "ParamEyeBallYPhy2",
+			"GroupId": "ParamGroup2",
+			"Name": "EyeBallYPhy2"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup5",
+			"GroupId": "",
+			"Name": "Ativaveis"
+		},
+		{
+			"Id": "ParamGroup13",
+			"GroupId": "",
+			"Name": "Tracking"
+		},
+		{
+			"Id": "ParamGroup10",
+			"GroupId": "",
+			"Name": "Space Anime"
+		},
+		{
+			"Id": "ParamGroup6",
+			"GroupId": "",
+			"Name": "Coração Anime"
+		},
+		{
+			"Id": "ParamGroup7",
+			"GroupId": "",
+			"Name": "Engrenagens Anime"
+		},
+		{
+			"Id": "ParamGroup8",
+			"GroupId": "",
+			"Name": "Guei Anime"
+		},
+		{
+			"Id": "ParamGroup9",
+			"GroupId": "",
+			"Name": "Hipno Anime"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "Chorando Anime"
+		},
+		{
+			"Id": "ParamGroup12",
+			"GroupId": "",
+			"Name": "Chorando Anime"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "Fogo"
+		},
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "Blink Phy"
+		},
+		{
+			"Id": "ParamGroup11",
+			"GroupId": "",
+			"Name": "Blink Phy"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "EyePhy"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part6",
+			"Name": "OlhoMeky"
+		},
+		{
+			"Id": "Part4",
+			"Name": "OlhoMeky"
+		},
+		{
+			"Id": "Part7",
+			"Name": "Gear 1"
+		},
+		{
+			"Id": "Crys2",
+			"Name": "Crys"
+		},
+		{
+			"Id": "Hearts2",
+			"Name": "Hearts"
+		},
+		{
+			"Id": "Cilios2",
+			"Name": "Cilios"
+		},
+		{
+			"Id": "Part8",
+			"Name": "Todos os Fogos"
+		},
+		{
+			"Id": "Brilhos2",
+			"Name": "Brilhos"
+		},
+		{
+			"Id": "Sombras2",
+			"Name": "Sombras"
+		},
+		{
+			"Id": "Rayraybow2",
+			"Name": "Rayraybow"
+		},
+		{
+			"Id": "Engrenagens2",
+			"Name": "Engrenagens"
+		},
+		{
+			"Id": "Part9",
+			"Name": "Esclera"
+		},
+		{
+			"Id": "Part10",
+			"Name": "Iris e Pupil"
+		},
+		{
+			"Id": "Iris_Conjunto2",
+			"Name": "Iris_Conjunto"
+		},
+		{
+			"Id": "Palps2",
+			"Name": "Palps"
+		},
+		{
+			"Id": "Part5",
+			"Name": "Gear 1"
+		},
+		{
+			"Id": "Crys",
+			"Name": "Crys"
+		},
+		{
+			"Id": "Hearts",
+			"Name": "Hearts"
+		},
+		{
+			"Id": "Cilios",
+			"Name": "Cilios"
+		},
+		{
+			"Id": "Part3",
+			"Name": "Todos os Fogos"
+		},
+		{
+			"Id": "Brilhos",
+			"Name": "Brilhos"
+		},
+		{
+			"Id": "Sombras",
+			"Name": "Sombras"
+		},
+		{
+			"Id": "Rayraybow",
+			"Name": "Rayraybow"
+		},
+		{
+			"Id": "Engrenagens",
+			"Name": "Engrenagens"
+		},
+		{
+			"Id": "Part2",
+			"Name": "Esclera"
+		},
+		{
+			"Id": "Part",
+			"Name": "Iris e Pupil"
+		},
+		{
+			"Id": "Palps",
+			"Name": "Palps"
+		},
+		{
+			"Id": "Fogos8",
+			"Name": "Sanz fire"
+		},
+		{
+			"Id": "Fogos9",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos3",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos10",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos11",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos12",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Spcaace2",
+			"Name": "Spcaace"
+		},
+		{
+			"Id": "Fogos7",
+			"Name": "Sanz fire"
+		},
+		{
+			"Id": "Fogos6",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos2",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos5",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos4",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Fogos",
+			"Name": "Fogos"
+		},
+		{
+			"Id": "Spcaace",
+			"Name": "Spcaace"
+		},
+		{
+			"Id": "Iris_Conjunto",
+			"Name": "Iris_Conjunto"
+		},
+		{
+			"Id": "MaskFire50",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire58",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire14",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire65",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire72",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire79",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire42",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire35",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire7",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire28",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire21",
+			"Name": "MaskFire"
+		},
+		{
+			"Id": "MaskFire",
+			"Name": "MaskFire"
+		}
+	]
+}
