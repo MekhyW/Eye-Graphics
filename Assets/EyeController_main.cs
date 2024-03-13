@@ -23,7 +23,7 @@ public class EyeController_main : MonoBehaviour
     double[] EYELID_SET = { 1.2, 0.7, 0.2, 0 };
     double X_DELTA_LIMIT = 2.0 / (11 - 1) * 0.75;
     double Y_DELTA_LIMIT = 2.0 / (5 - 1) * 0.75;
-    double EYELID_DELTA_LIMIT = 0.1;
+    double EYELID_DELTA_LIMIT = 0.2;
     public float TIMER_IDLE_RAND_LIMIT = 1.0f;
     static float timer_idle = 0;
     static float offsetX_idle = 0;
@@ -64,18 +64,26 @@ public class EyeController_main : MonoBehaviour
 
     private void ApplyExpressions()
     {
-        eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, eyeOpenL.Value + (disgustedSlider.value * (float)0.5), Time.deltaTime * speed);
-        eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, eyeOpenR.Value + (disgustedSlider.value * (float)0.5), Time.deltaTime * speed);
-        eyeSmileL.Value = Mathf.Lerp(eyeSmileL.Value, happySlider.value + disgustedSlider.value, Time.deltaTime * speed);
-        eyeSmileR.Value = Mathf.Lerp(eyeSmileR.Value, happySlider.value, Time.deltaTime * speed);
-        eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, surprisedSlider.value, Time.deltaTime * speed);
-        browYL.Value = Mathf.Lerp(browYL.Value, surprisedSlider.value - sadSlider.value - angrySlider.value - disgustedSlider.value, Time.deltaTime * speed);
-        browYR.Value = Mathf.Lerp(browYR.Value, surprisedSlider.value - sadSlider.value - angrySlider.value + disgustedSlider.value, Time.deltaTime * speed);
-        browAngleL.Value = Mathf.Lerp(browAngleL.Value, angrySlider.value - sadSlider.value + disgustedSlider.value, Time.deltaTime * speed);
-        browAngleR.Value = Mathf.Lerp(browAngleR.Value, angrySlider.value - sadSlider.value + disgustedSlider.value, Time.deltaTime * speed);
-        activSpace.Value = Mathf.Lerp(activSpace.Value, happySlider.value - neutralSlider.value, Time.deltaTime * speed);
-        activCry.Value = Mathf.Lerp(activCry.Value, sadSlider.value - neutralSlider.value, Time.deltaTime * speed);
-        activFire.Value = Mathf.Lerp(activFire.Value, angrySlider.value - neutralSlider.value, Time.deltaTime * speed);
+        float topExpr = Mathf.Max(angrySlider.value, disgustedSlider.value, happySlider.value, neutralSlider.value, sadSlider.value, surprisedSlider.value);
+        if (topExpr == happySlider.value || topExpr == disgustedSlider.value) { eyeSmileL.Value = Mathf.Lerp(eyeSmileL.Value, topExpr, Time.deltaTime * speed); }
+        else { eyeSmileL.Value = Mathf.Lerp(eyeSmileL.Value, 0, Time.deltaTime * speed); }
+        if (topExpr == happySlider.value) { eyeSmileR.Value = Mathf.Lerp(eyeSmileR.Value, topExpr, Time.deltaTime * speed); }
+        else { eyeSmileR.Value = Mathf.Lerp(eyeSmileR.Value, 0, Time.deltaTime * speed); }
+        if (topExpr == surprisedSlider.value) { eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, surprisedSlider.value, Time.deltaTime * speed); }
+        else { eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, 0, Time.deltaTime * speed); }
+        if (topExpr == surprisedSlider.value) { browYL.Value = Mathf.Lerp(browYL.Value, topExpr, Time.deltaTime * speed); }
+        else if (topExpr == sadSlider.value || topExpr == angrySlider.value || topExpr == disgustedSlider.value) { browYL.Value = Mathf.Lerp(browYL.Value, -topExpr, Time.deltaTime * speed); }
+        else { browYL.Value = Mathf.Lerp(browYL.Value, 0, Time.deltaTime * speed); }
+        if (topExpr == angrySlider.value || topExpr == disgustedSlider.value) { browAngleL.Value = Mathf.Lerp(browAngleL.Value, topExpr, Time.deltaTime * speed); }
+        else if (topExpr == sadSlider.value) { browAngleL.Value = Mathf.Lerp(browAngleL.Value, -topExpr, Time.deltaTime * speed); }
+        else { browAngleL.Value = Mathf.Lerp(browAngleL.Value, 0, Time.deltaTime * speed); }
+        if (topExpr == sadSlider.value) { activCry.Value = Mathf.Lerp(activCry.Value, topExpr, Time.deltaTime * speed); }
+        else { activCry.Value = Mathf.Lerp(activCry.Value, 0, Time.deltaTime * speed); }
+        if (topExpr == angrySlider.value) { activFire.Value = Mathf.Lerp(activFire.Value, topExpr, Time.deltaTime * speed); }
+        else { activFire.Value = Mathf.Lerp(activFire.Value, 0, Time.deltaTime * speed); }
+        browYR.Value = browYL.Value;
+        browAngleR.Value = browAngleL.Value;
+        activSpace.Value = eyeSmileR.Value;
         activHypno.Value = Mathf.Lerp(activHypno.Value, hypnoticSlider.value, Time.deltaTime * speed);
         activHeart.Value = Mathf.Lerp(activHeart.Value, heartSlider.value, Time.deltaTime * speed);
         activRainbow.Value = Mathf.Lerp(activRainbow.Value, rainbowSlider.value, Time.deltaTime * speed);
