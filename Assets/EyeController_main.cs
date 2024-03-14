@@ -15,15 +15,12 @@ public class EyeController_main : MonoBehaviour
 
     float xCurrent = 0;
     float yCurrent = 0;
-    float eyelidLeftCurrent = 0;
-    float eyelidRightCurrent = 0;
+    float eyelidCurrent = 0;
     public float speed = 25;
     double[] X_SET = { -1, -0.8, -0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8, 1 };
     double[] Y_SET = { -1, -0.5, 0, 0.5, 1 };
-    double[] EYELID_SET = { 1.2, 0.7, 0.2, 0 };
     double X_DELTA_LIMIT = 2.0 / (11 - 1) * 0.75;
     double Y_DELTA_LIMIT = 2.0 / (5 - 1) * 0.75;
-    double EYELID_DELTA_LIMIT = 0.2;
     public float TIMER_IDLE_RAND_LIMIT = 1.0f;
     static float timer_idle = 0;
     static float offsetX_idle = 0;
@@ -54,12 +51,26 @@ public class EyeController_main : MonoBehaviour
 
     private void MoveEyelids()
     {
-        if (Math.Abs(leftEyeClosenessSlider.value - eyelidLeftCurrent) > EYELID_DELTA_LIMIT)
-            eyelidLeftCurrent = (float)closest(leftEyeClosenessSlider.value, EYELID_SET);
-        if (Math.Abs(rightEyeClosenessSlider.value - eyelidRightCurrent) > EYELID_DELTA_LIMIT)
-            eyelidRightCurrent = (float)closest(rightEyeClosenessSlider.value, EYELID_SET);
-        eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.maxValue - eyelidLeftCurrent, Time.deltaTime * speed);
-        eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.maxValue - eyelidRightCurrent, Time.deltaTime * speed);
+        float sliderVal = (leftEyeClosenessSlider.value + rightEyeClosenessSlider.value)/2;
+        switch(eyelidCurrent)
+        {
+            case 1.2f:
+                if (sliderVal < 0.825) { eyelidCurrent = 0.7f; }
+                break;
+            case 0.7f:
+                if (sliderVal < 0.325) { eyelidCurrent = 0.2f; }
+                else if (sliderVal > 1.075) { eyelidCurrent = 1.2f; }
+                break;
+            case 0.2f:
+                if (sliderVal > 0.575) { eyelidCurrent = 0.7f; }
+                else if (sliderVal < 0.1) { eyelidCurrent = 0; }
+                break;
+            case 0:
+                if (sliderVal > 0.15) { eyelidCurrent = 0.2f; }
+                break;
+        }
+        eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.maxValue - eyelidCurrent, Time.deltaTime * speed);
+        eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.maxValue - eyelidCurrent, Time.deltaTime * speed);
     }
 
     private void ApplyExpressions()
