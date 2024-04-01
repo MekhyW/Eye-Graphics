@@ -21,7 +21,7 @@ public class EyeController_main : MonoBehaviour
     double[] Y_SET = { -1, -0.5, 0, 0.5, 1 };
     double X_DELTA_LIMIT = 2.0 / (11 - 1) * 0.75;
     double Y_DELTA_LIMIT = 2.0 / (5 - 1) * 0.75;
-    public float TIMER_IDLE_RAND_LIMIT = 1.0f;
+    static float TIMER_IDLE_RAND_LIMIT = 1.5f;
     static float timer_idle = 0;
     static float offsetX_idle = 0;
     static float offsetY_idle = 0;

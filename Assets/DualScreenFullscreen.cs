@@ -1,12 +1,13 @@
 using UnityEngine;
+using System.Collections;
 
-public class DualScreenFullscreen : MonoBehaviour
+public class ActivateAllDisplays : MonoBehaviour
 {
     void Start()
     {
-        int screenWidth = Screen.currentResolution.width;
-        int screenHeight = Screen.currentResolution.height;
-        Screen.SetResolution(screenWidth * 2, screenHeight, true);
-        Debug.Log("New resolution: " + Screen.width + "x" + Screen.height);
+        Debug.Log("displays connected: " + Display.displays.Length);
+        for (int i = 1; i < Display.displays.Length; i++) { 
+            Display.displays[i].Activate(); 
+        }
     }
 }
