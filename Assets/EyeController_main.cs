@@ -16,11 +16,11 @@ public class EyeController_main : MonoBehaviour
     float xCurrent = 0;
     float yCurrent = 0;
     float eyelidCurrent = 0;
-    public float speed = 25;
-    double[] X_SET = { -1, -0.8, -0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8, 1 };
-    double[] Y_SET = { -1, -0.5, 0, 0.5, 1 };
-    double X_DELTA_LIMIT = 2.0 / (11 - 1) * 0.75;
-    double Y_DELTA_LIMIT = 2.0 / (5 - 1) * 0.75;
+    public float speed = 35;
+    static double[] X_SET = { -1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 };
+    static double[] Y_SET = { -1, -0.5, 0, 0.5, 1 };
+    double X_DELTA_LIMIT = 2.0 / (X_SET.Length - 1) * 0.75;
+    double Y_DELTA_LIMIT = 2.0 / (Y_SET.Length - 1) * 0.75;
     static float TIMER_IDLE_RAND_LIMIT = 1.5f;
     static float timer_idle = 0;
     static float offsetX_idle = 0;
