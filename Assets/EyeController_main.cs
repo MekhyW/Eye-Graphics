@@ -13,16 +13,19 @@ public class EyeController_main : MonoBehaviour
         browYL, browYR, browAngleL, browAngleR,
         activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
 
+    const float speed = 35;
+    const float TIMER_IDLE_RAND_MAX = 1.5f;
+    const float TIMER_YMOVE_RAND_MAX = 6.0f;
+    const float TIMER_BLINK_RAND_MAX = 16.0f;
+    const float BLINK_DURATION = 0.1f;
+    static double[] X_SET = { -1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 };
+    double X_DELTA_LIMIT = 2.0 / (X_SET.Length - 1) * 0.75;
+
     float xCurrent = 0;
     float yCurrent = 0;
-    float eyelidCurrent = 0;
-    public float speed = 35;
-    static double[] X_SET = { -1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 };
-    static double[] Y_SET = { -1, -0.5, 0, 0.5, 1 };
-    double X_DELTA_LIMIT = 2.0 / (X_SET.Length - 1) * 0.75;
-    double Y_DELTA_LIMIT = 2.0 / (Y_SET.Length - 1) * 0.75;
-    static float TIMER_IDLE_RAND_LIMIT = 1.5f;
     static float timer_idle = 0;
+    static float timer_ymove = 0;
+    static float timer_blink = 0;
     static float offsetX_idle = 0;
     static float offsetY_idle = 0;
 
@@ -32,17 +35,36 @@ public class EyeController_main : MonoBehaviour
         return set[Array.IndexOf(c, c.Min())];
     };
 
+    private static float RandomGaussian(float minValue = 0.0f, float maxValue = 1.0f)
+    {
+        float u, v, S;
+        do
+        {
+            u = 2.0f * UnityEngine.Random.value - 1.0f;
+            v = 2.0f * UnityEngine.Random.value - 1.0f;
+            S = u * u + v * v;
+        }
+        while (S >= 1.0f);
+        float std = u * Mathf.Sqrt(-2.0f * Mathf.Log(S) / S);
+        float mean = (minValue + maxValue) / 2.0f;
+        float sigma = (maxValue - mean) / 3.0f;
+        return Mathf.Clamp(std * sigma + mean, minValue, maxValue);
+    }
+
     private void MoveEyes()
     {
-        if (Math.Abs(xSlider.value - xCurrent) > X_DELTA_LIMIT)
-            xCurrent = (float)closest(xSlider.value, X_SET);
-        if (Math.Abs(ySlider.value - yCurrent) > Y_DELTA_LIMIT)
-            yCurrent = (float)closest(ySlider.value, Y_SET);
+        if (Math.Abs(xSlider.value - xCurrent) > X_DELTA_LIMIT) { xCurrent = (float)closest(xSlider.value, X_SET); }
+        if (timer_ymove <= 0)
+        {
+            yCurrent = RandomGaussian((float)-ySlider.maxValue / 2, (float)ySlider.maxValue / 2);
+            timer_ymove = UnityEngine.Random.Range(0.0f, TIMER_YMOVE_RAND_MAX);
+        }
+        else { timer_ymove -= Time.deltaTime; }
         if (timer_idle <= 0 && hypnoticSlider.value < hypnoticSlider.maxValue/2)
         {
             offsetX_idle = UnityEngine.Random.Range((float)-xSlider.maxValue / 20, (float)xSlider.maxValue / 20);
             offsetY_idle = UnityEngine.Random.Range((float)-ySlider.maxValue / 20, (float)ySlider.maxValue / 20);
-            timer_idle = UnityEngine.Random.Range(0.0f, TIMER_IDLE_RAND_LIMIT);
+            timer_idle = UnityEngine.Random.Range(0.0f, TIMER_IDLE_RAND_MAX);
         }
         else { timer_idle -= Time.deltaTime; }
         eyeballX.Value = Mathf.Lerp(eyeballX.Value, xCurrent + offsetX_idle, Time.deltaTime * speed);
@@ -51,26 +73,19 @@ public class EyeController_main : MonoBehaviour
 
     private void MoveEyelids()
     {
-        float sliderVal = (leftEyeClosenessSlider.value + rightEyeClosenessSlider.value)/2;
-        switch(eyelidCurrent)
+        float sliderVal = (leftEyeClosenessSlider.value + rightEyeClosenessSlider.value) / 2;
+        if (timer_blink <= 0)
         {
-            case 1.2f:
-                if (sliderVal < 0.825) { eyelidCurrent = 0.7f; }
-                break;
-            case 0.7f:
-                if (sliderVal < 0.325) { eyelidCurrent = 0.2f; }
-                else if (sliderVal > 1.075) { eyelidCurrent = 1.2f; }
-                break;
-            case 0.2f:
-                if (sliderVal > 0.575) { eyelidCurrent = 0.7f; }
-                else if (sliderVal < 0.1) { eyelidCurrent = 0; }
-                break;
-            case 0:
-                if (sliderVal > 0.15) { eyelidCurrent = 0.2f; }
-                break;
+            eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.minValue, Time.deltaTime * speed);
+            eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.minValue, Time.deltaTime * speed);
+            if (timer_blink < -BLINK_DURATION) { timer_blink = UnityEngine.Random.Range(0.0f, TIMER_BLINK_RAND_MAX); }
         }
-        eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.maxValue - eyelidCurrent, Time.deltaTime * speed);
-        eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.maxValue - eyelidCurrent, Time.deltaTime * speed);
+        else
+        {
+            eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.maxValue - sliderVal, Time.deltaTime * speed);
+            eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.maxValue - sliderVal, Time.deltaTime * speed);
+        }
+        if (sliderVal < 0.5) { timer_blink -= Time.deltaTime; }
     }
 
     private void ApplyExpressions()
