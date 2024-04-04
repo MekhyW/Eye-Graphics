@@ -53,6 +53,12 @@ public class EyeController_main : MonoBehaviour
 
     private void MoveEyes()
     {
+        if (hypnoticSlider.value > hypnoticSlider.maxValue / 2)
+        {
+            eyeballX.Value = 0;
+            eyeballY.Value = 0;
+            return;
+        }
         if (Math.Abs(xSlider.value - xCurrent) > X_DELTA_LIMIT) { xCurrent = (float)closest(xSlider.value, X_SET); }
         if (timer_ymove <= 0)
         {
@@ -60,7 +66,7 @@ public class EyeController_main : MonoBehaviour
             timer_ymove = UnityEngine.Random.Range(0.0f, TIMER_YMOVE_RAND_MAX);
         }
         else { timer_ymove -= Time.deltaTime; }
-        if (timer_idle <= 0 && hypnoticSlider.value < hypnoticSlider.maxValue/2)
+        if (timer_idle <= 0)
         {
             offsetX_idle = UnityEngine.Random.Range((float)-xSlider.maxValue / 20, (float)xSlider.maxValue / 20);
             offsetY_idle = UnityEngine.Random.Range((float)-ySlider.maxValue / 20, (float)ySlider.maxValue / 20);
@@ -73,6 +79,12 @@ public class EyeController_main : MonoBehaviour
 
     private void MoveEyelids()
     {
+        if (hypnoticSlider.value > hypnoticSlider.maxValue / 2)
+        {
+            eyeOpenL.Value = leftEyeClosenessSlider.maxValue - 0.2f;
+            eyeOpenR.Value = rightEyeClosenessSlider.maxValue - 0.2f;
+            return;
+        }
         float sliderVal = (leftEyeClosenessSlider.value + rightEyeClosenessSlider.value) / 2;
         if (timer_blink <= 0)
         {
