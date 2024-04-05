@@ -18,6 +18,9 @@ public class EyeController_main : MonoBehaviour
     const float TIMER_YMOVE_RAND_MAX = 6.0f;
     const float TIMER_BLINK_RAND_MAX = 16.0f;
     const float BLINK_DURATION = 0.1f;
+    const float AVG_SLIDER_EYEBALLS = 0.5f;
+    const float AVG_SLIDER_EYELIDS = 0.6f;
+    const float AVG_SLIDER_EXPRS = 0.5f;
     static double[] X_SET = { -1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 };
     double X_DELTA_LIMIT = 2.0 / (X_SET.Length - 1) * 0.75;
 
@@ -53,7 +56,7 @@ public class EyeController_main : MonoBehaviour
 
     private void MoveEyes()
     {
-        if (hypnoticSlider.value > hypnoticSlider.maxValue / 2)
+        if (hypnoticSlider.value > AVG_SLIDER_EXPRS)
         {
             eyeballX.Value = 0;
             eyeballY.Value = 0;
@@ -62,7 +65,7 @@ public class EyeController_main : MonoBehaviour
         if (Math.Abs(xSlider.value - xCurrent) > X_DELTA_LIMIT) { xCurrent = (float)closest(xSlider.value, X_SET); }
         if (timer_ymove <= 0)
         {
-            yCurrent = RandomGaussian((float)-ySlider.maxValue / 2, (float)ySlider.maxValue / 2);
+            yCurrent = RandomGaussian((float)-AVG_SLIDER_EYEBALLS, (float)AVG_SLIDER_EYEBALLS);
             timer_ymove = UnityEngine.Random.Range(0.0f, TIMER_YMOVE_RAND_MAX);
         }
         else { timer_ymove -= Time.deltaTime; }
@@ -79,10 +82,16 @@ public class EyeController_main : MonoBehaviour
 
     private void MoveEyelids()
     {
-        if (hypnoticSlider.value > hypnoticSlider.maxValue / 2)
+        if (hypnoticSlider.value > AVG_SLIDER_EXPRS)
         {
             eyeOpenL.Value = leftEyeClosenessSlider.maxValue - 0.2f;
             eyeOpenR.Value = rightEyeClosenessSlider.maxValue - 0.2f;
+            return;
+        }
+        if (Math.Abs(leftEyeClosenessSlider.value - rightEyeClosenessSlider.value) > AVG_SLIDER_EYELIDS)
+        {
+            eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.maxValue - leftEyeClosenessSlider.value, Time.deltaTime * speed);
+            eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.maxValue - rightEyeClosenessSlider.value, Time.deltaTime * speed);
             return;
         }
         float sliderVal = (leftEyeClosenessSlider.value + rightEyeClosenessSlider.value) / 2;
