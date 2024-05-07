@@ -8,7 +8,7 @@ public class EyeController_main : MonoBehaviour
 {
     public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider,
         angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider,
-        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider;
+        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider, mischievousSlider;
     public CubismParameter eyeballX, eyeballY, eyeOpenL, eyeOpenR, eyeSmileL, eyeSmileR, eyeDeform,
         browYL, browYR, browAngleL, browAngleR,
         activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
@@ -84,8 +84,14 @@ public class EyeController_main : MonoBehaviour
     {
         if (hypnoticSlider.value > AVG_SLIDER_EXPRS)
         {
-            eyeOpenL.Value = leftEyeClosenessSlider.maxValue - 0.2f;
-            eyeOpenR.Value = rightEyeClosenessSlider.maxValue - 0.2f;
+            eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.maxValue - 0.2f, Time.deltaTime * speed);
+            eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.maxValue - 0.2f, Time.deltaTime * speed);
+            return;
+        }
+        if (mischievousSlider.value > AVG_SLIDER_EXPRS)
+        {
+            eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.maxValue - 0.7f, Time.deltaTime * speed);
+            eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.maxValue - 0.7f, Time.deltaTime * speed);
             return;
         }
         if (Math.Abs(leftEyeClosenessSlider.value - rightEyeClosenessSlider.value) > AVG_SLIDER_EYELIDS)
@@ -118,10 +124,12 @@ public class EyeController_main : MonoBehaviour
         else { eyeSmileR.Value = Mathf.Lerp(eyeSmileR.Value, 0, Time.deltaTime * speed); }
         if (topExpr == surprisedSlider.value) { eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, surprisedSlider.value, Time.deltaTime * speed); }
         else { eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, 0, Time.deltaTime * speed); }
-        if (topExpr == surprisedSlider.value) { browYL.Value = Mathf.Lerp(browYL.Value, topExpr, Time.deltaTime * speed); }
+        if (mischievousSlider.value > AVG_SLIDER_EXPRS) { browYL.Value = Mathf.Lerp(browYL.Value, -browYL.MaximumValue, Time.deltaTime * speed); }
+        else if (topExpr == surprisedSlider.value) { browYL.Value = Mathf.Lerp(browYL.Value, topExpr, Time.deltaTime * speed); }
         else if (topExpr == sadSlider.value || topExpr == angrySlider.value || topExpr == disgustedSlider.value) { browYL.Value = Mathf.Lerp(browYL.Value, -topExpr, Time.deltaTime * speed); }
         else { browYL.Value = Mathf.Lerp(browYL.Value, 0, Time.deltaTime * speed); }
-        if (topExpr == angrySlider.value || topExpr == disgustedSlider.value) { browAngleL.Value = Mathf.Lerp(browAngleL.Value, topExpr, Time.deltaTime * speed); }
+        if (mischievousSlider.value > AVG_SLIDER_EXPRS) { browAngleL.Value = Mathf.Lerp(browAngleL.Value, browAngleL.MaximumValue - 0.5f, Time.deltaTime * speed);  }
+        else if (topExpr == angrySlider.value || topExpr == disgustedSlider.value) { browAngleL.Value = Mathf.Lerp(browAngleL.Value, topExpr, Time.deltaTime * speed); }
         else if (topExpr == sadSlider.value) { browAngleL.Value = Mathf.Lerp(browAngleL.Value, -topExpr, Time.deltaTime * speed); }
         else { browAngleL.Value = Mathf.Lerp(browAngleL.Value, 0, Time.deltaTime * speed); }
         if (topExpr == sadSlider.value) { activCry.Value = Mathf.Lerp(activCry.Value, topExpr, Time.deltaTime * speed); }

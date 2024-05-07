@@ -12,7 +12,7 @@ public class Websocket : MonoBehaviour
 
     public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider,
         angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider,
-        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider;
+        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider, mischievousSlider;
 
     private bool ValidateMessage(string message)
     {
@@ -67,6 +67,7 @@ public class Websocket : MonoBehaviour
                     nightmareSlider.value = manual_expression == 9 ? 1 : 0;
                     gearsSlider.value = manual_expression == 10 ? 1 : 0;
                     sansSlider.value = manual_expression == 11 ? 1 : 0;
+                    mischievousSlider.value = manual_expression == 12 ? 1 : 0;
                 }
                 else { response = "Invalid message format!";}
                 byte[] responseMessage = Encoding.UTF8.GetBytes(response);
