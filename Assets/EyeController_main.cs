@@ -9,6 +9,7 @@ public class EyeController_main : MonoBehaviour
     public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider,
         angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider,
         hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider, mischievousSlider;
+    public Toggle sillyMode;
     public CubismParameter eyeballXL, eyeballYL, eyeballXR, eyeballYR, eyeOpenL, eyeOpenR, eyeSmileL, eyeSmileR, eyeDeform,
         browYL, browYR, browAngleL, browAngleR,
         activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
@@ -56,12 +57,20 @@ public class EyeController_main : MonoBehaviour
 
     private void MoveEyes()
     {
+        if (sillyMode.isOn)
+        {
+            eyeballXL.Value = Mathf.Lerp(eyeballXL.Value, 0.7f, Time.deltaTime * speed);
+            eyeballXR.Value = Mathf.Lerp(eyeballXR.Value, -0.9f, Time.deltaTime * speed);
+            eyeballYL.Value = Mathf.Lerp(eyeballYL.Value, 0.7f, Time.deltaTime * speed);
+            eyeballYR.Value = Mathf.Lerp(eyeballYR.Value, -0.8f, Time.deltaTime * speed);
+            return;
+        }
         if (hypnoticSlider.value > AVG_SLIDER_EXPRS)
         {
-            eyeballXL.Value = 0;
-            eyeballXR.Value = 0;
-            eyeballYL.Value = 0;
-            eyeballYR.Value = 0;
+            eyeballXL.Value = Mathf.Lerp(eyeballXL.Value, 0, Time.deltaTime * speed);
+            eyeballXR.Value = Mathf.Lerp(eyeballXR.Value, 0, Time.deltaTime * speed);
+            eyeballYL.Value = Mathf.Lerp(eyeballYL.Value, 0, Time.deltaTime * speed);
+            eyeballYR.Value = Mathf.Lerp(eyeballYR.Value, 0, Time.deltaTime * speed);
             return;
         }
         if (Math.Abs(xSlider.value - xCurrent) > X_DELTA_LIMIT) { xCurrent = (float)closest(xSlider.value, X_SET); }
@@ -129,7 +138,8 @@ public class EyeController_main : MonoBehaviour
         if (topExpr == happySlider.value) { eyeSmileR.Value = Mathf.Lerp(eyeSmileR.Value, topExpr, Time.deltaTime * speed); }
         else { eyeSmileR.Value = Mathf.Lerp(eyeSmileR.Value, 0, Time.deltaTime * speed); }
         //Deform
-        if (topExpr == surprisedSlider.value || topExpr == disgustedSlider.value) { eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, topExpr*0.5f, Time.deltaTime * speed); }
+        if (sillyMode.isOn) { eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, 0, Time.deltaTime * speed); }
+        else if (topExpr == surprisedSlider.value || topExpr == disgustedSlider.value) { eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, topExpr*0.5f, Time.deltaTime * speed); }
         else if (topExpr == angrySlider.value) { eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, topExpr*0.25f, Time.deltaTime * speed); }
         else { eyeDeform.Value = Mathf.Lerp(eyeDeform.Value, 0, Time.deltaTime * speed); }
         //Brow Y L
