@@ -1,4 +1,5 @@
 using Live2D.Cubism.Core;
+using Live2D.Cubism.Rendering;
 using System;
 using System.Linq;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class EyeController_main : MonoBehaviour
     public CubismParameter eyeballXL, eyeballYL, eyeballXR, eyeballYR, eyeOpenL, eyeOpenR, eyeSmileL, eyeSmileR, eyeDeform,
         browYL, browYR, browAngleL, browAngleR,
         activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
+    public CubismRenderer mask_esclera1, mask_esclera2;
 
     const float speed = 35;
     const float TIMER_IDLE_RAND_MAX = 1.5f;
@@ -172,6 +174,9 @@ public class EyeController_main : MonoBehaviour
         activNightmare.Value = Mathf.Lerp(activNightmare.Value, nightmareSlider.value, Time.deltaTime * speed);
         activGears.Value = Mathf.Lerp(activGears.Value, gearsSlider.value, Time.deltaTime * speed);
         activSans.Value = Mathf.Lerp(activSans.Value, sansSlider.value, Time.deltaTime * speed);
+        //Sclera masks
+        if (activNightmare.Value > AVG_SLIDER_EXPRS || activGears.Value > AVG_SLIDER_EXPRS || activSans.Value > AVG_SLIDER_EXPRS) { mask_esclera1.LocalSortingOrder = -1; mask_esclera2.LocalSortingOrder = -1; }
+        else { mask_esclera1.LocalSortingOrder = 0; mask_esclera2.LocalSortingOrder = 0; }
     }
 
     private void Update()
