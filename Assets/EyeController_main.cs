@@ -75,7 +75,10 @@ public class EyeController_main : MonoBehaviour
             eyeballYR.Value = Mathf.Lerp(eyeballYR.Value, 0, Time.deltaTime * speed);
             return;
         }
-        if (Math.Abs(xSlider.value - xCurrent) > X_DELTA_LIMIT) { xCurrent = (float)closest(xSlider.value, X_SET); }
+        if (Math.Abs(xSlider.value - xCurrent) > X_DELTA_LIMIT) { 
+            xCurrent = (float)closest(xSlider.value, X_SET);
+            timer_idle = UnityEngine.Random.Range(0.0f, TIMER_IDLE_RAND_MAX);
+        }
         if (timer_ymove <= 0)
         {
             yCurrent = RandomGaussian((float)-AVG_SLIDER_EYEBALLS, (float)AVG_SLIDER_EYEBALLS);
