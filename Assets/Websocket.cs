@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 public class Websocket : MonoBehaviour
 {
-    private const int port = 8765;
+    private const int port = 50000;
     private TcpListener listener;
 
     public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider,
@@ -80,10 +81,17 @@ public class Websocket : MonoBehaviour
 
     private async void Start()
     {
-        listener = new TcpListener(IPAddress.Any, port);
-        listener.Start();
-        Debug.Log("WebSocket server started on port " + port);
-        await StartListening();
+        try
+        {
+            listener = new TcpListener(IPAddress.Loopback, port);
+            listener.Start();
+            Debug.Log("WebSocket server started on localhost:" + port);
+            await StartListening();
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Failed to start WebSocket server: " + e.Message);
+        }
     }
 
     void Update() {}
