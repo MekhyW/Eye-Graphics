@@ -21413,7 +21413,7 @@ IL_0028_1:
 				NullCheck(L_12);
 				NullCheck(L_10);
 				int32_t L_13;
-				L_13 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(22, L_10, L_11, 0, ((int32_t)(((RuntimeArray*)L_12)->max_length)));
+				L_13 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(23, L_10, L_11, 0, ((int32_t)(((RuntimeArray*)L_12)->max_length)));
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = __this->___buffer;
 				NullCheck(L_14);
 				if ((((int32_t)L_13) == ((int32_t)((int32_t)(((RuntimeArray*)L_14)->max_length)))))

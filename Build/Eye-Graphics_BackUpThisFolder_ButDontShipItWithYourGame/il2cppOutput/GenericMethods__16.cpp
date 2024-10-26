@@ -1206,6 +1206,17 @@ struct BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30
 	uint8_t ___bitIndex;
 	uint8_t ___ownedState;
 };
+struct BoneWeight_t7E7DACA0D0F56698E05EBBD839D1D343502EA11F 
+{
+	float ___m_Weight0;
+	float ___m_Weight1;
+	float ___m_Weight2;
+	float ___m_Weight3;
+	int32_t ___m_BoneIndex0;
+	int32_t ___m_BoneIndex1;
+	int32_t ___m_BoneIndex2;
+	int32_t ___m_BoneIndex3;
+};
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
 {
 	bool ___m_value;
@@ -2991,6 +3002,11 @@ struct MemoryBlock_t83C4AD217E04686899AC67FBD8D14A7C9AAC6E84
 	int64_t ___m_bytes;
 	int64_t ___m_current;
 	int64_t ___m_allocations;
+};
+struct TransformData_tEC27E9D73132522EA47BF569B8FE23C627A5FC20 
+{
+	int32_t ___transformIndex;
+	int32_t ___refCount;
 };
 struct Reader_t409B401DB3A9E3F5C637DF66E5FAB1F63C291CB6 
 {
@@ -11455,6 +11471,39 @@ inline EqualityComparer_1_tE7F9CA4FFFE31F11BFD738023C1E489D3ECB371B* EqualityCom
 inline EqualityComparer_1_t8B3F40C676CD330DB13D396DB81564A00E2B7C70* EqualityComparer_1_CreateComparer_m5F906E9B13BCCCDF51EF0852BD9E5E0065D185F8 (const RuntimeMethod* method)
 {
 	return ((  EqualityComparer_1_t8B3F40C676CD330DB13D396DB81564A00E2B7C70* (*) (const RuntimeMethod*))EqualityComparer_1_CreateComparer_m5F906E9B13BCCCDF51EF0852BD9E5E0065D185F8_gshared)(method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_WriteArrayElement_TisTransformData_tEC27E9D73132522EA47BF569B8FE23C627A5FC20_mBD2C55B3AAF9B0F344497E789FDCDF26186EBA0F_gshared (void* ___0_destination, int32_t ___1_index, TransformData_tEC27E9D73132522EA47BF569B8FE23C627A5FC20 ___2_value, const RuntimeMethod* method) 
+{
+	{
+		void* L_0 = ___0_destination;
+		int32_t L_1 = ___1_index;
+		uint32_t L_2 = sizeof(TransformData_tEC27E9D73132522EA47BF569B8FE23C627A5FC20);
+		TransformData_tEC27E9D73132522EA47BF569B8FE23C627A5FC20 L_3 = ___2_value;
+		*(TransformData_tEC27E9D73132522EA47BF569B8FE23C627A5FC20*)((void*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)L_1), ((int64_t)((int32_t)L_2))))))) = L_3;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_WriteArrayElement_TisEntry_t1009A7BA6D4B9FE7C4EFBB241257631226E77F28_m6B16B42862E747874592BDD229006065E8DCF1EE_gshared (void* ___0_destination, int32_t ___1_index, Entry_t1009A7BA6D4B9FE7C4EFBB241257631226E77F28 ___2_value, const RuntimeMethod* method) 
+{
+	{
+		void* L_0 = ___0_destination;
+		int32_t L_1 = ___1_index;
+		uint32_t L_2 = sizeof(Entry_t1009A7BA6D4B9FE7C4EFBB241257631226E77F28);
+		Entry_t1009A7BA6D4B9FE7C4EFBB241257631226E77F28 L_3 = ___2_value;
+		*(Entry_t1009A7BA6D4B9FE7C4EFBB241257631226E77F28*)((void*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)L_1), ((int64_t)((int32_t)L_2))))))) = L_3;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_WriteArrayElementWithStride_TisBoneWeight_t7E7DACA0D0F56698E05EBBD839D1D343502EA11F_m5B55C38E0B7634A1479676B7EB819C037EC1CA70_gshared (void* ___0_destination, int32_t ___1_index, int32_t ___2_stride, BoneWeight_t7E7DACA0D0F56698E05EBBD839D1D343502EA11F ___3_value, const RuntimeMethod* method) 
+{
+	{
+		void* L_0 = ___0_destination;
+		int32_t L_1 = ___1_index;
+		int32_t L_2 = ___2_stride;
+		BoneWeight_t7E7DACA0D0F56698E05EBBD839D1D343502EA11F L_3 = ___3_value;
+		*(BoneWeight_t7E7DACA0D0F56698E05EBBD839D1D343502EA11F*)((void*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)L_1), ((int64_t)L_2)))))) = L_3;
+		return;
+	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_WriteArrayElementWithStride_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_mD64B816BD360CF926B77516A2707ED5608023EB3_gshared (void* ___0_destination, int32_t ___1_index, int32_t ___2_stride, uint8_t ___3_value, const RuntimeMethod* method) 
 {

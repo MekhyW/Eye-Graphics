@@ -301,6 +301,7 @@ struct FieldMouseDragger_1_t1FB7453FA6607F6DCA19DE074B10E1FE843042AB;
 struct FieldMouseDragger_1_t35F7DD4C4E08EA6C695CCE756BF9064EDD3E638B;
 struct FieldMouseDragger_1_t1AC2FA8AF572C750A97A3CB040FFCBC1A548A297;
 struct FromAsyncTrimPromise_1_tD68DEC921B8ED0D5E2D521C49A8C1FEC886D11A2;
+struct FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145;
 struct Func_1_t19B4AA7D8A9D43C2117CE38228D976097D91CF6B;
 struct Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1;
 struct Func_2_t4847DFE1EF6D7C84AAF9EF03BEA2117DF7233943;
@@ -358,6 +359,7 @@ struct Func_2_t19E50C11C3E1F20B5A8FDB85D7DD353B6DFF868B;
 struct Func_2_t3793651739D8B94095DFFF75C3BD348E5E2C455C;
 struct Func_2_t7F5F5324CE2DDB7001B68FFE29A5D9F907139FB0;
 struct Func_3_tDAAD31BAF6C284129F857C2B5AEC7BFA8D4B35F1;
+struct Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E;
 struct Func_3_tE45FBF8C5B654FAD4F321C1F8B9A78AF3C714C8A;
 struct Func_3_t0787D839A577CB564A3192D4164941D5F3DCFBB5;
 struct Func_5_t59D146C090EC3FC0CB7F034BE1EFDC7DFD720EA5;
@@ -2458,6 +2460,13 @@ struct TaskFactory_1_t0BEF06D58E44525B9135AB0B22D016856EE69FF3  : public Runtime
 	int32_t ___m_defaultCreationOptions;
 	int32_t ___m_defaultContinuationOptions;
 };
+struct TaskFactory_1_t4BEAD6CE2527DBE682C128CEAA0FF2A79483E96C  : public RuntimeObject
+{
+	CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED ___m_defaultCancellationToken;
+	TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E* ___m_defaultScheduler;
+	int32_t ___m_defaultCreationOptions;
+	int32_t ___m_defaultContinuationOptions;
+};
 struct TaskFactory_1_tF4CDC5BDA20AE9BD3F65B6146CDCD3F753003E1D  : public RuntimeObject
 {
 	CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED ___m_defaultCancellationToken;
@@ -3405,6 +3414,11 @@ struct EventBase_1_t2B9B970022841F58172C0C783B7E1040BEF85AC1  : public EventBase
 {
 	int32_t ___m_RefCount;
 };
+struct FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145  : public Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17
+{
+	RuntimeObject* ___m_thisRef;
+	Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E* ___m_endMethod;
+};
 struct NativeMultiHashMap_2_t7A39A956AC71CBF9F20057AF941C86AF6C4D8064 
 {
 	UnsafeMultiHashMap_2_tFF221ACEC1569F6C8B38CCF522E0E796B17E8FF3 ___m_MultiHashMapData;
@@ -4169,6 +4183,9 @@ struct Func_2_t7F5F5324CE2DDB7001B68FFE29A5D9F907139FB0  : public MulticastDeleg
 struct Func_3_tDAAD31BAF6C284129F857C2B5AEC7BFA8D4B35F1  : public MulticastDelegate_t
 {
 };
+struct Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E  : public MulticastDelegate_t
+{
+};
 struct Func_3_tE45FBF8C5B654FAD4F321C1F8B9A78AF3C714C8A  : public MulticastDelegate_t
 {
 };
@@ -4720,6 +4737,10 @@ struct Exception_t_StaticFields
 {
 	RuntimeObject* ___s_EDILock;
 };
+struct FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145_StaticFields
+{
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___s_completeFromAsyncResult;
+};
 struct Type_t_StaticFields
 {
 	Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235* ___s_defaultBinder;
@@ -5204,6 +5225,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SharedStatic_1__ctor_m57842D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FromAsyncTrimPromise_1__ctor_mB70C0819ACF4C395D239289203F9819BB3499891_gshared (FromAsyncTrimPromise_1_tD68DEC921B8ED0D5E2D521C49A8C1FEC886D11A2* __this, RuntimeObject* ___0_thisRef, Func_3_tDAAD31BAF6C284129F857C2B5AEC7BFA8D4B35F1* ___1_endMethod, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Func_5_Invoke_m392D0C4E7D4413D3636EE05EC3A70F8D58CC74A1_gshared_inline (Func_5_tBD83535470C7532DCD8D3FEC6FAAEABA156B6E6C* __this, RuntimeObject* ___0_arg1, ReadWriteParameters_t14911E85F7252B5A39D9A53466C7EDE243327033 ___1_arg2, RuntimeObject* ___2_arg3, RuntimeObject* ___3_arg4, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FromAsyncTrimPromise_1_Complete_m56AE76FCEF30ABD41523638898E9B529F718D951_gshared (FromAsyncTrimPromise_1_tD68DEC921B8ED0D5E2D521C49A8C1FEC886D11A2* __this, RuntimeObject* ___0_thisRef, Func_3_tDAAD31BAF6C284129F857C2B5AEC7BFA8D4B35F1* ___1_endMethod, RuntimeObject* ___2_asyncResult, bool ___3_requiresSynchronization, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FromAsyncTrimPromise_1__ctor_m659379BBA5519550116198DB83B594BBB0ED21F4_gshared (FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145* __this, RuntimeObject* ___0_thisRef, Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E* ___1_endMethod, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FromAsyncTrimPromise_1_Complete_m7985C0BDF0CF2E27AE73927FCCB5FEFBB624A2C5_gshared (FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145* __this, RuntimeObject* ___0_thisRef, Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E* ___1_endMethod, RuntimeObject* ___2_asyncResult, bool ___3_requiresSynchronization, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FieldMouseDragger_1__ctor_m9AA7691AE32EF2C2613231FF3135EF22CBC35B97_gshared (FieldMouseDragger_1_tC8B6940975814E44D7605B12FDE0DE2ACCC619AC* __this, RuntimeObject* ___0_drivenField, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TextInputBaseField_1_get_isReadOnly_mAD4A457343FE1BBD725D65C8C641AFC19AEB8BC6_gshared (TextInputBaseField_1_t34062BDA2EA570F154B05FB68863556F5A96A800* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextValueField_1_EnableLabelDragger_m7E206E5CA65382A3EF7B34699FF5DEF867CB7B8C_gshared (TextValueField_1_t27A25218814D58EAC51F059664AD9FDB8CE9A8B4* __this, bool ___0_enable, const RuntimeMethod* method) ;
@@ -5923,6 +5946,14 @@ inline RuntimeObject* Func_5_Invoke_mF4497C19D277F476C482EF59ACB37E92694AAF87_in
 inline void FromAsyncTrimPromise_1_Complete_m56AE76FCEF30ABD41523638898E9B529F718D951 (FromAsyncTrimPromise_1_tD68DEC921B8ED0D5E2D521C49A8C1FEC886D11A2* __this, RuntimeObject* ___0_thisRef, Func_3_tDAAD31BAF6C284129F857C2B5AEC7BFA8D4B35F1* ___1_endMethod, RuntimeObject* ___2_asyncResult, bool ___3_requiresSynchronization, const RuntimeMethod* method)
 {
 	((  void (*) (FromAsyncTrimPromise_1_tD68DEC921B8ED0D5E2D521C49A8C1FEC886D11A2*, RuntimeObject*, Func_3_tDAAD31BAF6C284129F857C2B5AEC7BFA8D4B35F1*, RuntimeObject*, bool, const RuntimeMethod*))FromAsyncTrimPromise_1_Complete_m56AE76FCEF30ABD41523638898E9B529F718D951_gshared)(__this, ___0_thisRef, ___1_endMethod, ___2_asyncResult, ___3_requiresSynchronization, method);
+}
+inline void FromAsyncTrimPromise_1__ctor_m659379BBA5519550116198DB83B594BBB0ED21F4 (FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145* __this, RuntimeObject* ___0_thisRef, Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E* ___1_endMethod, const RuntimeMethod* method)
+{
+	((  void (*) (FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145*, RuntimeObject*, Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E*, const RuntimeMethod*))FromAsyncTrimPromise_1__ctor_m659379BBA5519550116198DB83B594BBB0ED21F4_gshared)(__this, ___0_thisRef, ___1_endMethod, method);
+}
+inline void FromAsyncTrimPromise_1_Complete_m7985C0BDF0CF2E27AE73927FCCB5FEFBB624A2C5 (FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145* __this, RuntimeObject* ___0_thisRef, Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E* ___1_endMethod, RuntimeObject* ___2_asyncResult, bool ___3_requiresSynchronization, const RuntimeMethod* method)
+{
+	((  void (*) (FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145*, RuntimeObject*, Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E*, RuntimeObject*, bool, const RuntimeMethod*))FromAsyncTrimPromise_1_Complete_m7985C0BDF0CF2E27AE73927FCCB5FEFBB624A2C5_gshared)(__this, ___0_thisRef, ___1_endMethod, ___2_asyncResult, ___3_requiresSynchronization, method);
 }
 inline void FieldMouseDragger_1__ctor_m9AA7691AE32EF2C2613231FF3135EF22CBC35B97 (FieldMouseDragger_1_tC8B6940975814E44D7605B12FDE0DE2ACCC619AC* __this, RuntimeObject* ___0_drivenField, const RuntimeMethod* method)
 {
@@ -10277,6 +10308,55 @@ IL_0029:
 	{
 		FromAsyncTrimPromise_1_tD68DEC921B8ED0D5E2D521C49A8C1FEC886D11A2* L_15 = V_0;
 		return (Task_1_t4C228DE57804012969575431CFF12D57C875552D*)L_15;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17* TaskFactory_1_FromAsyncTrim_TisRuntimeObject_TisReadWriteParameters_t14911E85F7252B5A39D9A53466C7EDE243327033_mB0CE53566DC602BC27369A55B46E7176A1AC9DE3_gshared (RuntimeObject* ___0_thisRef, ReadWriteParameters_t14911E85F7252B5A39D9A53466C7EDE243327033 ___1_args, Func_5_tE5E3C054A0A1D158ED2C75F19065E2DE163DC748* ___2_beginMethod, Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E* ___3_endMethod, const RuntimeMethod* method) 
+{
+	if (!il2cpp_rgctx_is_initialized(method))
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5_il2cpp_TypeInfo_var);
+		il2cpp_rgctx_method_init(method);
+	}
+	FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145* V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	{
+		RuntimeObject* L_0 = ___0_thisRef;
+		Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E* L_1 = ___3_endMethod;
+		FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145* L_2 = (FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 2));
+		FromAsyncTrimPromise_1__ctor_m659379BBA5519550116198DB83B594BBB0ED21F4(L_2, L_0, L_1, il2cpp_rgctx_method(method->rgctx_data, 3));
+		V_0 = L_2;
+		Func_5_tE5E3C054A0A1D158ED2C75F19065E2DE163DC748* L_3 = ___2_beginMethod;
+		RuntimeObject* L_4 = ___0_thisRef;
+		ReadWriteParameters_t14911E85F7252B5A39D9A53466C7EDE243327033 L_5 = ___1_args;
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 6));
+		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_6 = ((FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->rgctx_data, 6)))->___s_completeFromAsyncResult;
+		FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145* L_7 = V_0;
+		NullCheck(L_3);
+		RuntimeObject* L_8;
+		L_8 = Func_5_Invoke_mF4497C19D277F476C482EF59ACB37E92694AAF87_inline(L_3, L_4, L_5, L_6, (RuntimeObject*)L_7, il2cpp_rgctx_method(method->rgctx_data, 7));
+		V_1 = L_8;
+		RuntimeObject* L_9 = V_1;
+		NullCheck(L_9);
+		bool L_10;
+		L_10 = InterfaceFuncInvoker0< bool >::Invoke(3, IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5_il2cpp_TypeInfo_var, L_9);
+		if (!L_10)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145* L_11 = V_0;
+		RuntimeObject* L_12 = ___0_thisRef;
+		Func_3_t947E668D09E04ED404CE9DC6074285F8363A170E* L_13 = ___3_endMethod;
+		RuntimeObject* L_14 = V_1;
+		NullCheck(L_11);
+		FromAsyncTrimPromise_1_Complete_m7985C0BDF0CF2E27AE73927FCCB5FEFBB624A2C5(L_11, L_12, L_13, L_14, (bool)0, il2cpp_rgctx_method(method->rgctx_data, 8));
+	}
+
+IL_0029:
+	{
+		FromAsyncTrimPromise_1_t0E0A4281A25DE65D9B0FF5BC0A245BDBB486D145* L_15 = V_0;
+		return (Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17*)L_15;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tDF1FF540D7D2248A08580387A39717B7FB7A9CF9* TaskFactory_1_FromAsyncTrim_TisRuntimeObject_TisIl2CppFullySharedGenericAny_mA53A0A3043A844DDCD4AD018729B4C19C5336FCC_gshared (RuntimeObject* ___0_thisRef, Il2CppFullySharedGenericAny ___1_args, Func_5_t59D146C090EC3FC0CB7F034BE1EFDC7DFD720EA5* ___2_beginMethod, Func_3_tE45FBF8C5B654FAD4F321C1F8B9A78AF3C714C8A* ___3_endMethod, const RuntimeMethod* method) 
