@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 public class Websocket : MonoBehaviour
 {
@@ -19,11 +20,11 @@ public class Websocket : MonoBehaviour
     private bool ValidateMessage(string message)
     {
         string[] terms = message.Split(' ');
-        if (terms.Length < 12) { return false;}
+        if (terms.Length < 12) { return false; }
         for (int i = 0; i < 12; i++)
         {
-            if (!float.TryParse(terms[i], out float value)) { return false;}
-            if (value < -1) { return false;}
+            if (!float.TryParse(terms[i], NumberStyles.Float, CultureInfo.InvariantCulture, out var value)) { return false; }
+            if (value < -1) { return false; }
         }
         return true;
     }
@@ -52,18 +53,18 @@ public class Websocket : MonoBehaviour
                 {
                     response = "Acknowledged: " + message;
                     string[] terms = message.Split(' ');
-                    xSlider.value = (float.Parse(terms[0]) + 1) / 2 * (xSlider.maxValue - xSlider.minValue) + xSlider.minValue;
-                    ySlider.value = (float.Parse(terms[1]) + 1) / 2 * (ySlider.maxValue - ySlider.minValue) + ySlider.minValue;
-                    leftEyeClosenessSlider.value = float.Parse(terms[2]);
-                    rightEyeClosenessSlider.value = float.Parse(terms[3]);
-                    angrySlider.value = float.Parse(terms[4]);
-                    disgustedSlider.value = float.Parse(terms[5]);
-                    happySlider.value = float.Parse(terms[6]);
-                    neutralSlider.value = float.Parse(terms[7]);
-                    sadSlider.value = float.Parse(terms[8]);
-                    surprisedSlider.value = float.Parse(terms[9]);
-                    int manual_expression = int.Parse(terms[10]);
-                    sillyMode.isOn = int.Parse(terms[11]) == 1;
+                    xSlider.value = (float.Parse(terms[0], CultureInfo.InvariantCulture) + 1) / 2 * (xSlider.maxValue - xSlider.minValue) + xSlider.minValue;
+                    ySlider.value = (float.Parse(terms[1], CultureInfo.InvariantCulture) + 1) / 2 * (ySlider.maxValue - ySlider.minValue) + ySlider.minValue;
+                    leftEyeClosenessSlider.value = float.Parse(terms[2], CultureInfo.InvariantCulture);
+                    rightEyeClosenessSlider.value = float.Parse(terms[3], CultureInfo.InvariantCulture);
+                    angrySlider.value = float.Parse(terms[4], CultureInfo.InvariantCulture);
+                    disgustedSlider.value = float.Parse(terms[5], CultureInfo.InvariantCulture);
+                    happySlider.value = float.Parse(terms[6], CultureInfo.InvariantCulture);
+                    neutralSlider.value = float.Parse(terms[7], CultureInfo.InvariantCulture);
+                    sadSlider.value = float.Parse(terms[8], CultureInfo.InvariantCulture);
+                    surprisedSlider.value = float.Parse(terms[9], CultureInfo.InvariantCulture);
+                    int manual_expression = int.Parse(terms[10], CultureInfo.InvariantCulture);
+                    sillyMode.isOn = int.Parse(terms[11], CultureInfo.InvariantCulture) == 1;
                     hypnoticSlider.value = manual_expression == 6 ? 1 : 0;
                     heartSlider.value = manual_expression == 7 ? 1 : 0;
                     rainbowSlider.value = manual_expression == 8 ? 1 : 0;
@@ -74,7 +75,7 @@ public class Websocket : MonoBehaviour
                 }
                 else { response = "Invalid message format!";}
                 byte[] responseMessage = Encoding.UTF8.GetBytes(response);
-                stream.Write(responseMessage, 0, responseMessage.Length);
+                await stream.WriteAsync(responseMessage, 0, responseMessage.Length);
             }
         }
     }
