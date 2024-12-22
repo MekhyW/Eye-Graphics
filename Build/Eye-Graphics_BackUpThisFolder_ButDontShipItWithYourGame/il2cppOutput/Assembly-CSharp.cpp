@@ -5924,7 +5924,7 @@ IL_0102:
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
 		float L_36;
 		L_36 = fabsf(((float)il2cpp_codegen_subtract(L_33, L_35)));
-		if ((!(((float)L_36) > ((float)(0.600000024f)))))
+		if ((!(((float)L_36) > ((float)(0.5f)))))
 		{
 			goto IL_01a0;
 		}
