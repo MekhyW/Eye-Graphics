@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536372c49e1ca914d822849d36de938c, type: 3}
   m_Name: WebGL Providers
   m_EditorClassIdentifier: 
+  m_InitializationComplete: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders: []
@@ -28,7 +29,10 @@ MonoBehaviour:
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 5574744233307830653}
-  m_InitManagerOnStart: 1
+  m_InitManagerOnStart: 0
+  m_AdaptivePerformanceManager: {fileID: 0}
+  m_ProviderIntialized: 0
+  m_ProviderStarted: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -57,6 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536372c49e1ca914d822849d36de938c, type: 3}
   m_Name: Standalone Providers
   m_EditorClassIdentifier: 
+  m_InitializationComplete: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders: []
@@ -74,3 +79,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: -7966367958812329734}
   m_InitManagerOnStart: 1
+  m_AdaptivePerformanceManager: {fileID: 0}
+  m_ProviderIntialized: 0
+  m_ProviderStarted: 0

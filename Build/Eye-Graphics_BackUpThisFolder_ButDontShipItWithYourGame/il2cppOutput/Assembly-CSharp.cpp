@@ -7607,7 +7607,7 @@ IL_00a1_2:
 					int32_t L_25 = V_2;
 					NullCheck(L_23);
 					String_t* L_26;
-					L_26 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(34, L_23, L_24, 0, L_25);
+					L_26 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(33, L_23, L_24, 0, L_25);
 					V_3 = L_26;
 					String_t* L_27 = V_3;
 					String_t* L_28;
@@ -8456,7 +8456,7 @@ IL_00a9_2:
 					int32_t L_26 = V_2;
 					NullCheck(L_24);
 					String_t* L_27;
-					L_27 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(34, L_24, L_25, 0, L_26);
+					L_27 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(33, L_24, L_25, 0, L_26);
 					V_3 = L_27;
 					Websocket_t8183FE3AEA4334DFDB9887AC03A8090749F1259E* L_28 = V_1;
 					String_t* L_29 = V_3;
