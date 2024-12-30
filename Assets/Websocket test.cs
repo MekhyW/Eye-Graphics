@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 public class Websockettest : MonoBehaviour
 {
-    private const int port = 8765;
+    private const int port = 50000;
     private TcpListener listener;
 
     private bool ValidateMessage(string message)
     {
         string[] terms = message.Split(' ');
-        if (terms.Length < 11) { Debug.Log("not enough terms"); return false;}
-        for (int i = 0; i < 11; i++)
+        if (terms.Length < 13) { Debug.Log("not enough terms"); return false;}
+        for (int i = 0; i < 13; i++)
         {
             if (!float.TryParse(terms[i], out float value)) { Debug.Log("value not a number"); return false;}
             if (value < -1) { Debug.Log("value out of range"); return false;}

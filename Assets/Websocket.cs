@@ -14,14 +14,15 @@ public class Websocket : MonoBehaviour
 
     public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider,
         angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider,
-        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider, mischievousSlider;
+        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider, mischievousSlider,
+        brightnessSlider;
     public Toggle sillyMode;
 
     private bool ValidateMessage(string message)
     {
         string[] terms = message.Split(' ');
-        if (terms.Length < 12) { return false; }
-        for (int i = 0; i < 12; i++)
+        if (terms.Length < 13) { return false; }
+        for (int i = 0; i < 13; i++)
         {
             if (!float.TryParse(terms[i], NumberStyles.Float, CultureInfo.InvariantCulture, out var value)) { return false; }
             if (value < -1) { return false; }
@@ -65,6 +66,7 @@ public class Websocket : MonoBehaviour
                     surprisedSlider.value = float.Parse(terms[9], CultureInfo.InvariantCulture);
                     int manual_expression = int.Parse(terms[10], CultureInfo.InvariantCulture);
                     sillyMode.isOn = int.Parse(terms[11], CultureInfo.InvariantCulture) == 1;
+                    brightnessSlider.value = int.Parse(terms[12], CultureInfo.InvariantCulture)/100;
                     hypnoticSlider.value = manual_expression == 6 ? 1 : 0;
                     heartSlider.value = manual_expression == 7 ? 1 : 0;
                     rainbowSlider.value = manual_expression == 8 ? 1 : 0;

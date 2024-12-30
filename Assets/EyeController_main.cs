@@ -4,17 +4,21 @@ using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering.PostProcessing;
 
 public class EyeController_main : MonoBehaviour
 {
     public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider,
         angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider,
-        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider, mischievousSlider;
+        hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider, mischievousSlider,
+        autoExposureSlider;
     public Toggle sillyMode;
     public CubismParameter eyeballXL, eyeballYL, eyeballXR, eyeballYR, eyeOpenL, eyeOpenR, eyeSmileL, eyeSmileR, eyeDeform,
         browYL, browYR, browAngleL, browAngleR,
         activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
     public CubismRenderer mask_esclera1, mask_esclera2;
+    public PostProcessProfile postProcessProfile;
+    AutoExposure autoExposure;
 
     const float speed = 35;
     const float TIMER_IDLE_RAND_MAX = 1.5f;
@@ -182,10 +186,21 @@ public class EyeController_main : MonoBehaviour
         else { mask_esclera1.LocalSortingOrder = 0; mask_esclera2.LocalSortingOrder = 0; }
     }
 
+    private void UpdateAutoExposure()
+    {
+        autoExposure.keyValue.value = autoExposureSlider.value;
+    }
+
+    private void Start()
+    {
+        autoExposure = postProcessProfile.GetSetting<AutoExposure>();
+    }
+
     private void Update()
     {
         MoveEyes();
         MoveEyelids();
         ApplyExpressions();
+        UpdateAutoExposure();
     }
 }
