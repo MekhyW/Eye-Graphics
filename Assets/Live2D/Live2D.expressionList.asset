@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Live2D.expressionList
   m_EditorClassIdentifier: 
   CubismExpressionObjects:
-  - {fileID: 11400000, guid: 0bf2bfde947736e41a8f4e9f74dfbf71, type: 2}
-  - {fileID: 11400000, guid: 3343f9667f14b8d469c3f26925f1211c, type: 2}
+  - {fileID: 11400000, guid: 6cf7fdd9396ed2a4591f3b2cf052d79b, type: 2}
+  - {fileID: 11400000, guid: f6fa7711086550a4ba878e5c594e6e86, type: 2}

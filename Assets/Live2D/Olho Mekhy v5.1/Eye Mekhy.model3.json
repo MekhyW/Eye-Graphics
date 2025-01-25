@@ -1,0 +1,28 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "Eye Mekhy.moc3",
+		"Textures": [
+			"Eye Mekhy.2048/texture_00.png",
+			"Eye Mekhy.2048/texture_01.png",
+			"Eye Mekhy.2048/texture_02.png"
+		],
+		"Physics": "Eye Mekhy.physics3.json",
+		"DisplayInfo": "Eye Mekhy.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

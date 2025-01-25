@@ -106,7 +106,18 @@ namespace Live2D.Cubism.Framework.Motion
                || layerIndex < 0 || layerIndex >= LayerCount ||
                ((_motionPriorities[layerIndex] >= priority) && (priority != CubismMotionPriority.PriorityForce)))
             {
-                Debug.Log("can't start motion.");
+                if (!enabled)
+                    Debug.Log("Can't start motion: Controller is not enabled");
+                else if (!_isActive)
+                    Debug.Log("Can't start motion: Controller is not active");
+                else if (_cubismFadeMotionList == null)
+                    Debug.Log("Can't start motion: Fade motion list is null");
+                else if (clip == null)
+                    Debug.Log("Can't start motion: Motion clip is null");
+                else if (layerIndex < 0 || layerIndex >= LayerCount)
+                    Debug.Log($"Can't start motion: Layer index {layerIndex} is out of range [0, {LayerCount})");
+                else
+                    Debug.Log($"Can't start motion: Current motion priority ({_motionPriorities[layerIndex]}) is higher or equal than requested priority ({priority})");
                 return;
             }
 
