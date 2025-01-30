@@ -18378,6 +18378,11 @@ struct Thing_t28082FA4E0EFF9DB634223820EC5EC6D2D81F2B8
 {
 	WordStorage_tEE399964316C39ACB7D6E554A292A91EB71419B1 ___Data;
 };
+struct ActivateAllDisplays_t7FAB37A9A0AAFB4C2DAC469C98869EEF0F669DD8  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B* ___cameras;
+	float ___aspectRatio;
+};
 struct AsyncToggler_t0B95B7CF50E5A05153B6AD659BA461E6136EC005  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	bool ___EnableAsync;
@@ -23221,6 +23226,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4131[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4133[7] = 
 {
 	static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E_StaticFields, ___s_Instance)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E, ___m_UnicodeLineBreakingRules)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E, ___m_LeadingCharacters)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E, ___m_FollowingCharacters)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E, ___m_UseModernHangulLineBreakingRules)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E_StaticFields, ___s_LeadingCharactersLookup)),static_cast<int32_t>(offsetof(UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E_StaticFields, ___s_FollowingCharactersLookup)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4135[2] = 
+{
+	static_cast<int32_t>(offsetof(ActivateAllDisplays_t7FAB37A9A0AAFB4C2DAC469C98869EEF0F669DD8, ___cameras)),static_cast<int32_t>(offsetof(ActivateAllDisplays_t7FAB37A9A0AAFB4C2DAC469C98869EEF0F669DD8, ___aspectRatio)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4136[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CU3Ec_t9516DDC1BB44A1D4C4D82917A04E3BBE221FD7E4_StaticFields, ___U3CU3E9)),static_cast<int32_t>(offsetof(U3CU3Ec_t9516DDC1BB44A1D4C4D82917A04E3BBE221FD7E4_StaticFields, ___U3CU3E9__20_0)),};
