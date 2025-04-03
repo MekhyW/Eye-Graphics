@@ -218,9 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 7733379478309775193}
-  - {fileID: 7862873018368502693}
-  - {fileID: 2949966283867336515}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _isOverwrittenPartMultiplyColors: 0
   _isOverwrittenPartScreenColors: 0
   _multiplyColor: {r: 1, g: 1, b: 1, a: 1}
@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 4196525535417936375}
   - component: {fileID: 3096433249801633403}
   - component: {fileID: 2042980727364546519}
+  - component: {fileID: 750600692437832577}
   - component: {fileID: 2709257198657586865}
   - component: {fileID: 4068578733108842801}
   - component: {fileID: 2202741598382863021}
@@ -601,7 +602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 967223d908bf07b4f90945995bdca68f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maskTexture: {fileID: 11400000, guid: 16bf142754640ab4487bb625c30931fd, type: 2}
+  _maskTexture: {fileID: 0}
 --- !u!114 &2042980727364546519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,6 +613,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 702f05e81266375468e2b47006338cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &750600692437832577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414076864402111058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23066d7f6cfa354d91d0033239622a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2709257198657586865
@@ -971,7 +984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 7346583645228870427}
+  - {fileID: 0}
   _isOverwrittenPartMultiplyColors: 0
   _isOverwrittenPartScreenColors: 0
   _multiplyColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2162,8 +2175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 4357816271173713317}
-  - {fileID: 659453790281524440}
+  - {fileID: 0}
+  - {fileID: 0}
   _isOverwrittenPartMultiplyColors: 0
   _isOverwrittenPartScreenColors: 0
   _multiplyColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2426,9 +2439,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 7254901085929800391}
-  - {fileID: 2454559698298252204}
-  - {fileID: 6990133945800995856}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _isOverwrittenPartMultiplyColors: 0
   _isOverwrittenPartScreenColors: 0
   _multiplyColor: {r: 1, g: 1, b: 1, a: 1}
