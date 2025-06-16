@@ -10,12 +10,606 @@
 
 
 
+struct EventHandler_1_tD8CD263AD37236A3E6D172E2279AEB1BA8AE0DAB;
+struct EventHandler_1_tF283423798357FD863C25D18CAE3BA90BD6E16FF;
+struct EventHandler_1_t7E5D268CF52B1C9542F6DA859F5DE310C05231CC;
+struct EventHandler_1_tAC9728BF324E262CF901E7B7F9B0F502789F497F;
+struct EventHandler_1_t309AA47D86BEA5E87317A545C8DD8283147B9FBC;
+struct EventHandler_1_t64E36B1408CD293F8E90CD18DF8D29605D07C861;
+struct EventHandler_1_tAA63491FF228AB7B9D8DD0764FA013B8D22C6092;
+struct EventHandler_1_tA203B8AD7DE7E8923520FED2F1C1AD86BC207C03;
+struct EventHandler_1_t7DAA6F1406E55F33BE3E752E1F14F0FE662EBD30;
+struct EventHandler_1_tCB1573E225C815C50F68472CD8D7A50719CFC427;
+struct EventHandler_1_t78F8E13BD41A6A170E74B85A879B68886FB5F39F;
+struct EventHandler_1_t1D5E6E5673FB22D30E80FC0FF5A9EACE17BA01A5;
+struct EventHandler_1_tFE13057AF208592E06457AB3DE8189C195D70999;
+struct EventHandler_1_t421E676CD0601C193666E511D19EF42C45779388;
+struct List_1_t15D86F375D65E05CFF18DE59C57CED4285D378F6;
+struct List_1_tA72D942F6677BEF150C4528BFF91923ABAC4BCB4;
+struct List_1_tBF521BD539CD953A9637BD42029BF9FBA3FABE0B;
+struct List_1_t508B2C9DC2320CDEA2BAB03E79233754D6A132A5;
+struct List_1_tBA06EDDD12D0E5FB6B0A993D8F113884711AEED0;
+struct MMDeviceEnumerator_t2C584F0D246CE3ACA933BFDC889CE1D49C8FB936;
+struct PropertyStore_t6047D2AF2EB617E0BFD4865B75950C700EB02342;
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct XAudio2EngineCallback_t08DA17EB03E34947A7137253ECDDDE8C30006638;
 
+struct DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_marshaled_com;
+struct Guid_t;
+struct IMMDeviceCollection_t198ED695858B392C87F37736CEB7C377D0EA983B;
+struct IMMDevice_tD3127F8A4820877146FDA19BB57B164F9A9DC2D5;
+struct IMMNotificationClient_tDA5E5A962F9A7E51F5AB4C427CFB5D5DCDF8E57D;
+struct IMediaBuffer_t79A339AC5E87CEBD9E1936021A52DB69DAAB54A2;
+struct IStream_t5B8504123802C24362FFFFC3891FDE9A60398873;
+struct MediaType_t9C6CCBB0DEB029D1117A7693FB0DC986B12A996C;
+struct STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_marshaled_com;
 
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
 
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+struct NOVTABLE IAudioSessionEvents_t324AF49B0A1BE20E64BBDB0BCD3EF34E03B56516 : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IAudioSessionEvents_OnDisplayNameChanged_m1163A6B32272D95436E28574BE2F460C22573418(Il2CppChar* ___0_newDisplayName, Guid_t* ___1_eventContext) = 0;
+	virtual il2cpp_hresult_t STDCALL IAudioSessionEvents_OnIconPathChanged_m585BF538A56C63C04B3E13F7B3F4D33A73832E97(Il2CppChar* ___0_newIconPath, Guid_t* ___1_eventContext) = 0;
+	virtual il2cpp_hresult_t STDCALL IAudioSessionEvents_OnSimpleVolumeChanged_m69223287CDE01E9BCC7A97DBF220AA0E149456A6(float ___0_newVolume, int32_t ___1_newMute, Guid_t* ___2_eventContext) = 0;
+	virtual il2cpp_hresult_t STDCALL IAudioSessionEvents_OnChannelVolumeChanged_m7B80940E7259A5E6B5477EF9BD280D660DAADECB(int32_t ___0_channelCount, float* ___1_newChannelVolumeArray, int32_t ___2_changedChannel, Guid_t* ___3_eventContext) = 0;
+	virtual il2cpp_hresult_t STDCALL IAudioSessionEvents_OnGroupingParamChanged_m07FE53EA9C41FD5FBBE78DAD36CCB031C8BE3FC5(Guid_t* ___0_newGroupingParam, Guid_t* ___1_eventContext) = 0;
+	virtual il2cpp_hresult_t STDCALL IAudioSessionEvents_OnStateChanged_m6180EA438121C0FFF52E674899BC60C3AAD75EFB(int32_t ___0_newState) = 0;
+	virtual il2cpp_hresult_t STDCALL IAudioSessionEvents_OnSessionDisconnected_m73AAF071CEBA80674ACFC44A88CC04BE135872F0(int32_t ___0_disconnectReason) = 0;
+};
+struct NOVTABLE IAudioVolumeDuckNotification_tCA9CCCDBB459019EF5677FE64D69CC10B8D4DAC3 : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IAudioVolumeDuckNotification_OnVolumeDuckNotification_mFBD6C16898EB8BB73F97CDF59F0C60A716CBD94D(Il2CppChar* ___0_sessionId, int32_t ___1_countCommunicationSessions, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IAudioVolumeDuckNotification_OnVolumeUnduckNotification_mA11EB625281A6DA4E47DF2454316854D93019F05(Il2CppChar* ___0_sessionId, int32_t ___1_countCommunicationSessions, int32_t* comReturnValue) = 0;
+};
+struct NOVTABLE IMMDeviceCollection_t198ED695858B392C87F37736CEB7C377D0EA983B : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IMMDeviceCollection_GetCount_mBA8137B9063BF77816DCC8F16287DB83582A929D(int32_t* ___0_deviceCount, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMDeviceCollection_Item_mE46BEA2EFB4395E6C0A98360A1744FE246072494(int32_t ___0_deviceIndex, IMMDevice_tD3127F8A4820877146FDA19BB57B164F9A9DC2D5** ___1_device, int32_t* comReturnValue) = 0;
+};
+struct NOVTABLE IMMDeviceEnumerator_t2AA6599E6D3785C934DBEF97C78A3488C9F0E6B1 : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IMMDeviceEnumerator_EnumAudioEndpoints_mFD543AAFEF6894E69DE89DB810E007D1A342FA08(int32_t ___0_dataFlow, int32_t ___1_stateMask, IMMDeviceCollection_t198ED695858B392C87F37736CEB7C377D0EA983B** ___2_deviceCollection, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMDeviceEnumerator_GetDefaultAudioEndpoint_mFCE499977BF041121D5DA30FA73420B097DFB469(int32_t ___0_dataFlow, int32_t ___1_role, IMMDevice_tD3127F8A4820877146FDA19BB57B164F9A9DC2D5** ___2_device, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMDeviceEnumerator_GetDevice_mF3772E6CB919117022A131582A050CDB41E6EBEC(Il2CppChar* ___0_id, IMMDevice_tD3127F8A4820877146FDA19BB57B164F9A9DC2D5** ___1_device, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMDeviceEnumerator_RegisterEndpointNotificationCallback_m376D781CF3BBBE236004EADF82DF897D1E03CF33(IMMNotificationClient_tDA5E5A962F9A7E51F5AB4C427CFB5D5DCDF8E57D* ___0_notificationClient, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMDeviceEnumerator_UnregisterEndpointNotificationCallback_m55752CB24D3984D94BD1120F7BDB40C4C33B37CA(IMMNotificationClient_tDA5E5A962F9A7E51F5AB4C427CFB5D5DCDF8E57D* ___0_notificationClient, int32_t* comReturnValue) = 0;
+};
+struct NOVTABLE IMediaObject_tA9539CA48917E118AABEC457862D4572DFB28C20 : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetStreamCount_m112133631492333C08793A898631BF6EFA8568F6(int32_t* ___0_inputStreams, int32_t* ___1_outputStreams, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetInputStreamInfo_m740A31909AAD51A923BFC4297CD2647FB3DE9B88(int32_t ___0_inputStreamIndex, int32_t* ___1_flags, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetOutputStreamInfo_m09E729EAC2EA4621C47D1DB0B54176CFDABC3209(int32_t ___0_outputStreamIndex, int32_t* ___1_flags, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetInputType_m68EEDD775F07810E63175987F00CCD9A1FEC480A(int32_t ___0_inputStreamIndex, int32_t ___1_typeIndex, MediaType_t9C6CCBB0DEB029D1117A7693FB0DC986B12A996C* ___2_mediaType, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetOutputType_m2476A56EF3C4B5B1F90AA17461EA570E872EB3FB(int32_t ___0_outputStreamIndex, int32_t ___1_typeIndex, MediaType_t9C6CCBB0DEB029D1117A7693FB0DC986B12A996C* ___2_mediaType, int32_t* comReturnValue) = 0;
+	virtual int32_t STDCALL IMediaObject_SetInputType_m1F8EFBD1C79D7BC8509019ACCF3C87B3168B2FD5(int32_t ___0_inputStreamIndex, MediaType_t9C6CCBB0DEB029D1117A7693FB0DC986B12A996C* ___1_mediaType, int32_t ___2_flags) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_SetOutputType_m97A43AC070E3670A1273CDAAEB736ED448C13193(int32_t ___0_outputStreamIndex, MediaType_t9C6CCBB0DEB029D1117A7693FB0DC986B12A996C* ___1_mediaType, int32_t ___2_flags, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetInputCurrentType_mC8A9E641080F60895AA6D4A47216A01201652FD1(int32_t ___0_inputStreamIndex, MediaType_t9C6CCBB0DEB029D1117A7693FB0DC986B12A996C* ___1_mediaType, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetOutputCurrentType_m304A9EEB1A75C973FA0EC68D2BB355555977403D(int32_t ___0_outputStreamIndex, MediaType_t9C6CCBB0DEB029D1117A7693FB0DC986B12A996C* ___1_mediaType, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetInputSizeInfo_m83A84A3E391F909BB8F7DD7B50DE784D4C06EC8F(int32_t ___0_inputStreamIndex, int32_t* ___1_size, int32_t* ___2_maxLookahead, int32_t* ___3_alignment, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetOutputSizeInfo_mE5C517A3C559ADBEA65E23DCB9441BBC5F1FBF6B(int32_t ___0_outputStreamIndex, int32_t* ___1_size, int32_t* ___2_alignment, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_GetInputMaxLatency_m974482BC485126442C7CD3573D5DF8B158382780(int32_t ___0_inputStreamIndex, int64_t* ___1_referenceTimeMaxLatency, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_SetInputMaxLatency_mACBE9858D32223D6A5299D659FC5F7E2E4A78675(int32_t ___0_inputStreamIndex, int64_t ___1_referenceTimeMaxLatency, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_Flush_m5E3098FEC74AF39B97831109396AC0F8599CA7FA(int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_Discontinuity_m188FC92CBF659A566FCD323639DC590604CE1B18(int32_t ___0_inputStreamIndex, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_AllocateStreamingResources_mEE411E5A7D74C6825FF7D3FB681EA8BF3D2A4F28(int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_FreeStreamingResources_mD7C6A8880B86268AB6AACBF14204C4B98A83A614(int32_t* comReturnValue) = 0;
+	virtual int32_t STDCALL IMediaObject_GetInputStatus_m3815338B96EA5532842A2165D3EEC25406DBFB86(int32_t ___0_inputStreamIndex, int32_t* ___1_flags) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_ProcessInput_m76E1A22E3A45F1CF3D5915AE581A9D1343884E60(int32_t ___0_inputStreamIndex, IMediaBuffer_t79A339AC5E87CEBD9E1936021A52DB69DAAB54A2* ___1_mediaBuffer, int32_t ___2_flags, int64_t ___3_referenceTimeTimestamp, int64_t ___4_referenceTimeDuration, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_ProcessOutput_mFB750BCF7D495040BFEF4FF07E2CDCADFACE4D10(int32_t ___0_flags, int32_t ___1_outputBufferCount, DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_marshaled_com* ___2_outputBuffers, int32_t* ___3_statusReserved, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMediaObject_Lock_mE0866A3A09E57ADD2DA9395B14A4EA5C56148947(IL2CPP_VARIANT_BOOL ___0_acquireLock, int32_t* comReturnValue) = 0;
+};
+struct NOVTABLE IWMResamplerProps_tEB43BE2AC9A5343A15DB8878F79BDE984706F35D : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IWMResamplerProps_SetHalfFilterLength_m6F54790318CDD80AF12DEBA5E86793BFD84D8AF0(int32_t ___0_quality, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IWMResamplerProps_SetUserChannelMtx_m8EA95B4CC8C07D30C03C6ED7DA3BA394AAC6FE2D(float* ___0_channelConversionMatrix, int32_t* comReturnValue) = 0;
+};
+struct AudioEndpointVolumeCallback_t46FA7BB4BD8C3EC706CB3A1456458CB78EE652EB  : public RuntimeObject
+{
+	static const Il2CppGuid CLSID;
+
+	EventHandler_1_tD8CD263AD37236A3E6D172E2279AEB1BA8AE0DAB* ___NotifyRecived;
+};
+struct AudioSessionEvents_t87A7ABEF6CA3E9E7D84620FB2AACA2773B391CFA  : public RuntimeObject
+{
+	static const Il2CppGuid CLSID;
+
+	EventHandler_1_tAC9728BF324E262CF901E7B7F9B0F502789F497F* ___DisplayNameChanged;
+	EventHandler_1_t64E36B1408CD293F8E90CD18DF8D29605D07C861* ___IconPathChanged;
+	EventHandler_1_tAA63491FF228AB7B9D8DD0764FA013B8D22C6092* ___SimpleVolumeChanged;
+	EventHandler_1_tF283423798357FD863C25D18CAE3BA90BD6E16FF* ___ChannelVolumeChanged;
+	EventHandler_1_t309AA47D86BEA5E87317A545C8DD8283147B9FBC* ___GroupingParamChanged;
+	EventHandler_1_tA203B8AD7DE7E8923520FED2F1C1AD86BC207C03* ___StateChanged;
+	EventHandler_1_t7E5D268CF52B1C9542F6DA859F5DE310C05231CC* ___SessionDisconnected;
+};
+struct AudioSessionNotification_tEC6D9E64A244D4B3ED60F364C0AC40E3BDF15633  : public RuntimeObject
+{
+	static const Il2CppGuid CLSID;
+
+	EventHandler_1_tFE13057AF208592E06457AB3DE8189C195D70999* ___SessionCreated;
+};
+struct AudioVolumeDuckNotification_t0A23F56DA2DB406817673BC372678539A5110963  : public RuntimeObject
+{
+	static const Il2CppGuid CLSID;
+
+	EventHandler_1_t421E676CD0601C193666E511D19EF42C45779388* ___VolumeDuckNotification;
+	EventHandler_1_t421E676CD0601C193666E511D19EF42C45779388* ___VolumeUnDuckNotification;
+};
+struct MMNotificationClient_tB78CBCC6375C6E8368AE900296DED1E81C45A0FC  : public RuntimeObject
+{
+	static const Il2CppGuid CLSID;
+
+	MMDeviceEnumerator_t2C584F0D246CE3ACA933BFDC889CE1D49C8FB936* ____deviceEnumerator;
+	EventHandler_1_t1D5E6E5673FB22D30E80FC0FF5A9EACE17BA01A5* ___DeviceStateChanged;
+	EventHandler_1_tCB1573E225C815C50F68472CD8D7A50719CFC427* ___DeviceAdded;
+	EventHandler_1_tCB1573E225C815C50F68472CD8D7A50719CFC427* ___DeviceRemoved;
+	EventHandler_1_t7DAA6F1406E55F33BE3E752E1F14F0FE662EBD30* ___DefaultDeviceChanged;
+	EventHandler_1_t78F8E13BD41A6A170E74B85A879B68886FB5F39F* ___DevicePropertyChanged;
+	bool ____disposed;
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+struct DmoChorusEffectObject_tDF6B4EE8C928D105B514DE850681DD0882747184  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DmoCompressorEffectObject_tE99A40906862C354A922D931D8CA04F51DD2A9F5  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DmoDistortionEffectObject_t6864513EC1FBB42E7C3F85E94E79B184CD2B6B57  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DmoEchoEffectObject_t4486D7618A8447A34CEBA4B492536EAE4B51630F  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DmoFlangerEffectObject_t1673F9060582B282ABB707D27AE685AA2CA39B9F  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DmoGargleEffectObject_t23676DD0F70F6294AC1F64EEF9E1F884965494BE  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DmoMP3DecoderObject_t1B427364B60EAEEC1B4059CC87A09C655F91A7E9  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DmoWavesReverbEffectObject_tB1F1F427817EA8F743B996A97554964F974EE936  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct MMDeviceEnumeratorObject_tC0E4AC99CF4526E80C07911108C2554A71CBEB12  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct WMResamplerObject_t5006B0EB6FF4F5C0CC9F9EFC935B048AFC76A11F  : public Il2CppComObject
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct Guid_t 
+{
+	int32_t ____a;
+	int16_t ____b;
+	int16_t ____c;
+	uint8_t ____d;
+	uint8_t ____e;
+	uint8_t ____f;
+	uint8_t ____g;
+	uint8_t ____h;
+	uint8_t ____i;
+	uint8_t ____j;
+	uint8_t ____k;
+};
+struct IntPtr_t 
+{
+	void* ___m_value;
+};
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+struct ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87  : public RuntimeObject
+{
+	void* ___UnsafeBasePtr;
+	RuntimeObject* ____lockObj;
+	bool ____disposed;
+};
+#pragma pack(push, tp, 2)
+struct DSBufferDescription_t2F162B8586615F5767EE057FA965725D82B7F62E 
+{
+	int32_t ___Size;
+	int32_t ___Flags;
+	int32_t ___BufferBytes;
+	int32_t ___Reserved;
+	intptr_t ___PtrFormat;
+	Guid_t ___Guid3DAlgorithm;
+};
+#pragma pack(pop, tp)
+struct NOVTABLE IAudioEndpointVolumeCallback_tCAFE7EF8BE0C333F25AC602F77D5192881C59A10 : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual int32_t STDCALL IAudioEndpointVolumeCallback_OnNotify_m374EF6D85375C43AF326544C735689989244C912(intptr_t ___0_notifyData) = 0;
+};
+struct NOVTABLE IAudioSessionNotification_tB7486E1356482020ECDAAF6F776FFD297118EA0E : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual int32_t STDCALL IAudioSessionNotification_OnSessionCreated_m1CB0B25A5442180F7682FDC0917A7AC57867EB55(intptr_t ___0_newSession) = 0;
+};
+struct NOVTABLE IMFCollection_tB7E4AFC7AD4CD5D091C161B02984345A80F977BD : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IMFCollection_GetElementCount_m4C704E6FEE3C76EB63ABEED02E0602C91ABC70D6(int32_t* ___0_count, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMFCollection_GetElement_mD1F3DB981945D96E44341DEDD77CCFA73E10B3CF(int32_t ___0_elementIndex, intptr_t* ___1_element, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMFCollection_AddElement_mA6D777407873D3573B6AF5B0FABCD13E5A541824(intptr_t ___0_element, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMFCollection_RemoveElement_m3708761145C7CAEDF7232A4398DCAB470684AC10(int32_t ___0_elementIndex, intptr_t* ___1_element, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMFCollection_InsertElementAt_m65A22CB820D5F6C9C9B1B22ADF6DE19A775DCFA9(int32_t ___0_index, intptr_t ___1_element, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMFCollection_RemoveAllElements_m5BE75425E570A42146AD37F928C1015E36C4C34B(int32_t* comReturnValue) = 0;
+};
+struct NOVTABLE IMMDevice_tD3127F8A4820877146FDA19BB57B164F9A9DC2D5 : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IMMDevice_Activate_m7F5B57189C7691FF6D7254B8557B15E3DB2A89F3(Guid_t ___0_iid, int32_t ___1_clsctx, intptr_t ___2_activationParams, intptr_t* ___3_pinterface, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMDevice_OpenPropertyStore_m9AA326819EB01C20C6516178494C4721A9BA6D10(int32_t ___0_access, intptr_t* ___1_propertystore, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMDevice_GetId_m815B72DBF5B1E56B6B09EE9191AFF161CD3BE1D9(Il2CppChar** ___0_deviceId, int32_t* comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMDevice_GetState_m7C1E28324EB0AE995160FAE8468CE3B44AD54367(int32_t* ___0_state, int32_t* comReturnValue) = 0;
+};
+struct NOVTABLE IMediaBuffer_t79A339AC5E87CEBD9E1936021A52DB69DAAB54A2 : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual int32_t STDCALL IMediaBuffer_SetLength_m868DB56911DDFEBD75349F7F7FFAB5A3DE8B7F6C(int32_t ___0_length) = 0;
+	virtual int32_t STDCALL IMediaBuffer_GetMaxLength_m73ACFF0055E219E977E6E9B1A35311E051DCF9D3(int32_t* ___0_length) = 0;
+	virtual int32_t STDCALL IMediaBuffer_GetBufferAndLength_m229B8F527070E825E26B9EF61B1E43C3E440D7D7(intptr_t ___0_ppBuffer, intptr_t ___1_validDataByteLength) = 0;
+};
+struct NOVTABLE IStream_t5B8504123802C24362FFFFC3891FDE9A60398873 : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual int32_t STDCALL IStream_Read_mE107056492A8220D54729A09563D0FFA54FAFEC8(uint8_t* ___0_pv, int32_t ___1_cb, intptr_t ___2_pcbRead) = 0;
+	virtual int32_t STDCALL IStream_Write_mB3854BD02776F8D242DFF93904F24732E87AA2D2(uint8_t* ___0_pv, int32_t ___1_cb, intptr_t ___2_pcbWritten) = 0;
+	virtual int32_t STDCALL IStream_Seek_mEE0D2D45103A31CC686BFCFC0E33090211127FE4(int64_t ___0_dlibMove, int32_t ___1_dwOrigin, intptr_t ___2_plibNewPosition) = 0;
+	virtual int32_t STDCALL IStream_SetSize_m8189F455E1B729F9928FB789AF522A77DA00B042(int64_t ___0_libNewSize) = 0;
+	virtual il2cpp_hresult_t STDCALL IStream_CopyTo_m2F6160F0BDB46497E6A5B4B8E4E969691D8D9A84(IStream_t5B8504123802C24362FFFFC3891FDE9A60398873* ___0_pstm, int64_t ___1_cb, intptr_t ___2_pcbRead, intptr_t ___3_pcbWritten, int32_t* comReturnValue) = 0;
+	virtual int32_t STDCALL IStream_Commit_m9091BEF83066D670D2EF070C5F19FCD62583842E(int32_t ___0_grfCommitFlags) = 0;
+	virtual int32_t STDCALL IStream_Revert_m01ADFB51E9C30365F60ED2B9C2DD64A87F1F3476() = 0;
+	virtual int32_t STDCALL IStream_LockRegion_mF2AECA97C5D14780D869EE3773770FB82991A0B7(int64_t ___0_libOffset, int64_t ___1_cb, int32_t ___2_dwLockType) = 0;
+	virtual int32_t STDCALL IStream_UnlockRegion_mA68ECA8B9614176C8296E06AC823167D6F486FC8(int64_t ___0_libOffset, int64_t ___1_cb, int32_t ___2_dwLockType) = 0;
+	virtual int32_t STDCALL IStream_Stat_m35F69FE7F912084C869D6F125CED27F5C1A83935(STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_marshaled_com* ___0_pstatstg, int32_t ___1_grfStatFlag) = 0;
+	virtual int32_t STDCALL IStream_Clone_m343CD91A4EFF00B1B99EDB840D9EC8C7C12C7EA0(IStream_t5B8504123802C24362FFFFC3891FDE9A60398873** ___0_ppstm) = 0;
+};
+struct PropertyKey_t58DED1084492B11296C3B45ABFADE53DAABB5B72 
+{
+	Guid_t ___ID;
+	int32_t ___PropertyID;
+};
+struct DirectSoundFxBase_1_tB7E0F78B263D4AF78B160B19BFFA65D480D0190E  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+};
+struct DirectSoundFxBase_1_t2398B3F574B6B7FF38BE0951241FAE8CAAC8AF87  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+};
+struct DirectSoundFxBase_1_t5017F8B7C7F5D04B98C757603CDE51BD71313FEB  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+};
+struct DirectSoundFxBase_1_tB6CBE0C0E862D287BADD00E6742DA43E505A29EB  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+};
+struct DirectSoundFxBase_1_t260E315A61FE65C56218AB6E9885982368565D76  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+};
+struct DirectSoundFxBase_1_t3943B4BDC1F48F8735C4F39938820AE9F54E03C4  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+};
+struct DirectSoundFxBase_1_t6B4518001F0D2A26E4A2BC7D1D7248D553214DB9  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+};
+struct AudioCaptureClient_tFC1CAD01C173B0B58CA24F934F8A990E442EB6C8  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct AudioClient_t2D019720E36C646163DF89BCD82ED8B23F1B9CFF  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct AudioClock_tC8DA27556D73736572BCF1FE3343E45C5A53450B  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct AudioClock2_t91A80319ADEA8138D1DE29583BC3253088CDC8E4  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct AudioEndpointVolume_t504D1C4AE6E345F39DE7C531692CF01CA5C99787  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+	List_1_t15D86F375D65E05CFF18DE59C57CED4285D378F6* ____channels;
+	List_1_tA72D942F6677BEF150C4528BFF91923ABAC4BCB4* ____notifies;
+};
+struct AudioMeterInformation_t20D9FEFA301C82C7B0C8F6D9E5B9C95607F7E527  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct AudioRenderClient_tCC452C9A70075FC54C1B44E6B1F4FFFFC44E877F  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct AudioSessionControl_tDFB3F9D795BF4486B77BAB4F051F2E9BE97C9625  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+	List_1_tBF521BD539CD953A9637BD42029BF9FBA3FABE0B* ____sessionEventHandler;
+};
+struct AudioSessionEnumerator_tAFBA9D39B04C3AFBC80E74CCAEA370CC049A82B6  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct AudioSessionManager_tC8532BF6C71036FB5D1ADF717429AF8BCABD550B  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundBase_tAE90A4B29BF27EB39126F53EE307CEFA964B015D  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundBuffer_t6C1AE334E48AAA03D28C278B5DA20F022AB49649  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundNotify_t6424E71491DA9808519FFC373DE534198921486A  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct EnumDmo_t9F8921A495BB00A3CC8F0CB8A012FA1B4D2CD938  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct NOVTABLE IMMNotificationClient_tDA5E5A962F9A7E51F5AB4C427CFB5D5DCDF8E57D : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL IMMNotificationClient_OnDeviceStateChanged_m1832490958A210B743646A6BBB7611118DC2E0D2(Il2CppChar* ___0_deviceId, int32_t ___1_deviceState) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMNotificationClient_OnDeviceAdded_m624B864E35247A54029BEB038F2D70B871F25DFB(Il2CppChar* ___0_deviceId) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMNotificationClient_OnDeviceRemoved_mB873E71A510DBFC79F3D6C81412C65F34B5ED2E5(Il2CppChar* ___0_deviceId) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMNotificationClient_OnDefaultDeviceChanged_mE6AD74F1FE927ADD2D55ED85E63FF3D5E6A7BABA(int32_t ___0_dataFlow, int32_t ___1_role, Il2CppChar* ___2_deviceId) = 0;
+	virtual il2cpp_hresult_t STDCALL IMMNotificationClient_OnPropertyValueChanged_mCCBA9CC3372445409E782588773BBE9EA8F6FAF1(Il2CppChar* ___0_deviceId, PropertyKey_t58DED1084492B11296C3B45ABFADE53DAABB5B72 ___1_key) = 0;
+};
+struct MFAttributes_tEC619374857ADF885C27C5F8B8796E277908AE61  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct MFByteStream_t65F0396F38E18AD53D47D0EECD685DC4531DB3B2  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+	bool ____disposed;
+};
+struct MFMediaBuffer_t65A04D9CB12F6D4D8931F1B66317F3D4076900AA  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct MFSinkWriter_t4E604334727727BD0D8A850C060E582E2867ABC1  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct MFSourceReader_t1C91612D2781D1129714CF36CB1F786434361329  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct MMDevice_tA976C9127C746973F4079D6567A985D8AD23C760  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+	PropertyStore_t6047D2AF2EB617E0BFD4865B75950C700EB02342* ____propertyStore;
+	bool ____disposed;
+};
+struct MMDeviceCollection_t8D656522C07CF950864EE37949E7B50CC39490AD  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct MMDeviceEnumerator_t2C584F0D246CE3ACA933BFDC889CE1D49C8FB936  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct MMEndpoint_t345363C3D266676303655D79B995C6E8DEFAFD7D  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct MediaObject_tF3175101F6FE87F252BBA6A3513575C103ACBEBD  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct PropertyStore_t6047D2AF2EB617E0BFD4865B75950C700EB02342  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct SimpleAudioVolume_t10546E0C7A0DD41441ED294557BB88926DAB50A7  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct WMResamplerProps_t9DA1198EB37C762439295DA5D0E03B40F9834A46  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct XAudio2_t6153C040CDB05394D4688EA9D1F7B57E74759DAE  : public ComObject_t2DBC40463BDC85ED97FBB2AC445EF7EC2309DF87
+{
+	static const Il2CppGuid CLSID;
+
+	int32_t ____version;
+	XAudio2EngineCallback_t08DA17EB03E34947A7137253ECDDDE8C30006638* ____engineCallback;
+};
+struct AudioSessionControl2_t5DEB20D2ED30B088944CE84CF9E33921F1184630  : public AudioSessionControl_tDFB3F9D795BF4486B77BAB4F051F2E9BE97C9625
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct AudioSessionManager2_tEFD221353B5539398050F17947843C8AFE6557FD  : public AudioSessionManager_tC8532BF6C71036FB5D1ADF717429AF8BCABD550B
+{
+	static const Il2CppGuid CLSID;
+
+	List_1_t508B2C9DC2320CDEA2BAB03E79233754D6A132A5* ____sessionNotifications;
+	List_1_tBA06EDDD12D0E5FB6B0A993D8F113884711AEED0* ____volumeDuckNotifications;
+	bool ____disposed;
+};
+struct DirectSound8_tC4FD5F247C51D33553294CFDA6040ED6F950A033  : public DirectSoundBase_tAE90A4B29BF27EB39126F53EE307CEFA964B015D
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundFXChorus_tFB9B0C945E4B1B9F888B35F61868CA0F96C91EDD  : public DirectSoundFxBase_1_tB7E0F78B263D4AF78B160B19BFFA65D480D0190E
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundFXCompressor_t277030BF017BF0BDA9EA28ABC36E3501B0CF25C2  : public DirectSoundFxBase_1_t2398B3F574B6B7FF38BE0951241FAE8CAAC8AF87
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundFXDistortion_t9E738B4C9722B0F175236462D0B1DF0B4814CC9E  : public DirectSoundFxBase_1_t5017F8B7C7F5D04B98C757603CDE51BD71313FEB
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundFXEcho_tC1CC94AFFD7E4D18B6DCAD2D920B2AC6B099BBC3  : public DirectSoundFxBase_1_tB6CBE0C0E862D287BADD00E6742DA43E505A29EB
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundFXFlanger_tCA7F83F314BEC7852C4E35A8DE07E660FE197FE4  : public DirectSoundFxBase_1_t260E315A61FE65C56218AB6E9885982368565D76
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundFXGargle_tF73337B3FCC455964BBB2863EA9150D2A81E84C8  : public DirectSoundFxBase_1_t3943B4BDC1F48F8735C4F39938820AE9F54E03C4
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundFXWavesReverb_t2A61FE891C89558304AB41BFB64E927ADE95C31D  : public DirectSoundFxBase_1_t6B4518001F0D2A26E4A2BC7D1D7248D553214DB9
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundPrimaryBuffer_t0DC243D181FD0F7A643B7646208C436192F191AD  : public DirectSoundBuffer_t6C1AE334E48AAA03D28C278B5DA20F022AB49649
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct DirectSoundSecondaryBuffer_tA7EAA60C8B7C291AFC5E3909AE6ACEDD44695788  : public DirectSoundBuffer_t6C1AE334E48AAA03D28C278B5DA20F022AB49649
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct MFMediaType_t44F42B8BC7FC5C4583100E56E93BBB4FA273FE91  : public MFAttributes_tEC619374857ADF885C27C5F8B8796E277908AE61
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct XAudio2_7_t00FCD1F431CD6BBC03BE5F00291BDF4021829FF7  : public XAudio2_t6153C040CDB05394D4688EA9D1F7B57E74759DAE
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct XAudio2_8_t8EC2D7A76A16B8E9F049B7004ED8E1D380853721  : public XAudio2_t6153C040CDB05394D4688EA9D1F7B57E74759DAE
+{
+	static const Il2CppGuid CLSID;
+
+};
+struct AudioCaptureClient_tFC1CAD01C173B0B58CA24F934F8A990E442EB6C8_StaticFields
+{
+	Guid_t ___IID_IAudioCaptureClient;
+};
+struct AudioClient_t2D019720E36C646163DF89BCD82ED8B23F1B9CFF_StaticFields
+{
+	Guid_t ___IID_IAudioClient;
+};
+struct AudioRenderClient_tCC452C9A70075FC54C1B44E6B1F4FFFFC44E877F_StaticFields
+{
+	Guid_t ___IID_IAudioRenderClient;
+};
+struct PropertyStore_t6047D2AF2EB617E0BFD4865B75950C700EB02342_StaticFields
+{
+	PropertyKey_t58DED1084492B11296C3B45ABFADE53DAABB5B72 ___DeviceDesc;
+	PropertyKey_t58DED1084492B11296C3B45ABFADE53DAABB5B72 ___DeviceInterfaceEnabled;
+	PropertyKey_t58DED1084492B11296C3B45ABFADE53DAABB5B72 ___DeviceInterfaceClassGuid;
+	PropertyKey_t58DED1084492B11296C3B45ABFADE53DAABB5B72 ___FriendlyName;
+	PropertyKey_t58DED1084492B11296C3B45ABFADE53DAABB5B72 ___AudioEndpointPath;
+	PropertyKey_t58DED1084492B11296C3B45ABFADE53DAABB5B72 ___AudioEngineDeviceFormat;
+};
+struct SimpleAudioVolume_t10546E0C7A0DD41441ED294557BB88926DAB50A7_StaticFields
+{
+	Guid_t ___IID_SimpleAudioVolume;
+};
+struct AudioSessionManager2_tEFD221353B5539398050F17947843C8AFE6557FD_StaticFields
+{
+	Guid_t ___IID_IAudioSessionManager2;
+};
+struct DirectSoundPrimaryBuffer_t0DC243D181FD0F7A643B7646208C436192F191AD_StaticFields
+{
+	DSBufferDescription_t2F162B8586615F5767EE057FA965725D82B7F62E ___DefaultPrimaryBufferDescription;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 
 
 
@@ -27,6 +621,10 @@ IL2CPP_EXTERN_C void Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshal_pin
 IL2CPP_EXTERN_C_CONST RuntimeType Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_AndroidJavaRunnable_tF23B9BBDA8C99A48BCEEA6335A47DA3C0EF34A7F();
 IL2CPP_EXTERN_C_CONST RuntimeType AndroidJavaRunnable_tF23B9BBDA8C99A48BCEEA6335A47DA3C0EF34A7F_0_0_0;
+IL2CPP_EXTERN_C void AnimalStruct_t0A6BF5C5986E40A7A2CD08336F04F16F85088FB6_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void AnimalStruct_t0A6BF5C5986E40A7A2CD08336F04F16F85088FB6_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void AnimalStruct_t0A6BF5C5986E40A7A2CD08336F04F16F85088FB6_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType AnimalStruct_t0A6BF5C5986E40A7A2CD08336F04F16F85088FB6_0_0_0;
 IL2CPP_EXTERN_C void AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -107,6 +705,42 @@ IL2CPP_EXTERN_C void AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F9
 IL2CPP_EXTERN_C void AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_0_0_0;
+const Il2CppGuid AudioCaptureClient_tFC1CAD01C173B0B58CA24F934F8A990E442EB6C8::CLSID = { 0xc8adbd64, 0xe71e, 0x48a0, 0xa4, 0xde, 0x18, 0x5c, 0x39, 0x5c, 0xd3, 0x17 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioCaptureClient_tFC1CAD01C173B0B58CA24F934F8A990E442EB6C8_0_0_0;
+const Il2CppGuid AudioClient_t2D019720E36C646163DF89BCD82ED8B23F1B9CFF::CLSID = { 0x1cb9ad4c, 0xdbfa, 0x4c32, 0xb1, 0x78, 0xc2, 0xf5, 0x68, 0xa7, 0x3, 0xb2 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioClient_t2D019720E36C646163DF89BCD82ED8B23F1B9CFF_0_0_0;
+const Il2CppGuid AudioClock_tC8DA27556D73736572BCF1FE3343E45C5A53450B::CLSID = { 0xcd63314f, 0x3fba, 0x4a1b, 0x81, 0x2c, 0xef, 0x96, 0x35, 0x87, 0x28, 0xe7 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioClock_tC8DA27556D73736572BCF1FE3343E45C5A53450B_0_0_0;
+const Il2CppGuid AudioClock2_t91A80319ADEA8138D1DE29583BC3253088CDC8E4::CLSID = { 0x6f49ff73, 0x6727, 0x49ac, 0xa0, 0x8, 0xd9, 0x8c, 0xf5, 0xe7, 0x0, 0x48 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioClock2_t91A80319ADEA8138D1DE29583BC3253088CDC8E4_0_0_0;
+const Il2CppGuid AudioEndpointVolume_t504D1C4AE6E345F39DE7C531692CF01CA5C99787::CLSID = { 0x5cdf2c82, 0x841e, 0x4546, 0x97, 0x22, 0xc, 0xf7, 0x40, 0x78, 0x22, 0x9a };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioEndpointVolume_t504D1C4AE6E345F39DE7C531692CF01CA5C99787_0_0_0;
+IL2CPP_EXTERN_C Il2CppIUnknown* CreateComCallableWrapperFor_AudioEndpointVolumeCallback_t46FA7BB4BD8C3EC706CB3A1456458CB78EE652EB(RuntimeObject* obj);
+const Il2CppGuid AudioEndpointVolumeCallback_t46FA7BB4BD8C3EC706CB3A1456458CB78EE652EB::CLSID = { 0x657804fa, 0xd6ad, 0x4496, 0x8a, 0x60, 0x35, 0x27, 0x52, 0xaf, 0x4f, 0x89 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioEndpointVolumeCallback_t46FA7BB4BD8C3EC706CB3A1456458CB78EE652EB_0_0_0;
+const Il2CppGuid AudioMeterInformation_t20D9FEFA301C82C7B0C8F6D9E5B9C95607F7E527::CLSID = { 0xc02216f6, 0x8c67, 0x4b5b, 0x9d, 0x0, 0xd0, 0x8, 0xe7, 0x3e, 0x0, 0x64 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioMeterInformation_t20D9FEFA301C82C7B0C8F6D9E5B9C95607F7E527_0_0_0;
+const Il2CppGuid AudioRenderClient_tCC452C9A70075FC54C1B44E6B1F4FFFFC44E877F::CLSID = { 0xf294acfc, 0x3146, 0x4483, 0xa7, 0xbf, 0xad, 0xdc, 0xa7, 0xc2, 0x60, 0xe2 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioRenderClient_tCC452C9A70075FC54C1B44E6B1F4FFFFC44E877F_0_0_0;
+const Il2CppGuid AudioSessionControl_tDFB3F9D795BF4486B77BAB4F051F2E9BE97C9625::CLSID = { 0xf4b1a599, 0x7266, 0x4319, 0xa8, 0xca, 0xe7, 0xa, 0xcb, 0x11, 0xe8, 0xcd };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioSessionControl_tDFB3F9D795BF4486B77BAB4F051F2E9BE97C9625_0_0_0;
+const Il2CppGuid AudioSessionControl2_t5DEB20D2ED30B088944CE84CF9E33921F1184630::CLSID = { 0xbfb7ff88, 0x7239, 0x4fc9, 0x8f, 0xa2, 0x7, 0xc9, 0x50, 0xbe, 0x9c, 0x6d };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioSessionControl2_t5DEB20D2ED30B088944CE84CF9E33921F1184630_0_0_0;
+const Il2CppGuid AudioSessionEnumerator_tAFBA9D39B04C3AFBC80E74CCAEA370CC049A82B6::CLSID = { 0xe2f5bb11, 0x570, 0x40ca, 0xac, 0xdd, 0x3a, 0xa0, 0x12, 0x77, 0xde, 0xe8 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioSessionEnumerator_tAFBA9D39B04C3AFBC80E74CCAEA370CC049A82B6_0_0_0;
+IL2CPP_EXTERN_C Il2CppIUnknown* CreateComCallableWrapperFor_AudioSessionEvents_t87A7ABEF6CA3E9E7D84620FB2AACA2773B391CFA(RuntimeObject* obj);
+const Il2CppGuid AudioSessionEvents_t87A7ABEF6CA3E9E7D84620FB2AACA2773B391CFA::CLSID = { 0x24918acc, 0x64b3, 0x37c1, 0x8c, 0xa9, 0x74, 0xa6, 0x6e, 0x99, 0x57, 0xa8 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioSessionEvents_t87A7ABEF6CA3E9E7D84620FB2AACA2773B391CFA_0_0_0;
+const Il2CppGuid AudioSessionManager_tC8532BF6C71036FB5D1ADF717429AF8BCABD550B::CLSID = { 0xbfa971f1, 0x4d5e, 0x40bb, 0x93, 0x5e, 0x96, 0x70, 0x39, 0xbf, 0xbe, 0xe4 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioSessionManager_tC8532BF6C71036FB5D1ADF717429AF8BCABD550B_0_0_0;
+const Il2CppGuid AudioSessionManager2_tEFD221353B5539398050F17947843C8AFE6557FD::CLSID = { 0x77aa99a0, 0x1bd6, 0x484f, 0x8b, 0xc7, 0x2c, 0x65, 0x4c, 0x9a, 0x9b, 0x6f };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioSessionManager2_tEFD221353B5539398050F17947843C8AFE6557FD_0_0_0;
+IL2CPP_EXTERN_C Il2CppIUnknown* CreateComCallableWrapperFor_AudioSessionNotification_tEC6D9E64A244D4B3ED60F364C0AC40E3BDF15633(RuntimeObject* obj);
+const Il2CppGuid AudioSessionNotification_tEC6D9E64A244D4B3ED60F364C0AC40E3BDF15633::CLSID = { 0x641dd20b, 0x4d41, 0x49cc, 0xab, 0xa3, 0x17, 0x4b, 0x94, 0x77, 0xbb, 0x8 };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioSessionNotification_tEC6D9E64A244D4B3ED60F364C0AC40E3BDF15633_0_0_0;
+IL2CPP_EXTERN_C Il2CppIUnknown* CreateComCallableWrapperFor_AudioVolumeDuckNotification_t0A23F56DA2DB406817673BC372678539A5110963(RuntimeObject* obj);
+const Il2CppGuid AudioVolumeDuckNotification_t0A23F56DA2DB406817673BC372678539A5110963::CLSID = { 0xc3b284d4, 0x6d39, 0x4359, 0xb3, 0xcf, 0xb5, 0x6d, 0xdb, 0x3b, 0xb3, 0x9c };
+IL2CPP_EXTERN_C_CONST RuntimeType AudioVolumeDuckNotification_t0A23F56DA2DB406817673BC372678539A5110963_0_0_0;
 IL2CPP_EXTERN_C void Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -115,6 +749,10 @@ IL2CPP_EXTERN_C void BatchRendererGroup_t452089ECEC9BF01E82CD6AE044B6D75B8CD12D1
 IL2CPP_EXTERN_C void BatchRendererGroup_t452089ECEC9BF01E82CD6AE044B6D75B8CD12D10_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void BatchRendererGroup_t452089ECEC9BF01E82CD6AE044B6D75B8CD12D10_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType BatchRendererGroup_t452089ECEC9BF01E82CD6AE044B6D75B8CD12D10_0_0_0;
+IL2CPP_EXTERN_C void BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_0_0_0;
 IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -139,6 +777,10 @@ IL2CPP_EXTERN_C void CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA9
 IL2CPP_EXTERN_C void CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389_0_0_0;
+IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0;
 IL2CPP_EXTERN_C void CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -155,6 +797,12 @@ IL2CPP_EXTERN_C void ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7_marsha
 IL2CPP_EXTERN_C void ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7_0_0_0;
+IL2CPP_EXTERN_C Il2CppIUnknown* CreateComCallableWrapperFor_ComStream_t0396CD5F52AE0FC5DD2854CB6CC106FB8123F0F5(RuntimeObject* obj);
+IL2CPP_EXTERN_C_CONST RuntimeType ComStream_t0396CD5F52AE0FC5DD2854CB6CC106FB8123F0F5_0_0_0;
+IL2CPP_EXTERN_C void ComputeBufferDesc_t4AFBC6F02239B19810A79101771BBE76388524F4_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ComputeBufferDesc_t4AFBC6F02239B19810A79101771BBE76388524F4_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ComputeBufferDesc_t4AFBC6F02239B19810A79101771BBE76388524F4_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ComputeBufferDesc_t4AFBC6F02239B19810A79101771BBE76388524F4_0_0_0;
 IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -163,6 +811,10 @@ IL2CPP_EXTERN_C void ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263
 IL2CPP_EXTERN_C void ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_0_0_0;
+IL2CPP_EXTERN_C void ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C_0_0_0;
 IL2CPP_EXTERN_C void ConsoleKeyInfo_t84640C60F53D0F6946B147ADAAF0366BBF1DE900_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ConsoleKeyInfo_t84640C60F53D0F6946B147ADAAF0366BBF1DE900_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ConsoleKeyInfo_t84640C60F53D0F6946B147ADAAF0366BBF1DE900_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -237,6 +889,12 @@ IL2CPP_EXTERN_C void CustomAttributeTypedArgument_tAAA19ADE66B16A67D030C8C67D7AD
 IL2CPP_EXTERN_C void CustomAttributeTypedArgument_tAAA19ADE66B16A67D030C8C67D7ADB29A7BEC75F_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void CustomAttributeTypedArgument_tAAA19ADE66B16A67D030C8C67D7ADB29A7BEC75F_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType CustomAttributeTypedArgument_tAAA19ADE66B16A67D030C8C67D7ADB29A7BEC75F_0_0_0;
+IL2CPP_EXTERN_C void DSAParameters_t2FA923FEA7E2DB5515EE54A7E86B0401D025E0E9_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void DSAParameters_t2FA923FEA7E2DB5515EE54A7E86B0401D025E0E9_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void DSAParameters_t2FA923FEA7E2DB5515EE54A7E86B0401D025E0E9_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType DSAParameters_t2FA923FEA7E2DB5515EE54A7E86B0401D025E0E9_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_DSEnumCallback_t6F3E9C67BCA9BDD434A9012D6C7DB19B4D3B631B();
+IL2CPP_EXTERN_C_CONST RuntimeType DSEnumCallback_t6F3E9C67BCA9BDD434A9012D6C7DB19B4D3B631B_0_0_0;
 IL2CPP_EXTERN_C void DateTimeRawInfo_tEAC42047935006C924842337850170E9AEA0AB03_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void DateTimeRawInfo_tEAC42047935006C924842337850170E9AEA0AB03_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void DateTimeRawInfo_tEAC42047935006C924842337850170E9AEA0AB03_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -253,10 +911,40 @@ IL2CPP_EXTERN_C void Delegate_t_marshal_pinvoke(void* managedStructure, void* ma
 IL2CPP_EXTERN_C void Delegate_t_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void Delegate_t_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType Delegate_t_0_0_0;
+IL2CPP_EXTERN_C void DeviceDetails_tFC03819B476629318086FA0E06C45F1D31C99035_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void DeviceDetails_tFC03819B476629318086FA0E06C45F1D31C99035_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void DeviceDetails_tFC03819B476629318086FA0E06C45F1D31C99035_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType DeviceDetails_tFC03819B476629318086FA0E06C45F1D31C99035_0_0_0;
 IL2CPP_EXTERN_C void DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_0_0_0;
+const Il2CppGuid DirectSound8_tC4FD5F247C51D33553294CFDA6040ED6F950A033::CLSID = { 0xc50a7e93, 0xf395, 0x4834, 0x9e, 0xf6, 0x7f, 0xa9, 0x9d, 0xe5, 0x9, 0x66 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSound8_tC4FD5F247C51D33553294CFDA6040ED6F950A033_0_0_0;
+const Il2CppGuid DirectSoundBase_tAE90A4B29BF27EB39126F53EE307CEFA964B015D::CLSID = { 0x279afa83, 0x4981, 0x11ce, 0xa5, 0x21, 0x0, 0x20, 0xaf, 0xb, 0xe5, 0x60 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundBase_tAE90A4B29BF27EB39126F53EE307CEFA964B015D_0_0_0;
+const Il2CppGuid DirectSoundBuffer_t6C1AE334E48AAA03D28C278B5DA20F022AB49649::CLSID = { 0x279afa85, 0x4981, 0x11ce, 0xa5, 0x21, 0x0, 0x20, 0xaf, 0xb, 0xe5, 0x60 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundBuffer_t6C1AE334E48AAA03D28C278B5DA20F022AB49649_0_0_0;
+const Il2CppGuid DirectSoundFXChorus_tFB9B0C945E4B1B9F888B35F61868CA0F96C91EDD::CLSID = { 0x880842e3, 0x145f, 0x43e6, 0xa9, 0x34, 0xa7, 0x18, 0x6, 0xe5, 0x5, 0x47 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundFXChorus_tFB9B0C945E4B1B9F888B35F61868CA0F96C91EDD_0_0_0;
+const Il2CppGuid DirectSoundFXCompressor_t277030BF017BF0BDA9EA28ABC36E3501B0CF25C2::CLSID = { 0x4bbd1154, 0x62f6, 0x4e2c, 0xa1, 0x5c, 0xd3, 0xb6, 0xc4, 0x17, 0xf7, 0xa0 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundFXCompressor_t277030BF017BF0BDA9EA28ABC36E3501B0CF25C2_0_0_0;
+const Il2CppGuid DirectSoundFXDistortion_t9E738B4C9722B0F175236462D0B1DF0B4814CC9E::CLSID = { 0x8ecf4326, 0x455f, 0x4d8b, 0xbd, 0xa9, 0x8d, 0x5d, 0x3e, 0x9e, 0x3e, 0xb };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundFXDistortion_t9E738B4C9722B0F175236462D0B1DF0B4814CC9E_0_0_0;
+const Il2CppGuid DirectSoundFXEcho_tC1CC94AFFD7E4D18B6DCAD2D920B2AC6B099BBC3::CLSID = { 0x8bd28edf, 0x50db, 0x4e92, 0xa2, 0xbd, 0x44, 0x54, 0x88, 0xd1, 0xed, 0x42 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundFXEcho_tC1CC94AFFD7E4D18B6DCAD2D920B2AC6B099BBC3_0_0_0;
+const Il2CppGuid DirectSoundFXFlanger_tCA7F83F314BEC7852C4E35A8DE07E660FE197FE4::CLSID = { 0x903e9878, 0x2c92, 0x4072, 0x9b, 0x2c, 0xea, 0x68, 0xf5, 0x39, 0x67, 0x83 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundFXFlanger_tCA7F83F314BEC7852C4E35A8DE07E660FE197FE4_0_0_0;
+const Il2CppGuid DirectSoundFXGargle_tF73337B3FCC455964BBB2863EA9150D2A81E84C8::CLSID = { 0xd616f352, 0xd622, 0x11ce, 0xaa, 0xc5, 0x0, 0x20, 0xaf, 0xb, 0x99, 0xa3 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundFXGargle_tF73337B3FCC455964BBB2863EA9150D2A81E84C8_0_0_0;
+const Il2CppGuid DirectSoundFXWavesReverb_t2A61FE891C89558304AB41BFB64E927ADE95C31D::CLSID = { 0x46858c3a, 0xdc6, 0x45e3, 0xb7, 0x60, 0xd4, 0xee, 0xf1, 0x6c, 0xb3, 0x25 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundFXWavesReverb_t2A61FE891C89558304AB41BFB64E927ADE95C31D_0_0_0;
+const Il2CppGuid DirectSoundNotify_t6424E71491DA9808519FFC373DE534198921486A::CLSID = { 0xb0210783, 0x89cd, 0x11d0, 0xaf, 0x8, 0x0, 0xa0, 0xc9, 0x25, 0xcd, 0x16 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundNotify_t6424E71491DA9808519FFC373DE534198921486A_0_0_0;
+const Il2CppGuid DirectSoundPrimaryBuffer_t0DC243D181FD0F7A643B7646208C436192F191AD::CLSID = { 0x279afa85, 0x4981, 0x11ce, 0xa5, 0x21, 0x0, 0x20, 0xaf, 0xb, 0xe5, 0x60 };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundPrimaryBuffer_t0DC243D181FD0F7A643B7646208C436192F191AD_0_0_0;
+const Il2CppGuid DirectSoundSecondaryBuffer_tA7EAA60C8B7C291AFC5E3909AE6ACEDD44695788::CLSID = { 0x6825a449, 0x7524, 0x4d82, 0x92, 0xf, 0x50, 0xe3, 0x6a, 0xb3, 0xab, 0x1e };
+IL2CPP_EXTERN_C_CONST RuntimeType DirectSoundSecondaryBuffer_tA7EAA60C8B7C291AFC5E3909AE6ACEDD44695788_0_0_0;
 IL2CPP_EXTERN_C void DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -269,6 +957,14 @@ IL2CPP_EXTERN_C void DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal
 IL2CPP_EXTERN_C void DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_0_0_0;
+IL2CPP_EXTERN_C void DmoEnumItem_t8FB30A741024B1D79BF2E4D408A6C195AECB4E79_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void DmoEnumItem_t8FB30A741024B1D79BF2E4D408A6C195AECB4E79_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void DmoEnumItem_t8FB30A741024B1D79BF2E4D408A6C195AECB4E79_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType DmoEnumItem_t8FB30A741024B1D79BF2E4D408A6C195AECB4E79_0_0_0;
+IL2CPP_EXTERN_C void DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_0_0_0;
 IL2CPP_EXTERN_C void DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -285,6 +981,8 @@ IL2CPP_EXTERN_C void EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8_marshal_
 IL2CPP_EXTERN_C void EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8_0_0_0;
+const Il2CppGuid EnumDmo_t9F8921A495BB00A3CC8F0CB8A012FA1B4D2CD938::CLSID = { 0x2c3cd98a, 0x2bfa, 0x4a53, 0x9c, 0x27, 0x52, 0x49, 0xba, 0x64, 0xba, 0xf };
+IL2CPP_EXTERN_C_CONST RuntimeType EnumDmo_t9F8921A495BB00A3CC8F0CB8A012FA1B4D2CD938_0_0_0;
 IL2CPP_EXTERN_C void Ephemeron_t74F279F5E7CF4A0CFC21C822431DD840572C6DA2_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void Ephemeron_t74F279F5E7CF4A0CFC21C822431DD840572C6DA2_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void Ephemeron_t74F279F5E7CF4A0CFC21C822431DD840572C6DA2_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -293,6 +991,10 @@ IL2CPP_EXTERN_C void Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshal_pin
 IL2CPP_EXTERN_C void Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_0_0_0;
+IL2CPP_EXTERN_C void EventAttributes_t08E6304B102F41E4FF59ED5A938F2C819CAA6D1A_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void EventAttributes_t08E6304B102F41E4FF59ED5A938F2C819CAA6D1A_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void EventAttributes_t08E6304B102F41E4FF59ED5A938F2C819CAA6D1A_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType EventAttributes_t08E6304B102F41E4FF59ED5A938F2C819CAA6D1A_0_0_0;
 IL2CPP_EXTERN_C void EventDispatcherGate_t75A9E135B6558D523DCFC5CF95B44F153A779097_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void EventDispatcherGate_t75A9E135B6558D523DCFC5CF95B44F153A779097_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void EventDispatcherGate_t75A9E135B6558D523DCFC5CF95B44F153A779097_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -321,10 +1023,18 @@ IL2CPP_EXTERN_C void FailedToLoadScriptObject_t51C7A75B7D39FE935901EB6E75FE2D020
 IL2CPP_EXTERN_C void FailedToLoadScriptObject_t51C7A75B7D39FE935901EB6E75FE2D020AF14A89_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void FailedToLoadScriptObject_t51C7A75B7D39FE935901EB6E75FE2D020AF14A89_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType FailedToLoadScriptObject_t51C7A75B7D39FE935901EB6E75FE2D020AF14A89_0_0_0;
+IL2CPP_EXTERN_C void FastMemoryDesc_tAD0B2FF1E2C10081569B42C98F9E48DE366F7F4D_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void FastMemoryDesc_tAD0B2FF1E2C10081569B42C98F9E48DE366F7F4D_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void FastMemoryDesc_tAD0B2FF1E2C10081569B42C98F9E48DE366F7F4D_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType FastMemoryDesc_tAD0B2FF1E2C10081569B42C98F9E48DE366F7F4D_0_0_0;
 IL2CPP_EXTERN_C void FieldMember_tFAEBD5181D8BB7C912174317D5AAE15D23B378BF_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void FieldMember_tFAEBD5181D8BB7C912174317D5AAE15D23B378BF_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void FieldMember_tFAEBD5181D8BB7C912174317D5AAE15D23B378BF_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType FieldMember_tFAEBD5181D8BB7C912174317D5AAE15D23B378BF_0_0_0;
+IL2CPP_EXTERN_C void FlacFrameInformation_t3577B15DD5538F12D8105FC22837DD4881385C2E_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void FlacFrameInformation_t3577B15DD5538F12D8105FC22837DD4881385C2E_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void FlacFrameInformation_t3577B15DD5538F12D8105FC22837DD4881385C2E_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType FlacFrameInformation_t3577B15DD5538F12D8105FC22837DD4881385C2E_0_0_0;
 IL2CPP_EXTERN_C void FloatTween_t11548A42FCB3B005DD83D77A529119381B2BB64A_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void FloatTween_t11548A42FCB3B005DD83D77A529119381B2BB64A_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void FloatTween_t11548A42FCB3B005DD83D77A529119381B2BB64A_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -345,6 +1055,10 @@ IL2CPP_EXTERN_C void FontWeightPair_tB94169BD86D0DFC25D651F890B15991A3E0ADA42_ma
 IL2CPP_EXTERN_C void FontWeightPair_tB94169BD86D0DFC25D651F890B15991A3E0ADA42_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void FontWeightPair_tB94169BD86D0DFC25D651F890B15991A3E0ADA42_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType FontWeightPair_tB94169BD86D0DFC25D651F890B15991A3E0ADA42_0_0_0;
+IL2CPP_EXTERN_C void ForceAsyncAwaiter_t4F90D8A767F7504702D667A8E69AA7ACCD0B87C2_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ForceAsyncAwaiter_t4F90D8A767F7504702D667A8E69AA7ACCD0B87C2_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ForceAsyncAwaiter_t4F90D8A767F7504702D667A8E69AA7ACCD0B87C2_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ForceAsyncAwaiter_t4F90D8A767F7504702D667A8E69AA7ACCD0B87C2_0_0_0;
 IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -357,6 +1071,10 @@ IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_mar
 IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0;
+IL2CPP_EXTERN_C void GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_0_0_0;
 IL2CPP_EXTERN_C void Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -369,10 +1087,42 @@ IL2CPP_EXTERN_C void HandleDragAndDropArgs_t14222F5271A86F1FE692EDBFD99ABA3FF143
 IL2CPP_EXTERN_C void HandleDragAndDropArgs_t14222F5271A86F1FE692EDBFD99ABA3FF1430F9D_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void HandleDragAndDropArgs_t14222F5271A86F1FE692EDBFD99ABA3FF1430F9D_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType HandleDragAndDropArgs_t14222F5271A86F1FE692EDBFD99ABA3FF1430F9D_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_HeaderParser_t9BD3B896027A047C0DA68DC732ABC1B9A660AB67();
+IL2CPP_EXTERN_C_CONST RuntimeType HeaderParser_t9BD3B896027A047C0DA68DC732ABC1B9A660AB67_0_0_0;
+IL2CPP_EXTERN_C void HeaderVariantInfo_t99223ED0C557730FBD8AA572065B994254F3386A_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void HeaderVariantInfo_t99223ED0C557730FBD8AA572065B994254F3386A_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void HeaderVariantInfo_t99223ED0C557730FBD8AA572065B994254F3386A_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType HeaderVariantInfo_t99223ED0C557730FBD8AA572065B994254F3386A_0_0_0;
 IL2CPP_EXTERN_C void HumanBone_t9A978BB2457E935D0B6FA64ADDE60562ADAE5FD8_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void HumanBone_t9A978BB2457E935D0B6FA64ADDE60562ADAE5FD8_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void HumanBone_t9A978BB2457E935D0B6FA64ADDE60562ADAE5FD8_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType HumanBone_t9A978BB2457E935D0B6FA64ADDE60562ADAE5FD8_0_0_0;
+IL2CPP_EXTERN_C void HumanDescription_tAEFC8398C9AA70799C171BC0AEE07C0031B0CD44_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void HumanDescription_tAEFC8398C9AA70799C171BC0AEE07C0031B0CD44_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void HumanDescription_tAEFC8398C9AA70799C171BC0AEE07C0031B0CD44_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType HumanDescription_tAEFC8398C9AA70799C171BC0AEE07C0031B0CD44_0_0_0;
+const Il2CppGuid IAudioEndpointVolumeCallback_tCAFE7EF8BE0C333F25AC602F77D5192881C59A10::IID = { 0x657804fa, 0xd6ad, 0x4496, 0x8a, 0x60, 0x35, 0x27, 0x52, 0xaf, 0x4f, 0x89 };
+IL2CPP_EXTERN_C_CONST RuntimeType IAudioEndpointVolumeCallback_tCAFE7EF8BE0C333F25AC602F77D5192881C59A10_0_0_0;
+const Il2CppGuid IAudioSessionEvents_t324AF49B0A1BE20E64BBDB0BCD3EF34E03B56516::IID = { 0x24918acc, 0x64b3, 0x37c1, 0x8c, 0xa9, 0x74, 0xa6, 0x6e, 0x99, 0x57, 0xa8 };
+IL2CPP_EXTERN_C_CONST RuntimeType IAudioSessionEvents_t324AF49B0A1BE20E64BBDB0BCD3EF34E03B56516_0_0_0;
+const Il2CppGuid IAudioSessionNotification_tB7486E1356482020ECDAAF6F776FFD297118EA0E::IID = { 0x641dd20b, 0x4d41, 0x49cc, 0xab, 0xa3, 0x17, 0x4b, 0x94, 0x77, 0xbb, 0x8 };
+IL2CPP_EXTERN_C_CONST RuntimeType IAudioSessionNotification_tB7486E1356482020ECDAAF6F776FFD297118EA0E_0_0_0;
+const Il2CppGuid IAudioVolumeDuckNotification_tCA9CCCDBB459019EF5677FE64D69CC10B8D4DAC3::IID = { 0xc3b284d4, 0x6d39, 0x4359, 0xb3, 0xcf, 0xb5, 0x6d, 0xdb, 0x3b, 0xb3, 0x9c };
+IL2CPP_EXTERN_C_CONST RuntimeType IAudioVolumeDuckNotification_tCA9CCCDBB459019EF5677FE64D69CC10B8D4DAC3_0_0_0;
+const Il2CppGuid IMFCollection_tB7E4AFC7AD4CD5D091C161B02984345A80F977BD::IID = { 0x5bc8a76b, 0x869a, 0x46a3, 0x9b, 0x3, 0xfa, 0x21, 0x8a, 0x66, 0xae, 0xbe };
+IL2CPP_EXTERN_C_CONST RuntimeType IMFCollection_tB7E4AFC7AD4CD5D091C161B02984345A80F977BD_0_0_0;
+const Il2CppGuid IMMDevice_tD3127F8A4820877146FDA19BB57B164F9A9DC2D5::IID = { 0xd666063f, 0x1587, 0x4e43, 0x81, 0xf1, 0xb9, 0x48, 0xe8, 0x7, 0x36, 0x3f };
+IL2CPP_EXTERN_C_CONST RuntimeType IMMDevice_tD3127F8A4820877146FDA19BB57B164F9A9DC2D5_0_0_0;
+const Il2CppGuid IMMDeviceCollection_t198ED695858B392C87F37736CEB7C377D0EA983B::IID = { 0xbd7a1be, 0x7a1a, 0x44db, 0x83, 0x97, 0xcc, 0x53, 0x92, 0x38, 0x7b, 0x5e };
+IL2CPP_EXTERN_C_CONST RuntimeType IMMDeviceCollection_t198ED695858B392C87F37736CEB7C377D0EA983B_0_0_0;
+const Il2CppGuid IMMDeviceEnumerator_t2AA6599E6D3785C934DBEF97C78A3488C9F0E6B1::IID = { 0xa95664d2, 0x9614, 0x4f35, 0xa7, 0x46, 0xde, 0x8d, 0xb6, 0x36, 0x17, 0xe6 };
+IL2CPP_EXTERN_C_CONST RuntimeType IMMDeviceEnumerator_t2AA6599E6D3785C934DBEF97C78A3488C9F0E6B1_0_0_0;
+const Il2CppGuid IMMNotificationClient_tDA5E5A962F9A7E51F5AB4C427CFB5D5DCDF8E57D::IID = { 0x7991eec9, 0x7e89, 0x4d85, 0x83, 0x90, 0x6c, 0x70, 0x3c, 0xec, 0x60, 0xc0 };
+IL2CPP_EXTERN_C_CONST RuntimeType IMMNotificationClient_tDA5E5A962F9A7E51F5AB4C427CFB5D5DCDF8E57D_0_0_0;
+const Il2CppGuid IMediaBuffer_t79A339AC5E87CEBD9E1936021A52DB69DAAB54A2::IID = { 0x59eff8b9, 0x938c, 0x4a26, 0x82, 0xf2, 0x95, 0xcb, 0x84, 0xcd, 0xc8, 0x37 };
+IL2CPP_EXTERN_C_CONST RuntimeType IMediaBuffer_t79A339AC5E87CEBD9E1936021A52DB69DAAB54A2_0_0_0;
+const Il2CppGuid IMediaObject_tA9539CA48917E118AABEC457862D4572DFB28C20::IID = { 0xd8ad0f58, 0x5494, 0x4102, 0x97, 0xc5, 0xec, 0x79, 0x8e, 0x59, 0xbc, 0xf4 };
+IL2CPP_EXTERN_C_CONST RuntimeType IMediaObject_tA9539CA48917E118AABEC457862D4572DFB28C20_0_0_0;
 IL2CPP_EXTERN_C void IOAsyncResult_t667861995468DDF5B2CFED1940CC2BCEEDD2B374_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void IOAsyncResult_t667861995468DDF5B2CFED1940CC2BCEEDD2B374_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void IOAsyncResult_t667861995468DDF5B2CFED1940CC2BCEEDD2B374_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -385,6 +1135,10 @@ IL2CPP_EXTERN_C void IPPacketInformation_tCD16AD717AD72D36684D9CFFDA0F6B53CCD324
 IL2CPP_EXTERN_C void IPPacketInformation_tCD16AD717AD72D36684D9CFFDA0F6B53CCD3249B_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void IPPacketInformation_tCD16AD717AD72D36684D9CFFDA0F6B53CCD3249B_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType IPPacketInformation_tCD16AD717AD72D36684D9CFFDA0F6B53CCD3249B_0_0_0;
+const Il2CppGuid IStream_t5B8504123802C24362FFFFC3891FDE9A60398873::IID = { 0xc, 0x0, 0x0, 0xc0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x46 };
+IL2CPP_EXTERN_C_CONST RuntimeType IStream_t5B8504123802C24362FFFFC3891FDE9A60398873_0_0_0;
+const Il2CppGuid IWMResamplerProps_tEB43BE2AC9A5343A15DB8878F79BDE984706F35D::IID = { 0xe7e9984f, 0xf09f, 0x4da4, 0x90, 0x3f, 0x6e, 0x2e, 0xe, 0xfe, 0x56, 0xb5 };
+IL2CPP_EXTERN_C_CONST RuntimeType IWMResamplerProps_tEB43BE2AC9A5343A15DB8878F79BDE984706F35D_0_0_0;
 IL2CPP_EXTERN_C void ImageSource_t0990262FCFA5C1F3C695C53FB04A35F71CDD63B4_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ImageSource_t0990262FCFA5C1F3C695C53FB04A35F71CDD63B4_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ImageSource_t0990262FCFA5C1F3C695C53FB04A35F71CDD63B4_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -449,6 +1203,10 @@ IL2CPP_EXTERN_C void LocalBuilder_tCB5AF342391604CED7394B81A931AB5BC6B97BB6_mars
 IL2CPP_EXTERN_C void LocalBuilder_tCB5AF342391604CED7394B81A931AB5BC6B97BB6_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void LocalBuilder_tCB5AF342391604CED7394B81A931AB5BC6B97BB6_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType LocalBuilder_tCB5AF342391604CED7394B81A931AB5BC6B97BB6_0_0_0;
+IL2CPP_EXTERN_C void LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB_0_0_0;
 IL2CPP_EXTERN_C void LocalVariableInfo_tFEE59A3613A442977805D456B016C3592CE60B62_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void LocalVariableInfo_tFEE59A3613A442977805D456B016C3592CE60B62_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void LocalVariableInfo_tFEE59A3613A442977805D456B016C3592CE60B62_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -457,6 +1215,37 @@ IL2CPP_EXTERN_C void LockHolder_t759094B031976CAB1D40EEA607217A40DB7A0A59_marsha
 IL2CPP_EXTERN_C void LockHolder_t759094B031976CAB1D40EEA607217A40DB7A0A59_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void LockHolder_t759094B031976CAB1D40EEA607217A40DB7A0A59_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType LockHolder_t759094B031976CAB1D40EEA607217A40DB7A0A59_0_0_0;
+const Il2CppGuid MFAttributes_tEC619374857ADF885C27C5F8B8796E277908AE61::CLSID = { 0x2cd2d921, 0xc447, 0x44a7, 0xa1, 0x3c, 0x4a, 0xda, 0xbf, 0xc2, 0x47, 0xe3 };
+IL2CPP_EXTERN_C_CONST RuntimeType MFAttributes_tEC619374857ADF885C27C5F8B8796E277908AE61_0_0_0;
+const Il2CppGuid MFByteStream_t65F0396F38E18AD53D47D0EECD685DC4531DB3B2::CLSID = { 0xad4c1b00, 0x4bf7, 0x422f, 0x91, 0x75, 0x75, 0x66, 0x93, 0xd9, 0x13, 0xd };
+IL2CPP_EXTERN_C_CONST RuntimeType MFByteStream_t65F0396F38E18AD53D47D0EECD685DC4531DB3B2_0_0_0;
+const Il2CppGuid MFMediaBuffer_t65A04D9CB12F6D4D8931F1B66317F3D4076900AA::CLSID = { 0x45fa593, 0x8799, 0x42b8, 0xbc, 0x8d, 0x89, 0x68, 0xc6, 0x45, 0x35, 0x7 };
+IL2CPP_EXTERN_C_CONST RuntimeType MFMediaBuffer_t65A04D9CB12F6D4D8931F1B66317F3D4076900AA_0_0_0;
+const Il2CppGuid MFMediaType_t44F42B8BC7FC5C4583100E56E93BBB4FA273FE91::CLSID = { 0x44ae0fa8, 0xea31, 0x4109, 0x8d, 0x2e, 0x4c, 0xae, 0x49, 0x97, 0xc5, 0x55 };
+IL2CPP_EXTERN_C_CONST RuntimeType MFMediaType_t44F42B8BC7FC5C4583100E56E93BBB4FA273FE91_0_0_0;
+const Il2CppGuid MFSinkWriter_t4E604334727727BD0D8A850C060E582E2867ABC1::CLSID = { 0x3137f1cd, 0xfe5e, 0x4805, 0xa5, 0xd8, 0xfb, 0x47, 0x74, 0x48, 0xcb, 0x3d };
+IL2CPP_EXTERN_C_CONST RuntimeType MFSinkWriter_t4E604334727727BD0D8A850C060E582E2867ABC1_0_0_0;
+const Il2CppGuid MFSourceReader_t1C91612D2781D1129714CF36CB1F786434361329::CLSID = { 0x70ae66f2, 0xc809, 0x4e4f, 0x89, 0x15, 0xbd, 0xcb, 0x40, 0x6b, 0x79, 0x93 };
+IL2CPP_EXTERN_C_CONST RuntimeType MFSourceReader_t1C91612D2781D1129714CF36CB1F786434361329_0_0_0;
+IL2CPP_EXTERN_C void MFTRegisterTypeInfo_t52B22A077060D5D269FF7DEA28FAC5E149DBAC1C_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void MFTRegisterTypeInfo_t52B22A077060D5D269FF7DEA28FAC5E149DBAC1C_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void MFTRegisterTypeInfo_t52B22A077060D5D269FF7DEA28FAC5E149DBAC1C_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType MFTRegisterTypeInfo_t52B22A077060D5D269FF7DEA28FAC5E149DBAC1C_0_0_0;
+const Il2CppGuid MMDevice_tA976C9127C746973F4079D6567A985D8AD23C760::CLSID = { 0xd666063f, 0x1587, 0x4e43, 0x81, 0xf1, 0xb9, 0x48, 0xe8, 0x7, 0x36, 0x3f };
+IL2CPP_EXTERN_C_CONST RuntimeType MMDevice_tA976C9127C746973F4079D6567A985D8AD23C760_0_0_0;
+const Il2CppGuid MMDeviceCollection_t8D656522C07CF950864EE37949E7B50CC39490AD::CLSID = { 0xbd7a1be, 0x7a1a, 0x44db, 0x83, 0x97, 0xcc, 0x53, 0x92, 0x38, 0x7b, 0x5e };
+IL2CPP_EXTERN_C_CONST RuntimeType MMDeviceCollection_t8D656522C07CF950864EE37949E7B50CC39490AD_0_0_0;
+const Il2CppGuid MMDeviceEnumerator_t2C584F0D246CE3ACA933BFDC889CE1D49C8FB936::CLSID = { 0xa95664d2, 0x9614, 0x4f35, 0xa7, 0x46, 0xde, 0x8d, 0xb6, 0x36, 0x17, 0xe6 };
+IL2CPP_EXTERN_C_CONST RuntimeType MMDeviceEnumerator_t2C584F0D246CE3ACA933BFDC889CE1D49C8FB936_0_0_0;
+const Il2CppGuid MMEndpoint_t345363C3D266676303655D79B995C6E8DEFAFD7D::CLSID = { 0x1be09788, 0x6894, 0x4089, 0x85, 0x86, 0x9a, 0x2a, 0x6c, 0x26, 0x5a, 0xc5 };
+IL2CPP_EXTERN_C_CONST RuntimeType MMEndpoint_t345363C3D266676303655D79B995C6E8DEFAFD7D_0_0_0;
+IL2CPP_EXTERN_C Il2CppIUnknown* CreateComCallableWrapperFor_MMNotificationClient_tB78CBCC6375C6E8368AE900296DED1E81C45A0FC(RuntimeObject* obj);
+const Il2CppGuid MMNotificationClient_tB78CBCC6375C6E8368AE900296DED1E81C45A0FC::CLSID = { 0x7991eec9, 0x7e89, 0x4d85, 0x83, 0x90, 0x6c, 0x70, 0x3c, 0xec, 0x60, 0xc0 };
+IL2CPP_EXTERN_C_CONST RuntimeType MMNotificationClient_tB78CBCC6375C6E8368AE900296DED1E81C45A0FC_0_0_0;
+IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0;
 IL2CPP_EXTERN_C void MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -473,6 +1262,10 @@ IL2CPP_EXTERN_C void MaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26
 IL2CPP_EXTERN_C void MaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType MaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26_0_0_0;
+IL2CPP_EXTERN_C Il2CppIUnknown* CreateComCallableWrapperFor_MediaBuffer_t8001337EF3AE5E5377CCD6033F127B018854252E(RuntimeObject* obj);
+IL2CPP_EXTERN_C_CONST RuntimeType MediaBuffer_t8001337EF3AE5E5377CCD6033F127B018854252E_0_0_0;
+const Il2CppGuid MediaObject_tF3175101F6FE87F252BBA6A3513575C103ACBEBD::CLSID = { 0xd8ad0f58, 0x5494, 0x4102, 0x97, 0xc5, 0xec, 0x79, 0x8e, 0x59, 0xbc, 0xf4 };
+IL2CPP_EXTERN_C_CONST RuntimeType MediaObject_tF3175101F6FE87F252BBA6A3513575C103ACBEBD_0_0_0;
 IL2CPP_EXTERN_C void MemoryHandle_t505785861D4FF84F850A3FF775BE6AE1833D2AFD_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void MemoryHandle_t505785861D4FF84F850A3FF775BE6AE1833D2AFD_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MemoryHandle_t505785861D4FF84F850A3FF775BE6AE1833D2AFD_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -493,6 +1286,10 @@ IL2CPP_EXTERN_C void MonoAsyncCall_t4CB32CAF9A2C648A4A35E0D921CE0A886B5D1A37_mar
 IL2CPP_EXTERN_C void MonoAsyncCall_t4CB32CAF9A2C648A4A35E0D921CE0A886B5D1A37_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MonoAsyncCall_t4CB32CAF9A2C648A4A35E0D921CE0A886B5D1A37_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType MonoAsyncCall_t4CB32CAF9A2C648A4A35E0D921CE0A886B5D1A37_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_MonoBtlsSelectCallback_t94D7F9E6194E0CC0F6D20A02709C3991261BEFAE();
+IL2CPP_EXTERN_C_CONST RuntimeType MonoBtlsSelectCallback_t94D7F9E6194E0CC0F6D20A02709C3991261BEFAE_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_MonoBtlsServerNameCallback_t157678673B6A4D619EE32B5F453ECACF3BE430EA();
+IL2CPP_EXTERN_C_CONST RuntimeType MonoBtlsServerNameCallback_t157678673B6A4D619EE32B5F453ECACF3BE430EA_0_0_0;
 IL2CPP_EXTERN_C void MonoEventInfo_tFC31A64CF7C2FC93D54A539434B3C403FC924777_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void MonoEventInfo_tFC31A64CF7C2FC93D54A539434B3C403FC924777_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MonoEventInfo_tFC31A64CF7C2FC93D54A539434B3C403FC924777_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -517,6 +1314,10 @@ IL2CPP_EXTERN_C void MovedFromAttributeData_t03CC6A15A3D30385AF3C6E10FA273DE13D8
 IL2CPP_EXTERN_C void MovedFromAttributeData_t03CC6A15A3D30385AF3C6E10FA273DE13D874A2F_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MovedFromAttributeData_t03CC6A15A3D30385AF3C6E10FA273DE13D874A2F_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType MovedFromAttributeData_t03CC6A15A3D30385AF3C6E10FA273DE13D874A2F_0_0_0;
+IL2CPP_EXTERN_C void Mp3Format_t44E6D66636BDCCCDA81AC4E5C79D8E3248D0A1D7_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void Mp3Format_t44E6D66636BDCCCDA81AC4E5C79D8E3248D0A1D7_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void Mp3Format_t44E6D66636BDCCCDA81AC4E5C79D8E3248D0A1D7_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType Mp3Format_t44E6D66636BDCCCDA81AC4E5C79D8E3248D0A1D7_0_0_0;
 IL2CPP_EXTERN_C void MulticastDelegate_t_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void MulticastDelegate_t_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MulticastDelegate_t_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -551,6 +1352,12 @@ IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marsh
 IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0;
+IL2CPP_EXTERN_C void ParsingInfo_t1717753431089DD2385D3739360CF85BDB410F89_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ParsingInfo_t1717753431089DD2385D3739360CF85BDB410F89_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ParsingInfo_t1717753431089DD2385D3739360CF85BDB410F89_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ParsingInfo_t1717753431089DD2385D3739360CF85BDB410F89_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_PerformDynamicRes_t0949EAA6943CF225A1F61B233E13A440C1C09B47();
+IL2CPP_EXTERN_C_CONST RuntimeType PerformDynamicRes_t0949EAA6943CF225A1F61B233E13A440C1C09B47_0_0_0;
 IL2CPP_EXTERN_C void PhotoCapture_t268971E77CE9FFE83CCCE1F07F8CFE3013A461ED_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void PhotoCapture_t268971E77CE9FFE83CCCE1F07F8CFE3013A461ED_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void PhotoCapture_t268971E77CE9FFE83CCCE1F07F8CFE3013A461ED_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -575,10 +1382,36 @@ IL2CPP_EXTERN_C void PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marsha
 IL2CPP_EXTERN_C void PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType PointLight_tD01A1428DC1015D98A527136034187F732433EA7_0_0_0;
+IL2CPP_EXTERN_C void ProbeDilationSettings_t28A862582E313EFC300E6437FDCB9D9DC9A9A167_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ProbeDilationSettings_t28A862582E313EFC300E6437FDCB9D9DC9A9A167_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ProbeDilationSettings_t28A862582E313EFC300E6437FDCB9D9DC9A9A167_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ProbeDilationSettings_t28A862582E313EFC300E6437FDCB9D9DC9A9A167_0_0_0;
+IL2CPP_EXTERN_C void ProbeVolumeBakingProcessSettings_t1A0C71DD07CFB6660AFC0D3EBF81FA5064CFDAD7_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ProbeVolumeBakingProcessSettings_t1A0C71DD07CFB6660AFC0D3EBF81FA5064CFDAD7_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ProbeVolumeBakingProcessSettings_t1A0C71DD07CFB6660AFC0D3EBF81FA5064CFDAD7_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ProbeVolumeBakingProcessSettings_t1A0C71DD07CFB6660AFC0D3EBF81FA5064CFDAD7_0_0_0;
+IL2CPP_EXTERN_C void ProbeVolumeShadingParameters_t2A2468B1474F1F66585CDA9999C46CBF88701641_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ProbeVolumeShadingParameters_t2A2468B1474F1F66585CDA9999C46CBF88701641_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ProbeVolumeShadingParameters_t2A2468B1474F1F66585CDA9999C46CBF88701641_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ProbeVolumeShadingParameters_t2A2468B1474F1F66585CDA9999C46CBF88701641_0_0_0;
+IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0;
+IL2CPP_EXTERN_C void ProfilingSample_t50A4DFD8DA524681EE1BF64D3A518E6BA633657A_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ProfilingSample_t50A4DFD8DA524681EE1BF64D3A518E6BA633657A_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ProfilingSample_t50A4DFD8DA524681EE1BF64D3A518E6BA633657A_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ProfilingSample_t50A4DFD8DA524681EE1BF64D3A518E6BA633657A_0_0_0;
 IL2CPP_EXTERN_C void PropertyMember_t4A07D86E6B1554D28A1679F276FA9F9A6E1FD984_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void PropertyMember_t4A07D86E6B1554D28A1679F276FA9F9A6E1FD984_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void PropertyMember_t4A07D86E6B1554D28A1679F276FA9F9A6E1FD984_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType PropertyMember_t4A07D86E6B1554D28A1679F276FA9F9A6E1FD984_0_0_0;
+const Il2CppGuid PropertyStore_t6047D2AF2EB617E0BFD4865B75950C700EB02342::CLSID = { 0x886d8eeb, 0x8cf2, 0x4446, 0x8d, 0x2, 0xcd, 0xba, 0x1d, 0xbd, 0xcf, 0x99 };
+IL2CPP_EXTERN_C_CONST RuntimeType PropertyStore_t6047D2AF2EB617E0BFD4865B75950C700EB02342_0_0_0;
+IL2CPP_EXTERN_C void RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_0_0_0;
 IL2CPP_EXTERN_C void RareData_t2F466D955456C8E8898324C284948FCB0F4D6F26_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void RareData_t2F466D955456C8E8898324C284948FCB0F4D6F26_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void RareData_t2F466D955456C8E8898324C284948FCB0F4D6F26_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -623,6 +1456,42 @@ IL2CPP_EXTERN_C void RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847
 IL2CPP_EXTERN_C void RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_0_0_0;
+IL2CPP_EXTERN_C void RenderGraphBuilder_t8AEC7329276477A095C2D889D3361085DD1A1FFC_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RenderGraphBuilder_t8AEC7329276477A095C2D889D3361085DD1A1FFC_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RenderGraphBuilder_t8AEC7329276477A095C2D889D3361085DD1A1FFC_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RenderGraphBuilder_t8AEC7329276477A095C2D889D3361085DD1A1FFC_0_0_0;
+IL2CPP_EXTERN_C void RenderGraphExecution_t6DD852CD6BF4AB57D2D963BA7DA449A218DD0529_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RenderGraphExecution_t6DD852CD6BF4AB57D2D963BA7DA449A218DD0529_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RenderGraphExecution_t6DD852CD6BF4AB57D2D963BA7DA449A218DD0529_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RenderGraphExecution_t6DD852CD6BF4AB57D2D963BA7DA449A218DD0529_0_0_0;
+IL2CPP_EXTERN_C void RenderGraphLogIndent_tF9C4FBEEBE5BC22C223A368FD757DB647CD5C8E5_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RenderGraphLogIndent_tF9C4FBEEBE5BC22C223A368FD757DB647CD5C8E5_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RenderGraphLogIndent_tF9C4FBEEBE5BC22C223A368FD757DB647CD5C8E5_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RenderGraphLogIndent_tF9C4FBEEBE5BC22C223A368FD757DB647CD5C8E5_0_0_0;
+IL2CPP_EXTERN_C void RenderGraphParameters_t09D9F272548DFFBB836A53B48E15EA3D8FEA4BCA_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RenderGraphParameters_t09D9F272548DFFBB836A53B48E15EA3D8FEA4BCA_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RenderGraphParameters_t09D9F272548DFFBB836A53B48E15EA3D8FEA4BCA_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RenderGraphParameters_t09D9F272548DFFBB836A53B48E15EA3D8FEA4BCA_0_0_0;
+IL2CPP_EXTERN_C void RenderGraphProfilingScope_t1FFE4E5C53237490107027CBCCA6684B111C28C0_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RenderGraphProfilingScope_t1FFE4E5C53237490107027CBCCA6684B111C28C0_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RenderGraphProfilingScope_t1FFE4E5C53237490107027CBCCA6684B111C28C0_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RenderGraphProfilingScope_t1FFE4E5C53237490107027CBCCA6684B111C28C0_0_0_0;
+IL2CPP_EXTERN_C void RendererListDesc_t5C51B75B4D539F99345A077545015B8FB99FE78E_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RendererListDesc_t5C51B75B4D539F99345A077545015B8FB99FE78E_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RendererListDesc_t5C51B75B4D539F99345A077545015B8FB99FE78E_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RendererListDesc_t5C51B75B4D539F99345A077545015B8FB99FE78E_0_0_0;
+IL2CPP_EXTERN_C void RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_0_0_0;
+IL2CPP_EXTERN_C void RendererListParams_t13F72282BCE2DC255747FE7694C6BBC3377944B1_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RendererListParams_t13F72282BCE2DC255747FE7694C6BBC3377944B1_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RendererListParams_t13F72282BCE2DC255747FE7694C6BBC3377944B1_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RendererListParams_t13F72282BCE2DC255747FE7694C6BBC3377944B1_0_0_0;
+IL2CPP_EXTERN_C void RendererListResource_t9B978DD85ADC467D7E4DB42EF603B7C49918BF49_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RendererListResource_t9B978DD85ADC467D7E4DB42EF603B7C49918BF49_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RendererListResource_t9B978DD85ADC467D7E4DB42EF603B7C49918BF49_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RendererListResource_t9B978DD85ADC467D7E4DB42EF603B7C49918BF49_0_0_0;
 IL2CPP_EXTERN_C void ResourceLocator_t84F68A0DD2AA185761938E49BBE9B2C46A47E122_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ResourceLocator_t84F68A0DD2AA185761938E49BBE9B2C46A47E122_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ResourceLocator_t84F68A0DD2AA185761938E49BBE9B2C46A47E122_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -651,6 +1520,10 @@ IL2CPP_EXTERN_C void RuntimeModule_tF7DA9B52FC45487544703DCA49464B67CEA79633_mar
 IL2CPP_EXTERN_C void RuntimeModule_tF7DA9B52FC45487544703DCA49464B67CEA79633_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void RuntimeModule_tF7DA9B52FC45487544703DCA49464B67CEA79633_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType RuntimeModule_tF7DA9B52FC45487544703DCA49464B67CEA79633_0_0_0;
+IL2CPP_EXTERN_C void STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_0_0_0;
 IL2CPP_EXTERN_C void SafeStringMarshal_t37C5C4D85118BDD5A55E3A20736550CF11C76C2E_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void SafeStringMarshal_t37C5C4D85118BDD5A55E3A20736550CF11C76C2E_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void SafeStringMarshal_t37C5C4D85118BDD5A55E3A20736550CF11C76C2E_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -665,10 +1538,20 @@ IL2CPP_EXTERN_C void Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshal_pin
 IL2CPP_EXTERN_C void Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_ScaleFunc_t423F661DAD5C7A18F509C8F1F62C9D6AEA9A9791();
+IL2CPP_EXTERN_C_CONST RuntimeType ScaleFunc_t423F661DAD5C7A18F509C8F1F62C9D6AEA9A9791_0_0_0;
+IL2CPP_EXTERN_C void ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899_0_0_0;
 IL2CPP_EXTERN_C void ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_0_0_0;
+IL2CPP_EXTERN_C void SecondarySpriteTexture_tAB48BE37F20C61C85B24FB2E38F751082AF1A07B_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void SecondarySpriteTexture_tAB48BE37F20C61C85B24FB2E38F751082AF1A07B_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void SecondarySpriteTexture_tAB48BE37F20C61C85B24FB2E38F751082AF1A07B_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType SecondarySpriteTexture_tAB48BE37F20C61C85B24FB2E38F751082AF1A07B_0_0_0;
 IL2CPP_EXTERN_C void SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -687,10 +1570,24 @@ IL2CPP_EXTERN_C void SetupDragAndDropArgs_t3D6B6745EDF8BA073395EFEFA50B007FE9419
 IL2CPP_EXTERN_C void SetupDragAndDropArgs_t3D6B6745EDF8BA073395EFEFA50B007FE94190F2_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void SetupDragAndDropArgs_t3D6B6745EDF8BA073395EFEFA50B007FE94190F2_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType SetupDragAndDropArgs_t3D6B6745EDF8BA073395EFEFA50B007FE94190F2_0_0_0;
+IL2CPP_EXTERN_C void ShaderDebugPrintInput_tAA3D285B61C21C127B4E4F3515343E1A761E3872_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ShaderDebugPrintInput_tAA3D285B61C21C127B4E4F3515343E1A761E3872_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ShaderDebugPrintInput_tAA3D285B61C21C127B4E4F3515343E1A761E3872_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ShaderDebugPrintInput_tAA3D285B61C21C127B4E4F3515343E1A761E3872_0_0_0;
+IL2CPP_EXTERN_C void ShaderKeyword_t683126BB2B2337DB41954B0FE0DA7EBAA7028661_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ShaderKeyword_t683126BB2B2337DB41954B0FE0DA7EBAA7028661_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ShaderKeyword_t683126BB2B2337DB41954B0FE0DA7EBAA7028661_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ShaderKeyword_t683126BB2B2337DB41954B0FE0DA7EBAA7028661_0_0_0;
+const Il2CppGuid SimpleAudioVolume_t10546E0C7A0DD41441ED294557BB88926DAB50A7::CLSID = { 0x87ce5498, 0x68d6, 0x44e5, 0x92, 0x15, 0x6d, 0xa4, 0x7e, 0xf8, 0x83, 0xd8 };
+IL2CPP_EXTERN_C_CONST RuntimeType SimpleAudioVolume_t10546E0C7A0DD41441ED294557BB88926DAB50A7_0_0_0;
 IL2CPP_EXTERN_C void SkeletonBone_tA999028EED923DB65E286BB99F81541872F5B126_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void SkeletonBone_tA999028EED923DB65E286BB99F81541872F5B126_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void SkeletonBone_tA999028EED923DB65E286BB99F81541872F5B126_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType SkeletonBone_tA999028EED923DB65E286BB99F81541872F5B126_0_0_0;
+IL2CPP_EXTERN_C void Sky_t5AB138933D60CB215B9FBA33CB82283A2F743A14_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void Sky_t5AB138933D60CB215B9FBA33CB82283A2F743A14_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void Sky_t5AB138933D60CB215B9FBA33CB82283A2F743A14_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType Sky_t5AB138933D60CB215B9FBA33CB82283A2F743A14_0_0_0;
 IL2CPP_EXTERN_C void SocketAsyncResult_tB157B0D0A1219D5A71AC5030C8BA8EA9D0F25340_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void SocketAsyncResult_tB157B0D0A1219D5A71AC5030C8BA8EA9D0F25340_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void SocketAsyncResult_tB157B0D0A1219D5A71AC5030C8BA8EA9D0F25340_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -815,6 +1712,10 @@ IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_mar
 IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0;
+IL2CPP_EXTERN_C void TextureDesc_tBD9644C6170930E57EEF8542E9200AD9D858B601_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void TextureDesc_tBD9644C6170930E57EEF8542E9200AD9D858B601_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void TextureDesc_tBD9644C6170930E57EEF8542E9200AD9D858B601_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType TextureDesc_tBD9644C6170930E57EEF8542E9200AD9D858B601_0_0_0;
 IL2CPP_EXTERN_C void TextureEntry_tDA3A5BB083FA16C7123AF227C5D7F78860665128_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void TextureEntry_tDA3A5BB083FA16C7123AF227C5D7F78860665128_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void TextureEntry_tDA3A5BB083FA16C7123AF227C5D7F78860665128_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -889,10 +1790,18 @@ IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_m
 IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0;
+IL2CPP_EXTERN_C void ValueStringBuilder_tEBD54C46E3AF8527BD0D234124F5C1AC14E9E251_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ValueStringBuilder_tEBD54C46E3AF8527BD0D234124F5C1AC14E9E251_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ValueStringBuilder_tEBD54C46E3AF8527BD0D234124F5C1AC14E9E251_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ValueStringBuilder_tEBD54C46E3AF8527BD0D234124F5C1AC14E9E251_0_0_0;
 IL2CPP_EXTERN_C void ValueStringBuilder_tC142140E6C0B9CD2BA423636F1BB5822672673E9_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ValueStringBuilder_tC142140E6C0B9CD2BA423636F1BB5822672673E9_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ValueStringBuilder_tC142140E6C0B9CD2BA423636F1BB5822672673E9_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType ValueStringBuilder_tC142140E6C0B9CD2BA423636F1BB5822672673E9_0_0_0;
+IL2CPP_EXTERN_C void ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A_0_0_0;
 IL2CPP_EXTERN_C void ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -901,14 +1810,28 @@ IL2CPP_EXTERN_C void VideoCapture_t4FC0DEDE3146D8313C7CD8B8B9D8EFB868CACD7B_mars
 IL2CPP_EXTERN_C void VideoCapture_t4FC0DEDE3146D8313C7CD8B8B9D8EFB868CACD7B_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void VideoCapture_t4FC0DEDE3146D8313C7CD8B8B9D8EFB868CACD7B_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType VideoCapture_t4FC0DEDE3146D8313C7CD8B8B9D8EFB868CACD7B_0_0_0;
+IL2CPP_EXTERN_C void VirtualOffsetSettings_tC91F136546790A8318F26B183DCB14460F426A44_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void VirtualOffsetSettings_tC91F136546790A8318F26B183DCB14460F426A44_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void VirtualOffsetSettings_tC91F136546790A8318F26B183DCB14460F426A44_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType VirtualOffsetSettings_tC91F136546790A8318F26B183DCB14460F426A44_0_0_0;
 IL2CPP_EXTERN_C void VisualData_t64B2C5387387BCEC426F3981BECC8582A02D3F1B_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void VisualData_t64B2C5387387BCEC426F3981BECC8582A02D3F1B_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void VisualData_t64B2C5387387BCEC426F3981BECC8582A02D3F1B_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType VisualData_t64B2C5387387BCEC426F3981BECC8582A02D3F1B_0_0_0;
+IL2CPP_EXTERN_C void VisualEffectPlayableSerializedEvent_t81FFD0AB85C7A0D22E898F03776FD3513BB4B4C1_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void VisualEffectPlayableSerializedEvent_t81FFD0AB85C7A0D22E898F03776FD3513BB4B4C1_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void VisualEffectPlayableSerializedEvent_t81FFD0AB85C7A0D22E898F03776FD3513BB4B4C1_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType VisualEffectPlayableSerializedEvent_t81FFD0AB85C7A0D22E898F03776FD3513BB4B4C1_0_0_0;
+IL2CPP_EXTERN_C void VisualEffectPlayableSerializedEventNoColor_t24C9BB23681EA5BA1533E8A0B9829179FD90A202_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void VisualEffectPlayableSerializedEventNoColor_t24C9BB23681EA5BA1533E8A0B9829179FD90A202_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void VisualEffectPlayableSerializedEventNoColor_t24C9BB23681EA5BA1533E8A0B9829179FD90A202_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType VisualEffectPlayableSerializedEventNoColor_t24C9BB23681EA5BA1533E8A0B9829179FD90A202_0_0_0;
 IL2CPP_EXTERN_C void VisualElementStyleSheetSet_t01465769E0D9109A677300311A7058701873A23B_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void VisualElementStyleSheetSet_t01465769E0D9109A677300311A7058701873A23B_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void VisualElementStyleSheetSet_t01465769E0D9109A677300311A7058701873A23B_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType VisualElementStyleSheetSet_t01465769E0D9109A677300311A7058701873A23B_0_0_0;
+const Il2CppGuid WMResamplerProps_t9DA1198EB37C762439295DA5D0E03B40F9834A46::CLSID = { 0xe7e9984f, 0xf09f, 0x4da4, 0x90, 0x3f, 0x6e, 0x2e, 0xe, 0xfe, 0x56, 0xb5 };
+IL2CPP_EXTERN_C_CONST RuntimeType WMResamplerProps_t9DA1198EB37C762439295DA5D0E03B40F9834A46_0_0_0;
 IL2CPP_EXTERN_C void WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -917,10 +1840,60 @@ IL2CPP_EXTERN_C void WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_marsha
 IL2CPP_EXTERN_C void WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_WaveCallback_tA51B97F90574E048047043BEC1CD28F376CFF69E();
+IL2CPP_EXTERN_C_CONST RuntimeType WaveCallback_tA51B97F90574E048047043BEC1CD28F376CFF69E_0_0_0;
+IL2CPP_EXTERN_C void WaveFormat_t02C57DD28F467ABB277C38DA4D2F6A381C723BB7_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void WaveFormat_t02C57DD28F467ABB277C38DA4D2F6A381C723BB7_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void WaveFormat_t02C57DD28F467ABB277C38DA4D2F6A381C723BB7_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType WaveFormat_t02C57DD28F467ABB277C38DA4D2F6A381C723BB7_0_0_0;
+IL2CPP_EXTERN_C void WaveFormatExtensible_t7E82B7BAB354A4E2C61162CD97F01961AD67C5A4_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void WaveFormatExtensible_t7E82B7BAB354A4E2C61162CD97F01961AD67C5A4_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void WaveFormatExtensible_t7E82B7BAB354A4E2C61162CD97F01961AD67C5A4_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType WaveFormatExtensible_t7E82B7BAB354A4E2C61162CD97F01961AD67C5A4_0_0_0;
+IL2CPP_EXTERN_C void WaveHeader_tA3F0F72A8655D36C341EF8BF8A31225560A340CC_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void WaveHeader_tA3F0F72A8655D36C341EF8BF8A31225560A340CC_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void WaveHeader_tA3F0F72A8655D36C341EF8BF8A31225560A340CC_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType WaveHeader_tA3F0F72A8655D36C341EF8BF8A31225560A340CC_0_0_0;
+IL2CPP_EXTERN_C void WaveInCaps_tF8056D424ABD2F660F33FDEB2FFFE4FF2D87D0F0_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void WaveInCaps_tF8056D424ABD2F660F33FDEB2FFFE4FF2D87D0F0_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void WaveInCaps_tF8056D424ABD2F660F33FDEB2FFFE4FF2D87D0F0_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType WaveInCaps_tF8056D424ABD2F660F33FDEB2FFFE4FF2D87D0F0_0_0_0;
+IL2CPP_EXTERN_C void WaveOutCaps_tEFDF763DF70572654833E5FE762AD5AD78DB9D9D_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void WaveOutCaps_tEFDF763DF70572654833E5FE762AD5AD78DB9D9D_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void WaveOutCaps_tEFDF763DF70572654833E5FE762AD5AD78DB9D9D_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType WaveOutCaps_tEFDF763DF70572654833E5FE762AD5AD78DB9D9D_0_0_0;
+IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_0_0_0;
+IL2CPP_EXTERN_C void Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_WindowFunction_t6537225961A2767DE7AB58BFAC26EEFBEA2339EB();
+IL2CPP_EXTERN_C_CONST RuntimeType WindowFunction_t6537225961A2767DE7AB58BFAC26EEFBEA2339EB_0_0_0;
 IL2CPP_EXTERN_C void WordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void WordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void WordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType WordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123_0_0_0;
+IL2CPP_EXTERN_C void X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_0_0_0;
+const Il2CppGuid XAudio2_t6153C040CDB05394D4688EA9D1F7B57E74759DAE::CLSID = { 0x60d8dac8, 0x5aa1, 0x4e8e, 0xb5, 0x97, 0x2f, 0x5e, 0x28, 0x83, 0xd4, 0x84 };
+IL2CPP_EXTERN_C_CONST RuntimeType XAudio2_t6153C040CDB05394D4688EA9D1F7B57E74759DAE_0_0_0;
+const Il2CppGuid XAudio2_7_t00FCD1F431CD6BBC03BE5F00291BDF4021829FF7::CLSID = { 0x8bcf1f58, 0x9fe7, 0x4583, 0x8a, 0xc6, 0xe2, 0xad, 0xc4, 0x65, 0xc8, 0xbb };
+IL2CPP_EXTERN_C_CONST RuntimeType XAudio2_7_t00FCD1F431CD6BBC03BE5F00291BDF4021829FF7_0_0_0;
+const Il2CppGuid XAudio2_8_t8EC2D7A76A16B8E9F049B7004ED8E1D380853721::CLSID = { 0x60d8dac8, 0x5aa1, 0x4e8e, 0xb5, 0x97, 0x2f, 0x5e, 0x28, 0x83, 0xd4, 0x84 };
+IL2CPP_EXTERN_C_CONST RuntimeType XAudio2_8_t8EC2D7A76A16B8E9F049B7004ED8E1D380853721_0_0_0;
+IL2CPP_EXTERN_C void XRPassCreateInfo_tBB279E651A4D9CBEB6A76FCBB138D7AB7A05DCA1_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void XRPassCreateInfo_tBB279E651A4D9CBEB6A76FCBB138D7AB7A05DCA1_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void XRPassCreateInfo_tBB279E651A4D9CBEB6A76FCBB138D7AB7A05DCA1_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType XRPassCreateInfo_tBB279E651A4D9CBEB6A76FCBB138D7AB7A05DCA1_0_0_0;
+IL2CPP_EXTERN_C void XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_0_0_0;
 IL2CPP_EXTERN_C void YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -985,6 +1958,18 @@ IL2CPP_EXTERN_C void DelegatePInvokeWrapper_ValidateBoneWeights_00000116U24Postf
 IL2CPP_EXTERN_C_CONST RuntimeType ValidateBoneWeights_00000116U24PostfixBurstDelegate_tA5DD301A516885745B6C1CD2345B7837CB6E23E3_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC();
 IL2CPP_EXTERN_C_CONST RuntimeType WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC_0_0_0;
+IL2CPP_EXTERN_C void AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_0_0_0;
+IL2CPP_EXTERN_C void ConfiguredTaskAwaiter_t6D4C5E6B82017ED33DAFA1EFC33B0EFBE3137618_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ConfiguredTaskAwaiter_t6D4C5E6B82017ED33DAFA1EFC33B0EFBE3137618_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ConfiguredTaskAwaiter_t6D4C5E6B82017ED33DAFA1EFC33B0EFBE3137618_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ConfiguredTaskAwaiter_t6D4C5E6B82017ED33DAFA1EFC33B0EFBE3137618_0_0_0;
+IL2CPP_EXTERN_C void RecognizedAttribute_t67AAD871D05C66CFF976B98E4492B979993FB7D3_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RecognizedAttribute_t67AAD871D05C66CFF976B98E4492B979993FB7D3_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RecognizedAttribute_t67AAD871D05C66CFF976B98E4492B979993FB7D3_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RecognizedAttribute_t67AAD871D05C66CFF976B98E4492B979993FB7D3_0_0_0;
 IL2CPP_EXTERN_C void ProcessMessageRes_t6B49D2FAE01AC95889FDF8F854970E358D2AC2C7_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ProcessMessageRes_t6B49D2FAE01AC95889FDF8F854970E358D2AC2C7_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ProcessMessageRes_t6B49D2FAE01AC95889FDF8F854970E358D2AC2C7_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1119,6 +2104,12 @@ IL2CPP_EXTERN_C void FocusBasedEventSequenceContext_tA9E2ED024CB3E4EC3C41F5B432A
 IL2CPP_EXTERN_C void FocusBasedEventSequenceContext_tA9E2ED024CB3E4EC3C41F5B432AB56D892D69BF0_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void FocusBasedEventSequenceContext_tA9E2ED024CB3E4EC3C41F5B432AB56D892D69BF0_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType FocusBasedEventSequenceContext_tA9E2ED024CB3E4EC3C41F5B432AB56D892D69BF0_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_ReadMethod_t87B67872818F82B3DCC067C0DD9BB47200327CE6();
+IL2CPP_EXTERN_C_CONST RuntimeType ReadMethod_t87B67872818F82B3DCC067C0DD9BB47200327CE6_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_WriteMethod_t43391B800F1C3F6EFEEFCBADF4D3322CBFB42AB9();
+IL2CPP_EXTERN_C_CONST RuntimeType WriteMethod_t43391B800F1C3F6EFEEFCBADF4D3322CBFB42AB9_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_UnmanagedReadOrWrite_t3705731796B1AD7D7A711D794FF08961B623E9BA();
+IL2CPP_EXTERN_C_CONST RuntimeType UnmanagedReadOrWrite_t3705731796B1AD7D7A711D794FF08961B623E9BA_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_DictationCompletedDelegate_t83D7F1A9EC8225F6C405F0936EEEA031F75E93C7();
 IL2CPP_EXTERN_C_CONST RuntimeType DictationCompletedDelegate_t83D7F1A9EC8225F6C405F0936EEEA031F75E93C7_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_DictationErrorHandler_t3B40C491B80EBCEC860A8ABF490B6A13B129AC6D();
@@ -1129,6 +2120,26 @@ IL2CPP_EXTERN_C void DelegatePInvokeWrapper_DictationResultDelegate_t09DC18A221E
 IL2CPP_EXTERN_C_CONST RuntimeType DictationResultDelegate_t09DC18A221E33F1C0E26AB3363F4004240FBCFC6_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68();
 IL2CPP_EXTERN_C_CONST RuntimeType DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68_0_0_0;
+const Il2CppGuid DmoChorusEffectObject_tDF6B4EE8C928D105B514DE850681DD0882747184::CLSID = { 0xefe6629c, 0x81f7, 0x4281, 0xbd, 0x91, 0xc9, 0xd6, 0x4, 0xa9, 0x5a, 0xf6 };
+IL2CPP_EXTERN_C_CONST RuntimeType DmoChorusEffectObject_tDF6B4EE8C928D105B514DE850681DD0882747184_0_0_0;
+const Il2CppGuid DmoCompressorEffectObject_tE99A40906862C354A922D931D8CA04F51DD2A9F5::CLSID = { 0xef011f79, 0x4000, 0x406d, 0x87, 0xaf, 0xbf, 0xfb, 0x3f, 0xc3, 0x9d, 0x57 };
+IL2CPP_EXTERN_C_CONST RuntimeType DmoCompressorEffectObject_tE99A40906862C354A922D931D8CA04F51DD2A9F5_0_0_0;
+const Il2CppGuid DmoDistortionEffectObject_t6864513EC1FBB42E7C3F85E94E79B184CD2B6B57::CLSID = { 0xef114c90, 0xcd1d, 0x484e, 0x96, 0xe5, 0x9, 0xcf, 0xaf, 0x91, 0x2a, 0x21 };
+IL2CPP_EXTERN_C_CONST RuntimeType DmoDistortionEffectObject_t6864513EC1FBB42E7C3F85E94E79B184CD2B6B57_0_0_0;
+const Il2CppGuid DmoEchoEffectObject_t4486D7618A8447A34CEBA4B492536EAE4B51630F::CLSID = { 0xef3e932c, 0xd40b, 0x4f51, 0x8c, 0xcf, 0x3f, 0x98, 0xf1, 0xb2, 0x9d, 0x5d };
+IL2CPP_EXTERN_C_CONST RuntimeType DmoEchoEffectObject_t4486D7618A8447A34CEBA4B492536EAE4B51630F_0_0_0;
+const Il2CppGuid DmoFlangerEffectObject_t1673F9060582B282ABB707D27AE685AA2CA39B9F::CLSID = { 0xefca3d92, 0xdfd8, 0x4672, 0xa6, 0x3, 0x74, 0x20, 0x89, 0x4b, 0xad, 0x98 };
+IL2CPP_EXTERN_C_CONST RuntimeType DmoFlangerEffectObject_t1673F9060582B282ABB707D27AE685AA2CA39B9F_0_0_0;
+const Il2CppGuid DmoGargleEffectObject_t23676DD0F70F6294AC1F64EEF9E1F884965494BE::CLSID = { 0xdafd8210, 0x5711, 0x4b91, 0x9f, 0xe3, 0xf7, 0x5b, 0x7a, 0xe2, 0x79, 0xbf };
+IL2CPP_EXTERN_C_CONST RuntimeType DmoGargleEffectObject_t23676DD0F70F6294AC1F64EEF9E1F884965494BE_0_0_0;
+const Il2CppGuid DmoMP3DecoderObject_t1B427364B60EAEEC1B4059CC87A09C655F91A7E9::CLSID = { 0xbbeea841, 0xa63, 0x4f52, 0xa7, 0xab, 0xa9, 0xb3, 0xa8, 0x4e, 0xd3, 0x8a };
+IL2CPP_EXTERN_C_CONST RuntimeType DmoMP3DecoderObject_t1B427364B60EAEEC1B4059CC87A09C655F91A7E9_0_0_0;
+const Il2CppGuid DmoWavesReverbEffectObject_tB1F1F427817EA8F743B996A97554964F974EE936::CLSID = { 0x87fc0268, 0x9a55, 0x4360, 0x95, 0xaa, 0x0, 0x4a, 0x1d, 0x9d, 0xe2, 0x6c };
+IL2CPP_EXTERN_C_CONST RuntimeType DmoWavesReverbEffectObject_tB1F1F427817EA8F743B996A97554964F974EE936_0_0_0;
+IL2CPP_EXTERN_C void ScalerContainer_t8C9EBECAB45F9B7C806AF9F477262E5F80F5E375_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ScalerContainer_t8C9EBECAB45F9B7C806AF9F477262E5F80F5E375_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ScalerContainer_t8C9EBECAB45F9B7C806AF9F477262E5F80F5E375_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ScalerContainer_t8C9EBECAB45F9B7C806AF9F477262E5F80F5E375_0_0_0;
 IL2CPP_EXTERN_C void EnumResult_t136A685F59AB498579BD350717FADD4D6603DAB4_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void EnumResult_t136A685F59AB498579BD350717FADD4D6603DAB4_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void EnumResult_t136A685F59AB498579BD350717FADD4D6603DAB4_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1179,6 +2190,10 @@ IL2CPP_EXTERN_C void bucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_marshal_pi
 IL2CPP_EXTERN_C void bucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void bucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType bucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_0_0_0;
+IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0;
 IL2CPP_EXTERN_C void GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1199,6 +2214,10 @@ IL2CPP_EXTERN_C void Reader_t77F3745416303EC22BC31DD74525DB04E7501DB6_marshal_pi
 IL2CPP_EXTERN_C void Reader_t77F3745416303EC22BC31DD74525DB04E7501DB6_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void Reader_t77F3745416303EC22BC31DD74525DB04E7501DB6_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType Reader_t77F3745416303EC22BC31DD74525DB04E7501DB6_0_0_0;
+const Il2CppGuid MMDeviceEnumeratorObject_tC0E4AC99CF4526E80C07911108C2554A71CBEB12::CLSID = { 0xbcde0395, 0xe52f, 0x467c, 0x8e, 0x3d, 0xc4, 0x57, 0x92, 0x91, 0x69, 0x2e };
+IL2CPP_EXTERN_C_CONST RuntimeType MMDeviceEnumeratorObject_tC0E4AC99CF4526E80C07911108C2554A71CBEB12_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_SecureStringAllocator_t261B9D6083129A0996138F50A608D9F5E4C6DC44();
+IL2CPP_EXTERN_C_CONST RuntimeType SecureStringAllocator_t261B9D6083129A0996138F50A608D9F5E4C6DC44_0_0_0;
 IL2CPP_EXTERN_C void AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1211,6 +2230,22 @@ IL2CPP_EXTERN_C void RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_m
 IL2CPP_EXTERN_C void RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_BioControlFunc_tA25CF03804268D67A2A2298BA7CF0304908E1164();
+IL2CPP_EXTERN_C_CONST RuntimeType BioControlFunc_tA25CF03804268D67A2A2298BA7CF0304908E1164_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_BioReadFunc_t13D991FB24C42BE3A5866565A417A46DAFCE2182();
+IL2CPP_EXTERN_C_CONST RuntimeType BioReadFunc_t13D991FB24C42BE3A5866565A417A46DAFCE2182_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_BioWriteFunc_t7F203B8BD307C07BC5C115240617DC2098776716();
+IL2CPP_EXTERN_C_CONST RuntimeType BioWriteFunc_t7F203B8BD307C07BC5C115240617DC2098776716_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_PrintErrorsCallbackFunc_t269F5AA2AEDE407790495E35615D581F8E57DAF1();
+IL2CPP_EXTERN_C_CONST RuntimeType PrintErrorsCallbackFunc_t269F5AA2AEDE407790495E35615D581F8E57DAF1_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_NativeSelectFunc_tB8204D9DD01EEA6E46BA2FDD005653A259AD8FCA();
+IL2CPP_EXTERN_C_CONST RuntimeType NativeSelectFunc_tB8204D9DD01EEA6E46BA2FDD005653A259AD8FCA_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_NativeServerNameFunc_tD685BC5D92B7FF9953F0BEB205BCF1BF9A2211FA();
+IL2CPP_EXTERN_C_CONST RuntimeType NativeServerNameFunc_tD685BC5D92B7FF9953F0BEB205BCF1BF9A2211FA_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_NativeVerifyFunc_t90E561336E71A9644B88DCC9CDD6A63CE98667E7();
+IL2CPP_EXTERN_C_CONST RuntimeType NativeVerifyFunc_t90E561336E71A9644B88DCC9CDD6A63CE98667E7_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_BySubjectFunc_t68E2B6BCEAD254F4C66501F0987E52D5ED8CF8DE();
+IL2CPP_EXTERN_C_CONST RuntimeType BySubjectFunc_t68E2B6BCEAD254F4C66501F0987E52D5ED8CF8DE_0_0_0;
 IL2CPP_EXTERN_C void SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1231,6 +2266,14 @@ IL2CPP_EXTERN_C void EmitParams_tE76279CE754C7B0A4ECDA7E294587AACB039FBA0_marsha
 IL2CPP_EXTERN_C void EmitParams_tE76279CE754C7B0A4ECDA7E294587AACB039FBA0_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void EmitParams_tE76279CE754C7B0A4ECDA7E294587AACB039FBA0_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType EmitParams_tE76279CE754C7B0A4ECDA7E294587AACB039FBA0_0_0_0;
+IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0;
+IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_OnCaptureResourceCreatedCallback_tA8D1E423E6D2EB046CA66BF468199752BA2A882B();
 IL2CPP_EXTERN_C_CONST RuntimeType OnCaptureResourceCreatedCallback_tA8D1E423E6D2EB046CA66BF468199752BA2A882B_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_OnCapturedToDiskCallback_t184CFBFA312A113D865AB3348AD2FCC9F2B8C87A();
@@ -1253,6 +2296,38 @@ IL2CPP_EXTERN_C void PointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6_m
 IL2CPP_EXTERN_C void PointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void PointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType PointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6_0_0_0;
+IL2CPP_EXTERN_C void DataLocation_t34FC6B68E8194966FC3C075EF4227E1522CB53BB_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void DataLocation_t34FC6B68E8194966FC3C075EF4227E1522CB53BB_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void DataLocation_t34FC6B68E8194966FC3C075EF4227E1522CB53BB_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType DataLocation_t34FC6B68E8194966FC3C075EF4227E1522CB53BB_0_0_0;
+IL2CPP_EXTERN_C void RuntimeResources_t4E5CAC2636FAF22D782E64516AA05B704BE5ACA4_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void RuntimeResources_t4E5CAC2636FAF22D782E64516AA05B704BE5ACA4_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void RuntimeResources_t4E5CAC2636FAF22D782E64516AA05B704BE5ACA4_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType RuntimeResources_t4E5CAC2636FAF22D782E64516AA05B704BE5ACA4_0_0_0;
+IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0;
+IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0;
+IL2CPP_EXTERN_C void SerializableBoundItem_tF2F8CD24513F8F4D69DCAC89522EA0D3C032A640_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void SerializableBoundItem_tF2F8CD24513F8F4D69DCAC89522EA0D3C032A640_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void SerializableBoundItem_tF2F8CD24513F8F4D69DCAC89522EA0D3C032A640_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType SerializableBoundItem_tF2F8CD24513F8F4D69DCAC89522EA0D3C032A640_0_0_0;
+IL2CPP_EXTERN_C void SerializableHasPVItem_t061E2CE4D8B201F280D06ABD0246C7AD8FD9571C_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void SerializableHasPVItem_t061E2CE4D8B201F280D06ABD0246C7AD8FD9571C_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void SerializableHasPVItem_t061E2CE4D8B201F280D06ABD0246C7AD8FD9571C_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType SerializableHasPVItem_t061E2CE4D8B201F280D06ABD0246C7AD8FD9571C_0_0_0;
+IL2CPP_EXTERN_C void SerializablePVBakeSettings_t9C88167788303739AC5D93A20092598DF654A452_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void SerializablePVBakeSettings_t9C88167788303739AC5D93A20092598DF654A452_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void SerializablePVBakeSettings_t9C88167788303739AC5D93A20092598DF654A452_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType SerializablePVBakeSettings_t9C88167788303739AC5D93A20092598DF654A452_0_0_0;
+IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_GetRayIntersectionAllCallback_t52E7AE4ECEA3F9744FF7F8448F852C872A70315C();
 IL2CPP_EXTERN_C_CONST RuntimeType GetRayIntersectionAllCallback_t52E7AE4ECEA3F9744FF7F8448F852C872A70315C_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_GetRayIntersectionAllNonAllocCallback_t28D7ACEBBE525DE0CBEA67986E4C3891D694F980();
@@ -1287,6 +2362,22 @@ IL2CPP_EXTERN_C void RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE_ma
 IL2CPP_EXTERN_C void RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE_0_0_0;
+IL2CPP_EXTERN_C void CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615_0_0_0;
+IL2CPP_EXTERN_C void CompiledResourceInfo_t1B258600AF5819B19709F6E4FF0D2803D039336A_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void CompiledResourceInfo_t1B258600AF5819B19709F6E4FF0D2803D039336A_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void CompiledResourceInfo_t1B258600AF5819B19709F6E4FF0D2803D039336A_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType CompiledResourceInfo_t1B258600AF5819B19709F6E4FF0D2803D039336A_0_0_0;
+IL2CPP_EXTERN_C void PassDebugData_tE911DB0148519C33C773511F2D92F57AF1B6D258_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void PassDebugData_tE911DB0148519C33C773511F2D92F57AF1B6D258_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void PassDebugData_tE911DB0148519C33C773511F2D92F57AF1B6D258_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType PassDebugData_tE911DB0148519C33C773511F2D92F57AF1B6D258_0_0_0;
+IL2CPP_EXTERN_C void ResourceDebugData_t83301B4E44B1F0B49486E21F019AFEE444809A9B_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ResourceDebugData_t83301B4E44B1F0B49486E21F019AFEE444809A9B_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ResourceDebugData_t83301B4E44B1F0B49486E21F019AFEE444809A9B_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ResourceDebugData_t83301B4E44B1F0B49486E21F019AFEE444809A9B_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_Try_000006E8U24PostfixBurstDelegate_tA30F9C73EB615DF5E109DC3D5F7AAFE2941B331D();
 IL2CPP_EXTERN_C_CONST RuntimeType Try_000006E8U24PostfixBurstDelegate_tA30F9C73EB615DF5E109DC3D5F7AAFE2941B331D_0_0_0;
 IL2CPP_EXTERN_C void HitInfo_t34AF939575E1C059D581AB7ED8F039BCFFC70314_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
@@ -1361,6 +2452,10 @@ IL2CPP_EXTERN_C void SyncTileCallbackSettings_tBBB8B7336BDE6E578C7A7B1D322A9B127
 IL2CPP_EXTERN_C void SyncTileCallbackSettings_tBBB8B7336BDE6E578C7A7B1D322A9B1273A76CDA_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void SyncTileCallbackSettings_tBBB8B7336BDE6E578C7A7B1D322A9B1273A76CDA_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType SyncTileCallbackSettings_tBBB8B7336BDE6E578C7A7B1D322A9B1273A76CDA_0_0_0;
+IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0;
 IL2CPP_EXTERN_C void FormatLiterals_tB7BAA4DA8EAC1AB8D825A2D9C446C9FCD9BBD94A_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void FormatLiterals_tB7BAA4DA8EAC1AB8D825A2D9C446C9FCD9BBD94A_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void FormatLiterals_tB7BAA4DA8EAC1AB8D825A2D9C446C9FCD9BBD94A_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1373,6 +2468,10 @@ IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_ma
 IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0;
+IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0;
 IL2CPP_EXTERN_C void ClosingInfo_t2DD9FDAA81DB13384355D75E956D24D1594C9D14_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ClosingInfo_t2DD9FDAA81DB13384355D75E956D24D1594C9D14_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ClosingInfo_t2DD9FDAA81DB13384355D75E956D24D1594C9D14_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1405,10 +2504,22 @@ IL2CPP_EXTERN_C void DateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD_marsh
 IL2CPP_EXTERN_C void DateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void DateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType DateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD_0_0_0;
+IL2CPP_EXTERN_C void MonoScriptData_t5A8A2339989AA38334930B2305A370BC3AB929DB_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void MonoScriptData_t5A8A2339989AA38334930B2305A370BC3AB929DB_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void MonoScriptData_t5A8A2339989AA38334930B2305A370BC3AB929DB_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType MonoScriptData_t5A8A2339989AA38334930B2305A370BC3AB929DB_0_0_0;
 IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_0_0_0;
+IL2CPP_EXTERN_C void MonoScriptData_tAB68332FFBDD2F26CAA0837E4CB0D2F2DB07A790_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void MonoScriptData_tAB68332FFBDD2F26CAA0837E4CB0D2F2DB07A790_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void MonoScriptData_tAB68332FFBDD2F26CAA0837E4CB0D2F2DB07A790_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType MonoScriptData_tAB68332FFBDD2F26CAA0837E4CB0D2F2DB07A790_0_0_0;
+IL2CPP_EXTERN_C void MonoScriptData_tB5B5EE91D8BC5D502A62D6C6578FC46CA6B2A2D2_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void MonoScriptData_tB5B5EE91D8BC5D502A62D6C6578FC46CA6B2A2D2_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void MonoScriptData_tB5B5EE91D8BC5D502A62D6C6578FC46CA6B2A2D2_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType MonoScriptData_tB5B5EE91D8BC5D502A62D6C6578FC46CA6B2A2D2_0_0_0;
 IL2CPP_EXTERN_C void MonoScriptData_t3D5A25DC08492EA2ADCEA359C2240CC0F481D91C_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void MonoScriptData_t3D5A25DC08492EA2ADCEA359C2240CC0F481D91C_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MonoScriptData_t3D5A25DC08492EA2ADCEA359C2240CC0F481D91C_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1433,6 +2544,18 @@ IL2CPP_EXTERN_C void MonoScriptData_t7886AD524F999CEC1F1C2ACCD8F79B6E2E7608D2_ma
 IL2CPP_EXTERN_C void MonoScriptData_t7886AD524F999CEC1F1C2ACCD8F79B6E2E7608D2_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MonoScriptData_t7886AD524F999CEC1F1C2ACCD8F79B6E2E7608D2_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType MonoScriptData_t7886AD524F999CEC1F1C2ACCD8F79B6E2E7608D2_0_0_0;
+IL2CPP_EXTERN_C void MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_0_0_0;
+IL2CPP_EXTERN_C void MonoScriptData_tA0C7360799640B8079A5A2795562EFBB25FE27CB_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void MonoScriptData_tA0C7360799640B8079A5A2795562EFBB25FE27CB_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void MonoScriptData_tA0C7360799640B8079A5A2795562EFBB25FE27CB_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType MonoScriptData_tA0C7360799640B8079A5A2795562EFBB25FE27CB_0_0_0;
+IL2CPP_EXTERN_C void MonoScriptData_tB0C5FB2A2A0762D39F4C568FB3742A405821B83A_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void MonoScriptData_tB0C5FB2A2A0762D39F4C568FB3742A405821B83A_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void MonoScriptData_tB0C5FB2A2A0762D39F4C568FB3742A405821B83A_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType MonoScriptData_tB0C5FB2A2A0762D39F4C568FB3742A405821B83A_0_0_0;
 IL2CPP_EXTERN_C void MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1441,6 +2564,30 @@ IL2CPP_EXTERN_C void WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44_marsh
 IL2CPP_EXTERN_C void WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44_0_0_0;
+IL2CPP_EXTERN_C void unitytls_interface_struct_tFD4B67EBFBE5D7FF212193507C3517DBA60978ED_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void unitytls_interface_struct_tFD4B67EBFBE5D7FF212193507C3517DBA60978ED_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void unitytls_interface_struct_tFD4B67EBFBE5D7FF212193507C3517DBA60978ED_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_interface_struct_tFD4B67EBFBE5D7FF212193507C3517DBA60978ED_0_0_0;
+IL2CPP_EXTERN_C void unitytls_tlsctx_callbacks_t348AE3D333ACBB2F17D4D7B8412256357B39B568_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void unitytls_tlsctx_callbacks_t348AE3D333ACBB2F17D4D7B8412256357B39B568_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void unitytls_tlsctx_callbacks_t348AE3D333ACBB2F17D4D7B8412256357B39B568_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_callbacks_t348AE3D333ACBB2F17D4D7B8412256357B39B568_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_certificate_callback_tB2FEBFA5D27CFA86544C06451270B36D77F2932C();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_certificate_callback_tB2FEBFA5D27CFA86544C06451270B36D77F2932C_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_read_callback_tDBE877327789CABE940C2A724EC9A5D142318851();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_read_callback_tDBE877327789CABE940C2A724EC9A5D142318851_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_trace_callback_tAC1169E423F6EBDA60CDD5D33E1795A8811E0BE6();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_trace_callback_tAC1169E423F6EBDA60CDD5D33E1795A8811E0BE6_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_write_callback_t5D4B64AD846D04E819A49689F7EAA47365636611();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_write_callback_t5D4B64AD846D04E819A49689F7EAA47365636611_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_x509verify_callback_t3334D904C28324D444B6C26BEEF29B5E07D9D58D();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_x509verify_callback_t3334D904C28324D444B6C26BEEF29B5E07D9D58D_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509verify_callback_t1B72B7CF228F76F09A6A75C54C15F2084C01CA09();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509verify_callback_t1B72B7CF228F76F09A6A75C54C15F2084C01CA09_0_0_0;
+IL2CPP_EXTERN_C void Bone_t45A5AE3FD1F023346E79F0A823629DF304C64C07_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void Bone_t45A5AE3FD1F023346E79F0A823629DF304C64C07_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void Bone_t45A5AE3FD1F023346E79F0A823629DF304C64C07_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType Bone_t45A5AE3FD1F023346E79F0A823629DF304C64C07_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_OnStartedRecordingVideoCallback_t64E6C26F7ABAB9254AACB9D62C693F8922C1E45C();
 IL2CPP_EXTERN_C_CONST RuntimeType OnStartedRecordingVideoCallback_t64E6C26F7ABAB9254AACB9D62C693F8922C1E45C_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_OnStoppedRecordingVideoCallback_tC089900DD6C16C42C782522C257740BB222C1437();
@@ -1451,6 +2598,26 @@ IL2CPP_EXTERN_C void DelegatePInvokeWrapper_OnVideoModeStartedCallback_t7BFBEBA2
 IL2CPP_EXTERN_C_CONST RuntimeType OnVideoModeStartedCallback_t7BFBEBA2CDDBFA58023D8BA206E0D90920819C1F_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_OnVideoModeStoppedCallback_tA29659F86D8702608589583F3F415ABF57F6A054();
 IL2CPP_EXTERN_C_CONST RuntimeType OnVideoModeStoppedCallback_tA29659F86D8702608589583F3F415ABF57F6A054_0_0_0;
+IL2CPP_EXTERN_C void EventState_tC6463B8BEBD8D54440D74A6D2457B7177A474AB5_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void EventState_tC6463B8BEBD8D54440D74A6D2457B7177A474AB5_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void EventState_tC6463B8BEBD8D54440D74A6D2457B7177A474AB5_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType EventState_tC6463B8BEBD8D54440D74A6D2457B7177A474AB5_0_0_0;
+IL2CPP_EXTERN_C void ClipEvent_tB1B5AECDBECAE26DCDD484137C0921A674007B98_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ClipEvent_tB1B5AECDBECAE26DCDD484137C0921A674007B98_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ClipEvent_tB1B5AECDBECAE26DCDD484137C0921A674007B98_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ClipEvent_tB1B5AECDBECAE26DCDD484137C0921A674007B98_0_0_0;
+IL2CPP_EXTERN_C void PrewarmClipSettings_t232EAD8B9AFF3DF3B79ECBBBACBF296A6F781D2F_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void PrewarmClipSettings_t232EAD8B9AFF3DF3B79ECBBBACBF296A6F781D2F_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void PrewarmClipSettings_t232EAD8B9AFF3DF3B79ECBBBACBF296A6F781D2F_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType PrewarmClipSettings_t232EAD8B9AFF3DF3B79ECBBBACBF296A6F781D2F_0_0_0;
+IL2CPP_EXTERN_C void Chunk_t1E89391EEEF9687BE88541B60DF90CD0F7FA2796_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void Chunk_t1E89391EEEF9687BE88541B60DF90CD0F7FA2796_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void Chunk_t1E89391EEEF9687BE88541B60DF90CD0F7FA2796_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType Chunk_t1E89391EEEF9687BE88541B60DF90CD0F7FA2796_0_0_0;
+IL2CPP_EXTERN_C void Event_tE4504A5B6293BF5B848A7939E03B434FABD98C4D_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void Event_tE4504A5B6293BF5B848A7939E03B434FABD98C4D_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void Event_tE4504A5B6293BF5B848A7939E03B434FABD98C4D_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType Event_tE4504A5B6293BF5B848A7939E03B434FABD98C4D_0_0_0;
 IL2CPP_EXTERN_C void Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1479,6 +2646,14 @@ IL2CPP_EXTERN_C void VolatileObject_tEA3ACFAAFB9D2EFA5162F693BAAB342EA7737B99_ma
 IL2CPP_EXTERN_C void VolatileObject_tEA3ACFAAFB9D2EFA5162F693BAAB342EA7737B99_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void VolatileObject_tEA3ACFAAFB9D2EFA5162F693BAAB342EA7737B99_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType VolatileObject_tEA3ACFAAFB9D2EFA5162F693BAAB342EA7737B99_0_0_0;
+const Il2CppGuid WMResamplerObject_t5006B0EB6FF4F5C0CC9F9EFC935B048AFC76A11F::CLSID = { 0xf447b69e, 0x1884, 0x4a7e, 0x80, 0x55, 0x34, 0x6f, 0x74, 0xd6, 0xed, 0xb3 };
+IL2CPP_EXTERN_C_CONST RuntimeType WMResamplerObject_t5006B0EB6FF4F5C0CC9F9EFC935B048AFC76A11F_0_0_0;
+IL2CPP_EXTERN_C Il2CppIUnknown* CreateComCallableWrapperFor_WasapiEventHandler_tA490DED0BC4E60029A8820E69927AD95B6621E1B(RuntimeObject* obj);
+IL2CPP_EXTERN_C_CONST RuntimeType WasapiEventHandler_tA490DED0BC4E60029A8820E69927AD95B6621E1B_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_X3DAudioCalculateDelegate_t55023033DD15E368911B56A8A800EC389BC84932();
+IL2CPP_EXTERN_C_CONST RuntimeType X3DAudioCalculateDelegate_t55023033DD15E368911B56A8A800EC389BC84932_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_X3DAudioInitializeDelegate_tB030633D1AE80B07BDA5A616C5DB28FAD249ECC3();
+IL2CPP_EXTERN_C_CONST RuntimeType X3DAudioInitializeDelegate_tB030633D1AE80B07BDA5A616C5DB28FAD249ECC3_0_0_0;
 IL2CPP_EXTERN_C void XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1487,6 +2662,10 @@ IL2CPP_EXTERN_C void XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E216
 IL2CPP_EXTERN_C void XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E2162E0_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E2162E0_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E2162E0_0_0_0;
+IL2CPP_EXTERN_C void XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_0_0_0;
 IL2CPP_EXTERN_C void XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -1501,18 +2680,93 @@ IL2CPP_EXTERN_C void DelegatePInvokeWrapper_Try_00000980U24PostfixBurstDelegate_
 IL2CPP_EXTERN_C_CONST RuntimeType Try_00000980U24PostfixBurstDelegate_tB323B9595B050940232579C962823E084FF96338_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_IsBurstEnabledDelegate_t0628E97FE590352373ABA022E954D7F5CE183D3C();
 IL2CPP_EXTERN_C_CONST RuntimeType IsBurstEnabledDelegate_t0628E97FE590352373ABA022E954D7F5CE183D3C_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_Release_tEDE678E6349A4D7E3890509F14CE61C2E3F75CC9();
+IL2CPP_EXTERN_C_CONST RuntimeType Release_tEDE678E6349A4D7E3890509F14CE61C2E3F75CC9_0_0_0;
 IL2CPP_EXTERN_C void DelegatePInvokeWrapper_WindowsCancelHandler_tC396577B75EBC714D192D78185E70181CBB963B4();
 IL2CPP_EXTERN_C_CONST RuntimeType WindowsCancelHandler_tC396577B75EBC714D192D78185E70181CBB963B4_0_0_0;
+IL2CPP_EXTERN_C void ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9_0_0_0;
+IL2CPP_EXTERN_C void NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4_0_0_0;
+IL2CPP_EXTERN_C void NumberBuffer_t0F9FC9D15F03CFDEBA3B3F4210A2AB3B53305CDA_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
+IL2CPP_EXTERN_C void NumberBuffer_t0F9FC9D15F03CFDEBA3B3F4210A2AB3B53305CDA_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
+IL2CPP_EXTERN_C void NumberBuffer_t0F9FC9D15F03CFDEBA3B3F4210A2AB3B53305CDA_marshal_pinvoke_cleanup(void* marshaledStructure);
+IL2CPP_EXTERN_C_CONST RuntimeType NumberBuffer_t0F9FC9D15F03CFDEBA3B3F4210A2AB3B53305CDA_0_0_0;
 IL2CPP_EXTERN_C void ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 IL2CPP_EXTERN_C void ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 IL2CPP_EXTERN_C void ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957_marshal_pinvoke_cleanup(void* marshaledStructure);
 IL2CPP_EXTERN_C_CONST RuntimeType ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_errorstate_create_t_tE8BB5D6BCA7D232F4981831586B71C39802CF75B();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_errorstate_create_t_tE8BB5D6BCA7D232F4981831586B71C39802CF75B_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_errorstate_raise_error_t_t8C20FC78CA5BBEE0248CC09D1C1AF25BCB3835CF();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_errorstate_raise_error_t_t8C20FC78CA5BBEE0248CC09D1C1AF25BCB3835CF_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_key_free_t_tDB8665140BAF30447F3650D323078C193566FF72();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_key_free_t_tDB8665140BAF30447F3650D323078C193566FF72_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_key_get_ref_t_t8335968B19449FE0ED92E67AE9B6D95915684209();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_key_get_ref_t_t8335968B19449FE0ED92E67AE9B6D95915684209_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_key_parse_der_t_tC218AEF9253FA105762F39041F696A06C52D3F10();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_key_parse_der_t_tC218AEF9253FA105762F39041F696A06C52D3F10_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_key_parse_pem_t_tE945670C6CB28BBF4670D2E8E904B7D8A2AB277B();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_key_parse_pem_t_tE945670C6CB28BBF4670D2E8E904B7D8A2AB277B_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_random_generate_bytes_t_t6E7011EF958B0948582F8D1D213B454A5A962569();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_random_generate_bytes_t_t6E7011EF958B0948582F8D1D213B454A5A962569_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_create_client_t_t49D8F69D4152410A346CB3560B121DCC44AAC4EC();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_create_client_t_t49D8F69D4152410A346CB3560B121DCC44AAC4EC_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_create_server_t_t1068941B319B893D3FFBE53FE061676FF1CC3803();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_create_server_t_t1068941B319B893D3FFBE53FE061676FF1CC3803_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_free_t_tFBF7BB64D2E1C183718FB5809ABF0051395FD8F0();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_free_t_tFBF7BB64D2E1C183718FB5809ABF0051395FD8F0_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_get_ciphersuite_t_t7317543D399259616648B1AA19447C4B63F70EF2();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_get_ciphersuite_t_t7317543D399259616648B1AA19447C4B63F70EF2_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_get_protocol_t_t04E3B73C1D77379F7C7388ED4934189365326F3C();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_get_protocol_t_t04E3B73C1D77379F7C7388ED4934189365326F3C_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_notify_close_t_t717D19846262E3DF5D1A69C5E136912E7A54B253();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_notify_close_t_t717D19846262E3DF5D1A69C5E136912E7A54B253_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_process_handshake_t_t8D94F5FAD00CD61BF950829866C0C6E29D202606();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_process_handshake_t_t8D94F5FAD00CD61BF950829866C0C6E29D202606_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_read_t_t3E3C711F7A47E704ABDF0DF0B7515E7306EB7C95();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_read_t_t3E3C711F7A47E704ABDF0DF0B7515E7306EB7C95_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_server_require_client_authentication_t_t2AC04245D1F40738C5FB87B0DEE80761E243F0BE();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_server_require_client_authentication_t_t2AC04245D1F40738C5FB87B0DEE80761E243F0BE_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_set_certificate_callback_t_t2B54F7228DFC11BF14DCF2201BDD90CF0EF92D41();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_set_certificate_callback_t_t2B54F7228DFC11BF14DCF2201BDD90CF0EF92D41_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_set_supported_ciphersuites_t_t007E8706D364DE695F1DBF28358058A1E73DF544();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_set_supported_ciphersuites_t_t007E8706D364DE695F1DBF28358058A1E73DF544_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_set_trace_callback_t_t3C615EACADC2CB1CDA8362B3F775071976E7CF7C();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_set_trace_callback_t_t3C615EACADC2CB1CDA8362B3F775071976E7CF7C_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_set_x509verify_callback_t_t032FE980BEDD0D201CAF1EE653ABE303CDBCA7C9();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_set_x509verify_callback_t_t032FE980BEDD0D201CAF1EE653ABE303CDBCA7C9_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_tlsctx_write_t_t976A41600B61F9C8DF022296B67316FFA53EB386();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_tlsctx_write_t_t976A41600B61F9C8DF022296B67316FFA53EB386_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509_export_der_t_tB784597940DE501BB5FEFA3EA528634559A16749();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509_export_der_t_tB784597940DE501BB5FEFA3EA528634559A16749_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509list_append_der_t_tC45176B25C9B11C509119A1943EFDE133D819951();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509list_append_der_t_tC45176B25C9B11C509119A1943EFDE133D819951_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509list_append_t_tC84B9CA7C15F5D1DE98386670A80D5F98559D98E();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509list_append_t_tC84B9CA7C15F5D1DE98386670A80D5F98559D98E_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509list_create_t_t8873365FFB1556CE6B643700DB0C30E391B758D6();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509list_create_t_t8873365FFB1556CE6B643700DB0C30E391B758D6_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509list_free_t_t9BD50B09A7919B7891DC529787E93C708FC653A2();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509list_free_t_t9BD50B09A7919B7891DC529787E93C708FC653A2_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509list_get_ref_t_t264CEEF7B8D1F10FD95E1BC78BB48BCA11E305EA();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509list_get_ref_t_t264CEEF7B8D1F10FD95E1BC78BB48BCA11E305EA_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509list_get_x509_t_t428DCD367D50DCDD5ECE6DCFEB8967C5F7C3DFE8();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509list_get_x509_t_t428DCD367D50DCDD5ECE6DCFEB8967C5F7C3DFE8_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509verify_default_ca_t_tED88B7ABC8408A22DB51B1F57D5FC65BDD2EC809();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509verify_default_ca_t_tED88B7ABC8408A22DB51B1F57D5FC65BDD2EC809_0_0_0;
+IL2CPP_EXTERN_C void DelegatePInvokeWrapper_unitytls_x509verify_explicit_ca_t_t1B3D98BF01F059A3C2ADE87EFDDA03C557A3D08D();
+IL2CPP_EXTERN_C_CONST RuntimeType unitytls_x509verify_explicit_ca_t_t1B3D98BF01F059A3C2ADE87EFDDA03C557A3D08D_0_0_0;
 IL2CPP_EXTERN_C Il2CppInteropData g_Il2CppInteropData[];
-Il2CppInteropData g_Il2CppInteropData[406] = 
+Il2CppInteropData g_Il2CppInteropData[636] = 
 {
 	{ DelegatePInvokeWrapper_Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07, NULL, NULL, NULL, NULL, NULL, &Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_0_0_0 },
 	{ NULL, Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshal_pinvoke, Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshal_pinvoke_back, Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_marshal_pinvoke_cleanup, NULL, NULL, &Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE_0_0_0 },
 	{ DelegatePInvokeWrapper_AndroidJavaRunnable_tF23B9BBDA8C99A48BCEEA6335A47DA3C0EF34A7F, NULL, NULL, NULL, NULL, NULL, &AndroidJavaRunnable_tF23B9BBDA8C99A48BCEEA6335A47DA3C0EF34A7F_0_0_0 },
+	{ NULL, AnimalStruct_t0A6BF5C5986E40A7A2CD08336F04F16F85088FB6_marshal_pinvoke, AnimalStruct_t0A6BF5C5986E40A7A2CD08336F04F16F85088FB6_marshal_pinvoke_back, AnimalStruct_t0A6BF5C5986E40A7A2CD08336F04F16F85088FB6_marshal_pinvoke_cleanup, NULL, NULL, &AnimalStruct_t0A6BF5C5986E40A7A2CD08336F04F16F85088FB6_0_0_0 },
 	{ NULL, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshal_pinvoke, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshal_pinvoke_back, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshal_pinvoke_cleanup, NULL, NULL, &AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_0_0_0 },
 	{ NULL, AnimationEvent_t77294DB2372A5C387B53EEA3EFDC550C75EC3174_marshal_pinvoke, AnimationEvent_t77294DB2372A5C387B53EEA3EFDC550C75EC3174_marshal_pinvoke_back, AnimationEvent_t77294DB2372A5C387B53EEA3EFDC550C75EC3174_marshal_pinvoke_cleanup, NULL, NULL, &AnimationEvent_t77294DB2372A5C387B53EEA3EFDC550C75EC3174_0_0_0 },
 	{ NULL, AnimatorTransitionInfo_t44894D5EDEACB368CDBA07458F6EE5F01A1F34AD_marshal_pinvoke, AnimatorTransitionInfo_t44894D5EDEACB368CDBA07458F6EE5F01A1F34AD_marshal_pinvoke_back, AnimatorTransitionInfo_t44894D5EDEACB368CDBA07458F6EE5F01A1F34AD_marshal_pinvoke_cleanup, NULL, NULL, &AnimatorTransitionInfo_t44894D5EDEACB368CDBA07458F6EE5F01A1F34AD_0_0_0 },
@@ -1533,20 +2787,41 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, AsyncResult_t125D959CA0F9FB74EF9F7DF4E04F15BB1B265760_marshal_pinvoke, AsyncResult_t125D959CA0F9FB74EF9F7DF4E04F15BB1B265760_marshal_pinvoke_back, AsyncResult_t125D959CA0F9FB74EF9F7DF4E04F15BB1B265760_marshal_pinvoke_cleanup, NULL, NULL, &AsyncResult_t125D959CA0F9FB74EF9F7DF4E04F15BB1B265760_0_0_0 },
 	{ NULL, AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_marshal_pinvoke, AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_marshal_pinvoke_back, AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_marshal_pinvoke_cleanup, NULL, NULL, &AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_0_0_0 },
 	{ NULL, AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_marshal_pinvoke, AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_marshal_pinvoke_back, AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_marshal_pinvoke_cleanup, NULL, NULL, &AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioCaptureClient_tFC1CAD01C173B0B58CA24F934F8A990E442EB6C8::CLSID, &AudioCaptureClient_tFC1CAD01C173B0B58CA24F934F8A990E442EB6C8_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioClient_t2D019720E36C646163DF89BCD82ED8B23F1B9CFF::CLSID, &AudioClient_t2D019720E36C646163DF89BCD82ED8B23F1B9CFF_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioClock_tC8DA27556D73736572BCF1FE3343E45C5A53450B::CLSID, &AudioClock_tC8DA27556D73736572BCF1FE3343E45C5A53450B_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioClock2_t91A80319ADEA8138D1DE29583BC3253088CDC8E4::CLSID, &AudioClock2_t91A80319ADEA8138D1DE29583BC3253088CDC8E4_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioEndpointVolume_t504D1C4AE6E345F39DE7C531692CF01CA5C99787::CLSID, &AudioEndpointVolume_t504D1C4AE6E345F39DE7C531692CF01CA5C99787_0_0_0 },
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_AudioEndpointVolumeCallback_t46FA7BB4BD8C3EC706CB3A1456458CB78EE652EB, &AudioEndpointVolumeCallback_t46FA7BB4BD8C3EC706CB3A1456458CB78EE652EB::CLSID, &AudioEndpointVolumeCallback_t46FA7BB4BD8C3EC706CB3A1456458CB78EE652EB_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioMeterInformation_t20D9FEFA301C82C7B0C8F6D9E5B9C95607F7E527::CLSID, &AudioMeterInformation_t20D9FEFA301C82C7B0C8F6D9E5B9C95607F7E527_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioRenderClient_tCC452C9A70075FC54C1B44E6B1F4FFFFC44E877F::CLSID, &AudioRenderClient_tCC452C9A70075FC54C1B44E6B1F4FFFFC44E877F_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioSessionControl_tDFB3F9D795BF4486B77BAB4F051F2E9BE97C9625::CLSID, &AudioSessionControl_tDFB3F9D795BF4486B77BAB4F051F2E9BE97C9625_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioSessionControl2_t5DEB20D2ED30B088944CE84CF9E33921F1184630::CLSID, &AudioSessionControl2_t5DEB20D2ED30B088944CE84CF9E33921F1184630_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioSessionEnumerator_tAFBA9D39B04C3AFBC80E74CCAEA370CC049A82B6::CLSID, &AudioSessionEnumerator_tAFBA9D39B04C3AFBC80E74CCAEA370CC049A82B6_0_0_0 },
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_AudioSessionEvents_t87A7ABEF6CA3E9E7D84620FB2AACA2773B391CFA, &AudioSessionEvents_t87A7ABEF6CA3E9E7D84620FB2AACA2773B391CFA::CLSID, &AudioSessionEvents_t87A7ABEF6CA3E9E7D84620FB2AACA2773B391CFA_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioSessionManager_tC8532BF6C71036FB5D1ADF717429AF8BCABD550B::CLSID, &AudioSessionManager_tC8532BF6C71036FB5D1ADF717429AF8BCABD550B_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &AudioSessionManager2_tEFD221353B5539398050F17947843C8AFE6557FD::CLSID, &AudioSessionManager2_tEFD221353B5539398050F17947843C8AFE6557FD_0_0_0 },
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_AudioSessionNotification_tEC6D9E64A244D4B3ED60F364C0AC40E3BDF15633, &AudioSessionNotification_tEC6D9E64A244D4B3ED60F364C0AC40E3BDF15633::CLSID, &AudioSessionNotification_tEC6D9E64A244D4B3ED60F364C0AC40E3BDF15633_0_0_0 },
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_AudioVolumeDuckNotification_t0A23F56DA2DB406817673BC372678539A5110963, &AudioVolumeDuckNotification_t0A23F56DA2DB406817673BC372678539A5110963::CLSID, &AudioVolumeDuckNotification_t0A23F56DA2DB406817673BC372678539A5110963_0_0_0 },
 	{ NULL, Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8_marshal_pinvoke, Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8_marshal_pinvoke_back, Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8_marshal_pinvoke_cleanup, NULL, NULL, &Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8_0_0_0 },
 	{ NULL, BatchRendererGroup_t452089ECEC9BF01E82CD6AE044B6D75B8CD12D10_marshal_pinvoke, BatchRendererGroup_t452089ECEC9BF01E82CD6AE044B6D75B8CD12D10_marshal_pinvoke_back, BatchRendererGroup_t452089ECEC9BF01E82CD6AE044B6D75B8CD12D10_marshal_pinvoke_cleanup, NULL, NULL, &BatchRendererGroup_t452089ECEC9BF01E82CD6AE044B6D75B8CD12D10_0_0_0 },
+	{ NULL, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_marshal_pinvoke, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_marshal_pinvoke_back, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_marshal_pinvoke_cleanup, NULL, NULL, &BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_0_0_0 },
 	{ NULL, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_pinvoke, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_pinvoke_back, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_pinvoke_cleanup, NULL, NULL, &BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0 },
 	{ NULL, CalendarData_t4A54E28AB4470E0B835605CAEE9BEB25EBF9B6A9_marshal_pinvoke, CalendarData_t4A54E28AB4470E0B835605CAEE9BEB25EBF9B6A9_marshal_pinvoke_back, CalendarData_t4A54E28AB4470E0B835605CAEE9BEB25EBF9B6A9_marshal_pinvoke_cleanup, NULL, NULL, &CalendarData_t4A54E28AB4470E0B835605CAEE9BEB25EBF9B6A9_0_0_0 },
 	{ NULL, CanStartDragArgs_tABF4E0D7A89F6C14BE4E8308C18129670E80DFEF_marshal_pinvoke, CanStartDragArgs_tABF4E0D7A89F6C14BE4E8308C18129670E80DFEF_marshal_pinvoke_back, CanStartDragArgs_tABF4E0D7A89F6C14BE4E8308C18129670E80DFEF_marshal_pinvoke_cleanup, NULL, NULL, &CanStartDragArgs_tABF4E0D7A89F6C14BE4E8308C18129670E80DFEF_0_0_0 },
 	{ NULL, CancellationCallbackCoreWorkArguments_t12DB960B203CDDF2119BC6A29ACA80175C15FAD0_marshal_pinvoke, CancellationCallbackCoreWorkArguments_t12DB960B203CDDF2119BC6A29ACA80175C15FAD0_marshal_pinvoke_back, CancellationCallbackCoreWorkArguments_t12DB960B203CDDF2119BC6A29ACA80175C15FAD0_marshal_pinvoke_cleanup, NULL, NULL, &CancellationCallbackCoreWorkArguments_t12DB960B203CDDF2119BC6A29ACA80175C15FAD0_0_0_0 },
 	{ NULL, CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_marshal_pinvoke, CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_marshal_pinvoke_back, CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_marshal_pinvoke_cleanup, NULL, NULL, &CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_0_0_0 },
 	{ NULL, CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389_marshal_pinvoke, CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389_marshal_pinvoke_back, CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389_marshal_pinvoke_cleanup, NULL, NULL, &CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389_0_0_0 },
+	{ NULL, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_pinvoke, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_pinvoke_back, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_pinvoke_cleanup, NULL, NULL, &CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0 },
 	{ NULL, CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshal_pinvoke, CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshal_pinvoke_back, CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_marshal_pinvoke_cleanup, NULL, NULL, &CertificateHandler_t148B524FA5DB39F3ABADB181CD420FC505C33804_0_0_0 },
 	{ NULL, Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B_marshal_pinvoke, Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B_marshal_pinvoke_back, Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B_marshal_pinvoke_cleanup, NULL, NULL, &Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B_0_0_0 },
 	{ NULL, ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshal_pinvoke, ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshal_pinvoke_back, ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_marshal_pinvoke_cleanup, NULL, NULL, &ColorPage_t7C2B8995DE8D27CED5E55F7BFE4E6C70C971FAE0_0_0_0 },
 	{ NULL, ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7_marshal_pinvoke, ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7_marshal_pinvoke_back, ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7_marshal_pinvoke_cleanup, NULL, NULL, &ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7_0_0_0 },
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_ComStream_t0396CD5F52AE0FC5DD2854CB6CC106FB8123F0F5, NULL, &ComStream_t0396CD5F52AE0FC5DD2854CB6CC106FB8123F0F5_0_0_0 },
+	{ NULL, ComputeBufferDesc_t4AFBC6F02239B19810A79101771BBE76388524F4_marshal_pinvoke, ComputeBufferDesc_t4AFBC6F02239B19810A79101771BBE76388524F4_marshal_pinvoke_back, ComputeBufferDesc_t4AFBC6F02239B19810A79101771BBE76388524F4_marshal_pinvoke_cleanup, NULL, NULL, &ComputeBufferDesc_t4AFBC6F02239B19810A79101771BBE76388524F4_0_0_0 },
 	{ NULL, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_pinvoke, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_pinvoke_back, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_pinvoke_cleanup, NULL, NULL, &ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0 },
 	{ NULL, ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshal_pinvoke, ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshal_pinvoke_back, ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshal_pinvoke_cleanup, NULL, NULL, &ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_0_0_0 },
+	{ NULL, ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C_marshal_pinvoke, ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C_marshal_pinvoke_back, ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C_marshal_pinvoke_cleanup, NULL, NULL, &ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C_0_0_0 },
 	{ NULL, ConsoleKeyInfo_t84640C60F53D0F6946B147ADAAF0366BBF1DE900_marshal_pinvoke, ConsoleKeyInfo_t84640C60F53D0F6946B147ADAAF0366BBF1DE900_marshal_pinvoke_back, ConsoleKeyInfo_t84640C60F53D0F6946B147ADAAF0366BBF1DE900_marshal_pinvoke_cleanup, NULL, NULL, &ConsoleKeyInfo_t84640C60F53D0F6946B147ADAAF0366BBF1DE900_0_0_0 },
 	{ NULL, ContactFilter2D_t54A8515C326BF7DA16E5DE97EA7D3CD9B2F77F14_marshal_pinvoke, ContactFilter2D_t54A8515C326BF7DA16E5DE97EA7D3CD9B2F77F14_marshal_pinvoke_back, ContactFilter2D_t54A8515C326BF7DA16E5DE97EA7D3CD9B2F77F14_marshal_pinvoke_cleanup, NULL, NULL, &ContactFilter2D_t54A8515C326BF7DA16E5DE97EA7D3CD9B2F77F14_0_0_0 },
 	{ NULL, Context_t2CCB8C97E2B9649D3A11A72438694220AEA6CF95_marshal_pinvoke, Context_t2CCB8C97E2B9649D3A11A72438694220AEA6CF95_marshal_pinvoke_back, Context_t2CCB8C97E2B9649D3A11A72438694220AEA6CF95_marshal_pinvoke_cleanup, NULL, NULL, &Context_t2CCB8C97E2B9649D3A11A72438694220AEA6CF95_0_0_0 },
@@ -1566,20 +2841,40 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, Cursor_t24C3B5095F65B86794C4F7EA168E324DFDA9EE82_marshal_pinvoke, Cursor_t24C3B5095F65B86794C4F7EA168E324DFDA9EE82_marshal_pinvoke_back, Cursor_t24C3B5095F65B86794C4F7EA168E324DFDA9EE82_marshal_pinvoke_cleanup, NULL, NULL, &Cursor_t24C3B5095F65B86794C4F7EA168E324DFDA9EE82_0_0_0 },
 	{ NULL, CustomAttributeNamedArgument_t4EC1C2BB9943BEB7E77AC0870BE2A899E23B4E02_marshal_pinvoke, CustomAttributeNamedArgument_t4EC1C2BB9943BEB7E77AC0870BE2A899E23B4E02_marshal_pinvoke_back, CustomAttributeNamedArgument_t4EC1C2BB9943BEB7E77AC0870BE2A899E23B4E02_marshal_pinvoke_cleanup, NULL, NULL, &CustomAttributeNamedArgument_t4EC1C2BB9943BEB7E77AC0870BE2A899E23B4E02_0_0_0 },
 	{ NULL, CustomAttributeTypedArgument_tAAA19ADE66B16A67D030C8C67D7ADB29A7BEC75F_marshal_pinvoke, CustomAttributeTypedArgument_tAAA19ADE66B16A67D030C8C67D7ADB29A7BEC75F_marshal_pinvoke_back, CustomAttributeTypedArgument_tAAA19ADE66B16A67D030C8C67D7ADB29A7BEC75F_marshal_pinvoke_cleanup, NULL, NULL, &CustomAttributeTypedArgument_tAAA19ADE66B16A67D030C8C67D7ADB29A7BEC75F_0_0_0 },
+	{ NULL, DSAParameters_t2FA923FEA7E2DB5515EE54A7E86B0401D025E0E9_marshal_pinvoke, DSAParameters_t2FA923FEA7E2DB5515EE54A7E86B0401D025E0E9_marshal_pinvoke_back, DSAParameters_t2FA923FEA7E2DB5515EE54A7E86B0401D025E0E9_marshal_pinvoke_cleanup, NULL, NULL, &DSAParameters_t2FA923FEA7E2DB5515EE54A7E86B0401D025E0E9_0_0_0 },
+	{ DelegatePInvokeWrapper_DSEnumCallback_t6F3E9C67BCA9BDD434A9012D6C7DB19B4D3B631B, NULL, NULL, NULL, NULL, NULL, &DSEnumCallback_t6F3E9C67BCA9BDD434A9012D6C7DB19B4D3B631B_0_0_0 },
 	{ NULL, DateTimeRawInfo_tEAC42047935006C924842337850170E9AEA0AB03_marshal_pinvoke, DateTimeRawInfo_tEAC42047935006C924842337850170E9AEA0AB03_marshal_pinvoke_back, DateTimeRawInfo_tEAC42047935006C924842337850170E9AEA0AB03_marshal_pinvoke_cleanup, NULL, NULL, &DateTimeRawInfo_tEAC42047935006C924842337850170E9AEA0AB03_0_0_0 },
 	{ NULL, DateTimeResult_t88A2CAF7FB72DB24CD634B742B58043128BB9722_marshal_pinvoke, DateTimeResult_t88A2CAF7FB72DB24CD634B742B58043128BB9722_marshal_pinvoke_back, DateTimeResult_t88A2CAF7FB72DB24CD634B742B58043128BB9722_marshal_pinvoke_cleanup, NULL, NULL, &DateTimeResult_t88A2CAF7FB72DB24CD634B742B58043128BB9722_0_0_0 },
 	{ NULL, DaylightTimeStruct_tB667DCA32C2FA55FEFB2D8D3A871D4A5BF97CED1_marshal_pinvoke, DaylightTimeStruct_tB667DCA32C2FA55FEFB2D8D3A871D4A5BF97CED1_marshal_pinvoke_back, DaylightTimeStruct_tB667DCA32C2FA55FEFB2D8D3A871D4A5BF97CED1_marshal_pinvoke_cleanup, NULL, NULL, &DaylightTimeStruct_tB667DCA32C2FA55FEFB2D8D3A871D4A5BF97CED1_0_0_0 },
 	{ NULL, Delegate_t_marshal_pinvoke, Delegate_t_marshal_pinvoke_back, Delegate_t_marshal_pinvoke_cleanup, NULL, NULL, &Delegate_t_0_0_0 },
+	{ NULL, DeviceDetails_tFC03819B476629318086FA0E06C45F1D31C99035_marshal_pinvoke, DeviceDetails_tFC03819B476629318086FA0E06C45F1D31C99035_marshal_pinvoke_back, DeviceDetails_tFC03819B476629318086FA0E06C45F1D31C99035_marshal_pinvoke_cleanup, NULL, NULL, &DeviceDetails_tFC03819B476629318086FA0E06C45F1D31C99035_0_0_0 },
 	{ NULL, DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_marshal_pinvoke, DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_marshal_pinvoke_back, DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_marshal_pinvoke_cleanup, NULL, NULL, &DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSound8_tC4FD5F247C51D33553294CFDA6040ED6F950A033::CLSID, &DirectSound8_tC4FD5F247C51D33553294CFDA6040ED6F950A033_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundBase_tAE90A4B29BF27EB39126F53EE307CEFA964B015D::CLSID, &DirectSoundBase_tAE90A4B29BF27EB39126F53EE307CEFA964B015D_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundBuffer_t6C1AE334E48AAA03D28C278B5DA20F022AB49649::CLSID, &DirectSoundBuffer_t6C1AE334E48AAA03D28C278B5DA20F022AB49649_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundFXChorus_tFB9B0C945E4B1B9F888B35F61868CA0F96C91EDD::CLSID, &DirectSoundFXChorus_tFB9B0C945E4B1B9F888B35F61868CA0F96C91EDD_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundFXCompressor_t277030BF017BF0BDA9EA28ABC36E3501B0CF25C2::CLSID, &DirectSoundFXCompressor_t277030BF017BF0BDA9EA28ABC36E3501B0CF25C2_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundFXDistortion_t9E738B4C9722B0F175236462D0B1DF0B4814CC9E::CLSID, &DirectSoundFXDistortion_t9E738B4C9722B0F175236462D0B1DF0B4814CC9E_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundFXEcho_tC1CC94AFFD7E4D18B6DCAD2D920B2AC6B099BBC3::CLSID, &DirectSoundFXEcho_tC1CC94AFFD7E4D18B6DCAD2D920B2AC6B099BBC3_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundFXFlanger_tCA7F83F314BEC7852C4E35A8DE07E660FE197FE4::CLSID, &DirectSoundFXFlanger_tCA7F83F314BEC7852C4E35A8DE07E660FE197FE4_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundFXGargle_tF73337B3FCC455964BBB2863EA9150D2A81E84C8::CLSID, &DirectSoundFXGargle_tF73337B3FCC455964BBB2863EA9150D2A81E84C8_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundFXWavesReverb_t2A61FE891C89558304AB41BFB64E927ADE95C31D::CLSID, &DirectSoundFXWavesReverb_t2A61FE891C89558304AB41BFB64E927ADE95C31D_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundNotify_t6424E71491DA9808519FFC373DE534198921486A::CLSID, &DirectSoundNotify_t6424E71491DA9808519FFC373DE534198921486A_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundPrimaryBuffer_t0DC243D181FD0F7A643B7646208C436192F191AD::CLSID, &DirectSoundPrimaryBuffer_t0DC243D181FD0F7A643B7646208C436192F191AD_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DirectSoundSecondaryBuffer_tA7EAA60C8B7C291AFC5E3909AE6ACEDD44695788::CLSID, &DirectSoundSecondaryBuffer_tA7EAA60C8B7C291AFC5E3909AE6ACEDD44695788_0_0_0 },
 	{ NULL, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_pinvoke, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_pinvoke_back, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_pinvoke_cleanup, NULL, NULL, &DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_0_0_0 },
 	{ NULL, DisableMediaInsertionPrompt_t874258833B73FEAAC32D1DB565E134D1439AB2F7_marshal_pinvoke, DisableMediaInsertionPrompt_t874258833B73FEAAC32D1DB565E134D1439AB2F7_marshal_pinvoke_back, DisableMediaInsertionPrompt_t874258833B73FEAAC32D1DB565E134D1439AB2F7_marshal_pinvoke_cleanup, NULL, NULL, &DisableMediaInsertionPrompt_t874258833B73FEAAC32D1DB565E134D1439AB2F7_0_0_0 },
 	{ NULL, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_pinvoke, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_pinvoke_back, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_pinvoke_cleanup, NULL, NULL, &DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_0_0_0 },
+	{ NULL, DmoEnumItem_t8FB30A741024B1D79BF2E4D408A6C195AECB4E79_marshal_pinvoke, DmoEnumItem_t8FB30A741024B1D79BF2E4D408A6C195AECB4E79_marshal_pinvoke_back, DmoEnumItem_t8FB30A741024B1D79BF2E4D408A6C195AECB4E79_marshal_pinvoke_cleanup, NULL, NULL, &DmoEnumItem_t8FB30A741024B1D79BF2E4D408A6C195AECB4E79_0_0_0 },
+	{ NULL, DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_marshal_pinvoke, DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_marshal_pinvoke_back, DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_marshal_pinvoke_cleanup, NULL, NULL, &DmoOutputDataBuffer_t8B4C1A943F561542EF44B5A4C4DE9064C4DE7FCE_0_0_0 },
 	{ NULL, DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshal_pinvoke, DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshal_pinvoke_back, DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_marshal_pinvoke_cleanup, NULL, NULL, &DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB_0_0_0 },
 	{ NULL, DragAndDropArgs_t5D3B6A3AB96D87DB0C2840230EEA8C8426EBCA9C_marshal_pinvoke, DragAndDropArgs_t5D3B6A3AB96D87DB0C2840230EEA8C8426EBCA9C_marshal_pinvoke_back, DragAndDropArgs_t5D3B6A3AB96D87DB0C2840230EEA8C8426EBCA9C_marshal_pinvoke_cleanup, NULL, NULL, &DragAndDropArgs_t5D3B6A3AB96D87DB0C2840230EEA8C8426EBCA9C_0_0_0 },
 	{ NULL, Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshal_pinvoke, Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshal_pinvoke_back, Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshal_pinvoke_cleanup, NULL, NULL, &Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_0_0_0 },
 	{ NULL, EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8_marshal_pinvoke, EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8_marshal_pinvoke_back, EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8_marshal_pinvoke_cleanup, NULL, NULL, &EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &EnumDmo_t9F8921A495BB00A3CC8F0CB8A012FA1B4D2CD938::CLSID, &EnumDmo_t9F8921A495BB00A3CC8F0CB8A012FA1B4D2CD938_0_0_0 },
 	{ NULL, Ephemeron_t74F279F5E7CF4A0CFC21C822431DD840572C6DA2_marshal_pinvoke, Ephemeron_t74F279F5E7CF4A0CFC21C822431DD840572C6DA2_marshal_pinvoke_back, Ephemeron_t74F279F5E7CF4A0CFC21C822431DD840572C6DA2_marshal_pinvoke_cleanup, NULL, NULL, &Ephemeron_t74F279F5E7CF4A0CFC21C822431DD840572C6DA2_0_0_0 },
 	{ NULL, Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshal_pinvoke, Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshal_pinvoke_back, Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshal_pinvoke_cleanup, NULL, NULL, &Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_0_0_0 },
+	{ NULL, EventAttributes_t08E6304B102F41E4FF59ED5A938F2C819CAA6D1A_marshal_pinvoke, EventAttributes_t08E6304B102F41E4FF59ED5A938F2C819CAA6D1A_marshal_pinvoke_back, EventAttributes_t08E6304B102F41E4FF59ED5A938F2C819CAA6D1A_marshal_pinvoke_cleanup, NULL, NULL, &EventAttributes_t08E6304B102F41E4FF59ED5A938F2C819CAA6D1A_0_0_0 },
 	{ NULL, EventDispatcherGate_t75A9E135B6558D523DCFC5CF95B44F153A779097_marshal_pinvoke, EventDispatcherGate_t75A9E135B6558D523DCFC5CF95B44F153A779097_marshal_pinvoke_back, EventDispatcherGate_t75A9E135B6558D523DCFC5CF95B44F153A779097_marshal_pinvoke_cleanup, NULL, NULL, &EventDispatcherGate_t75A9E135B6558D523DCFC5CF95B44F153A779097_0_0_0 },
 	{ NULL, EventInterests_tF375F3296A6689BC4B016F237123DB5457515EC8_marshal_pinvoke, EventInterests_tF375F3296A6689BC4B016F237123DB5457515EC8_marshal_pinvoke_back, EventInterests_tF375F3296A6689BC4B016F237123DB5457515EC8_marshal_pinvoke_cleanup, NULL, NULL, &EventInterests_tF375F3296A6689BC4B016F237123DB5457515EC8_0_0_0 },
 	{ NULL, Exception_t_marshal_pinvoke, Exception_t_marshal_pinvoke_back, Exception_t_marshal_pinvoke_cleanup, NULL, NULL, &Exception_t_0_0_0 },
@@ -1587,22 +2882,42 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, ExecutionContextSwitcher_tC30FBBA37AF7939CED1F80BF8A63BA1DFD07D708_marshal_pinvoke, ExecutionContextSwitcher_tC30FBBA37AF7939CED1F80BF8A63BA1DFD07D708_marshal_pinvoke_back, ExecutionContextSwitcher_tC30FBBA37AF7939CED1F80BF8A63BA1DFD07D708_marshal_pinvoke_cleanup, NULL, NULL, &ExecutionContextSwitcher_tC30FBBA37AF7939CED1F80BF8A63BA1DFD07D708_0_0_0 },
 	{ NULL, FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756_marshal_pinvoke, FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756_marshal_pinvoke_back, FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756_marshal_pinvoke_cleanup, NULL, NULL, &FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756_0_0_0 },
 	{ NULL, FailedToLoadScriptObject_t51C7A75B7D39FE935901EB6E75FE2D020AF14A89_marshal_pinvoke, FailedToLoadScriptObject_t51C7A75B7D39FE935901EB6E75FE2D020AF14A89_marshal_pinvoke_back, FailedToLoadScriptObject_t51C7A75B7D39FE935901EB6E75FE2D020AF14A89_marshal_pinvoke_cleanup, NULL, NULL, &FailedToLoadScriptObject_t51C7A75B7D39FE935901EB6E75FE2D020AF14A89_0_0_0 },
+	{ NULL, FastMemoryDesc_tAD0B2FF1E2C10081569B42C98F9E48DE366F7F4D_marshal_pinvoke, FastMemoryDesc_tAD0B2FF1E2C10081569B42C98F9E48DE366F7F4D_marshal_pinvoke_back, FastMemoryDesc_tAD0B2FF1E2C10081569B42C98F9E48DE366F7F4D_marshal_pinvoke_cleanup, NULL, NULL, &FastMemoryDesc_tAD0B2FF1E2C10081569B42C98F9E48DE366F7F4D_0_0_0 },
 	{ NULL, FieldMember_tFAEBD5181D8BB7C912174317D5AAE15D23B378BF_marshal_pinvoke, FieldMember_tFAEBD5181D8BB7C912174317D5AAE15D23B378BF_marshal_pinvoke_back, FieldMember_tFAEBD5181D8BB7C912174317D5AAE15D23B378BF_marshal_pinvoke_cleanup, NULL, NULL, &FieldMember_tFAEBD5181D8BB7C912174317D5AAE15D23B378BF_0_0_0 },
+	{ NULL, FlacFrameInformation_t3577B15DD5538F12D8105FC22837DD4881385C2E_marshal_pinvoke, FlacFrameInformation_t3577B15DD5538F12D8105FC22837DD4881385C2E_marshal_pinvoke_back, FlacFrameInformation_t3577B15DD5538F12D8105FC22837DD4881385C2E_marshal_pinvoke_cleanup, NULL, NULL, &FlacFrameInformation_t3577B15DD5538F12D8105FC22837DD4881385C2E_0_0_0 },
 	{ NULL, FloatTween_t11548A42FCB3B005DD83D77A529119381B2BB64A_marshal_pinvoke, FloatTween_t11548A42FCB3B005DD83D77A529119381B2BB64A_marshal_pinvoke_back, FloatTween_t11548A42FCB3B005DD83D77A529119381B2BB64A_marshal_pinvoke_cleanup, NULL, NULL, &FloatTween_t11548A42FCB3B005DD83D77A529119381B2BB64A_0_0_0 },
 	{ NULL, FontAssetCreationEditorSettings_t0FF28D2E78F090105C63C81F9E438A7B09E3EA52_marshal_pinvoke, FontAssetCreationEditorSettings_t0FF28D2E78F090105C63C81F9E438A7B09E3EA52_marshal_pinvoke_back, FontAssetCreationEditorSettings_t0FF28D2E78F090105C63C81F9E438A7B09E3EA52_marshal_pinvoke_cleanup, NULL, NULL, &FontAssetCreationEditorSettings_t0FF28D2E78F090105C63C81F9E438A7B09E3EA52_0_0_0 },
 	{ NULL, FontDefinition_t65281B0E106365C28AD3F2525DE148719AEEA30C_marshal_pinvoke, FontDefinition_t65281B0E106365C28AD3F2525DE148719AEEA30C_marshal_pinvoke_back, FontDefinition_t65281B0E106365C28AD3F2525DE148719AEEA30C_marshal_pinvoke_cleanup, NULL, NULL, &FontDefinition_t65281B0E106365C28AD3F2525DE148719AEEA30C_0_0_0 },
 	{ NULL, FontReference_t550791D5AA7787156C3A229C65D7E1AC4BF76172_marshal_pinvoke, FontReference_t550791D5AA7787156C3A229C65D7E1AC4BF76172_marshal_pinvoke_back, FontReference_t550791D5AA7787156C3A229C65D7E1AC4BF76172_marshal_pinvoke_cleanup, NULL, NULL, &FontReference_t550791D5AA7787156C3A229C65D7E1AC4BF76172_0_0_0 },
 	{ NULL, FontWeightPair_tB94169BD86D0DFC25D651F890B15991A3E0ADA42_marshal_pinvoke, FontWeightPair_tB94169BD86D0DFC25D651F890B15991A3E0ADA42_marshal_pinvoke_back, FontWeightPair_tB94169BD86D0DFC25D651F890B15991A3E0ADA42_marshal_pinvoke_cleanup, NULL, NULL, &FontWeightPair_tB94169BD86D0DFC25D651F890B15991A3E0ADA42_0_0_0 },
+	{ NULL, ForceAsyncAwaiter_t4F90D8A767F7504702D667A8E69AA7ACCD0B87C2_marshal_pinvoke, ForceAsyncAwaiter_t4F90D8A767F7504702D667A8E69AA7ACCD0B87C2_marshal_pinvoke_back, ForceAsyncAwaiter_t4F90D8A767F7504702D667A8E69AA7ACCD0B87C2_marshal_pinvoke_cleanup, NULL, NULL, &ForceAsyncAwaiter_t4F90D8A767F7504702D667A8E69AA7ACCD0B87C2_0_0_0 },
 	{ NULL, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_pinvoke, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_pinvoke_back, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_pinvoke_cleanup, NULL, NULL, &GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0 },
 	{ NULL, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_pinvoke, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_pinvoke_back, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_pinvoke_cleanup, NULL, NULL, &GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0 },
 	{ NULL, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_pinvoke, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_pinvoke_back, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_pinvoke_cleanup, NULL, NULL, &GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0 },
+	{ NULL, GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_marshal_pinvoke, GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_marshal_pinvoke_back, GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_marshal_pinvoke_cleanup, NULL, NULL, &GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_0_0_0 },
 	{ NULL, Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F_marshal_pinvoke, Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F_marshal_pinvoke_back, Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F_marshal_pinvoke_cleanup, NULL, NULL, &Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F_0_0_0 },
 	{ NULL, Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E_marshal_pinvoke, Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E_marshal_pinvoke_back, Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E_marshal_pinvoke_cleanup, NULL, NULL, &Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E_0_0_0 },
 	{ NULL, HandleDragAndDropArgs_t14222F5271A86F1FE692EDBFD99ABA3FF1430F9D_marshal_pinvoke, HandleDragAndDropArgs_t14222F5271A86F1FE692EDBFD99ABA3FF1430F9D_marshal_pinvoke_back, HandleDragAndDropArgs_t14222F5271A86F1FE692EDBFD99ABA3FF1430F9D_marshal_pinvoke_cleanup, NULL, NULL, &HandleDragAndDropArgs_t14222F5271A86F1FE692EDBFD99ABA3FF1430F9D_0_0_0 },
+	{ DelegatePInvokeWrapper_HeaderParser_t9BD3B896027A047C0DA68DC732ABC1B9A660AB67, NULL, NULL, NULL, NULL, NULL, &HeaderParser_t9BD3B896027A047C0DA68DC732ABC1B9A660AB67_0_0_0 },
+	{ NULL, HeaderVariantInfo_t99223ED0C557730FBD8AA572065B994254F3386A_marshal_pinvoke, HeaderVariantInfo_t99223ED0C557730FBD8AA572065B994254F3386A_marshal_pinvoke_back, HeaderVariantInfo_t99223ED0C557730FBD8AA572065B994254F3386A_marshal_pinvoke_cleanup, NULL, NULL, &HeaderVariantInfo_t99223ED0C557730FBD8AA572065B994254F3386A_0_0_0 },
 	{ NULL, HumanBone_t9A978BB2457E935D0B6FA64ADDE60562ADAE5FD8_marshal_pinvoke, HumanBone_t9A978BB2457E935D0B6FA64ADDE60562ADAE5FD8_marshal_pinvoke_back, HumanBone_t9A978BB2457E935D0B6FA64ADDE60562ADAE5FD8_marshal_pinvoke_cleanup, NULL, NULL, &HumanBone_t9A978BB2457E935D0B6FA64ADDE60562ADAE5FD8_0_0_0 },
+	{ NULL, HumanDescription_tAEFC8398C9AA70799C171BC0AEE07C0031B0CD44_marshal_pinvoke, HumanDescription_tAEFC8398C9AA70799C171BC0AEE07C0031B0CD44_marshal_pinvoke_back, HumanDescription_tAEFC8398C9AA70799C171BC0AEE07C0031B0CD44_marshal_pinvoke_cleanup, NULL, NULL, &HumanDescription_tAEFC8398C9AA70799C171BC0AEE07C0031B0CD44_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IAudioEndpointVolumeCallback_tCAFE7EF8BE0C333F25AC602F77D5192881C59A10::IID, &IAudioEndpointVolumeCallback_tCAFE7EF8BE0C333F25AC602F77D5192881C59A10_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IAudioSessionEvents_t324AF49B0A1BE20E64BBDB0BCD3EF34E03B56516::IID, &IAudioSessionEvents_t324AF49B0A1BE20E64BBDB0BCD3EF34E03B56516_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IAudioSessionNotification_tB7486E1356482020ECDAAF6F776FFD297118EA0E::IID, &IAudioSessionNotification_tB7486E1356482020ECDAAF6F776FFD297118EA0E_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IAudioVolumeDuckNotification_tCA9CCCDBB459019EF5677FE64D69CC10B8D4DAC3::IID, &IAudioVolumeDuckNotification_tCA9CCCDBB459019EF5677FE64D69CC10B8D4DAC3_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IMFCollection_tB7E4AFC7AD4CD5D091C161B02984345A80F977BD::IID, &IMFCollection_tB7E4AFC7AD4CD5D091C161B02984345A80F977BD_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IMMDevice_tD3127F8A4820877146FDA19BB57B164F9A9DC2D5::IID, &IMMDevice_tD3127F8A4820877146FDA19BB57B164F9A9DC2D5_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IMMDeviceCollection_t198ED695858B392C87F37736CEB7C377D0EA983B::IID, &IMMDeviceCollection_t198ED695858B392C87F37736CEB7C377D0EA983B_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IMMDeviceEnumerator_t2AA6599E6D3785C934DBEF97C78A3488C9F0E6B1::IID, &IMMDeviceEnumerator_t2AA6599E6D3785C934DBEF97C78A3488C9F0E6B1_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IMMNotificationClient_tDA5E5A962F9A7E51F5AB4C427CFB5D5DCDF8E57D::IID, &IMMNotificationClient_tDA5E5A962F9A7E51F5AB4C427CFB5D5DCDF8E57D_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IMediaBuffer_t79A339AC5E87CEBD9E1936021A52DB69DAAB54A2::IID, &IMediaBuffer_t79A339AC5E87CEBD9E1936021A52DB69DAAB54A2_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IMediaObject_tA9539CA48917E118AABEC457862D4572DFB28C20::IID, &IMediaObject_tA9539CA48917E118AABEC457862D4572DFB28C20_0_0_0 },
 	{ NULL, IOAsyncResult_t667861995468DDF5B2CFED1940CC2BCEEDD2B374_marshal_pinvoke, IOAsyncResult_t667861995468DDF5B2CFED1940CC2BCEEDD2B374_marshal_pinvoke_back, IOAsyncResult_t667861995468DDF5B2CFED1940CC2BCEEDD2B374_marshal_pinvoke_cleanup, NULL, NULL, &IOAsyncResult_t667861995468DDF5B2CFED1940CC2BCEEDD2B374_0_0_0 },
 	{ NULL, IOSelectorJob_t988E3C2831A98169EFDB178A08E8548A4E90DD31_marshal_pinvoke, IOSelectorJob_t988E3C2831A98169EFDB178A08E8548A4E90DD31_marshal_pinvoke_back, IOSelectorJob_t988E3C2831A98169EFDB178A08E8548A4E90DD31_marshal_pinvoke_cleanup, NULL, NULL, &IOSelectorJob_t988E3C2831A98169EFDB178A08E8548A4E90DD31_0_0_0 },
 	{ NULL, IPPacketInformation_tCD16AD717AD72D36684D9CFFDA0F6B53CCD3249B_marshal_pinvoke, IPPacketInformation_tCD16AD717AD72D36684D9CFFDA0F6B53CCD3249B_marshal_pinvoke_back, IPPacketInformation_tCD16AD717AD72D36684D9CFFDA0F6B53CCD3249B_marshal_pinvoke_cleanup, NULL, NULL, &IPPacketInformation_tCD16AD717AD72D36684D9CFFDA0F6B53CCD3249B_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IStream_t5B8504123802C24362FFFFC3891FDE9A60398873::IID, &IStream_t5B8504123802C24362FFFFC3891FDE9A60398873_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &IWMResamplerProps_tEB43BE2AC9A5343A15DB8878F79BDE984706F35D::IID, &IWMResamplerProps_tEB43BE2AC9A5343A15DB8878F79BDE984706F35D_0_0_0 },
 	{ NULL, ImageSource_t0990262FCFA5C1F3C695C53FB04A35F71CDD63B4_marshal_pinvoke, ImageSource_t0990262FCFA5C1F3C695C53FB04A35F71CDD63B4_marshal_pinvoke_back, ImageSource_t0990262FCFA5C1F3C695C53FB04A35F71CDD63B4_marshal_pinvoke_cleanup, NULL, NULL, &ImageSource_t0990262FCFA5C1F3C695C53FB04A35F71CDD63B4_0_0_0 },
 	{ NULL, InheritedData_t9CB0AE42B025C0BD86FEF0C979D5BFE15E188E67_marshal_pinvoke, InheritedData_t9CB0AE42B025C0BD86FEF0C979D5BFE15E188E67_marshal_pinvoke_back, InheritedData_t9CB0AE42B025C0BD86FEF0C979D5BFE15E188E67_marshal_pinvoke_cleanup, NULL, NULL, &InheritedData_t9CB0AE42B025C0BD86FEF0C979D5BFE15E188E67_0_0_0 },
 	{ NULL, InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD_marshal_pinvoke, InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD_marshal_pinvoke_back, InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD_marshal_pinvoke_cleanup, NULL, NULL, &InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD_0_0_0 },
@@ -1619,23 +2934,42 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, LightProbes_tB0E0051ED428658D51E611C9E4B6FE3A49EB094D_marshal_pinvoke, LightProbes_tB0E0051ED428658D51E611C9E4B6FE3A49EB094D_marshal_pinvoke_back, LightProbes_tB0E0051ED428658D51E611C9E4B6FE3A49EB094D_marshal_pinvoke_cleanup, NULL, NULL, &LightProbes_tB0E0051ED428658D51E611C9E4B6FE3A49EB094D_0_0_0 },
 	{ NULL, LinkInfo_tE85DDAFDFBDA635E6405C88EE4FD5941A9243DD8_marshal_pinvoke, LinkInfo_tE85DDAFDFBDA635E6405C88EE4FD5941A9243DD8_marshal_pinvoke_back, LinkInfo_tE85DDAFDFBDA635E6405C88EE4FD5941A9243DD8_marshal_pinvoke_cleanup, NULL, NULL, &LinkInfo_tE85DDAFDFBDA635E6405C88EE4FD5941A9243DD8_0_0_0 },
 	{ NULL, LocalBuilder_tCB5AF342391604CED7394B81A931AB5BC6B97BB6_marshal_pinvoke, LocalBuilder_tCB5AF342391604CED7394B81A931AB5BC6B97BB6_marshal_pinvoke_back, LocalBuilder_tCB5AF342391604CED7394B81A931AB5BC6B97BB6_marshal_pinvoke_cleanup, NULL, NULL, &LocalBuilder_tCB5AF342391604CED7394B81A931AB5BC6B97BB6_0_0_0 },
+	{ NULL, LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB_marshal_pinvoke, LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB_marshal_pinvoke_back, LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB_marshal_pinvoke_cleanup, NULL, NULL, &LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB_0_0_0 },
 	{ NULL, LocalVariableInfo_tFEE59A3613A442977805D456B016C3592CE60B62_marshal_pinvoke, LocalVariableInfo_tFEE59A3613A442977805D456B016C3592CE60B62_marshal_pinvoke_back, LocalVariableInfo_tFEE59A3613A442977805D456B016C3592CE60B62_marshal_pinvoke_cleanup, NULL, NULL, &LocalVariableInfo_tFEE59A3613A442977805D456B016C3592CE60B62_0_0_0 },
 	{ NULL, LockHolder_t759094B031976CAB1D40EEA607217A40DB7A0A59_marshal_pinvoke, LockHolder_t759094B031976CAB1D40EEA607217A40DB7A0A59_marshal_pinvoke_back, LockHolder_t759094B031976CAB1D40EEA607217A40DB7A0A59_marshal_pinvoke_cleanup, NULL, NULL, &LockHolder_t759094B031976CAB1D40EEA607217A40DB7A0A59_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MFAttributes_tEC619374857ADF885C27C5F8B8796E277908AE61::CLSID, &MFAttributes_tEC619374857ADF885C27C5F8B8796E277908AE61_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MFByteStream_t65F0396F38E18AD53D47D0EECD685DC4531DB3B2::CLSID, &MFByteStream_t65F0396F38E18AD53D47D0EECD685DC4531DB3B2_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MFMediaBuffer_t65A04D9CB12F6D4D8931F1B66317F3D4076900AA::CLSID, &MFMediaBuffer_t65A04D9CB12F6D4D8931F1B66317F3D4076900AA_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MFMediaType_t44F42B8BC7FC5C4583100E56E93BBB4FA273FE91::CLSID, &MFMediaType_t44F42B8BC7FC5C4583100E56E93BBB4FA273FE91_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MFSinkWriter_t4E604334727727BD0D8A850C060E582E2867ABC1::CLSID, &MFSinkWriter_t4E604334727727BD0D8A850C060E582E2867ABC1_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MFSourceReader_t1C91612D2781D1129714CF36CB1F786434361329::CLSID, &MFSourceReader_t1C91612D2781D1129714CF36CB1F786434361329_0_0_0 },
+	{ NULL, MFTRegisterTypeInfo_t52B22A077060D5D269FF7DEA28FAC5E149DBAC1C_marshal_pinvoke, MFTRegisterTypeInfo_t52B22A077060D5D269FF7DEA28FAC5E149DBAC1C_marshal_pinvoke_back, MFTRegisterTypeInfo_t52B22A077060D5D269FF7DEA28FAC5E149DBAC1C_marshal_pinvoke_cleanup, NULL, NULL, &MFTRegisterTypeInfo_t52B22A077060D5D269FF7DEA28FAC5E149DBAC1C_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MMDevice_tA976C9127C746973F4079D6567A985D8AD23C760::CLSID, &MMDevice_tA976C9127C746973F4079D6567A985D8AD23C760_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MMDeviceCollection_t8D656522C07CF950864EE37949E7B50CC39490AD::CLSID, &MMDeviceCollection_t8D656522C07CF950864EE37949E7B50CC39490AD_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MMDeviceEnumerator_t2C584F0D246CE3ACA933BFDC889CE1D49C8FB936::CLSID, &MMDeviceEnumerator_t2C584F0D246CE3ACA933BFDC889CE1D49C8FB936_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MMEndpoint_t345363C3D266676303655D79B995C6E8DEFAFD7D::CLSID, &MMEndpoint_t345363C3D266676303655D79B995C6E8DEFAFD7D_0_0_0 },
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_MMNotificationClient_tB78CBCC6375C6E8368AE900296DED1E81C45A0FC, &MMNotificationClient_tB78CBCC6375C6E8368AE900296DED1E81C45A0FC::CLSID, &MMNotificationClient_tB78CBCC6375C6E8368AE900296DED1E81C45A0FC_0_0_0 },
+	{ NULL, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_pinvoke, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_pinvoke_back, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_pinvoke_cleanup, NULL, NULL, &MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0 },
 	{ NULL, MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshal_pinvoke, MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshal_pinvoke_back, MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshal_pinvoke_cleanup, NULL, NULL, &MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_0_0_0 },
 	{ NULL, MatchResult_t466703B46AB8050EABFF2E93F9439AD049D2566A_marshal_pinvoke, MatchResult_t466703B46AB8050EABFF2E93F9439AD049D2566A_marshal_pinvoke_back, MatchResult_t466703B46AB8050EABFF2E93F9439AD049D2566A_marshal_pinvoke_cleanup, NULL, NULL, &MatchResult_t466703B46AB8050EABFF2E93F9439AD049D2566A_0_0_0 },
 	{ NULL, MatchResultInfo_t2D42F957A6C5CBA42159437BECB361DA59B66697_marshal_pinvoke, MatchResultInfo_t2D42F957A6C5CBA42159437BECB361DA59B66697_marshal_pinvoke_back, MatchResultInfo_t2D42F957A6C5CBA42159437BECB361DA59B66697_marshal_pinvoke_cleanup, NULL, NULL, &MatchResultInfo_t2D42F957A6C5CBA42159437BECB361DA59B66697_0_0_0 },
 	{ NULL, MaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26_marshal_pinvoke, MaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26_marshal_pinvoke_back, MaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26_marshal_pinvoke_cleanup, NULL, NULL, &MaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26_0_0_0 },
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_MediaBuffer_t8001337EF3AE5E5377CCD6033F127B018854252E, NULL, &MediaBuffer_t8001337EF3AE5E5377CCD6033F127B018854252E_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MediaObject_tF3175101F6FE87F252BBA6A3513575C103ACBEBD::CLSID, &MediaObject_tF3175101F6FE87F252BBA6A3513575C103ACBEBD_0_0_0 },
 	{ NULL, MemoryHandle_t505785861D4FF84F850A3FF775BE6AE1833D2AFD_marshal_pinvoke, MemoryHandle_t505785861D4FF84F850A3FF775BE6AE1833D2AFD_marshal_pinvoke_back, MemoryHandle_t505785861D4FF84F850A3FF775BE6AE1833D2AFD_marshal_pinvoke_cleanup, NULL, NULL, &MemoryHandle_t505785861D4FF84F850A3FF775BE6AE1833D2AFD_0_0_0 },
 	{ NULL, MeshGenerationResult_tD5A6D639B2CF1A3F855AFB41861DEC48DC0D3A9C_marshal_pinvoke, MeshGenerationResult_tD5A6D639B2CF1A3F855AFB41861DEC48DC0D3A9C_marshal_pinvoke_back, MeshGenerationResult_tD5A6D639B2CF1A3F855AFB41861DEC48DC0D3A9C_marshal_pinvoke_cleanup, NULL, NULL, &MeshGenerationResult_tD5A6D639B2CF1A3F855AFB41861DEC48DC0D3A9C_0_0_0 },
 	{ NULL, MeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F_marshal_pinvoke, MeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F_marshal_pinvoke_back, MeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F_marshal_pinvoke_cleanup, NULL, NULL, &MeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F_0_0_0 },
 	{ NULL, Module_tABB9217F7F2BA3E0F4277D03C2B234A7313BB8D0_marshal_pinvoke, Module_tABB9217F7F2BA3E0F4277D03C2B234A7313BB8D0_marshal_pinvoke_back, Module_tABB9217F7F2BA3E0F4277D03C2B234A7313BB8D0_marshal_pinvoke_cleanup, NULL, NULL, &Module_tABB9217F7F2BA3E0F4277D03C2B234A7313BB8D0_0_0_0 },
 	{ NULL, MonoAsyncCall_t4CB32CAF9A2C648A4A35E0D921CE0A886B5D1A37_marshal_pinvoke, MonoAsyncCall_t4CB32CAF9A2C648A4A35E0D921CE0A886B5D1A37_marshal_pinvoke_back, MonoAsyncCall_t4CB32CAF9A2C648A4A35E0D921CE0A886B5D1A37_marshal_pinvoke_cleanup, NULL, NULL, &MonoAsyncCall_t4CB32CAF9A2C648A4A35E0D921CE0A886B5D1A37_0_0_0 },
+	{ DelegatePInvokeWrapper_MonoBtlsSelectCallback_t94D7F9E6194E0CC0F6D20A02709C3991261BEFAE, NULL, NULL, NULL, NULL, NULL, &MonoBtlsSelectCallback_t94D7F9E6194E0CC0F6D20A02709C3991261BEFAE_0_0_0 },
+	{ DelegatePInvokeWrapper_MonoBtlsServerNameCallback_t157678673B6A4D619EE32B5F453ECACF3BE430EA, NULL, NULL, NULL, NULL, NULL, &MonoBtlsServerNameCallback_t157678673B6A4D619EE32B5F453ECACF3BE430EA_0_0_0 },
 	{ NULL, MonoEventInfo_tFC31A64CF7C2FC93D54A539434B3C403FC924777_marshal_pinvoke, MonoEventInfo_tFC31A64CF7C2FC93D54A539434B3C403FC924777_marshal_pinvoke_back, MonoEventInfo_tFC31A64CF7C2FC93D54A539434B3C403FC924777_marshal_pinvoke_cleanup, NULL, NULL, &MonoEventInfo_tFC31A64CF7C2FC93D54A539434B3C403FC924777_0_0_0 },
 	{ NULL, MonoMethodInfo_t1E614E57E686DDBD9D853F45CDFD61E1F9206F61_marshal_pinvoke, MonoMethodInfo_t1E614E57E686DDBD9D853F45CDFD61E1F9206F61_marshal_pinvoke_back, MonoMethodInfo_t1E614E57E686DDBD9D853F45CDFD61E1F9206F61_marshal_pinvoke_cleanup, NULL, NULL, &MonoMethodInfo_t1E614E57E686DDBD9D853F45CDFD61E1F9206F61_0_0_0 },
 	{ NULL, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshal_pinvoke, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshal_pinvoke_back, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshal_pinvoke_cleanup, NULL, NULL, &MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0 },
 	{ NULL, MonoPropertyInfo_t8022292639E946C5DEE573BC1C902DB8D7290A1C_marshal_pinvoke, MonoPropertyInfo_t8022292639E946C5DEE573BC1C902DB8D7290A1C_marshal_pinvoke_back, MonoPropertyInfo_t8022292639E946C5DEE573BC1C902DB8D7290A1C_marshal_pinvoke_cleanup, NULL, NULL, &MonoPropertyInfo_t8022292639E946C5DEE573BC1C902DB8D7290A1C_0_0_0 },
 	{ NULL, MonoTypeInfo_t90D5999A69AC524474FDEAC50F55B6CE868AB501_marshal_pinvoke, MonoTypeInfo_t90D5999A69AC524474FDEAC50F55B6CE868AB501_marshal_pinvoke_back, MonoTypeInfo_t90D5999A69AC524474FDEAC50F55B6CE868AB501_marshal_pinvoke_cleanup, NULL, NULL, &MonoTypeInfo_t90D5999A69AC524474FDEAC50F55B6CE868AB501_0_0_0 },
 	{ NULL, MovedFromAttributeData_t03CC6A15A3D30385AF3C6E10FA273DE13D874A2F_marshal_pinvoke, MovedFromAttributeData_t03CC6A15A3D30385AF3C6E10FA273DE13D874A2F_marshal_pinvoke_back, MovedFromAttributeData_t03CC6A15A3D30385AF3C6E10FA273DE13D874A2F_marshal_pinvoke_cleanup, NULL, NULL, &MovedFromAttributeData_t03CC6A15A3D30385AF3C6E10FA273DE13D874A2F_0_0_0 },
+	{ NULL, Mp3Format_t44E6D66636BDCCCDA81AC4E5C79D8E3248D0A1D7_marshal_pinvoke, Mp3Format_t44E6D66636BDCCCDA81AC4E5C79D8E3248D0A1D7_marshal_pinvoke_back, Mp3Format_t44E6D66636BDCCCDA81AC4E5C79D8E3248D0A1D7_marshal_pinvoke_cleanup, NULL, NULL, &Mp3Format_t44E6D66636BDCCCDA81AC4E5C79D8E3248D0A1D7_0_0_0 },
 	{ NULL, MulticastDelegate_t_marshal_pinvoke, MulticastDelegate_t_marshal_pinvoke_back, MulticastDelegate_t_marshal_pinvoke_cleanup, NULL, NULL, &MulticastDelegate_t_0_0_0 },
 	{ NULL, MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B_marshal_pinvoke, MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B_marshal_pinvoke_back, MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B_marshal_pinvoke_cleanup, NULL, NULL, &MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B_0_0_0 },
 	{ DelegatePInvokeWrapper_NativeUpdateCallback_tC5CA5A9117B79251968A4DA3758552EFE1D37495, NULL, NULL, NULL, NULL, NULL, &NativeUpdateCallback_tC5CA5A9117B79251968A4DA3758552EFE1D37495_0_0_0 },
@@ -1645,13 +2979,22 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, ParameterInfo_tBC2D68304851A59EFB2EAE6B168714CD45445F2F_marshal_pinvoke, ParameterInfo_tBC2D68304851A59EFB2EAE6B168714CD45445F2F_marshal_pinvoke_back, ParameterInfo_tBC2D68304851A59EFB2EAE6B168714CD45445F2F_marshal_pinvoke_cleanup, NULL, NULL, &ParameterInfo_tBC2D68304851A59EFB2EAE6B168714CD45445F2F_0_0_0 },
 	{ NULL, ParameterModifier_t75F1AF13B2AD5EDBD3A3579FD337D0A66E3FF510_marshal_pinvoke, ParameterModifier_t75F1AF13B2AD5EDBD3A3579FD337D0A66E3FF510_marshal_pinvoke_back, ParameterModifier_t75F1AF13B2AD5EDBD3A3579FD337D0A66E3FF510_marshal_pinvoke_cleanup, NULL, NULL, &ParameterModifier_t75F1AF13B2AD5EDBD3A3579FD337D0A66E3FF510_0_0_0 },
 	{ NULL, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_pinvoke, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_pinvoke_back, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_pinvoke_cleanup, NULL, NULL, &ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0 },
+	{ NULL, ParsingInfo_t1717753431089DD2385D3739360CF85BDB410F89_marshal_pinvoke, ParsingInfo_t1717753431089DD2385D3739360CF85BDB410F89_marshal_pinvoke_back, ParsingInfo_t1717753431089DD2385D3739360CF85BDB410F89_marshal_pinvoke_cleanup, NULL, NULL, &ParsingInfo_t1717753431089DD2385D3739360CF85BDB410F89_0_0_0 },
+	{ DelegatePInvokeWrapper_PerformDynamicRes_t0949EAA6943CF225A1F61B233E13A440C1C09B47, NULL, NULL, NULL, NULL, NULL, &PerformDynamicRes_t0949EAA6943CF225A1F61B233E13A440C1C09B47_0_0_0 },
 	{ NULL, PhotoCapture_t268971E77CE9FFE83CCCE1F07F8CFE3013A461ED_marshal_pinvoke, PhotoCapture_t268971E77CE9FFE83CCCE1F07F8CFE3013A461ED_marshal_pinvoke_back, PhotoCapture_t268971E77CE9FFE83CCCE1F07F8CFE3013A461ED_marshal_pinvoke_cleanup, NULL, NULL, &PhotoCapture_t268971E77CE9FFE83CCCE1F07F8CFE3013A461ED_0_0_0 },
 	{ NULL, PhraseRecognizedEventArgs_t91AA21891352136A6CA60FCF60FCA372D07B18D8_marshal_pinvoke, PhraseRecognizedEventArgs_t91AA21891352136A6CA60FCF60FCA372D07B18D8_marshal_pinvoke_back, PhraseRecognizedEventArgs_t91AA21891352136A6CA60FCF60FCA372D07B18D8_marshal_pinvoke_cleanup, NULL, NULL, &PhraseRecognizedEventArgs_t91AA21891352136A6CA60FCF60FCA372D07B18D8_0_0_0 },
 	{ NULL, PlayableBinding_tB68B3BAC47F4F4C559640472174D5BEF93CB6AB4_marshal_pinvoke, PlayableBinding_tB68B3BAC47F4F4C559640472174D5BEF93CB6AB4_marshal_pinvoke_back, PlayableBinding_tB68B3BAC47F4F4C559640472174D5BEF93CB6AB4_marshal_pinvoke_cleanup, NULL, NULL, &PlayableBinding_tB68B3BAC47F4F4C559640472174D5BEF93CB6AB4_0_0_0 },
 	{ NULL, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_marshal_pinvoke, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_marshal_pinvoke_back, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_marshal_pinvoke_cleanup, NULL, NULL, &PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_0_0_0 },
 	{ NULL, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5_marshal_pinvoke, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5_marshal_pinvoke_back, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5_marshal_pinvoke_cleanup, NULL, NULL, &PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5_0_0_0 },
 	{ NULL, PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_pinvoke, PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_pinvoke_back, PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_pinvoke_cleanup, NULL, NULL, &PointLight_tD01A1428DC1015D98A527136034187F732433EA7_0_0_0 },
+	{ NULL, ProbeDilationSettings_t28A862582E313EFC300E6437FDCB9D9DC9A9A167_marshal_pinvoke, ProbeDilationSettings_t28A862582E313EFC300E6437FDCB9D9DC9A9A167_marshal_pinvoke_back, ProbeDilationSettings_t28A862582E313EFC300E6437FDCB9D9DC9A9A167_marshal_pinvoke_cleanup, NULL, NULL, &ProbeDilationSettings_t28A862582E313EFC300E6437FDCB9D9DC9A9A167_0_0_0 },
+	{ NULL, ProbeVolumeBakingProcessSettings_t1A0C71DD07CFB6660AFC0D3EBF81FA5064CFDAD7_marshal_pinvoke, ProbeVolumeBakingProcessSettings_t1A0C71DD07CFB6660AFC0D3EBF81FA5064CFDAD7_marshal_pinvoke_back, ProbeVolumeBakingProcessSettings_t1A0C71DD07CFB6660AFC0D3EBF81FA5064CFDAD7_marshal_pinvoke_cleanup, NULL, NULL, &ProbeVolumeBakingProcessSettings_t1A0C71DD07CFB6660AFC0D3EBF81FA5064CFDAD7_0_0_0 },
+	{ NULL, ProbeVolumeShadingParameters_t2A2468B1474F1F66585CDA9999C46CBF88701641_marshal_pinvoke, ProbeVolumeShadingParameters_t2A2468B1474F1F66585CDA9999C46CBF88701641_marshal_pinvoke_back, ProbeVolumeShadingParameters_t2A2468B1474F1F66585CDA9999C46CBF88701641_marshal_pinvoke_cleanup, NULL, NULL, &ProbeVolumeShadingParameters_t2A2468B1474F1F66585CDA9999C46CBF88701641_0_0_0 },
+	{ NULL, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_pinvoke, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_pinvoke_back, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_pinvoke_cleanup, NULL, NULL, &ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0 },
+	{ NULL, ProfilingSample_t50A4DFD8DA524681EE1BF64D3A518E6BA633657A_marshal_pinvoke, ProfilingSample_t50A4DFD8DA524681EE1BF64D3A518E6BA633657A_marshal_pinvoke_back, ProfilingSample_t50A4DFD8DA524681EE1BF64D3A518E6BA633657A_marshal_pinvoke_cleanup, NULL, NULL, &ProfilingSample_t50A4DFD8DA524681EE1BF64D3A518E6BA633657A_0_0_0 },
 	{ NULL, PropertyMember_t4A07D86E6B1554D28A1679F276FA9F9A6E1FD984_marshal_pinvoke, PropertyMember_t4A07D86E6B1554D28A1679F276FA9F9A6E1FD984_marshal_pinvoke_back, PropertyMember_t4A07D86E6B1554D28A1679F276FA9F9A6E1FD984_marshal_pinvoke_cleanup, NULL, NULL, &PropertyMember_t4A07D86E6B1554D28A1679F276FA9F9A6E1FD984_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &PropertyStore_t6047D2AF2EB617E0BFD4865B75950C700EB02342::CLSID, &PropertyStore_t6047D2AF2EB617E0BFD4865B75950C700EB02342_0_0_0 },
+	{ NULL, RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_marshal_pinvoke, RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_marshal_pinvoke_back, RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_marshal_pinvoke_cleanup, NULL, NULL, &RSAParameters_t14B738B69F9D1EB594D5F391BDF8E42BA16435FF_0_0_0 },
 	{ NULL, RareData_t2F466D955456C8E8898324C284948FCB0F4D6F26_marshal_pinvoke, RareData_t2F466D955456C8E8898324C284948FCB0F4D6F26_marshal_pinvoke_back, RareData_t2F466D955456C8E8898324C284948FCB0F4D6F26_marshal_pinvoke_cleanup, NULL, NULL, &RareData_t2F466D955456C8E8898324C284948FCB0F4D6F26_0_0_0 },
 	{ NULL, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshal_pinvoke, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshal_pinvoke_back, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshal_pinvoke_cleanup, NULL, NULL, &RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_0_0_0 },
 	{ NULL, RealProxy_t2D3667E71799D4A142B9E0EDED7FD858277FC9AB_marshal_pinvoke, RealProxy_t2D3667E71799D4A142B9E0EDED7FD858277FC9AB_marshal_pinvoke_back, RealProxy_t2D3667E71799D4A142B9E0EDED7FD858277FC9AB_marshal_pinvoke_cleanup, NULL, NULL, &RealProxy_t2D3667E71799D4A142B9E0EDED7FD858277FC9AB_0_0_0 },
@@ -1663,6 +3006,15 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, RegionInfo_tB80D4B7042096ED4166921F58B93FD1DB5555836_marshal_pinvoke, RegionInfo_tB80D4B7042096ED4166921F58B93FD1DB5555836_marshal_pinvoke_back, RegionInfo_tB80D4B7042096ED4166921F58B93FD1DB5555836_marshal_pinvoke_cleanup, NULL, NULL, &RegionInfo_tB80D4B7042096ED4166921F58B93FD1DB5555836_0_0_0 },
 	{ NULL, RemoteConfigSettings_tC979947EE51355162B3241B9F80D95A8FD25FE52_marshal_pinvoke, RemoteConfigSettings_tC979947EE51355162B3241B9F80D95A8FD25FE52_marshal_pinvoke_back, RemoteConfigSettings_tC979947EE51355162B3241B9F80D95A8FD25FE52_marshal_pinvoke_cleanup, NULL, NULL, &RemoteConfigSettings_tC979947EE51355162B3241B9F80D95A8FD25FE52_0_0_0 },
 	{ NULL, RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_marshal_pinvoke, RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_marshal_pinvoke_back, RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_marshal_pinvoke_cleanup, NULL, NULL, &RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_0_0_0 },
+	{ NULL, RenderGraphBuilder_t8AEC7329276477A095C2D889D3361085DD1A1FFC_marshal_pinvoke, RenderGraphBuilder_t8AEC7329276477A095C2D889D3361085DD1A1FFC_marshal_pinvoke_back, RenderGraphBuilder_t8AEC7329276477A095C2D889D3361085DD1A1FFC_marshal_pinvoke_cleanup, NULL, NULL, &RenderGraphBuilder_t8AEC7329276477A095C2D889D3361085DD1A1FFC_0_0_0 },
+	{ NULL, RenderGraphExecution_t6DD852CD6BF4AB57D2D963BA7DA449A218DD0529_marshal_pinvoke, RenderGraphExecution_t6DD852CD6BF4AB57D2D963BA7DA449A218DD0529_marshal_pinvoke_back, RenderGraphExecution_t6DD852CD6BF4AB57D2D963BA7DA449A218DD0529_marshal_pinvoke_cleanup, NULL, NULL, &RenderGraphExecution_t6DD852CD6BF4AB57D2D963BA7DA449A218DD0529_0_0_0 },
+	{ NULL, RenderGraphLogIndent_tF9C4FBEEBE5BC22C223A368FD757DB647CD5C8E5_marshal_pinvoke, RenderGraphLogIndent_tF9C4FBEEBE5BC22C223A368FD757DB647CD5C8E5_marshal_pinvoke_back, RenderGraphLogIndent_tF9C4FBEEBE5BC22C223A368FD757DB647CD5C8E5_marshal_pinvoke_cleanup, NULL, NULL, &RenderGraphLogIndent_tF9C4FBEEBE5BC22C223A368FD757DB647CD5C8E5_0_0_0 },
+	{ NULL, RenderGraphParameters_t09D9F272548DFFBB836A53B48E15EA3D8FEA4BCA_marshal_pinvoke, RenderGraphParameters_t09D9F272548DFFBB836A53B48E15EA3D8FEA4BCA_marshal_pinvoke_back, RenderGraphParameters_t09D9F272548DFFBB836A53B48E15EA3D8FEA4BCA_marshal_pinvoke_cleanup, NULL, NULL, &RenderGraphParameters_t09D9F272548DFFBB836A53B48E15EA3D8FEA4BCA_0_0_0 },
+	{ NULL, RenderGraphProfilingScope_t1FFE4E5C53237490107027CBCCA6684B111C28C0_marshal_pinvoke, RenderGraphProfilingScope_t1FFE4E5C53237490107027CBCCA6684B111C28C0_marshal_pinvoke_back, RenderGraphProfilingScope_t1FFE4E5C53237490107027CBCCA6684B111C28C0_marshal_pinvoke_cleanup, NULL, NULL, &RenderGraphProfilingScope_t1FFE4E5C53237490107027CBCCA6684B111C28C0_0_0_0 },
+	{ NULL, RendererListDesc_t5C51B75B4D539F99345A077545015B8FB99FE78E_marshal_pinvoke, RendererListDesc_t5C51B75B4D539F99345A077545015B8FB99FE78E_marshal_pinvoke_back, RendererListDesc_t5C51B75B4D539F99345A077545015B8FB99FE78E_marshal_pinvoke_cleanup, NULL, NULL, &RendererListDesc_t5C51B75B4D539F99345A077545015B8FB99FE78E_0_0_0 },
+	{ NULL, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_marshal_pinvoke, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_marshal_pinvoke_back, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_marshal_pinvoke_cleanup, NULL, NULL, &RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_0_0_0 },
+	{ NULL, RendererListParams_t13F72282BCE2DC255747FE7694C6BBC3377944B1_marshal_pinvoke, RendererListParams_t13F72282BCE2DC255747FE7694C6BBC3377944B1_marshal_pinvoke_back, RendererListParams_t13F72282BCE2DC255747FE7694C6BBC3377944B1_marshal_pinvoke_cleanup, NULL, NULL, &RendererListParams_t13F72282BCE2DC255747FE7694C6BBC3377944B1_0_0_0 },
+	{ NULL, RendererListResource_t9B978DD85ADC467D7E4DB42EF603B7C49918BF49_marshal_pinvoke, RendererListResource_t9B978DD85ADC467D7E4DB42EF603B7C49918BF49_marshal_pinvoke_back, RendererListResource_t9B978DD85ADC467D7E4DB42EF603B7C49918BF49_marshal_pinvoke_cleanup, NULL, NULL, &RendererListResource_t9B978DD85ADC467D7E4DB42EF603B7C49918BF49_0_0_0 },
 	{ NULL, ResourceLocator_t84F68A0DD2AA185761938E49BBE9B2C46A47E122_marshal_pinvoke, ResourceLocator_t84F68A0DD2AA185761938E49BBE9B2C46A47E122_marshal_pinvoke_back, ResourceLocator_t84F68A0DD2AA185761938E49BBE9B2C46A47E122_marshal_pinvoke_cleanup, NULL, NULL, &ResourceLocator_t84F68A0DD2AA185761938E49BBE9B2C46A47E122_0_0_0 },
 	{ NULL, ResourceRequest_tE6953FBA45EAAEFE866C635B9E7852044E62D868_marshal_pinvoke, ResourceRequest_tE6953FBA45EAAEFE866C635B9E7852044E62D868_marshal_pinvoke_back, ResourceRequest_tE6953FBA45EAAEFE866C635B9E7852044E62D868_marshal_pinvoke_cleanup, NULL, NULL, &ResourceRequest_tE6953FBA45EAAEFE866C635B9E7852044E62D868_0_0_0 },
 	{ NULL, RewindableAllocator_tB18F8ADC8F2EE36E1F51FCCCFF0AC093108EF254_marshal_pinvoke, RewindableAllocator_tB18F8ADC8F2EE36E1F51FCCCFF0AC093108EF254_marshal_pinvoke_back, RewindableAllocator_tB18F8ADC8F2EE36E1F51FCCCFF0AC093108EF254_marshal_pinvoke_cleanup, NULL, NULL, &RewindableAllocator_tB18F8ADC8F2EE36E1F51FCCCFF0AC093108EF254_0_0_0 },
@@ -1670,17 +3022,25 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E_marshal_pinvoke, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E_marshal_pinvoke_back, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E_marshal_pinvoke_cleanup, NULL, NULL, &RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E_0_0_0 },
 	{ NULL, RuntimeAssembly_tA26A4DE82E77826DFC3D58AD976BCFC6BCA918AF_marshal_pinvoke, RuntimeAssembly_tA26A4DE82E77826DFC3D58AD976BCFC6BCA918AF_marshal_pinvoke_back, RuntimeAssembly_tA26A4DE82E77826DFC3D58AD976BCFC6BCA918AF_marshal_pinvoke_cleanup, NULL, NULL, &RuntimeAssembly_tA26A4DE82E77826DFC3D58AD976BCFC6BCA918AF_0_0_0 },
 	{ NULL, RuntimeModule_tF7DA9B52FC45487544703DCA49464B67CEA79633_marshal_pinvoke, RuntimeModule_tF7DA9B52FC45487544703DCA49464B67CEA79633_marshal_pinvoke_back, RuntimeModule_tF7DA9B52FC45487544703DCA49464B67CEA79633_marshal_pinvoke_cleanup, NULL, NULL, &RuntimeModule_tF7DA9B52FC45487544703DCA49464B67CEA79633_0_0_0 },
+	{ NULL, STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_marshal_pinvoke, STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_marshal_pinvoke_back, STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_marshal_pinvoke_cleanup, NULL, NULL, &STATSTG_t127B1C03A3166EE385CADA145D69700CB2FE20B0_0_0_0 },
 	{ NULL, SafeStringMarshal_t37C5C4D85118BDD5A55E3A20736550CF11C76C2E_marshal_pinvoke, SafeStringMarshal_t37C5C4D85118BDD5A55E3A20736550CF11C76C2E_marshal_pinvoke_back, SafeStringMarshal_t37C5C4D85118BDD5A55E3A20736550CF11C76C2E_marshal_pinvoke_cleanup, NULL, NULL, &SafeStringMarshal_t37C5C4D85118BDD5A55E3A20736550CF11C76C2E_0_0_0 },
 	{ DelegatePInvokeWrapper_SavePersistentViewData_tFE77B8450170D95B16B3017D62F81F2139D4F716, NULL, NULL, NULL, NULL, NULL, &SavePersistentViewData_tFE77B8450170D95B16B3017D62F81F2139D4F716_0_0_0 },
 	{ NULL, ScalableImage_t64F0F6F75D1099EF5D595E70CA1A2A7B9914E80F_marshal_pinvoke, ScalableImage_t64F0F6F75D1099EF5D595E70CA1A2A7B9914E80F_marshal_pinvoke_back, ScalableImage_t64F0F6F75D1099EF5D595E70CA1A2A7B9914E80F_marshal_pinvoke_cleanup, NULL, NULL, &ScalableImage_t64F0F6F75D1099EF5D595E70CA1A2A7B9914E80F_0_0_0 },
 	{ NULL, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshal_pinvoke, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshal_pinvoke_back, Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_marshal_pinvoke_cleanup, NULL, NULL, &Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_0_0_0 },
+	{ DelegatePInvokeWrapper_ScaleFunc_t423F661DAD5C7A18F509C8F1F62C9D6AEA9A9791, NULL, NULL, NULL, NULL, NULL, &ScaleFunc_t423F661DAD5C7A18F509C8F1F62C9D6AEA9A9791_0_0_0 },
+	{ NULL, ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899_marshal_pinvoke, ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899_marshal_pinvoke_back, ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899_marshal_pinvoke_cleanup, NULL, NULL, &ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899_0_0_0 },
 	{ NULL, ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshal_pinvoke, ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshal_pinvoke_back, ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshal_pinvoke_cleanup, NULL, NULL, &ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_0_0_0 },
+	{ NULL, SecondarySpriteTexture_tAB48BE37F20C61C85B24FB2E38F751082AF1A07B_marshal_pinvoke, SecondarySpriteTexture_tAB48BE37F20C61C85B24FB2E38F751082AF1A07B_marshal_pinvoke_back, SecondarySpriteTexture_tAB48BE37F20C61C85B24FB2E38F751082AF1A07B_marshal_pinvoke_cleanup, NULL, NULL, &SecondarySpriteTexture_tAB48BE37F20C61C85B24FB2E38F751082AF1A07B_0_0_0 },
 	{ NULL, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_marshal_pinvoke, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_marshal_pinvoke_back, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_marshal_pinvoke_cleanup, NULL, NULL, &SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_0_0_0 },
 	{ NULL, SemanticMeaning_tB410A3D7306E8060875DDEFE041CC7FDDEEE6335_marshal_pinvoke, SemanticMeaning_tB410A3D7306E8060875DDEFE041CC7FDDEEE6335_marshal_pinvoke_back, SemanticMeaning_tB410A3D7306E8060875DDEFE041CC7FDDEEE6335_marshal_pinvoke_cleanup, NULL, NULL, &SemanticMeaning_tB410A3D7306E8060875DDEFE041CC7FDDEEE6335_0_0_0 },
 	{ NULL, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshal_pinvoke, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshal_pinvoke_back, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshal_pinvoke_cleanup, NULL, NULL, &SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0 },
 	{ DelegatePInvokeWrapper_SerializationEventHandler_t0A09DB90E1E5E0B2CCCB82D3380E02F4ACE8995F, NULL, NULL, NULL, NULL, NULL, &SerializationEventHandler_t0A09DB90E1E5E0B2CCCB82D3380E02F4ACE8995F_0_0_0 },
 	{ NULL, SetupDragAndDropArgs_t3D6B6745EDF8BA073395EFEFA50B007FE94190F2_marshal_pinvoke, SetupDragAndDropArgs_t3D6B6745EDF8BA073395EFEFA50B007FE94190F2_marshal_pinvoke_back, SetupDragAndDropArgs_t3D6B6745EDF8BA073395EFEFA50B007FE94190F2_marshal_pinvoke_cleanup, NULL, NULL, &SetupDragAndDropArgs_t3D6B6745EDF8BA073395EFEFA50B007FE94190F2_0_0_0 },
+	{ NULL, ShaderDebugPrintInput_tAA3D285B61C21C127B4E4F3515343E1A761E3872_marshal_pinvoke, ShaderDebugPrintInput_tAA3D285B61C21C127B4E4F3515343E1A761E3872_marshal_pinvoke_back, ShaderDebugPrintInput_tAA3D285B61C21C127B4E4F3515343E1A761E3872_marshal_pinvoke_cleanup, NULL, NULL, &ShaderDebugPrintInput_tAA3D285B61C21C127B4E4F3515343E1A761E3872_0_0_0 },
+	{ NULL, ShaderKeyword_t683126BB2B2337DB41954B0FE0DA7EBAA7028661_marshal_pinvoke, ShaderKeyword_t683126BB2B2337DB41954B0FE0DA7EBAA7028661_marshal_pinvoke_back, ShaderKeyword_t683126BB2B2337DB41954B0FE0DA7EBAA7028661_marshal_pinvoke_cleanup, NULL, NULL, &ShaderKeyword_t683126BB2B2337DB41954B0FE0DA7EBAA7028661_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &SimpleAudioVolume_t10546E0C7A0DD41441ED294557BB88926DAB50A7::CLSID, &SimpleAudioVolume_t10546E0C7A0DD41441ED294557BB88926DAB50A7_0_0_0 },
 	{ NULL, SkeletonBone_tA999028EED923DB65E286BB99F81541872F5B126_marshal_pinvoke, SkeletonBone_tA999028EED923DB65E286BB99F81541872F5B126_marshal_pinvoke_back, SkeletonBone_tA999028EED923DB65E286BB99F81541872F5B126_marshal_pinvoke_cleanup, NULL, NULL, &SkeletonBone_tA999028EED923DB65E286BB99F81541872F5B126_0_0_0 },
+	{ NULL, Sky_t5AB138933D60CB215B9FBA33CB82283A2F743A14_marshal_pinvoke, Sky_t5AB138933D60CB215B9FBA33CB82283A2F743A14_marshal_pinvoke_back, Sky_t5AB138933D60CB215B9FBA33CB82283A2F743A14_marshal_pinvoke_cleanup, NULL, NULL, &Sky_t5AB138933D60CB215B9FBA33CB82283A2F743A14_0_0_0 },
 	{ NULL, SocketAsyncResult_tB157B0D0A1219D5A71AC5030C8BA8EA9D0F25340_marshal_pinvoke, SocketAsyncResult_tB157B0D0A1219D5A71AC5030C8BA8EA9D0F25340_marshal_pinvoke_back, SocketAsyncResult_tB157B0D0A1219D5A71AC5030C8BA8EA9D0F25340_marshal_pinvoke_cleanup, NULL, NULL, &SocketAsyncResult_tB157B0D0A1219D5A71AC5030C8BA8EA9D0F25340_0_0_0 },
 	{ NULL, SortKey_tFE5594FAAAFF330066735114D1021DB0D5273740_marshal_pinvoke, SortKey_tFE5594FAAAFF330066735114D1021DB0D5273740_marshal_pinvoke_back, SortKey_tFE5594FAAAFF330066735114D1021DB0D5273740_marshal_pinvoke_cleanup, NULL, NULL, &SortKey_tFE5594FAAAFF330066735114D1021DB0D5273740_0_0_0 },
 	{ NULL, SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshal_pinvoke, SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshal_pinvoke_back, SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_marshal_pinvoke_cleanup, NULL, NULL, &SpinLock_t0826FB2BDD25012485F35D6D33A1FE1E1752E816_0_0_0 },
@@ -1712,6 +3072,7 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, TextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976_marshal_pinvoke, TextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976_marshal_pinvoke_back, TextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976_marshal_pinvoke_cleanup, NULL, NULL, &TextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976_0_0_0 },
 	{ NULL, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshal_pinvoke, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshal_pinvoke_back, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshal_pinvoke_cleanup, NULL, NULL, &TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0 },
 	{ NULL, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_pinvoke, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_pinvoke_back, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_pinvoke_cleanup, NULL, NULL, &TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0 },
+	{ NULL, TextureDesc_tBD9644C6170930E57EEF8542E9200AD9D858B601_marshal_pinvoke, TextureDesc_tBD9644C6170930E57EEF8542E9200AD9D858B601_marshal_pinvoke_back, TextureDesc_tBD9644C6170930E57EEF8542E9200AD9D858B601_marshal_pinvoke_cleanup, NULL, NULL, &TextureDesc_tBD9644C6170930E57EEF8542E9200AD9D858B601_0_0_0 },
 	{ NULL, TextureEntry_tDA3A5BB083FA16C7123AF227C5D7F78860665128_marshal_pinvoke, TextureEntry_tDA3A5BB083FA16C7123AF227C5D7F78860665128_marshal_pinvoke_back, TextureEntry_tDA3A5BB083FA16C7123AF227C5D7F78860665128_marshal_pinvoke_cleanup, NULL, NULL, &TextureEntry_tDA3A5BB083FA16C7123AF227C5D7F78860665128_0_0_0 },
 	{ DelegatePInvokeWrapper_ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2, NULL, NULL, NULL, NULL, NULL, &ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_0_0_0 },
 	{ NULL, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshal_pinvoke, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshal_pinvoke_back, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshal_pinvoke_cleanup, NULL, NULL, &TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0 },
@@ -1732,14 +3093,35 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5_marshal_pinvoke, VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5_marshal_pinvoke_back, VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5_marshal_pinvoke_cleanup, NULL, NULL, &VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA9ACF43063F5_0_0_0 },
 	{ NULL, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshal_pinvoke, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshal_pinvoke_back, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshal_pinvoke_cleanup, NULL, NULL, &VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0 },
 	{ NULL, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_pinvoke, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_pinvoke_back, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_pinvoke_cleanup, NULL, NULL, &VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0 },
+	{ NULL, ValueStringBuilder_tEBD54C46E3AF8527BD0D234124F5C1AC14E9E251_marshal_pinvoke, ValueStringBuilder_tEBD54C46E3AF8527BD0D234124F5C1AC14E9E251_marshal_pinvoke_back, ValueStringBuilder_tEBD54C46E3AF8527BD0D234124F5C1AC14E9E251_marshal_pinvoke_cleanup, NULL, NULL, &ValueStringBuilder_tEBD54C46E3AF8527BD0D234124F5C1AC14E9E251_0_0_0 },
 	{ NULL, ValueStringBuilder_tC142140E6C0B9CD2BA423636F1BB5822672673E9_marshal_pinvoke, ValueStringBuilder_tC142140E6C0B9CD2BA423636F1BB5822672673E9_marshal_pinvoke_back, ValueStringBuilder_tC142140E6C0B9CD2BA423636F1BB5822672673E9_marshal_pinvoke_cleanup, NULL, NULL, &ValueStringBuilder_tC142140E6C0B9CD2BA423636F1BB5822672673E9_0_0_0 },
+	{ NULL, ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A_marshal_pinvoke, ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A_marshal_pinvoke_back, ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A_marshal_pinvoke_cleanup, NULL, NULL, &ValueTaskAwaiter_t8A53759F995F1786E132CA010D1D215B55F3101A_0_0_0 },
 	{ NULL, ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshal_pinvoke, ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshal_pinvoke_back, ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshal_pinvoke_cleanup, NULL, NULL, &ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_0_0_0 },
 	{ NULL, VideoCapture_t4FC0DEDE3146D8313C7CD8B8B9D8EFB868CACD7B_marshal_pinvoke, VideoCapture_t4FC0DEDE3146D8313C7CD8B8B9D8EFB868CACD7B_marshal_pinvoke_back, VideoCapture_t4FC0DEDE3146D8313C7CD8B8B9D8EFB868CACD7B_marshal_pinvoke_cleanup, NULL, NULL, &VideoCapture_t4FC0DEDE3146D8313C7CD8B8B9D8EFB868CACD7B_0_0_0 },
+	{ NULL, VirtualOffsetSettings_tC91F136546790A8318F26B183DCB14460F426A44_marshal_pinvoke, VirtualOffsetSettings_tC91F136546790A8318F26B183DCB14460F426A44_marshal_pinvoke_back, VirtualOffsetSettings_tC91F136546790A8318F26B183DCB14460F426A44_marshal_pinvoke_cleanup, NULL, NULL, &VirtualOffsetSettings_tC91F136546790A8318F26B183DCB14460F426A44_0_0_0 },
 	{ NULL, VisualData_t64B2C5387387BCEC426F3981BECC8582A02D3F1B_marshal_pinvoke, VisualData_t64B2C5387387BCEC426F3981BECC8582A02D3F1B_marshal_pinvoke_back, VisualData_t64B2C5387387BCEC426F3981BECC8582A02D3F1B_marshal_pinvoke_cleanup, NULL, NULL, &VisualData_t64B2C5387387BCEC426F3981BECC8582A02D3F1B_0_0_0 },
+	{ NULL, VisualEffectPlayableSerializedEvent_t81FFD0AB85C7A0D22E898F03776FD3513BB4B4C1_marshal_pinvoke, VisualEffectPlayableSerializedEvent_t81FFD0AB85C7A0D22E898F03776FD3513BB4B4C1_marshal_pinvoke_back, VisualEffectPlayableSerializedEvent_t81FFD0AB85C7A0D22E898F03776FD3513BB4B4C1_marshal_pinvoke_cleanup, NULL, NULL, &VisualEffectPlayableSerializedEvent_t81FFD0AB85C7A0D22E898F03776FD3513BB4B4C1_0_0_0 },
+	{ NULL, VisualEffectPlayableSerializedEventNoColor_t24C9BB23681EA5BA1533E8A0B9829179FD90A202_marshal_pinvoke, VisualEffectPlayableSerializedEventNoColor_t24C9BB23681EA5BA1533E8A0B9829179FD90A202_marshal_pinvoke_back, VisualEffectPlayableSerializedEventNoColor_t24C9BB23681EA5BA1533E8A0B9829179FD90A202_marshal_pinvoke_cleanup, NULL, NULL, &VisualEffectPlayableSerializedEventNoColor_t24C9BB23681EA5BA1533E8A0B9829179FD90A202_0_0_0 },
 	{ NULL, VisualElementStyleSheetSet_t01465769E0D9109A677300311A7058701873A23B_marshal_pinvoke, VisualElementStyleSheetSet_t01465769E0D9109A677300311A7058701873A23B_marshal_pinvoke_back, VisualElementStyleSheetSet_t01465769E0D9109A677300311A7058701873A23B_marshal_pinvoke_cleanup, NULL, NULL, &VisualElementStyleSheetSet_t01465769E0D9109A677300311A7058701873A23B_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &WMResamplerProps_t9DA1198EB37C762439295DA5D0E03B40F9834A46::CLSID, &WMResamplerProps_t9DA1198EB37C762439295DA5D0E03B40F9834A46_0_0_0 },
 	{ NULL, WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshal_pinvoke, WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshal_pinvoke_back, WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshal_pinvoke_cleanup, NULL, NULL, &WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_0_0_0 },
 	{ NULL, WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_marshal_pinvoke, WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_marshal_pinvoke_back, WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_marshal_pinvoke_cleanup, NULL, NULL, &WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_0_0_0 },
+	{ DelegatePInvokeWrapper_WaveCallback_tA51B97F90574E048047043BEC1CD28F376CFF69E, NULL, NULL, NULL, NULL, NULL, &WaveCallback_tA51B97F90574E048047043BEC1CD28F376CFF69E_0_0_0 },
+	{ NULL, WaveFormat_t02C57DD28F467ABB277C38DA4D2F6A381C723BB7_marshal_pinvoke, WaveFormat_t02C57DD28F467ABB277C38DA4D2F6A381C723BB7_marshal_pinvoke_back, WaveFormat_t02C57DD28F467ABB277C38DA4D2F6A381C723BB7_marshal_pinvoke_cleanup, NULL, NULL, &WaveFormat_t02C57DD28F467ABB277C38DA4D2F6A381C723BB7_0_0_0 },
+	{ NULL, WaveFormatExtensible_t7E82B7BAB354A4E2C61162CD97F01961AD67C5A4_marshal_pinvoke, WaveFormatExtensible_t7E82B7BAB354A4E2C61162CD97F01961AD67C5A4_marshal_pinvoke_back, WaveFormatExtensible_t7E82B7BAB354A4E2C61162CD97F01961AD67C5A4_marshal_pinvoke_cleanup, NULL, NULL, &WaveFormatExtensible_t7E82B7BAB354A4E2C61162CD97F01961AD67C5A4_0_0_0 },
+	{ NULL, WaveHeader_tA3F0F72A8655D36C341EF8BF8A31225560A340CC_marshal_pinvoke, WaveHeader_tA3F0F72A8655D36C341EF8BF8A31225560A340CC_marshal_pinvoke_back, WaveHeader_tA3F0F72A8655D36C341EF8BF8A31225560A340CC_marshal_pinvoke_cleanup, NULL, NULL, &WaveHeader_tA3F0F72A8655D36C341EF8BF8A31225560A340CC_0_0_0 },
+	{ NULL, WaveInCaps_tF8056D424ABD2F660F33FDEB2FFFE4FF2D87D0F0_marshal_pinvoke, WaveInCaps_tF8056D424ABD2F660F33FDEB2FFFE4FF2D87D0F0_marshal_pinvoke_back, WaveInCaps_tF8056D424ABD2F660F33FDEB2FFFE4FF2D87D0F0_marshal_pinvoke_cleanup, NULL, NULL, &WaveInCaps_tF8056D424ABD2F660F33FDEB2FFFE4FF2D87D0F0_0_0_0 },
+	{ NULL, WaveOutCaps_tEFDF763DF70572654833E5FE762AD5AD78DB9D9D_marshal_pinvoke, WaveOutCaps_tEFDF763DF70572654833E5FE762AD5AD78DB9D9D_marshal_pinvoke_back, WaveOutCaps_tEFDF763DF70572654833E5FE762AD5AD78DB9D9D_marshal_pinvoke_cleanup, NULL, NULL, &WaveOutCaps_tEFDF763DF70572654833E5FE762AD5AD78DB9D9D_0_0_0 },
+	{ NULL, Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_pinvoke, Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_pinvoke_back, Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_pinvoke_cleanup, NULL, NULL, &Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_0_0_0 },
+	{ NULL, Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke, Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke_back, Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke_cleanup, NULL, NULL, &Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_0_0_0 },
+	{ DelegatePInvokeWrapper_WindowFunction_t6537225961A2767DE7AB58BFAC26EEFBEA2339EB, NULL, NULL, NULL, NULL, NULL, &WindowFunction_t6537225961A2767DE7AB58BFAC26EEFBEA2339EB_0_0_0 },
 	{ NULL, WordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123_marshal_pinvoke, WordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123_marshal_pinvoke_back, WordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123_marshal_pinvoke_cleanup, NULL, NULL, &WordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123_0_0_0 },
+	{ NULL, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_marshal_pinvoke, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_marshal_pinvoke_back, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_marshal_pinvoke_cleanup, NULL, NULL, &X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &XAudio2_t6153C040CDB05394D4688EA9D1F7B57E74759DAE::CLSID, &XAudio2_t6153C040CDB05394D4688EA9D1F7B57E74759DAE_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &XAudio2_7_t00FCD1F431CD6BBC03BE5F00291BDF4021829FF7::CLSID, &XAudio2_7_t00FCD1F431CD6BBC03BE5F00291BDF4021829FF7_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &XAudio2_8_t8EC2D7A76A16B8E9F049B7004ED8E1D380853721::CLSID, &XAudio2_8_t8EC2D7A76A16B8E9F049B7004ED8E1D380853721_0_0_0 },
+	{ NULL, XRPassCreateInfo_tBB279E651A4D9CBEB6A76FCBB138D7AB7A05DCA1_marshal_pinvoke, XRPassCreateInfo_tBB279E651A4D9CBEB6A76FCBB138D7AB7A05DCA1_marshal_pinvoke_back, XRPassCreateInfo_tBB279E651A4D9CBEB6A76FCBB138D7AB7A05DCA1_marshal_pinvoke_cleanup, NULL, NULL, &XRPassCreateInfo_tBB279E651A4D9CBEB6A76FCBB138D7AB7A05DCA1_0_0_0 },
+	{ NULL, XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_marshal_pinvoke, XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_marshal_pinvoke_back, XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_marshal_pinvoke_cleanup, NULL, NULL, &XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_0_0_0 },
 	{ NULL, YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshal_pinvoke, YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshal_pinvoke_back, YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshal_pinvoke_cleanup, NULL, NULL, &YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_0_0_0 },
 	{ NULL, __DTString_t732683AF9A8EEC82B66C136920240C4033EF0637_marshal_pinvoke, __DTString_t732683AF9A8EEC82B66C136920240C4033EF0637_marshal_pinvoke_back, __DTString_t732683AF9A8EEC82B66C136920240C4033EF0637_marshal_pinvoke_cleanup, NULL, NULL, &__DTString_t732683AF9A8EEC82B66C136920240C4033EF0637_0_0_0 },
 	{ NULL, jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225_marshal_pinvoke, jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225_marshal_pinvoke_back, jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225_marshal_pinvoke_cleanup, NULL, NULL, &jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225_0_0_0 },
@@ -1762,6 +3144,9 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, NumberBuffer_tF09E8463D840202ECA50F50BE6D57729C18213B4_marshal_pinvoke, NumberBuffer_tF09E8463D840202ECA50F50BE6D57729C18213B4_marshal_pinvoke_back, NumberBuffer_tF09E8463D840202ECA50F50BE6D57729C18213B4_marshal_pinvoke_cleanup, NULL, NULL, &NumberBuffer_tF09E8463D840202ECA50F50BE6D57729C18213B4_0_0_0 },
 	{ DelegatePInvokeWrapper_ValidateBoneWeights_00000116U24PostfixBurstDelegate_tA5DD301A516885745B6C1CD2345B7837CB6E23E3, NULL, NULL, NULL, NULL, NULL, &ValidateBoneWeights_00000116U24PostfixBurstDelegate_tA5DD301A516885745B6C1CD2345B7837CB6E23E3_0_0_0 },
 	{ DelegatePInvokeWrapper_WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC, NULL, NULL, NULL, NULL, NULL, &WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC_0_0_0 },
+	{ NULL, AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_marshal_pinvoke, AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_marshal_pinvoke_back, AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_marshal_pinvoke_cleanup, NULL, NULL, &AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_0_0_0 },
+	{ NULL, ConfiguredTaskAwaiter_t6D4C5E6B82017ED33DAFA1EFC33B0EFBE3137618_marshal_pinvoke, ConfiguredTaskAwaiter_t6D4C5E6B82017ED33DAFA1EFC33B0EFBE3137618_marshal_pinvoke_back, ConfiguredTaskAwaiter_t6D4C5E6B82017ED33DAFA1EFC33B0EFBE3137618_marshal_pinvoke_cleanup, NULL, NULL, &ConfiguredTaskAwaiter_t6D4C5E6B82017ED33DAFA1EFC33B0EFBE3137618_0_0_0 },
+	{ NULL, RecognizedAttribute_t67AAD871D05C66CFF976B98E4492B979993FB7D3_marshal_pinvoke, RecognizedAttribute_t67AAD871D05C66CFF976B98E4492B979993FB7D3_marshal_pinvoke_back, RecognizedAttribute_t67AAD871D05C66CFF976B98E4492B979993FB7D3_marshal_pinvoke_cleanup, NULL, NULL, &RecognizedAttribute_t67AAD871D05C66CFF976B98E4492B979993FB7D3_0_0_0 },
 	{ NULL, ProcessMessageRes_t6B49D2FAE01AC95889FDF8F854970E358D2AC2C7_marshal_pinvoke, ProcessMessageRes_t6B49D2FAE01AC95889FDF8F854970E358D2AC2C7_marshal_pinvoke_back, ProcessMessageRes_t6B49D2FAE01AC95889FDF8F854970E358D2AC2C7_marshal_pinvoke_cleanup, NULL, NULL, &ProcessMessageRes_t6B49D2FAE01AC95889FDF8F854970E358D2AC2C7_0_0_0 },
 	{ NULL, SerializableParameterGroups_t5D16D3223F64924A8BF571AF6DB58DBF15DE9583_marshal_pinvoke, SerializableParameterGroups_t5D16D3223F64924A8BF571AF6DB58DBF15DE9583_marshal_pinvoke_back, SerializableParameterGroups_t5D16D3223F64924A8BF571AF6DB58DBF15DE9583_marshal_pinvoke_cleanup, NULL, NULL, &SerializableParameterGroups_t5D16D3223F64924A8BF571AF6DB58DBF15DE9583_0_0_0 },
 	{ NULL, SerializableParameters_t664DB3D1BAC0BD3F51C40B7C124AA33B3E794BE6_marshal_pinvoke, SerializableParameters_t664DB3D1BAC0BD3F51C40B7C124AA33B3E794BE6_marshal_pinvoke_back, SerializableParameters_t664DB3D1BAC0BD3F51C40B7C124AA33B3E794BE6_marshal_pinvoke_cleanup, NULL, NULL, &SerializableParameters_t664DB3D1BAC0BD3F51C40B7C124AA33B3E794BE6_0_0_0 },
@@ -1798,11 +3183,23 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ DelegatePInvokeWrapper_OnCultureInfoChangedDelegate_t643F89A369BE552AC4D546507F51BF998EBA670A, NULL, NULL, NULL, NULL, NULL, &OnCultureInfoChangedDelegate_t643F89A369BE552AC4D546507F51BF998EBA670A_0_0_0 },
 	{ NULL, Resources_t959FACC867970114DBF8DC7D4C649240E819940E_marshal_pinvoke, Resources_t959FACC867970114DBF8DC7D4C649240E819940E_marshal_pinvoke_back, Resources_t959FACC867970114DBF8DC7D4C649240E819940E_marshal_pinvoke_cleanup, NULL, NULL, &Resources_t959FACC867970114DBF8DC7D4C649240E819940E_0_0_0 },
 	{ NULL, FocusBasedEventSequenceContext_tA9E2ED024CB3E4EC3C41F5B432AB56D892D69BF0_marshal_pinvoke, FocusBasedEventSequenceContext_tA9E2ED024CB3E4EC3C41F5B432AB56D892D69BF0_marshal_pinvoke_back, FocusBasedEventSequenceContext_tA9E2ED024CB3E4EC3C41F5B432AB56D892D69BF0_marshal_pinvoke_cleanup, NULL, NULL, &FocusBasedEventSequenceContext_tA9E2ED024CB3E4EC3C41F5B432AB56D892D69BF0_0_0_0 },
+	{ DelegatePInvokeWrapper_ReadMethod_t87B67872818F82B3DCC067C0DD9BB47200327CE6, NULL, NULL, NULL, NULL, NULL, &ReadMethod_t87B67872818F82B3DCC067C0DD9BB47200327CE6_0_0_0 },
+	{ DelegatePInvokeWrapper_WriteMethod_t43391B800F1C3F6EFEEFCBADF4D3322CBFB42AB9, NULL, NULL, NULL, NULL, NULL, &WriteMethod_t43391B800F1C3F6EFEEFCBADF4D3322CBFB42AB9_0_0_0 },
+	{ DelegatePInvokeWrapper_UnmanagedReadOrWrite_t3705731796B1AD7D7A711D794FF08961B623E9BA, NULL, NULL, NULL, NULL, NULL, &UnmanagedReadOrWrite_t3705731796B1AD7D7A711D794FF08961B623E9BA_0_0_0 },
 	{ DelegatePInvokeWrapper_DictationCompletedDelegate_t83D7F1A9EC8225F6C405F0936EEEA031F75E93C7, NULL, NULL, NULL, NULL, NULL, &DictationCompletedDelegate_t83D7F1A9EC8225F6C405F0936EEEA031F75E93C7_0_0_0 },
 	{ DelegatePInvokeWrapper_DictationErrorHandler_t3B40C491B80EBCEC860A8ABF490B6A13B129AC6D, NULL, NULL, NULL, NULL, NULL, &DictationErrorHandler_t3B40C491B80EBCEC860A8ABF490B6A13B129AC6D_0_0_0 },
 	{ DelegatePInvokeWrapper_DictationHypothesisDelegate_t062C7AA1EAEA39F02173D9C05D809EAB1DDBB77A, NULL, NULL, NULL, NULL, NULL, &DictationHypothesisDelegate_t062C7AA1EAEA39F02173D9C05D809EAB1DDBB77A_0_0_0 },
 	{ DelegatePInvokeWrapper_DictationResultDelegate_t09DC18A221E33F1C0E26AB3363F4004240FBCFC6, NULL, NULL, NULL, NULL, NULL, &DictationResultDelegate_t09DC18A221E33F1C0E26AB3363F4004240FBCFC6_0_0_0 },
 	{ DelegatePInvokeWrapper_DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68, NULL, NULL, NULL, NULL, NULL, &DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DmoChorusEffectObject_tDF6B4EE8C928D105B514DE850681DD0882747184::CLSID, &DmoChorusEffectObject_tDF6B4EE8C928D105B514DE850681DD0882747184_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DmoCompressorEffectObject_tE99A40906862C354A922D931D8CA04F51DD2A9F5::CLSID, &DmoCompressorEffectObject_tE99A40906862C354A922D931D8CA04F51DD2A9F5_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DmoDistortionEffectObject_t6864513EC1FBB42E7C3F85E94E79B184CD2B6B57::CLSID, &DmoDistortionEffectObject_t6864513EC1FBB42E7C3F85E94E79B184CD2B6B57_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DmoEchoEffectObject_t4486D7618A8447A34CEBA4B492536EAE4B51630F::CLSID, &DmoEchoEffectObject_t4486D7618A8447A34CEBA4B492536EAE4B51630F_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DmoFlangerEffectObject_t1673F9060582B282ABB707D27AE685AA2CA39B9F::CLSID, &DmoFlangerEffectObject_t1673F9060582B282ABB707D27AE685AA2CA39B9F_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DmoGargleEffectObject_t23676DD0F70F6294AC1F64EEF9E1F884965494BE::CLSID, &DmoGargleEffectObject_t23676DD0F70F6294AC1F64EEF9E1F884965494BE_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DmoMP3DecoderObject_t1B427364B60EAEEC1B4059CC87A09C655F91A7E9::CLSID, &DmoMP3DecoderObject_t1B427364B60EAEEC1B4059CC87A09C655F91A7E9_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &DmoWavesReverbEffectObject_tB1F1F427817EA8F743B996A97554964F974EE936::CLSID, &DmoWavesReverbEffectObject_tB1F1F427817EA8F743B996A97554964F974EE936_0_0_0 },
+	{ NULL, ScalerContainer_t8C9EBECAB45F9B7C806AF9F477262E5F80F5E375_marshal_pinvoke, ScalerContainer_t8C9EBECAB45F9B7C806AF9F477262E5F80F5E375_marshal_pinvoke_back, ScalerContainer_t8C9EBECAB45F9B7C806AF9F477262E5F80F5E375_marshal_pinvoke_cleanup, NULL, NULL, &ScalerContainer_t8C9EBECAB45F9B7C806AF9F477262E5F80F5E375_0_0_0 },
 	{ NULL, EnumResult_t136A685F59AB498579BD350717FADD4D6603DAB4_marshal_pinvoke, EnumResult_t136A685F59AB498579BD350717FADD4D6603DAB4_marshal_pinvoke_back, EnumResult_t136A685F59AB498579BD350717FADD4D6603DAB4_marshal_pinvoke_cleanup, NULL, NULL, &EnumResult_t136A685F59AB498579BD350717FADD4D6603DAB4_0_0_0 },
 	{ NULL, DispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455_marshal_pinvoke, DispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455_marshal_pinvoke_back, DispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455_marshal_pinvoke_cleanup, NULL, NULL, &DispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455_0_0_0 },
 	{ NULL, EventRecord_tEC2901C48A23F5AFE20A9E8D4F05F3799EA62BF2_marshal_pinvoke, EventRecord_tEC2901C48A23F5AFE20A9E8D4F05F3799EA62BF2_marshal_pinvoke_back, EventRecord_tEC2901C48A23F5AFE20A9E8D4F05F3799EA62BF2_marshal_pinvoke_cleanup, NULL, NULL, &EventRecord_tEC2901C48A23F5AFE20A9E8D4F05F3799EA62BF2_0_0_0 },
@@ -1818,21 +3215,34 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, RawTexture_t11E3CED18C936D84173D8F6A55270D7AC5452FCA_marshal_pinvoke, RawTexture_t11E3CED18C936D84173D8F6A55270D7AC5452FCA_marshal_pinvoke_back, RawTexture_t11E3CED18C936D84173D8F6A55270D7AC5452FCA_marshal_pinvoke_cleanup, NULL, NULL, &RawTexture_t11E3CED18C936D84173D8F6A55270D7AC5452FCA_0_0_0 },
 	{ NULL, GuidResult_t5B70D46D3C631BD00631FF6D700371C1E9C7AC79_marshal_pinvoke, GuidResult_t5B70D46D3C631BD00631FF6D700371C1E9C7AC79_marshal_pinvoke_back, GuidResult_t5B70D46D3C631BD00631FF6D700371C1E9C7AC79_marshal_pinvoke_cleanup, NULL, NULL, &GuidResult_t5B70D46D3C631BD00631FF6D700371C1E9C7AC79_0_0_0 },
 	{ NULL, bucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_marshal_pinvoke, bucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_marshal_pinvoke_back, bucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_marshal_pinvoke_cleanup, NULL, NULL, &bucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_0_0_0 },
+	{ NULL, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_pinvoke, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_pinvoke_back, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_pinvoke_cleanup, NULL, NULL, &AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0 },
 	{ NULL, GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshal_pinvoke, GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshal_pinvoke_back, GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_marshal_pinvoke_cleanup, NULL, NULL, &GUIGlobals_tA6082A955224515E1D82F5B41D84A0CD35A9CF10_0_0_0 },
 	{ NULL, InlineRule_t33A25EE06BCFCD5561E60223DF8544C8EF644C30_marshal_pinvoke, InlineRule_t33A25EE06BCFCD5561E60223DF8544C8EF644C30_marshal_pinvoke_back, InlineRule_t33A25EE06BCFCD5561E60223DF8544C8EF644C30_marshal_pinvoke_cleanup, NULL, NULL, &InlineRule_t33A25EE06BCFCD5561E60223DF8544C8EF644C30_0_0_0 },
 	{ DelegatePInvokeWrapper_OnValidateInput_t48916A4E9C9FD6204401FF0808C2B7A93D73418B, NULL, NULL, NULL, NULL, NULL, &OnValidateInput_t48916A4E9C9FD6204401FF0808C2B7A93D73418B_0_0_0 },
 	{ DelegatePInvokeWrapper_PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02, NULL, NULL, NULL, NULL, NULL, &PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02_0_0_0 },
 	{ NULL, DragPosition_t922FC1F61C1B1A510241E4207B94AA1CD7E94660_marshal_pinvoke, DragPosition_t922FC1F61C1B1A510241E4207B94AA1CD7E94660_marshal_pinvoke_back, DragPosition_t922FC1F61C1B1A510241E4207B94AA1CD7E94660_marshal_pinvoke_cleanup, NULL, NULL, &DragPosition_t922FC1F61C1B1A510241E4207B94AA1CD7E94660_0_0_0 },
 	{ NULL, Reader_t77F3745416303EC22BC31DD74525DB04E7501DB6_marshal_pinvoke, Reader_t77F3745416303EC22BC31DD74525DB04E7501DB6_marshal_pinvoke_back, Reader_t77F3745416303EC22BC31DD74525DB04E7501DB6_marshal_pinvoke_cleanup, NULL, NULL, &Reader_t77F3745416303EC22BC31DD74525DB04E7501DB6_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &MMDeviceEnumeratorObject_tC0E4AC99CF4526E80C07911108C2554A71CBEB12::CLSID, &MMDeviceEnumeratorObject_tC0E4AC99CF4526E80C07911108C2554A71CBEB12_0_0_0 },
+	{ DelegatePInvokeWrapper_SecureStringAllocator_t261B9D6083129A0996138F50A608D9F5E4C6DC44, NULL, NULL, NULL, NULL, NULL, &SecureStringAllocator_t261B9D6083129A0996138F50A608D9F5E4C6DC44_0_0_0 },
 	{ NULL, AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0_marshal_pinvoke, AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0_marshal_pinvoke_back, AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0_marshal_pinvoke_cleanup, NULL, NULL, &AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0_0_0_0 },
 	{ NULL, BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80_marshal_pinvoke, BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80_marshal_pinvoke_back, BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80_marshal_pinvoke_cleanup, NULL, NULL, &BorderParams_t66CC80A4CCAC5C52D6384BE4E66A3230C7099B80_0_0_0 },
 	{ NULL, RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_marshal_pinvoke, RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_marshal_pinvoke_back, RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_marshal_pinvoke_cleanup, NULL, NULL, &RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B_0_0_0 },
+	{ DelegatePInvokeWrapper_BioControlFunc_tA25CF03804268D67A2A2298BA7CF0304908E1164, NULL, NULL, NULL, NULL, NULL, &BioControlFunc_tA25CF03804268D67A2A2298BA7CF0304908E1164_0_0_0 },
+	{ DelegatePInvokeWrapper_BioReadFunc_t13D991FB24C42BE3A5866565A417A46DAFCE2182, NULL, NULL, NULL, NULL, NULL, &BioReadFunc_t13D991FB24C42BE3A5866565A417A46DAFCE2182_0_0_0 },
+	{ DelegatePInvokeWrapper_BioWriteFunc_t7F203B8BD307C07BC5C115240617DC2098776716, NULL, NULL, NULL, NULL, NULL, &BioWriteFunc_t7F203B8BD307C07BC5C115240617DC2098776716_0_0_0 },
+	{ DelegatePInvokeWrapper_PrintErrorsCallbackFunc_t269F5AA2AEDE407790495E35615D581F8E57DAF1, NULL, NULL, NULL, NULL, NULL, &PrintErrorsCallbackFunc_t269F5AA2AEDE407790495E35615D581F8E57DAF1_0_0_0 },
+	{ DelegatePInvokeWrapper_NativeSelectFunc_tB8204D9DD01EEA6E46BA2FDD005653A259AD8FCA, NULL, NULL, NULL, NULL, NULL, &NativeSelectFunc_tB8204D9DD01EEA6E46BA2FDD005653A259AD8FCA_0_0_0 },
+	{ DelegatePInvokeWrapper_NativeServerNameFunc_tD685BC5D92B7FF9953F0BEB205BCF1BF9A2211FA, NULL, NULL, NULL, NULL, NULL, &NativeServerNameFunc_tD685BC5D92B7FF9953F0BEB205BCF1BF9A2211FA_0_0_0 },
+	{ DelegatePInvokeWrapper_NativeVerifyFunc_t90E561336E71A9644B88DCC9CDD6A63CE98667E7, NULL, NULL, NULL, NULL, NULL, &NativeVerifyFunc_t90E561336E71A9644B88DCC9CDD6A63CE98667E7_0_0_0 },
+	{ DelegatePInvokeWrapper_BySubjectFunc_t68E2B6BCEAD254F4C66501F0987E52D5ED8CF8DE, NULL, NULL, NULL, NULL, NULL, &BySubjectFunc_t68E2B6BCEAD254F4C66501F0987E52D5ED8CF8DE_0_0_0 },
 	{ NULL, SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA_marshal_pinvoke, SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA_marshal_pinvoke_back, SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA_marshal_pinvoke_cleanup, NULL, NULL, &SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA_0_0_0 },
 	{ DelegatePInvokeWrapper_OnNavMeshPreUpdate_t332BD19DBCB087D7DE3F4F48C1E8F6A4EAB691C7, NULL, NULL, NULL, NULL, NULL, &OnNavMeshPreUpdate_t332BD19DBCB087D7DE3F4F48C1E8F6A4EAB691C7_0_0_0 },
 	{ NULL, FocusableHierarchyTraversal_tE18EF688B7AC65FC273812175FCF84916E3E7E4B_marshal_pinvoke, FocusableHierarchyTraversal_tE18EF688B7AC65FC273812175FCF84916E3E7E4B_marshal_pinvoke_back, FocusableHierarchyTraversal_tE18EF688B7AC65FC273812175FCF84916E3E7E4B_marshal_pinvoke_cleanup, NULL, NULL, &FocusableHierarchyTraversal_tE18EF688B7AC65FC273812175FCF84916E3E7E4B_0_0_0 },
 	{ DelegatePInvokeWrapper_InvocationEntryDelegate_t6CCA2089ADE78BEAC44921F10D121BD51641A3C3, NULL, NULL, NULL, NULL, NULL, &InvocationEntryDelegate_t6CCA2089ADE78BEAC44921F10D121BD51641A3C3_0_0_0 },
 	{ NULL, FormatParam_t76A31D70C9964751A9AAFD4CE6951437E6C1CD8E_marshal_pinvoke, FormatParam_t76A31D70C9964751A9AAFD4CE6951437E6C1CD8E_marshal_pinvoke_back, FormatParam_t76A31D70C9964751A9AAFD4CE6951437E6C1CD8E_marshal_pinvoke_cleanup, NULL, NULL, &FormatParam_t76A31D70C9964751A9AAFD4CE6951437E6C1CD8E_0_0_0 },
 	{ NULL, EmitParams_tE76279CE754C7B0A4ECDA7E294587AACB039FBA0_marshal_pinvoke, EmitParams_tE76279CE754C7B0A4ECDA7E294587AACB039FBA0_marshal_pinvoke_back, EmitParams_tE76279CE754C7B0A4ECDA7E294587AACB039FBA0_marshal_pinvoke_cleanup, NULL, NULL, &EmitParams_tE76279CE754C7B0A4ECDA7E294587AACB039FBA0_0_0_0 },
+	{ NULL, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_pinvoke, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_pinvoke_back, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_pinvoke_cleanup, NULL, NULL, &MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0 },
+	{ NULL, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_pinvoke, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_pinvoke_back, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_pinvoke_cleanup, NULL, NULL, &SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0 },
 	{ DelegatePInvokeWrapper_OnCaptureResourceCreatedCallback_tA8D1E423E6D2EB046CA66BF468199752BA2A882B, NULL, NULL, NULL, NULL, NULL, &OnCaptureResourceCreatedCallback_tA8D1E423E6D2EB046CA66BF468199752BA2A882B_0_0_0 },
 	{ DelegatePInvokeWrapper_OnCapturedToDiskCallback_t184CFBFA312A113D865AB3348AD2FCC9F2B8C87A, NULL, NULL, NULL, NULL, NULL, &OnCapturedToDiskCallback_t184CFBFA312A113D865AB3348AD2FCC9F2B8C87A_0_0_0 },
 	{ DelegatePInvokeWrapper_OnPhotoModeStartedCallback_tCC911AAFA0C56D78D8C3AFAB4F10C6D64AFB8F28, NULL, NULL, NULL, NULL, NULL, &OnPhotoModeStartedCallback_tCC911AAFA0C56D78D8C3AFAB4F10C6D64AFB8F28_0_0_0 },
@@ -1843,6 +3253,14 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ DelegatePInvokeWrapper_CreateOutputMethod_tD18AFE3B69E6DDD913D82D5FA1D5D909CEEC8509, NULL, NULL, NULL, NULL, NULL, &CreateOutputMethod_tD18AFE3B69E6DDD913D82D5FA1D5D909CEEC8509_0_0_0 },
 	{ DelegatePInvokeWrapper_UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4, NULL, NULL, NULL, NULL, NULL, &UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4_0_0_0 },
 	{ NULL, PointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6_marshal_pinvoke, PointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6_marshal_pinvoke_back, PointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6_marshal_pinvoke_cleanup, NULL, NULL, &PointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6_0_0_0 },
+	{ NULL, DataLocation_t34FC6B68E8194966FC3C075EF4227E1522CB53BB_marshal_pinvoke, DataLocation_t34FC6B68E8194966FC3C075EF4227E1522CB53BB_marshal_pinvoke_back, DataLocation_t34FC6B68E8194966FC3C075EF4227E1522CB53BB_marshal_pinvoke_cleanup, NULL, NULL, &DataLocation_t34FC6B68E8194966FC3C075EF4227E1522CB53BB_0_0_0 },
+	{ NULL, RuntimeResources_t4E5CAC2636FAF22D782E64516AA05B704BE5ACA4_marshal_pinvoke, RuntimeResources_t4E5CAC2636FAF22D782E64516AA05B704BE5ACA4_marshal_pinvoke_back, RuntimeResources_t4E5CAC2636FAF22D782E64516AA05B704BE5ACA4_marshal_pinvoke_cleanup, NULL, NULL, &RuntimeResources_t4E5CAC2636FAF22D782E64516AA05B704BE5ACA4_0_0_0 },
+	{ NULL, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_pinvoke, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_pinvoke_back, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_pinvoke_cleanup, NULL, NULL, &PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0 },
+	{ NULL, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_pinvoke, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_pinvoke_back, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_pinvoke_cleanup, NULL, NULL, &SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0 },
+	{ NULL, SerializableBoundItem_tF2F8CD24513F8F4D69DCAC89522EA0D3C032A640_marshal_pinvoke, SerializableBoundItem_tF2F8CD24513F8F4D69DCAC89522EA0D3C032A640_marshal_pinvoke_back, SerializableBoundItem_tF2F8CD24513F8F4D69DCAC89522EA0D3C032A640_marshal_pinvoke_cleanup, NULL, NULL, &SerializableBoundItem_tF2F8CD24513F8F4D69DCAC89522EA0D3C032A640_0_0_0 },
+	{ NULL, SerializableHasPVItem_t061E2CE4D8B201F280D06ABD0246C7AD8FD9571C_marshal_pinvoke, SerializableHasPVItem_t061E2CE4D8B201F280D06ABD0246C7AD8FD9571C_marshal_pinvoke_back, SerializableHasPVItem_t061E2CE4D8B201F280D06ABD0246C7AD8FD9571C_marshal_pinvoke_cleanup, NULL, NULL, &SerializableHasPVItem_t061E2CE4D8B201F280D06ABD0246C7AD8FD9571C_0_0_0 },
+	{ NULL, SerializablePVBakeSettings_t9C88167788303739AC5D93A20092598DF654A452_marshal_pinvoke, SerializablePVBakeSettings_t9C88167788303739AC5D93A20092598DF654A452_marshal_pinvoke_back, SerializablePVBakeSettings_t9C88167788303739AC5D93A20092598DF654A452_marshal_pinvoke_cleanup, NULL, NULL, &SerializablePVBakeSettings_t9C88167788303739AC5D93A20092598DF654A452_0_0_0 },
+	{ NULL, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_pinvoke, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_pinvoke_back, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_pinvoke_cleanup, NULL, NULL, &SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0 },
 	{ DelegatePInvokeWrapper_GetRayIntersectionAllCallback_t52E7AE4ECEA3F9744FF7F8448F852C872A70315C, NULL, NULL, NULL, NULL, NULL, &GetRayIntersectionAllCallback_t52E7AE4ECEA3F9744FF7F8448F852C872A70315C_0_0_0 },
 	{ DelegatePInvokeWrapper_GetRayIntersectionAllNonAllocCallback_t28D7ACEBBE525DE0CBEA67986E4C3891D694F980, NULL, NULL, NULL, NULL, NULL, &GetRayIntersectionAllNonAllocCallback_t28D7ACEBBE525DE0CBEA67986E4C3891D694F980_0_0_0 },
 	{ DelegatePInvokeWrapper_GetRaycastNonAllocCallback_tC3DA6EE6063FE663DD0A9FC52439D825DE4A1FFC, NULL, NULL, NULL, NULL, NULL, &GetRaycastNonAllocCallback_tC3DA6EE6063FE663DD0A9FC52439D825DE4A1FFC_0_0_0 },
@@ -1855,6 +3273,10 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ DelegatePInvokeWrapper_UpdatedEventHandler_tB0D5A5BA322FE093894992C29DCF51E7E12579C4, NULL, NULL, NULL, NULL, NULL, &UpdatedEventHandler_tB0D5A5BA322FE093894992C29DCF51E7E12579C4_0_0_0 },
 	{ NULL, DepthOrderedDirtyTracking_t7972148BB4524E0E788C8D94A005C3BAF8C189A4_marshal_pinvoke, DepthOrderedDirtyTracking_t7972148BB4524E0E788C8D94A005C3BAF8C189A4_marshal_pinvoke_back, DepthOrderedDirtyTracking_t7972148BB4524E0E788C8D94A005C3BAF8C189A4_marshal_pinvoke_cleanup, NULL, NULL, &DepthOrderedDirtyTracking_t7972148BB4524E0E788C8D94A005C3BAF8C189A4_0_0_0 },
 	{ NULL, RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE_marshal_pinvoke, RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE_marshal_pinvoke_back, RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE_marshal_pinvoke_cleanup, NULL, NULL, &RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE_0_0_0 },
+	{ NULL, CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615_marshal_pinvoke, CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615_marshal_pinvoke_back, CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615_marshal_pinvoke_cleanup, NULL, NULL, &CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615_0_0_0 },
+	{ NULL, CompiledResourceInfo_t1B258600AF5819B19709F6E4FF0D2803D039336A_marshal_pinvoke, CompiledResourceInfo_t1B258600AF5819B19709F6E4FF0D2803D039336A_marshal_pinvoke_back, CompiledResourceInfo_t1B258600AF5819B19709F6E4FF0D2803D039336A_marshal_pinvoke_cleanup, NULL, NULL, &CompiledResourceInfo_t1B258600AF5819B19709F6E4FF0D2803D039336A_0_0_0 },
+	{ NULL, PassDebugData_tE911DB0148519C33C773511F2D92F57AF1B6D258_marshal_pinvoke, PassDebugData_tE911DB0148519C33C773511F2D92F57AF1B6D258_marshal_pinvoke_back, PassDebugData_tE911DB0148519C33C773511F2D92F57AF1B6D258_marshal_pinvoke_cleanup, NULL, NULL, &PassDebugData_tE911DB0148519C33C773511F2D92F57AF1B6D258_0_0_0 },
+	{ NULL, ResourceDebugData_t83301B4E44B1F0B49486E21F019AFEE444809A9B_marshal_pinvoke, ResourceDebugData_t83301B4E44B1F0B49486E21F019AFEE444809A9B_marshal_pinvoke_back, ResourceDebugData_t83301B4E44B1F0B49486E21F019AFEE444809A9B_marshal_pinvoke_cleanup, NULL, NULL, &ResourceDebugData_t83301B4E44B1F0B49486E21F019AFEE444809A9B_0_0_0 },
 	{ DelegatePInvokeWrapper_Try_000006E8U24PostfixBurstDelegate_tA30F9C73EB615DF5E109DC3D5F7AAFE2941B331D, NULL, NULL, NULL, NULL, NULL, &Try_000006E8U24PostfixBurstDelegate_tA30F9C73EB615DF5E109DC3D5F7AAFE2941B331D_0_0_0 },
 	{ NULL, HitInfo_t34AF939575E1C059D581AB7ED8F039BCFFC70314_marshal_pinvoke, HitInfo_t34AF939575E1C059D581AB7ED8F039BCFFC70314_marshal_pinvoke_back, HitInfo_t34AF939575E1C059D581AB7ED8F039BCFFC70314_marshal_pinvoke_cleanup, NULL, NULL, &HitInfo_t34AF939575E1C059D581AB7ED8F039BCFFC70314_0_0_0 },
 	{ NULL, Escape_tBDF8B9DE3CB50EC7389A1FCAD8AE65F6AA289178_marshal_pinvoke, Escape_tBDF8B9DE3CB50EC7389A1FCAD8AE65F6AA289178_marshal_pinvoke_back, Escape_tBDF8B9DE3CB50EC7389A1FCAD8AE65F6AA289178_marshal_pinvoke_cleanup, NULL, NULL, &Escape_tBDF8B9DE3CB50EC7389A1FCAD8AE65F6AA289178_0_0_0 },
@@ -1874,9 +3296,11 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B_marshal_pinvoke, TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B_marshal_pinvoke_back, TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B_marshal_pinvoke_cleanup, NULL, NULL, &TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B_0_0_0 },
 	{ NULL, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_pinvoke, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_pinvoke_back, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_pinvoke_cleanup, NULL, NULL, &SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0 },
 	{ NULL, SyncTileCallbackSettings_tBBB8B7336BDE6E578C7A7B1D322A9B1273A76CDA_marshal_pinvoke, SyncTileCallbackSettings_tBBB8B7336BDE6E578C7A7B1D322A9B1273A76CDA_marshal_pinvoke_back, SyncTileCallbackSettings_tBBB8B7336BDE6E578C7A7B1D322A9B1273A76CDA_marshal_pinvoke_cleanup, NULL, NULL, &SyncTileCallbackSettings_tBBB8B7336BDE6E578C7A7B1D322A9B1273A76CDA_0_0_0 },
+	{ NULL, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_pinvoke, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_pinvoke_back, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_pinvoke_cleanup, NULL, NULL, &NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0 },
 	{ NULL, FormatLiterals_tB7BAA4DA8EAC1AB8D825A2D9C446C9FCD9BBD94A_marshal_pinvoke, FormatLiterals_tB7BAA4DA8EAC1AB8D825A2D9C446C9FCD9BBD94A_marshal_pinvoke_back, FormatLiterals_tB7BAA4DA8EAC1AB8D825A2D9C446C9FCD9BBD94A_marshal_pinvoke_cleanup, NULL, NULL, &FormatLiterals_tB7BAA4DA8EAC1AB8D825A2D9C446C9FCD9BBD94A_0_0_0 },
 	{ NULL, DYNAMIC_TIME_ZONE_INFORMATION_t5E5AC77C219A3CC0783CECA5AE7CECB2260CC16E_marshal_pinvoke, DYNAMIC_TIME_ZONE_INFORMATION_t5E5AC77C219A3CC0783CECA5AE7CECB2260CC16E_marshal_pinvoke_back, DYNAMIC_TIME_ZONE_INFORMATION_t5E5AC77C219A3CC0783CECA5AE7CECB2260CC16E_marshal_pinvoke_cleanup, NULL, NULL, &DYNAMIC_TIME_ZONE_INFORMATION_t5E5AC77C219A3CC0783CECA5AE7CECB2260CC16E_0_0_0 },
 	{ NULL, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_pinvoke, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_pinvoke_back, TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_marshal_pinvoke_cleanup, NULL, NULL, &TransitionTime_tE1A32FD9A7AC39502239D3C9A4EA83ED2AD81823_0_0_0 },
+	{ NULL, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_pinvoke, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_pinvoke_back, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_pinvoke_cleanup, NULL, NULL, &TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0 },
 	{ NULL, ClosingInfo_t2DD9FDAA81DB13384355D75E956D24D1594C9D14_marshal_pinvoke, ClosingInfo_t2DD9FDAA81DB13384355D75E956D24D1594C9D14_marshal_pinvoke_back, ClosingInfo_t2DD9FDAA81DB13384355D75E956D24D1594C9D14_marshal_pinvoke_cleanup, NULL, NULL, &ClosingInfo_t2DD9FDAA81DB13384355D75E956D24D1594C9D14_0_0_0 },
 	{ NULL, Entry_tB8765CA56422E2C92887314844384843688DCB9F_marshal_pinvoke, Entry_tB8765CA56422E2C92887314844384843688DCB9F_marshal_pinvoke_back, Entry_tB8765CA56422E2C92887314844384843688DCB9F_marshal_pinvoke_cleanup, NULL, NULL, &Entry_tB8765CA56422E2C92887314844384843688DCB9F_0_0_0 },
 	{ NULL, AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8_marshal_pinvoke, AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8_marshal_pinvoke_back, AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8_marshal_pinvoke_cleanup, NULL, NULL, &AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8_0_0_0 },
@@ -1885,20 +3309,40 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, EvaluationState_t91A908747DD184A56AA6402529B965E07E555567_marshal_pinvoke, EvaluationState_t91A908747DD184A56AA6402529B965E07E555567_marshal_pinvoke_back, EvaluationState_t91A908747DD184A56AA6402529B965E07E555567_marshal_pinvoke_cleanup, NULL, NULL, &EvaluationState_t91A908747DD184A56AA6402529B965E07E555567_0_0_0 },
 	{ NULL, Comparison_t8926BD187CC7CEF468E3592AD18DFFB21C62C487_marshal_pinvoke, Comparison_t8926BD187CC7CEF468E3592AD18DFFB21C62C487_marshal_pinvoke_back, Comparison_t8926BD187CC7CEF468E3592AD18DFFB21C62C487_marshal_pinvoke_cleanup, NULL, NULL, &Comparison_t8926BD187CC7CEF468E3592AD18DFFB21C62C487_0_0_0 },
 	{ NULL, DateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD_marshal_pinvoke, DateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD_marshal_pinvoke_back, DateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD_marshal_pinvoke_cleanup, NULL, NULL, &DateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD_0_0_0 },
+	{ NULL, MonoScriptData_t5A8A2339989AA38334930B2305A370BC3AB929DB_marshal_pinvoke, MonoScriptData_t5A8A2339989AA38334930B2305A370BC3AB929DB_marshal_pinvoke_back, MonoScriptData_t5A8A2339989AA38334930B2305A370BC3AB929DB_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t5A8A2339989AA38334930B2305A370BC3AB929DB_0_0_0 },
 	{ NULL, MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_pinvoke, MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_pinvoke_back, MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_0_0_0 },
+	{ NULL, MonoScriptData_tAB68332FFBDD2F26CAA0837E4CB0D2F2DB07A790_marshal_pinvoke, MonoScriptData_tAB68332FFBDD2F26CAA0837E4CB0D2F2DB07A790_marshal_pinvoke_back, MonoScriptData_tAB68332FFBDD2F26CAA0837E4CB0D2F2DB07A790_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_tAB68332FFBDD2F26CAA0837E4CB0D2F2DB07A790_0_0_0 },
+	{ NULL, MonoScriptData_tB5B5EE91D8BC5D502A62D6C6578FC46CA6B2A2D2_marshal_pinvoke, MonoScriptData_tB5B5EE91D8BC5D502A62D6C6578FC46CA6B2A2D2_marshal_pinvoke_back, MonoScriptData_tB5B5EE91D8BC5D502A62D6C6578FC46CA6B2A2D2_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_tB5B5EE91D8BC5D502A62D6C6578FC46CA6B2A2D2_0_0_0 },
 	{ NULL, MonoScriptData_t3D5A25DC08492EA2ADCEA359C2240CC0F481D91C_marshal_pinvoke, MonoScriptData_t3D5A25DC08492EA2ADCEA359C2240CC0F481D91C_marshal_pinvoke_back, MonoScriptData_t3D5A25DC08492EA2ADCEA359C2240CC0F481D91C_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t3D5A25DC08492EA2ADCEA359C2240CC0F481D91C_0_0_0 },
 	{ NULL, MonoScriptData_t9FE40F8A50A6C374FD4C5CB3542BAD4F406CA0CB_marshal_pinvoke, MonoScriptData_t9FE40F8A50A6C374FD4C5CB3542BAD4F406CA0CB_marshal_pinvoke_back, MonoScriptData_t9FE40F8A50A6C374FD4C5CB3542BAD4F406CA0CB_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t9FE40F8A50A6C374FD4C5CB3542BAD4F406CA0CB_0_0_0 },
 	{ NULL, MonoScriptData_t4F2AB24BC02A7052E6B9EED48D1A83B0A2F7F97F_marshal_pinvoke, MonoScriptData_t4F2AB24BC02A7052E6B9EED48D1A83B0A2F7F97F_marshal_pinvoke_back, MonoScriptData_t4F2AB24BC02A7052E6B9EED48D1A83B0A2F7F97F_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t4F2AB24BC02A7052E6B9EED48D1A83B0A2F7F97F_0_0_0 },
 	{ NULL, MonoScriptData_t2513809E5905A2EC3232C9FCAE5A95B601B92AFF_marshal_pinvoke, MonoScriptData_t2513809E5905A2EC3232C9FCAE5A95B601B92AFF_marshal_pinvoke_back, MonoScriptData_t2513809E5905A2EC3232C9FCAE5A95B601B92AFF_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t2513809E5905A2EC3232C9FCAE5A95B601B92AFF_0_0_0 },
 	{ NULL, MonoScriptData_t4D9701A8A24E14F65FEFA10A3020AE19F6207116_marshal_pinvoke, MonoScriptData_t4D9701A8A24E14F65FEFA10A3020AE19F6207116_marshal_pinvoke_back, MonoScriptData_t4D9701A8A24E14F65FEFA10A3020AE19F6207116_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t4D9701A8A24E14F65FEFA10A3020AE19F6207116_0_0_0 },
 	{ NULL, MonoScriptData_t7886AD524F999CEC1F1C2ACCD8F79B6E2E7608D2_marshal_pinvoke, MonoScriptData_t7886AD524F999CEC1F1C2ACCD8F79B6E2E7608D2_marshal_pinvoke_back, MonoScriptData_t7886AD524F999CEC1F1C2ACCD8F79B6E2E7608D2_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t7886AD524F999CEC1F1C2ACCD8F79B6E2E7608D2_0_0_0 },
+	{ NULL, MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_marshal_pinvoke, MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_marshal_pinvoke_back, MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t7B0CAD73C7F4F5B47AA229BBAB263F662D46573E_0_0_0 },
+	{ NULL, MonoScriptData_tA0C7360799640B8079A5A2795562EFBB25FE27CB_marshal_pinvoke, MonoScriptData_tA0C7360799640B8079A5A2795562EFBB25FE27CB_marshal_pinvoke_back, MonoScriptData_tA0C7360799640B8079A5A2795562EFBB25FE27CB_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_tA0C7360799640B8079A5A2795562EFBB25FE27CB_0_0_0 },
+	{ NULL, MonoScriptData_tB0C5FB2A2A0762D39F4C568FB3742A405821B83A_marshal_pinvoke, MonoScriptData_tB0C5FB2A2A0762D39F4C568FB3742A405821B83A_marshal_pinvoke_back, MonoScriptData_tB0C5FB2A2A0762D39F4C568FB3742A405821B83A_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_tB0C5FB2A2A0762D39F4C568FB3742A405821B83A_0_0_0 },
 	{ NULL, MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_marshal_pinvoke, MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_marshal_pinvoke_back, MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_marshal_pinvoke_cleanup, NULL, NULL, &MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_0_0_0 },
 	{ NULL, WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44_marshal_pinvoke, WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44_marshal_pinvoke_back, WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44_marshal_pinvoke_cleanup, NULL, NULL, &WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44_0_0_0 },
+	{ NULL, unitytls_interface_struct_tFD4B67EBFBE5D7FF212193507C3517DBA60978ED_marshal_pinvoke, unitytls_interface_struct_tFD4B67EBFBE5D7FF212193507C3517DBA60978ED_marshal_pinvoke_back, unitytls_interface_struct_tFD4B67EBFBE5D7FF212193507C3517DBA60978ED_marshal_pinvoke_cleanup, NULL, NULL, &unitytls_interface_struct_tFD4B67EBFBE5D7FF212193507C3517DBA60978ED_0_0_0 },
+	{ NULL, unitytls_tlsctx_callbacks_t348AE3D333ACBB2F17D4D7B8412256357B39B568_marshal_pinvoke, unitytls_tlsctx_callbacks_t348AE3D333ACBB2F17D4D7B8412256357B39B568_marshal_pinvoke_back, unitytls_tlsctx_callbacks_t348AE3D333ACBB2F17D4D7B8412256357B39B568_marshal_pinvoke_cleanup, NULL, NULL, &unitytls_tlsctx_callbacks_t348AE3D333ACBB2F17D4D7B8412256357B39B568_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_certificate_callback_tB2FEBFA5D27CFA86544C06451270B36D77F2932C, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_certificate_callback_tB2FEBFA5D27CFA86544C06451270B36D77F2932C_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_read_callback_tDBE877327789CABE940C2A724EC9A5D142318851, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_read_callback_tDBE877327789CABE940C2A724EC9A5D142318851_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_trace_callback_tAC1169E423F6EBDA60CDD5D33E1795A8811E0BE6, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_trace_callback_tAC1169E423F6EBDA60CDD5D33E1795A8811E0BE6_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_write_callback_t5D4B64AD846D04E819A49689F7EAA47365636611, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_write_callback_t5D4B64AD846D04E819A49689F7EAA47365636611_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_x509verify_callback_t3334D904C28324D444B6C26BEEF29B5E07D9D58D, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_x509verify_callback_t3334D904C28324D444B6C26BEEF29B5E07D9D58D_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509verify_callback_t1B72B7CF228F76F09A6A75C54C15F2084C01CA09, NULL, NULL, NULL, NULL, NULL, &unitytls_x509verify_callback_t1B72B7CF228F76F09A6A75C54C15F2084C01CA09_0_0_0 },
+	{ NULL, Bone_t45A5AE3FD1F023346E79F0A823629DF304C64C07_marshal_pinvoke, Bone_t45A5AE3FD1F023346E79F0A823629DF304C64C07_marshal_pinvoke_back, Bone_t45A5AE3FD1F023346E79F0A823629DF304C64C07_marshal_pinvoke_cleanup, NULL, NULL, &Bone_t45A5AE3FD1F023346E79F0A823629DF304C64C07_0_0_0 },
 	{ DelegatePInvokeWrapper_OnStartedRecordingVideoCallback_t64E6C26F7ABAB9254AACB9D62C693F8922C1E45C, NULL, NULL, NULL, NULL, NULL, &OnStartedRecordingVideoCallback_t64E6C26F7ABAB9254AACB9D62C693F8922C1E45C_0_0_0 },
 	{ DelegatePInvokeWrapper_OnStoppedRecordingVideoCallback_tC089900DD6C16C42C782522C257740BB222C1437, NULL, NULL, NULL, NULL, NULL, &OnStoppedRecordingVideoCallback_tC089900DD6C16C42C782522C257740BB222C1437_0_0_0 },
 	{ DelegatePInvokeWrapper_OnVideoCaptureResourceCreatedCallback_t5652A803A57C7FEA9BEAAA7250D14204C9AA114C, NULL, NULL, NULL, NULL, NULL, &OnVideoCaptureResourceCreatedCallback_t5652A803A57C7FEA9BEAAA7250D14204C9AA114C_0_0_0 },
 	{ DelegatePInvokeWrapper_OnVideoModeStartedCallback_t7BFBEBA2CDDBFA58023D8BA206E0D90920819C1F, NULL, NULL, NULL, NULL, NULL, &OnVideoModeStartedCallback_t7BFBEBA2CDDBFA58023D8BA206E0D90920819C1F_0_0_0 },
 	{ DelegatePInvokeWrapper_OnVideoModeStoppedCallback_tA29659F86D8702608589583F3F415ABF57F6A054, NULL, NULL, NULL, NULL, NULL, &OnVideoModeStoppedCallback_tA29659F86D8702608589583F3F415ABF57F6A054_0_0_0 },
+	{ NULL, EventState_tC6463B8BEBD8D54440D74A6D2457B7177A474AB5_marshal_pinvoke, EventState_tC6463B8BEBD8D54440D74A6D2457B7177A474AB5_marshal_pinvoke_back, EventState_tC6463B8BEBD8D54440D74A6D2457B7177A474AB5_marshal_pinvoke_cleanup, NULL, NULL, &EventState_tC6463B8BEBD8D54440D74A6D2457B7177A474AB5_0_0_0 },
+	{ NULL, ClipEvent_tB1B5AECDBECAE26DCDD484137C0921A674007B98_marshal_pinvoke, ClipEvent_tB1B5AECDBECAE26DCDD484137C0921A674007B98_marshal_pinvoke_back, ClipEvent_tB1B5AECDBECAE26DCDD484137C0921A674007B98_marshal_pinvoke_cleanup, NULL, NULL, &ClipEvent_tB1B5AECDBECAE26DCDD484137C0921A674007B98_0_0_0 },
+	{ NULL, PrewarmClipSettings_t232EAD8B9AFF3DF3B79ECBBBACBF296A6F781D2F_marshal_pinvoke, PrewarmClipSettings_t232EAD8B9AFF3DF3B79ECBBBACBF296A6F781D2F_marshal_pinvoke_back, PrewarmClipSettings_t232EAD8B9AFF3DF3B79ECBBBACBF296A6F781D2F_marshal_pinvoke_cleanup, NULL, NULL, &PrewarmClipSettings_t232EAD8B9AFF3DF3B79ECBBBACBF296A6F781D2F_0_0_0 },
+	{ NULL, Chunk_t1E89391EEEF9687BE88541B60DF90CD0F7FA2796_marshal_pinvoke, Chunk_t1E89391EEEF9687BE88541B60DF90CD0F7FA2796_marshal_pinvoke_back, Chunk_t1E89391EEEF9687BE88541B60DF90CD0F7FA2796_marshal_pinvoke_cleanup, NULL, NULL, &Chunk_t1E89391EEEF9687BE88541B60DF90CD0F7FA2796_0_0_0 },
+	{ NULL, Event_tE4504A5B6293BF5B848A7939E03B434FABD98C4D_marshal_pinvoke, Event_tE4504A5B6293BF5B848A7939E03B434FABD98C4D_marshal_pinvoke_back, Event_tE4504A5B6293BF5B848A7939E03B434FABD98C4D_marshal_pinvoke_cleanup, NULL, NULL, &Event_tE4504A5B6293BF5B848A7939E03B434FABD98C4D_0_0_0 },
 	{ NULL, Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677_marshal_pinvoke, Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677_marshal_pinvoke_back, Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677_marshal_pinvoke_cleanup, NULL, NULL, &Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677_0_0_0 },
 	{ NULL, AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D_marshal_pinvoke, AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D_marshal_pinvoke_back, AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D_marshal_pinvoke_cleanup, NULL, NULL, &AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D_0_0_0 },
 	{ NULL, SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8_marshal_pinvoke, SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8_marshal_pinvoke_back, SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8_marshal_pinvoke_cleanup, NULL, NULL, &SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8_0_0_0 },
@@ -1906,14 +3350,53 @@ Il2CppInteropData g_Il2CppInteropData[406] =
 	{ NULL, UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484_marshal_pinvoke, UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484_marshal_pinvoke_back, UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484_marshal_pinvoke_cleanup, NULL, NULL, &UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484_0_0_0 },
 	{ NULL, UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02_marshal_pinvoke, UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02_marshal_pinvoke_back, UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02_marshal_pinvoke_cleanup, NULL, NULL, &UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02_0_0_0 },
 	{ NULL, VolatileObject_tEA3ACFAAFB9D2EFA5162F693BAAB342EA7737B99_marshal_pinvoke, VolatileObject_tEA3ACFAAFB9D2EFA5162F693BAAB342EA7737B99_marshal_pinvoke_back, VolatileObject_tEA3ACFAAFB9D2EFA5162F693BAAB342EA7737B99_marshal_pinvoke_cleanup, NULL, NULL, &VolatileObject_tEA3ACFAAFB9D2EFA5162F693BAAB342EA7737B99_0_0_0 },
+	{ NULL, NULL, NULL, NULL, NULL, &WMResamplerObject_t5006B0EB6FF4F5C0CC9F9EFC935B048AFC76A11F::CLSID, &WMResamplerObject_t5006B0EB6FF4F5C0CC9F9EFC935B048AFC76A11F_0_0_0 },
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_WasapiEventHandler_tA490DED0BC4E60029A8820E69927AD95B6621E1B, NULL, &WasapiEventHandler_tA490DED0BC4E60029A8820E69927AD95B6621E1B_0_0_0 },
+	{ DelegatePInvokeWrapper_X3DAudioCalculateDelegate_t55023033DD15E368911B56A8A800EC389BC84932, NULL, NULL, NULL, NULL, NULL, &X3DAudioCalculateDelegate_t55023033DD15E368911B56A8A800EC389BC84932_0_0_0 },
+	{ DelegatePInvokeWrapper_X3DAudioInitializeDelegate_tB030633D1AE80B07BDA5A616C5DB28FAD249ECC3, NULL, NULL, NULL, NULL, NULL, &X3DAudioInitializeDelegate_tB030633D1AE80B07BDA5A616C5DB28FAD249ECC3_0_0_0 },
 	{ NULL, XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshal_pinvoke, XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshal_pinvoke_back, XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_marshal_pinvoke_cleanup, NULL, NULL, &XRBlitParams_tB6F9130166CF43540F2547163E8542CFC7266CD9_0_0_0 },
 	{ NULL, XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E2162E0_marshal_pinvoke, XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E2162E0_marshal_pinvoke_back, XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E2162E0_marshal_pinvoke_cleanup, NULL, NULL, &XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E2162E0_0_0_0 },
+	{ NULL, XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_marshal_pinvoke, XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_marshal_pinvoke_back, XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_marshal_pinvoke_cleanup, NULL, NULL, &XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_0_0_0 },
 	{ NULL, XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshal_pinvoke, XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshal_pinvoke_back, XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshal_pinvoke_cleanup, NULL, NULL, &XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_0_0_0 },
 	{ DelegatePInvokeWrapper_Hash128Long_00000726U24PostfixBurstDelegate_tDCFEBF017B234053E20733EE5D672798D4729FFD, NULL, NULL, NULL, NULL, NULL, &Hash128Long_00000726U24PostfixBurstDelegate_tDCFEBF017B234053E20733EE5D672798D4729FFD_0_0_0 },
 	{ DelegatePInvokeWrapper_Hash64Long_0000071FU24PostfixBurstDelegate_tAFFFD862200972D45B81F5803E2F182B4AC91DAA, NULL, NULL, NULL, NULL, NULL, &Hash64Long_0000071FU24PostfixBurstDelegate_tAFFFD862200972D45B81F5803E2F182B4AC91DAA_0_0_0 },
 	{ DelegatePInvokeWrapper_Try_0000098EU24PostfixBurstDelegate_tD75442236C1C50A7FC708F09AA8022D1407BB102, NULL, NULL, NULL, NULL, NULL, &Try_0000098EU24PostfixBurstDelegate_tD75442236C1C50A7FC708F09AA8022D1407BB102_0_0_0 },
 	{ DelegatePInvokeWrapper_Try_00000980U24PostfixBurstDelegate_tB323B9595B050940232579C962823E084FF96338, NULL, NULL, NULL, NULL, NULL, &Try_00000980U24PostfixBurstDelegate_tB323B9595B050940232579C962823E084FF96338_0_0_0 },
 	{ DelegatePInvokeWrapper_IsBurstEnabledDelegate_t0628E97FE590352373ABA022E954D7F5CE183D3C, NULL, NULL, NULL, NULL, NULL, &IsBurstEnabledDelegate_t0628E97FE590352373ABA022E954D7F5CE183D3C_0_0_0 },
+	{ DelegatePInvokeWrapper_Release_tEDE678E6349A4D7E3890509F14CE61C2E3F75CC9, NULL, NULL, NULL, NULL, NULL, &Release_tEDE678E6349A4D7E3890509F14CE61C2E3F75CC9_0_0_0 },
 	{ DelegatePInvokeWrapper_WindowsCancelHandler_tC396577B75EBC714D192D78185E70181CBB963B4, NULL, NULL, NULL, NULL, NULL, &WindowsCancelHandler_tC396577B75EBC714D192D78185E70181CBB963B4_0_0_0 },
+	{ NULL, ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9_marshal_pinvoke, ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9_marshal_pinvoke_back, ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9_marshal_pinvoke_cleanup, NULL, NULL, &ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9_0_0_0 },
+	{ NULL, NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4_marshal_pinvoke, NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4_marshal_pinvoke_back, NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4_marshal_pinvoke_cleanup, NULL, NULL, &NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4_0_0_0 },
+	{ NULL, NumberBuffer_t0F9FC9D15F03CFDEBA3B3F4210A2AB3B53305CDA_marshal_pinvoke, NumberBuffer_t0F9FC9D15F03CFDEBA3B3F4210A2AB3B53305CDA_marshal_pinvoke_back, NumberBuffer_t0F9FC9D15F03CFDEBA3B3F4210A2AB3B53305CDA_marshal_pinvoke_cleanup, NULL, NULL, &NumberBuffer_t0F9FC9D15F03CFDEBA3B3F4210A2AB3B53305CDA_0_0_0 },
 	{ NULL, ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957_marshal_pinvoke, ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957_marshal_pinvoke_back, ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957_marshal_pinvoke_cleanup, NULL, NULL, &ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_errorstate_create_t_tE8BB5D6BCA7D232F4981831586B71C39802CF75B, NULL, NULL, NULL, NULL, NULL, &unitytls_errorstate_create_t_tE8BB5D6BCA7D232F4981831586B71C39802CF75B_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_errorstate_raise_error_t_t8C20FC78CA5BBEE0248CC09D1C1AF25BCB3835CF, NULL, NULL, NULL, NULL, NULL, &unitytls_errorstate_raise_error_t_t8C20FC78CA5BBEE0248CC09D1C1AF25BCB3835CF_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_key_free_t_tDB8665140BAF30447F3650D323078C193566FF72, NULL, NULL, NULL, NULL, NULL, &unitytls_key_free_t_tDB8665140BAF30447F3650D323078C193566FF72_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_key_get_ref_t_t8335968B19449FE0ED92E67AE9B6D95915684209, NULL, NULL, NULL, NULL, NULL, &unitytls_key_get_ref_t_t8335968B19449FE0ED92E67AE9B6D95915684209_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_key_parse_der_t_tC218AEF9253FA105762F39041F696A06C52D3F10, NULL, NULL, NULL, NULL, NULL, &unitytls_key_parse_der_t_tC218AEF9253FA105762F39041F696A06C52D3F10_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_key_parse_pem_t_tE945670C6CB28BBF4670D2E8E904B7D8A2AB277B, NULL, NULL, NULL, NULL, NULL, &unitytls_key_parse_pem_t_tE945670C6CB28BBF4670D2E8E904B7D8A2AB277B_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_random_generate_bytes_t_t6E7011EF958B0948582F8D1D213B454A5A962569, NULL, NULL, NULL, NULL, NULL, &unitytls_random_generate_bytes_t_t6E7011EF958B0948582F8D1D213B454A5A962569_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_create_client_t_t49D8F69D4152410A346CB3560B121DCC44AAC4EC, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_create_client_t_t49D8F69D4152410A346CB3560B121DCC44AAC4EC_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_create_server_t_t1068941B319B893D3FFBE53FE061676FF1CC3803, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_create_server_t_t1068941B319B893D3FFBE53FE061676FF1CC3803_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_free_t_tFBF7BB64D2E1C183718FB5809ABF0051395FD8F0, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_free_t_tFBF7BB64D2E1C183718FB5809ABF0051395FD8F0_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_get_ciphersuite_t_t7317543D399259616648B1AA19447C4B63F70EF2, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_get_ciphersuite_t_t7317543D399259616648B1AA19447C4B63F70EF2_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_get_protocol_t_t04E3B73C1D77379F7C7388ED4934189365326F3C, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_get_protocol_t_t04E3B73C1D77379F7C7388ED4934189365326F3C_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_notify_close_t_t717D19846262E3DF5D1A69C5E136912E7A54B253, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_notify_close_t_t717D19846262E3DF5D1A69C5E136912E7A54B253_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_process_handshake_t_t8D94F5FAD00CD61BF950829866C0C6E29D202606, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_process_handshake_t_t8D94F5FAD00CD61BF950829866C0C6E29D202606_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_read_t_t3E3C711F7A47E704ABDF0DF0B7515E7306EB7C95, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_read_t_t3E3C711F7A47E704ABDF0DF0B7515E7306EB7C95_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_server_require_client_authentication_t_t2AC04245D1F40738C5FB87B0DEE80761E243F0BE, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_server_require_client_authentication_t_t2AC04245D1F40738C5FB87B0DEE80761E243F0BE_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_set_certificate_callback_t_t2B54F7228DFC11BF14DCF2201BDD90CF0EF92D41, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_set_certificate_callback_t_t2B54F7228DFC11BF14DCF2201BDD90CF0EF92D41_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_set_supported_ciphersuites_t_t007E8706D364DE695F1DBF28358058A1E73DF544, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_set_supported_ciphersuites_t_t007E8706D364DE695F1DBF28358058A1E73DF544_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_set_trace_callback_t_t3C615EACADC2CB1CDA8362B3F775071976E7CF7C, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_set_trace_callback_t_t3C615EACADC2CB1CDA8362B3F775071976E7CF7C_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_set_x509verify_callback_t_t032FE980BEDD0D201CAF1EE653ABE303CDBCA7C9, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_set_x509verify_callback_t_t032FE980BEDD0D201CAF1EE653ABE303CDBCA7C9_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_tlsctx_write_t_t976A41600B61F9C8DF022296B67316FFA53EB386, NULL, NULL, NULL, NULL, NULL, &unitytls_tlsctx_write_t_t976A41600B61F9C8DF022296B67316FFA53EB386_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509_export_der_t_tB784597940DE501BB5FEFA3EA528634559A16749, NULL, NULL, NULL, NULL, NULL, &unitytls_x509_export_der_t_tB784597940DE501BB5FEFA3EA528634559A16749_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509list_append_der_t_tC45176B25C9B11C509119A1943EFDE133D819951, NULL, NULL, NULL, NULL, NULL, &unitytls_x509list_append_der_t_tC45176B25C9B11C509119A1943EFDE133D819951_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509list_append_t_tC84B9CA7C15F5D1DE98386670A80D5F98559D98E, NULL, NULL, NULL, NULL, NULL, &unitytls_x509list_append_t_tC84B9CA7C15F5D1DE98386670A80D5F98559D98E_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509list_create_t_t8873365FFB1556CE6B643700DB0C30E391B758D6, NULL, NULL, NULL, NULL, NULL, &unitytls_x509list_create_t_t8873365FFB1556CE6B643700DB0C30E391B758D6_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509list_free_t_t9BD50B09A7919B7891DC529787E93C708FC653A2, NULL, NULL, NULL, NULL, NULL, &unitytls_x509list_free_t_t9BD50B09A7919B7891DC529787E93C708FC653A2_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509list_get_ref_t_t264CEEF7B8D1F10FD95E1BC78BB48BCA11E305EA, NULL, NULL, NULL, NULL, NULL, &unitytls_x509list_get_ref_t_t264CEEF7B8D1F10FD95E1BC78BB48BCA11E305EA_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509list_get_x509_t_t428DCD367D50DCDD5ECE6DCFEB8967C5F7C3DFE8, NULL, NULL, NULL, NULL, NULL, &unitytls_x509list_get_x509_t_t428DCD367D50DCDD5ECE6DCFEB8967C5F7C3DFE8_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509verify_default_ca_t_tED88B7ABC8408A22DB51B1F57D5FC65BDD2EC809, NULL, NULL, NULL, NULL, NULL, &unitytls_x509verify_default_ca_t_tED88B7ABC8408A22DB51B1F57D5FC65BDD2EC809_0_0_0 },
+	{ DelegatePInvokeWrapper_unitytls_x509verify_explicit_ca_t_t1B3D98BF01F059A3C2ADE87EFDDA03C557A3D08D, NULL, NULL, NULL, NULL, NULL, &unitytls_x509verify_explicit_ca_t_t1B3D98BF01F059A3C2ADE87EFDDA03C557A3D08D_0_0_0 },
 };

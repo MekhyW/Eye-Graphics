@@ -32279,11 +32279,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_3 = __this->___m_TargetTexture;
 		NullCheck(L_3);
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_3);
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_3);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_5 = __this->___m_TargetTexture;
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_5);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_7;
 		memset((&L_7), 0, sizeof(L_7));
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_7), (0.0f), (0.0f), ((float)L_4), ((float)L_6), NULL);

@@ -7247,11 +7247,11 @@ IL_0038:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_8 = ___1_image;
 		NullCheck(L_8);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_8);
+		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_8);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_10 = ___1_image;
 		NullCheck(L_10);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_10);
+		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_10);
 		___4_imageAspect = ((float)(((float)L_9)/((float)L_11)));
 	}
 

@@ -7041,7 +7041,7 @@ IL_0023:
 		L_8 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_7, NULL);
 		NullCheck(L_8);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_9;
-		L_9 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(108, L_8);
+		L_9 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(113, L_8);
 		V_5 = L_9;
 		V_6 = 0;
 		goto IL_0077;
@@ -17535,7 +17535,7 @@ IL_0029:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_7 = V_3;
 		NullCheck(L_7);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_7);
+		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_7);
 		G_B4_0 = L_8;
 	}
 
@@ -17563,7 +17563,7 @@ IL_0042:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_12 = V_3;
 		NullCheck(L_12);
 		int32_t L_13;
-		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_12);
+		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_12);
 		G_B7_0 = L_13;
 	}
 
@@ -17595,11 +17595,11 @@ IL_006f:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_21 = __this->___targetTexture;
 		NullCheck(L_21);
 		int32_t L_22;
-		L_22 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_21);
+		L_22 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_21);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_23 = __this->___targetTexture;
 		NullCheck(L_23);
 		int32_t L_24;
-		L_24 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_23);
+		L_24 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_23);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_25;
 		memset((&L_25), 0, sizeof(L_25));
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_25), (0.0f), (0.0f), ((float)L_22), ((float)L_24), NULL);
@@ -21384,12 +21384,12 @@ IL_0028:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_5 = ___0_image;
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_5);
 		int32_t L_7 = __this->___m_2Padding;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_8 = ___0_image;
 		NullCheck(L_8);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_8);
+		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_8);
 		int32_t L_10 = __this->___m_2Padding;
 		Alloc2D_tB9971776E3506C8F38C7F3C66690F9AC0322542E* L_11 = ___1_alloc;
 		NullCheck(L_4);
@@ -21452,11 +21452,11 @@ IL_0064:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_40 = ___0_image;
 		NullCheck(L_40);
 		int32_t L_41;
-		L_41 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_40);
+		L_41 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_40);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_42 = ___0_image;
 		NullCheck(L_42);
 		int32_t L_43;
-		L_43 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_42);
+		L_43 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_42);
 		RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 L_44;
 		memset((&L_44), 0, sizeof(L_44));
 		RectInt__ctor_m6E8B3A6C7EE11257A6B438E36274116FE39B5B42_inline((&L_44), ((int32_t)il2cpp_codegen_add(L_34, L_35)), ((int32_t)il2cpp_codegen_add(L_38, L_39)), L_41, L_43, NULL);
@@ -21541,11 +21541,11 @@ IL_0035:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_8 = ___0_image;
 		NullCheck(L_8);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_8);
+		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_8);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_10 = ___0_image;
 		NullCheck(L_10);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_10);
+		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_10);
 		RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 L_12;
 		memset((&L_12), 0, sizeof(L_12));
 		RectInt__ctor_m6E8B3A6C7EE11257A6B438E36274116FE39B5B42_inline((&L_12), 0, 0, L_9, L_11, NULL);
@@ -21707,7 +21707,7 @@ IL_0024:
 		L_4 = DynamicAtlasPage_get_atlas_mD1347372F4335BCC5392824B9F4F96320132A02A_inline(__this, NULL);
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_4);
 		Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A* L_6 = (Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A*)(&__this->___m_CurrentSize);
 		int32_t L_7;
 		L_7 = Vector2Int_get_x_mA2CACB1B6E6B5AD0CCC32B2CD2EDCE3ECEB50576_inline(L_6, NULL);
@@ -21721,7 +21721,7 @@ IL_0024:
 		L_8 = DynamicAtlasPage_get_atlas_mD1347372F4335BCC5392824B9F4F96320132A02A_inline(__this, NULL);
 		NullCheck(L_8);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_8);
+		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_8);
 		Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A* L_10 = (Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A*)(&__this->___m_CurrentSize);
 		int32_t L_11;
 		L_11 = Vector2Int_get_y_m48454163ECF0B463FB5A16A0C4FC4B14DB0768B3_inline(L_10, NULL);
@@ -21765,7 +21765,7 @@ IL_005a:
 		L_19 = DynamicAtlasPage_get_atlas_mD1347372F4335BCC5392824B9F4F96320132A02A_inline(__this, NULL);
 		NullCheck(L_19);
 		int32_t L_20;
-		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_19);
+		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_19);
 		int32_t L_21 = L_20;
 		RuntimeObject* L_22 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_21);
 		NullCheck(L_18);
@@ -21776,7 +21776,7 @@ IL_005a:
 		L_24 = DynamicAtlasPage_get_atlas_mD1347372F4335BCC5392824B9F4F96320132A02A_inline(__this, NULL);
 		NullCheck(L_24);
 		int32_t L_25;
-		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_24);
+		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_24);
 		int32_t L_26 = L_25;
 		RuntimeObject* L_27 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_26);
 		NullCheck(L_23);
@@ -21815,12 +21815,12 @@ IL_00d3:
 		L_41 = DynamicAtlasPage_get_atlas_mD1347372F4335BCC5392824B9F4F96320132A02A_inline(__this, NULL);
 		NullCheck(L_41);
 		int32_t L_42;
-		L_42 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_41);
+		L_42 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_41);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_43;
 		L_43 = DynamicAtlasPage_get_atlas_mD1347372F4335BCC5392824B9F4F96320132A02A_inline(__this, NULL);
 		NullCheck(L_43);
 		int32_t L_44;
-		L_44 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_43);
+		L_44 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_43);
 		RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 L_45;
 		memset((&L_45), 0, sizeof(L_45));
 		RectInt__ctor_m6E8B3A6C7EE11257A6B438E36274116FE39B5B42_inline((&L_45), 0, 0, L_42, L_44, NULL);
@@ -23818,13 +23818,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectangleParams_AdjustUVsForScaleMode_mC
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = ___2_texture;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_0);
 		float L_2;
 		L_2 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline((&___1_uv), NULL);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_3 = ___2_texture;
 		NullCheck(L_3);
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_3);
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_3);
 		float L_5;
 		L_5 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline((&___1_uv), NULL);
 		float L_6;
@@ -24796,11 +24796,11 @@ IL_0012:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_7 = ___2_texture;
 		NullCheck(L_7);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_7);
+		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_7);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_9 = ___2_texture;
 		NullCheck(L_9);
 		int32_t L_10;
-		L_10 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_9);
+		L_10 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_9);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_1), ((float)L_8), ((float)L_10), NULL);
 		il2cpp_codegen_initobj((&V_3), sizeof(RectangleParams_t0B5A63548DC33EE252AF81E242B719118C235A4B));
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_11 = ___0_rect;
@@ -25316,14 +25316,14 @@ IL_02a9:
 		L_116 = Sprite_get_texture_mEEA6640C1B5D38F84CB64C775B201D7D9F48E045(L_115, NULL);
 		NullCheck(L_116);
 		int32_t L_117;
-		L_117 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_116);
+		L_117 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_116);
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_118 = ___2_sprite;
 		NullCheck(L_118);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_119;
 		L_119 = Sprite_get_texture_mEEA6640C1B5D38F84CB64C775B201D7D9F48E045(L_118, NULL);
 		NullCheck(L_119);
 		int32_t L_120;
-		L_120 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_119);
+		L_120 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_119);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_121;
 		memset((&L_121), 0, sizeof(L_121));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_121), ((float)L_117), ((float)L_120), NULL);

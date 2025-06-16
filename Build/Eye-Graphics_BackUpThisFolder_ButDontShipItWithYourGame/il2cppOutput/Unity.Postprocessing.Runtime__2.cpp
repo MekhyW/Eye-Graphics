@@ -2413,7 +2413,7 @@ IL_0012:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_5 = V_3;
 		NullCheck(L_5);
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_5);
 		int32_t L_7 = ___1_w;
 		if ((!(((uint32_t)L_6) == ((uint32_t)L_7))))
 		{
@@ -2424,7 +2424,7 @@ IL_0012:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_8 = V_3;
 		NullCheck(L_8);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_8);
+		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_8);
 		int32_t L_10 = ___2_h;
 		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
 		{
@@ -2475,7 +2475,7 @@ IL_0012:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_21 = V_3;
 		NullCheck(L_21);
 		int32_t L_22;
-		L_22 = VirtualFuncInvoker0< int32_t >::Invoke(8, L_21);
+		L_22 = VirtualFuncInvoker0< int32_t >::Invoke(9, L_21);
 		if ((!(((uint32_t)L_22) == ((uint32_t)3))))
 		{
 			goto IL_005f;
@@ -2545,7 +2545,7 @@ IL_007e:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_35 = L_34;
 		int32_t L_36 = V_4;
 		NullCheck(L_35);
-		VirtualActionInvoker1< int32_t >::Invoke(9, L_35, L_36);
+		VirtualActionInvoker1< int32_t >::Invoke(10, L_35, L_36);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_37 = L_35;
 		NullCheck(L_37);
 		Texture_set_filterMode_mE423E58C0C16D059EA62BA87AD70F44AEA50CCC9(L_37, 1, NULL);
@@ -2737,11 +2737,11 @@ IL_0068:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_17 = ___0_from;
 		NullCheck(L_17);
 		int32_t L_18;
-		L_18 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_17);
+		L_18 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_17);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_19 = ___0_from;
 		NullCheck(L_19);
 		int32_t L_20;
-		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_19);
+		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_19);
 		int32_t L_21;
 		L_21 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(L_18, L_20, NULL);
 		int32_t L_22 = V_3;
@@ -2750,11 +2750,11 @@ IL_0068:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_24 = ___0_from;
 		NullCheck(L_24);
 		int32_t L_25;
-		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_24);
+		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_24);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_26 = ___0_from;
 		NullCheck(L_26);
 		int32_t L_27;
-		L_27 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_26);
+		L_27 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_26);
 		int32_t L_28 = V_3;
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_29;
 		L_29 = TextureLerper_Get_mD700555241B9F131B78A0302883C35AD0936F120(__this, 2, L_25, L_27, L_28, (bool)1, (bool)1, NULL);
@@ -2775,11 +2775,11 @@ IL_0068:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_37 = ___0_from;
 		NullCheck(L_37);
 		int32_t L_38;
-		L_38 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_37);
+		L_38 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_37);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_39 = ___0_from;
 		NullCheck(L_39);
 		int32_t L_40;
-		L_40 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_39);
+		L_40 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_39);
 		int32_t L_41 = V_3;
 		float L_42 = ___2_t;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_43;
@@ -2847,11 +2847,11 @@ IL_016e:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_76 = ___1_to;
 		NullCheck(L_76);
 		int32_t L_77;
-		L_77 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_76);
+		L_77 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_76);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_78 = ___1_to;
 		NullCheck(L_78);
 		int32_t L_79;
-		L_79 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_78);
+		L_79 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_78);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_80;
 		L_80 = TextureLerper_Get_mD700555241B9F131B78A0302883C35AD0936F120(__this, L_75, L_77, L_79, 1, (bool)0, (bool)0, NULL);
 		V_0 = L_80;
@@ -3011,11 +3011,11 @@ IL_0058:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_11 = ___0_from;
 		NullCheck(L_11);
 		int32_t L_12;
-		L_12 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_11);
+		L_12 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_11);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_13 = ___0_from;
 		NullCheck(L_13);
 		int32_t L_14;
-		L_14 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_13);
+		L_14 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_13);
 		int32_t L_15;
 		L_15 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(L_12, L_14, NULL);
 		int32_t L_16 = V_3;
@@ -3024,11 +3024,11 @@ IL_0058:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_18 = ___0_from;
 		NullCheck(L_18);
 		int32_t L_19;
-		L_19 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_18);
+		L_19 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_18);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_20 = ___0_from;
 		NullCheck(L_20);
 		int32_t L_21;
-		L_21 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_20);
+		L_21 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_20);
 		int32_t L_22 = V_3;
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_23;
 		L_23 = TextureLerper_Get_mD700555241B9F131B78A0302883C35AD0936F120(__this, 2, L_19, L_21, L_22, (bool)1, (bool)1, NULL);
@@ -3049,11 +3049,11 @@ IL_0058:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_31 = ___0_from;
 		NullCheck(L_31);
 		int32_t L_32;
-		L_32 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_31);
+		L_32 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_31);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_33 = ___0_from;
 		NullCheck(L_33);
 		int32_t L_34;
-		L_34 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_33);
+		L_34 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_33);
 		int32_t L_35 = V_3;
 		float L_36 = ___2_t;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_37;
@@ -3118,11 +3118,11 @@ IL_0157:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_70 = ___0_from;
 		NullCheck(L_70);
 		int32_t L_71;
-		L_71 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_70);
+		L_71 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_70);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_72 = ___0_from;
 		NullCheck(L_72);
 		int32_t L_73;
-		L_73 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_72);
+		L_73 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_72);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_74;
 		L_74 = TextureLerper_Get_mD700555241B9F131B78A0302883C35AD0936F120(__this, L_69, L_71, L_73, 1, (bool)0, (bool)0, NULL);
 		V_0 = L_74;

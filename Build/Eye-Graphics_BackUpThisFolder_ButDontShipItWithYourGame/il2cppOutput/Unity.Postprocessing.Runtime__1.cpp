@@ -5119,7 +5119,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_CheckOutput_m413208864EA3CACC6D4
 		L_4 = Monitor_get_output_m47DF8F109DA67DEF62A5993E579B62750DA196C0_inline(__this, NULL);
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_4);
 		int32_t L_6 = ___0_width;
 		if ((!(((uint32_t)L_5) == ((uint32_t)L_6))))
 		{
@@ -5131,7 +5131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_CheckOutput_m413208864EA3CACC6D4
 		L_7 = Monitor_get_output_m47DF8F109DA67DEF62A5993E579B62750DA196C0_inline(__this, NULL);
 		NullCheck(L_7);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_7);
+		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_7);
 		int32_t L_9 = ___1_height;
 		if ((((int32_t)L_8) == ((int32_t)L_9)))
 		{
@@ -6595,7 +6595,7 @@ IL_0040:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_16 = ___1_to;
 		NullCheck(L_16);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_16);
+		L_17 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_16);
 		G_B10_0 = L_17;
 		goto IL_0060;
 	}
@@ -6605,7 +6605,7 @@ IL_005a:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_18 = ___0_from;
 		NullCheck(L_18);
 		int32_t L_19;
-		L_19 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_18);
+		L_19 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_18);
 		G_B10_0 = L_19;
 	}
 
@@ -6713,7 +6713,7 @@ IL_00bd:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_34 = ___1_to;
 		NullCheck(L_34);
 		int32_t L_35;
-		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_34);
+		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_34);
 		G_B22_0 = L_35;
 		goto IL_00d4;
 	}
@@ -6723,7 +6723,7 @@ IL_00ce:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_36 = ___0_from;
 		NullCheck(L_36);
 		int32_t L_37;
-		L_37 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_36);
+		L_37 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_36);
 		G_B22_0 = L_37;
 	}
 
@@ -6768,11 +6768,11 @@ IL_00f2:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_45 = ___0_from;
 		NullCheck(L_45);
 		int32_t L_46;
-		L_46 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_45);
+		L_46 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_45);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_47 = ___1_to;
 		NullCheck(L_47);
 		int32_t L_48;
-		L_48 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_47);
+		L_48 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_47);
 		if ((!(((uint32_t)L_46) == ((uint32_t)L_48))))
 		{
 			goto IL_010e;
@@ -6782,11 +6782,11 @@ IL_00f2:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_49 = ___0_from;
 		NullCheck(L_49);
 		int32_t L_50;
-		L_50 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_49);
+		L_50 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_49);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_51 = ___1_to;
 		NullCheck(L_51);
 		int32_t L_52;
-		L_52 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_51);
+		L_52 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_51);
 		if ((((int32_t)L_50) == ((int32_t)L_52)))
 		{
 			goto IL_0116;
@@ -7465,7 +7465,7 @@ IL_0012:
 		L_6 = Monitor_get_output_m47DF8F109DA67DEF62A5993E579B62750DA196C0_inline(L_5, NULL);
 		NullCheck(L_6);
 		int32_t L_7;
-		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_6);
+		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_6);
 		Rect_set_width_m93B6217CF3EFF89F9B0C81F34D7345DE90B93E5A_inline(L_4, ((float)L_7), NULL);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_8 = ___0_rect;
 		Monitor_tCBFD2372574421BB96EF17D00190BEFB2F65E5FC* L_9 = ___1_monitor;
@@ -7474,7 +7474,7 @@ IL_0012:
 		L_10 = Monitor_get_output_m47DF8F109DA67DEF62A5993E579B62750DA196C0_inline(L_9, NULL);
 		NullCheck(L_10);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_10);
+		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_10);
 		Rect_set_height_mD00038E6E06637137A5626CA8CD421924005BF03_inline(L_8, ((float)L_11), NULL);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_12 = ___0_rect;
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_13 = (*(Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D*)L_12);
@@ -7494,7 +7494,7 @@ IL_0012:
 		L_20 = Monitor_get_output_m47DF8F109DA67DEF62A5993E579B62750DA196C0_inline(L_19, NULL);
 		NullCheck(L_20);
 		int32_t L_21;
-		L_21 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_20);
+		L_21 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_20);
 		Rect_set_x_mAB91AB71898A20762BC66FD0723C4C739C4C3406_inline(L_17, ((float)il2cpp_codegen_add(L_18, ((float)il2cpp_codegen_add(((float)L_21), (5.0f))))), NULL);
 		return;
 	}
@@ -7844,7 +7844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PostProcessDebugLayer_PushDebugOverlay_m
 		L_4 = PostProcessDebugLayer_get_debugOverlayTarget_mEE851EF1356AE899D0EF902AD0E0966B16AFD940_inline(__this, NULL);
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_4);
 		int32_t L_6 = __this->___frameWidth;
 		if ((!(((uint32_t)L_5) == ((uint32_t)L_6))))
 		{
@@ -7856,7 +7856,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PostProcessDebugLayer_PushDebugOverlay_m
 		L_7 = PostProcessDebugLayer_get_debugOverlayTarget_mEE851EF1356AE899D0EF902AD0E0966B16AFD940_inline(__this, NULL);
 		NullCheck(L_7);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_7);
+		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_7);
 		int32_t L_9 = __this->___frameHeight;
 		if ((((int32_t)L_8) == ((int32_t)L_9)))
 		{

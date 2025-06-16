@@ -10409,7 +10409,7 @@ IL_0032:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_12 = ___0_texture;
 		NullCheck(L_12);
 		bool L_13;
-		L_13 = VirtualFuncInvoker0< bool >::Invoke(10, L_12);
+		L_13 = VirtualFuncInvoker0< bool >::Invoke(11, L_12);
 		G_B8_0 = ((int32_t)(L_13));
 		goto IL_0064;
 	}
@@ -10445,7 +10445,7 @@ IL_0072:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_16 = ___0_texture;
 		NullCheck(L_16);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_16);
+		L_17 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_16);
 		int32_t L_18;
 		L_18 = DynamicAtlas_get_maxSubTextureSize_m59367234F355EBF06783D9E0A2AFBFAAB760E6D0(__this, NULL);
 		if ((((int32_t)L_17) > ((int32_t)L_18)))
@@ -10457,7 +10457,7 @@ IL_0072:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_19 = ___0_texture;
 		NullCheck(L_19);
 		int32_t L_20;
-		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_19);
+		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_19);
 		int32_t L_21;
 		L_21 = DynamicAtlas_get_maxSubTextureSize_m59367234F355EBF06783D9E0A2AFBFAAB760E6D0(__this, NULL);
 		G_B14_0 = ((((int32_t)L_20) > ((int32_t)L_21))? 1 : 0);
@@ -17189,7 +17189,7 @@ IL_007c_1:
 				Type_t* L_21 = V_6;
 				NullCheck(L_21);
 				TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_22;
-				L_22 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(108, L_21);
+				L_22 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(113, L_21);
 				Func_2_t7AF8146EC94DFCBB0F1B3E70111C1FB21D39F00E* L_23 = (Func_2_t7AF8146EC94DFCBB0F1B3E70111C1FB21D39F00E*)il2cpp_codegen_object_new(Func_2_t7AF8146EC94DFCBB0F1B3E70111C1FB21D39F00E_il2cpp_TypeInfo_var);
 				Func_2__ctor_mAFDFA2B152082BBF5E0626BF143EDACD61DE9D74(L_23, NULL, (intptr_t)((void*)BaseListViewController_U3CAddItemsU3Eg__IsGenericListU7C15_0_mD5A1E07441AC98E686931F347B1FD1860DA32D17_RuntimeMethod_var), NULL);
 				Type_t* L_24;

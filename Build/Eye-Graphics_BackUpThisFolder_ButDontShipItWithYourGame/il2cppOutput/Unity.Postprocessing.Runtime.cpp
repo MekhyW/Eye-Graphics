@@ -5098,11 +5098,11 @@ IL_0468:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_207 = V_23;
 		NullCheck(L_207);
 		int32_t L_208;
-		L_208 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_207);
+		L_208 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_207);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_209 = V_23;
 		NullCheck(L_209);
 		int32_t L_210;
-		L_210 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_209);
+		L_210 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_209);
 		V_24 = ((float)(((float)L_208)/((float)L_210)));
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_211 = ___0_context;
 		NullCheck(L_211);
@@ -6338,11 +6338,11 @@ IL_001b:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_15 = V_0;
 		NullCheck(L_15);
 		int32_t L_16;
-		L_16 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_15);
+		L_16 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_15);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_17 = V_0;
 		NullCheck(L_17);
 		int32_t L_18;
-		L_18 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_17);
+		L_18 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_17);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_19;
 		memset((&L_19), 0, sizeof(L_19));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_19), ((float)((1.0f)/((float)L_16))), ((float)il2cpp_codegen_subtract(((float)L_18), (1.0f))), NULL);
@@ -6934,11 +6934,11 @@ IL_04c7:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_223 = V_0;
 		NullCheck(L_223);
 		int32_t L_224;
-		L_224 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_223);
+		L_224 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_223);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_225 = V_0;
 		NullCheck(L_225);
 		int32_t L_226;
-		L_226 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_225);
+		L_226 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_225);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_227;
 		memset((&L_227), 0, sizeof(L_227));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_227), ((float)((1.0f)/((float)L_224))), ((float)il2cpp_codegen_subtract(((float)L_226), (1.0f))), NULL);
@@ -7505,15 +7505,15 @@ IL_047f:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_215 = V_0;
 		NullCheck(L_215);
 		int32_t L_216;
-		L_216 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_215);
+		L_216 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_215);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_217 = V_0;
 		NullCheck(L_217);
 		int32_t L_218;
-		L_218 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_217);
+		L_218 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_217);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_219 = V_0;
 		NullCheck(L_219);
 		int32_t L_220;
-		L_220 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_219);
+		L_220 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_219);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_221;
 		memset((&L_221), 0, sizeof(L_221));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_221), ((float)((1.0f)/((float)L_216))), ((float)((1.0f)/((float)L_218))), ((float)il2cpp_codegen_subtract(((float)L_220), (1.0f))), NULL);
@@ -7888,15 +7888,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColorGradingRenderer_RenderLDRPipeline2D
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_137 = V_12;
 		NullCheck(L_137);
 		int32_t L_138;
-		L_138 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_137);
+		L_138 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_137);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_139 = V_12;
 		NullCheck(L_139);
 		int32_t L_140;
-		L_140 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_139);
+		L_140 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_139);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_141 = V_12;
 		NullCheck(L_141);
 		int32_t L_142;
-		L_142 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_141);
+		L_142 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_141);
 		if ((((int32_t)L_138) == ((int32_t)((int32_t)il2cpp_codegen_multiply(L_140, L_142)))))
 		{
 			goto IL_0369;
@@ -7933,15 +7933,15 @@ IL_0369:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_153 = V_12;
 		NullCheck(L_153);
 		int32_t L_154;
-		L_154 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_153);
+		L_154 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_153);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_155 = V_12;
 		NullCheck(L_155);
 		int32_t L_156;
-		L_156 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_155);
+		L_156 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_155);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_157 = V_12;
 		NullCheck(L_157);
 		int32_t L_158;
-		L_158 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_157);
+		L_158 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_157);
 		ColorGrading_t01599C2C3DF14F6425CC1F83630FF897530C7594* L_159;
 		L_159 = PostProcessEffectRenderer_1_get_settings_mE28F06A8D043E6114A75099F1852A9AFF01D0EA9_inline(__this, PostProcessEffectRenderer_1_get_settings_mE28F06A8D043E6114A75099F1852A9AFF01D0EA9_RuntimeMethod_var);
 		NullCheck(L_159);
@@ -7995,15 +7995,15 @@ IL_03e3:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_180 = V_0;
 		NullCheck(L_180);
 		int32_t L_181;
-		L_181 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_180);
+		L_181 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_180);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_182 = V_0;
 		NullCheck(L_182);
 		int32_t L_183;
-		L_183 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_182);
+		L_183 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_182);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_184 = V_0;
 		NullCheck(L_184);
 		int32_t L_185;
-		L_185 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_184);
+		L_185 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_184);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_186;
 		memset((&L_186), 0, sizeof(L_186));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_186), ((float)((1.0f)/((float)L_181))), ((float)((1.0f)/((float)L_183))), ((float)il2cpp_codegen_subtract(((float)L_185), (1.0f))), NULL);
@@ -8070,7 +8070,7 @@ IL_001b:
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_8, _stringLiteral18F61DA6EF229C719A1317F8F945FC533BB26864, NULL);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_9 = L_8;
 		NullCheck(L_9);
-		VirtualActionInvoker1< int32_t >::Invoke(9, L_9, 3);
+		VirtualActionInvoker1< int32_t >::Invoke(10, L_9, 3);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_10 = L_9;
 		NullCheck(L_10);
 		Object_set_hideFlags_mACB8BFC903FB3B01BBD427753E791BF28B5E33D4(L_10, ((int32_t)52), NULL);
@@ -8839,7 +8839,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29F
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_12 = V_0;
 		NullCheck(L_12);
 		int32_t L_13;
-		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_12);
+		L_13 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_12);
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_14 = ___2_context;
 		NullCheck(L_14);
 		int32_t L_15;
@@ -8853,7 +8853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29F
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_16 = V_0;
 		NullCheck(L_16);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_16);
+		L_17 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_16);
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_18 = ___2_context;
 		NullCheck(L_18);
 		int32_t L_19;
@@ -9544,7 +9544,7 @@ IL_002c:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_25 = V_3;
 		NullCheck(L_25);
 		int32_t L_26;
-		L_26 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_25);
+		L_26 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_25);
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_27 = ___0_context;
 		NullCheck(L_27);
 		int32_t L_28;
@@ -9552,7 +9552,7 @@ IL_002c:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_29 = V_3;
 		NullCheck(L_29);
 		int32_t L_30;
-		L_30 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_29);
+		L_30 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_29);
 		float L_31 = V_1;
 		float L_32 = V_2;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_33;
@@ -10228,7 +10228,7 @@ IL_0161:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_75 = __this->___m_GrainLookupRT;
 		NullCheck(L_75);
 		int32_t L_76;
-		L_76 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_75);
+		L_76 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_75);
 		Grain_tAF18E7559F72DD8F0C8169852021D015A129AC38* L_77;
 		L_77 = PostProcessEffectRenderer_1_get_settings_mC9CA1BBCE03F4EBDD90003D711FA2C3BA9114267_inline(__this, PostProcessEffectRenderer_1_get_settings_mC9CA1BBCE03F4EBDD90003D711FA2C3BA9114267_RuntimeMethod_var);
 		NullCheck(L_77);
@@ -10242,7 +10242,7 @@ IL_0161:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_82 = __this->___m_GrainLookupRT;
 		NullCheck(L_82);
 		int32_t L_83;
-		L_83 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_82);
+		L_83 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_82);
 		Grain_tAF18E7559F72DD8F0C8169852021D015A129AC38* L_84;
 		L_84 = PostProcessEffectRenderer_1_get_settings_mC9CA1BBCE03F4EBDD90003D711FA2C3BA9114267_inline(__this, PostProcessEffectRenderer_1_get_settings_mC9CA1BBCE03F4EBDD90003D711FA2C3BA9114267_RuntimeMethod_var);
 		NullCheck(L_84);
@@ -13155,7 +13155,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiScaleVO_CheckAOTexture_mE6F5AA4D7F0
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_4 = __this->___m_AmbientOnlyAO;
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_4);
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_6 = ___0_context;
 		NullCheck(L_6);
 		int32_t L_7;
@@ -13169,7 +13169,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiScaleVO_CheckAOTexture_mE6F5AA4D7F0
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_8 = __this->___m_AmbientOnlyAO;
 		NullCheck(L_8);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_8);
+		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_8);
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_10 = ___0_context;
 		NullCheck(L_10);
 		int32_t L_11;
@@ -13644,7 +13644,7 @@ IL_006c:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_15 = __this->___m_Result;
 		NullCheck(L_15);
 		int32_t L_16;
-		L_16 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_15);
+		L_16 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_15);
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_17 = ___0_context;
 		NullCheck(L_17);
 		int32_t L_18;
@@ -13658,7 +13658,7 @@ IL_006c:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_19 = __this->___m_Result;
 		NullCheck(L_19);
 		int32_t L_20;
-		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_19);
+		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_19);
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_21 = ___0_context;
 		NullCheck(L_21);
 		int32_t L_22;
@@ -13680,14 +13680,14 @@ IL_0092:
 		int32_t L_26;
 		L_26 = PostProcessRenderContext_get_width_m551FAECA1D38B547E9337BEC7316D6B113B00F03_inline(L_25, NULL);
 		NullCheck(L_24);
-		VirtualActionInvoker1< int32_t >::Invoke(5, L_24, L_26);
+		VirtualActionInvoker1< int32_t >::Invoke(6, L_24, L_26);
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_27 = __this->___m_Result;
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_28 = ___0_context;
 		NullCheck(L_28);
 		int32_t L_29;
 		L_29 = PostProcessRenderContext_get_height_mECB24899496181711525B9E8204F8A85AAA84181_inline(L_28, NULL);
 		NullCheck(L_27);
-		VirtualActionInvoker1< int32_t >::Invoke(7, L_27, L_29);
+		VirtualActionInvoker1< int32_t >::Invoke(8, L_27, L_29);
 		V_0 = (bool)1;
 	}
 
@@ -14423,7 +14423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenSpaceReflectionsRenderer_CheckRT_m
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_7 = *((RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27**)L_6);
 		NullCheck(L_7);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_7);
+		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_7);
 		int32_t L_9 = ___1_width;
 		if ((!(((uint32_t)L_8) == ((uint32_t)L_9))))
 		{
@@ -14435,7 +14435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenSpaceReflectionsRenderer_CheckRT_m
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_11 = *((RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27**)L_10);
 		NullCheck(L_11);
 		int32_t L_12;
-		L_12 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_11);
+		L_12 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_11);
 		int32_t L_13 = ___2_height;
 		if ((((int32_t)L_12) == ((int32_t)L_13)))
 		{
@@ -14848,7 +14848,7 @@ IL_0101:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_128 = V_3;
 		NullCheck(L_128);
 		int32_t L_129;
-		L_129 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_128);
+		L_129 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_128);
 		ScreenSpaceReflections_t910D8544C9945DBF5FB83CD256BFF77C7C7FCBEC* L_130;
 		L_130 = PostProcessEffectRenderer_1_get_settings_m3079B52B567553DAE1B0041AE58043956B8B24B7_inline(__this, PostProcessEffectRenderer_1_get_settings_m3079B52B567553DAE1B0041AE58043956B8B24B7_RuntimeMethod_var);
 		NullCheck(L_130);
@@ -16134,7 +16134,7 @@ IL_0099:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_43 = V_1;
 		NullCheck(L_43);
 		int32_t L_44;
-		L_44 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_43);
+		L_44 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_43);
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_45 = ___1_context;
 		NullCheck(L_45);
 		int32_t L_46;
@@ -16148,7 +16148,7 @@ IL_0099:
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_47 = V_1;
 		NullCheck(L_47);
 		int32_t L_48;
-		L_48 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_47);
+		L_48 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_47);
 		PostProcessRenderContext_t7A95408B72564734295D248DE20A301815141FD7* L_49 = ___1_context;
 		NullCheck(L_49);
 		int32_t L_50;

@@ -412,6 +412,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_RegisterDescriptor_TisRuntimeObject_TisRuntimeObject_mBDA60AD66ED0AB222060E8F6FB6A09E504B7AD0E_gshared (RuntimeObject* ___0_descriptor, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___1_storeInList, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntegratedSubsystem_get_valid_m6537B83457B7E79D9743A0EA9144BD116B0E850B (IntegratedSubsystem_t990160A89854D87C0836DC589B720231C02D4CE3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntegratedSubsystem_IsRunning_m6AF6106D2DA0A840DBA7D52E9D5F373658B66009 (IntegratedSubsystem_t990160A89854D87C0836DC589B720231C02D4CE3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Inequality_m90EFC9C4CAD9A33E309F2DDF98EE4E1DD253637B (intptr_t ___0_value1, intptr_t ___1_value2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SubsystemDescriptorBindings_GetId_mD3D36C3199EF50AAAB7830E6D061269F4CE956C1 (intptr_t ___0_descriptorPtr, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptorStore_RegisterDeprecatedDescriptor_m0314598F5A51921C9C9B254B4E82C1191FC4D4B1 (SubsystemDescriptor_tF417D2751C69A8B0DD86162EBCE55F84D3493A71* ___0_descriptor, const RuntimeMethod* method) ;
@@ -554,6 +557,52 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegratedSubsystem_SetHandle_m22D17A2E0
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (IntegratedSubsystem_SetHandle_m22D17A2E0BD8AF0FC18CE09638572D34AD8DB48B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.IntegratedSubsystem::SetHandle(UnityEngine.IntegratedSubsystem)");
 	_il2cpp_icall_func(__this, ___0_subsystem);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntegratedSubsystem_get_running_m18AA0D7AD1CB593DC9EE5F3DC79643717509D6E8 (IntegratedSubsystem_t990160A89854D87C0836DC589B720231C02D4CE3* __this, const RuntimeMethod* method) 
+{
+	int32_t G_B3_0 = 0;
+	{
+		bool L_0;
+		L_0 = IntegratedSubsystem_get_valid_m6537B83457B7E79D9743A0EA9144BD116B0E850B(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		bool L_1;
+		L_1 = IntegratedSubsystem_IsRunning_m6AF6106D2DA0A840DBA7D52E9D5F373658B66009(__this, NULL);
+		G_B3_0 = ((int32_t)(L_1));
+		goto IL_0011;
+	}
+
+IL_0010:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0011:
+	{
+		return (bool)G_B3_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntegratedSubsystem_get_valid_m6537B83457B7E79D9743A0EA9144BD116B0E850B (IntegratedSubsystem_t990160A89854D87C0836DC589B720231C02D4CE3* __this, const RuntimeMethod* method) 
+{
+	{
+		intptr_t L_0 = __this->___m_Ptr;
+		bool L_1;
+		L_1 = IntPtr_op_Inequality_m90EFC9C4CAD9A33E309F2DDF98EE4E1DD253637B(L_0, 0, NULL);
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntegratedSubsystem_IsRunning_m6AF6106D2DA0A840DBA7D52E9D5F373658B66009 (IntegratedSubsystem_t990160A89854D87C0836DC589B720231C02D4CE3* __this, const RuntimeMethod* method) 
+{
+	typedef bool (*IntegratedSubsystem_IsRunning_m6AF6106D2DA0A840DBA7D52E9D5F373658B66009_ftn) (IntegratedSubsystem_t990160A89854D87C0836DC589B720231C02D4CE3*);
+	static IntegratedSubsystem_IsRunning_m6AF6106D2DA0A840DBA7D52E9D5F373658B66009_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (IntegratedSubsystem_IsRunning_m6AF6106D2DA0A840DBA7D52E9D5F373658B66009_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.IntegratedSubsystem::IsRunning()");
+	bool icallRetVal = _il2cpp_icall_func(__this);
+	return icallRetVal;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegratedSubsystem__ctor_m8A0E82CAFC72287502DB0158488C98831B2DF405 (IntegratedSubsystem_t990160A89854D87C0836DC589B720231C02D4CE3* __this, const RuntimeMethod* method) 
 {
