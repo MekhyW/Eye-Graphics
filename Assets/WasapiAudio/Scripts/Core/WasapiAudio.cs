@@ -10,7 +10,7 @@ namespace Assets.WasapiAudio.Scripts.Core
 {
     public class WasapiAudio
     {
-        private const FftSize CFftSize = FftSize.Fft4096;
+        private const FftSize CFftSize = FftSize.Fft2048;
         private const float MaxAudioValue = 1.0f;
 
         private readonly WasapiCaptureType _captureType;

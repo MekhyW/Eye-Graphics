@@ -8,6 +8,8 @@ namespace Assets.Scripts
         private GameObject[] _spectrumBars;
         private Vector3[] _originalPositions;
         private Vector3 _originalScale;
+        private float _updateInterval = 1f/30f;
+        private float _lastUpdate;
 
         public GameObject Prefab;
         public float AudioScale;
@@ -33,6 +35,8 @@ namespace Assets.Scripts
 
         public void Update()
         {
+            if (Time.time - _lastUpdate < _updateInterval) return;
+            _lastUpdate = Time.time;
             var spectrumData = GetSpectrumData();
             for (var i = 0; i < SpectrumSize; i++)
             {
