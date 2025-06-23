@@ -17,6 +17,8 @@ namespace Assets.Scripts
 
         public void Start()
         {
+            var cubeRenderer = Prefab.GetComponent<Renderer>();
+            cubeRenderer.material.SetColor("_Color", Color.gray);
             _spectrumBars = new GameObject[SpectrumSize];
             _originalPositions = new Vector3[SpectrumSize];
             _originalScale = Prefab.transform.localScale;
