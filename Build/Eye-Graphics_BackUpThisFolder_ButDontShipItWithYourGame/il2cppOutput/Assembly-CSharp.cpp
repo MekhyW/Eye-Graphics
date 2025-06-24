@@ -6865,7 +6865,7 @@ IL_0506:
 		float L_199;
 		L_199 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_200;
-		L_200 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_197, ((float)il2cpp_codegen_multiply(L_198, (0.920000017f))), ((float)il2cpp_codegen_multiply(L_199, (35.0f))), NULL);
+		L_200 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_197, ((float)il2cpp_codegen_multiply(L_198, (0.0f))), ((float)il2cpp_codegen_multiply(L_199, (35.0f))), NULL);
 		NullCheck(L_195);
 		L_195->___Value = L_200;
 		goto IL_056e;

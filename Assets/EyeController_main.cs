@@ -171,7 +171,7 @@ public class EyeController_main : MonoBehaviour
         if (topExpr == sadSlider.value) { activCry.Value = Mathf.Lerp(activCry.Value, topExpr, Time.deltaTime * speed); }
         else { activCry.Value = Mathf.Lerp(activCry.Value, 0, Time.deltaTime * speed); }
         //Fire
-        if (topExpr == angrySlider.value) { activFire.Value = Mathf.Lerp(activFire.Value, topExpr * 0.92f, Time.deltaTime * speed); }
+        if (topExpr == angrySlider.value) { activFire.Value = Mathf.Lerp(activFire.Value, topExpr * 0f, Time.deltaTime * speed); }
         else { activFire.Value = Mathf.Lerp(activFire.Value, 0, Time.deltaTime * speed); }
         //Others
         activSpace.Value = eyeSmileR.Value;
