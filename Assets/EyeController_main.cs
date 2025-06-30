@@ -96,9 +96,9 @@ public class EyeController_main : MonoBehaviour
             timer_idle = UnityEngine.Random.Range(0.0f, TIMER_IDLE_RAND_MAX);
         }
         else { timer_idle -= Time.deltaTime; }
-        eyeballXL.Value = Mathf.Lerp(eyeballXL.Value, xCurrent + offsetX_idle, Time.deltaTime * speed);
+        eyeballXL.Value = Mathf.Lerp(eyeballXL.Value, xCurrent + offsetX_idle - 0.2f, Time.deltaTime * speed);
         eyeballYL.Value = Mathf.Lerp(eyeballYL.Value, yCurrent + offsetY_idle, Time.deltaTime * speed);
-        eyeballXR.Value = Mathf.Lerp(eyeballXR.Value, xCurrent + offsetX_idle, Time.deltaTime * speed);
+        eyeballXR.Value = Mathf.Lerp(eyeballXR.Value, xCurrent + offsetX_idle + 0.2f, Time.deltaTime * speed);
         eyeballYR.Value = Mathf.Lerp(eyeballYR.Value, yCurrent + offsetY_idle, Time.deltaTime * speed);
     }
 

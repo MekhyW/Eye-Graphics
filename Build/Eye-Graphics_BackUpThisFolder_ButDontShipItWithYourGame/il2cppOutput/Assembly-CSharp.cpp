@@ -5930,7 +5930,7 @@ IL_02ad:
 		float L_79;
 		L_79 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_80;
-		L_80 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_76, ((float)il2cpp_codegen_add(L_77, L_78)), ((float)il2cpp_codegen_multiply(L_79, (35.0f))), NULL);
+		L_80 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_76, ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(L_77, L_78)), (0.200000003f))), ((float)il2cpp_codegen_multiply(L_79, (35.0f))), NULL);
 		NullCheck(L_74);
 		L_74->___Value = L_80;
 		CubismParameter_tD90802B9BB451735498CBBAF28B92CE9CCACB1F1* L_81 = __this->___eyeballYL;
@@ -5954,7 +5954,7 @@ IL_02ad:
 		float L_93;
 		L_93 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_94;
-		L_94 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_90, ((float)il2cpp_codegen_add(L_91, L_92)), ((float)il2cpp_codegen_multiply(L_93, (35.0f))), NULL);
+		L_94 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_90, ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_91, L_92)), (0.200000003f))), ((float)il2cpp_codegen_multiply(L_93, (35.0f))), NULL);
 		NullCheck(L_88);
 		L_88->___Value = L_94;
 		CubismParameter_tD90802B9BB451735498CBBAF28B92CE9CCACB1F1* L_95 = __this->___eyeballYR;
