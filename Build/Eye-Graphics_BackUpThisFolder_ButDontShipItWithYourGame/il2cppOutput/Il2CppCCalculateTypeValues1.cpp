@@ -2808,7 +2808,7 @@ struct U3CU3Ec__DisplayClass20_0_t3CB205F68634F995731C8ACBFC81B88A7ADCA986  : pu
 struct U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B  : public RuntimeObject
 {
 };
-struct U3CU3Ec__DisplayClass70_0_t524A33FEF2678B40F83B6AF85427FBA5EC7D4D3B  : public RuntimeObject
+struct U3CU3Ec__DisplayClass68_0_t43D73FFD5881A79931713C2AC1AAAD6ABEE1CA52  : public RuntimeObject
 {
 	double ___val;
 };
@@ -23836,7 +23836,7 @@ struct U3CU3Ec_t9516DDC1BB44A1D4C4D82917A04E3BBE221FD7E4_StaticFields
 struct U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B_StaticFields
 {
 	U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B* ___U3CU3E9;
-	Func_3_t6222A59C885E2C8638BA802DB264974FADE0C371* ___U3CU3E9__70_0;
+	Func_3_t6222A59C885E2C8638BA802DB264974FADE0C371* ___U3CU3E9__68_0;
 };
 struct U3CU3Ec_tE3434A696CF5060D63A69C93A84379DBF90E9948_StaticFields
 {
@@ -25684,7 +25684,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize5982 = { sizeof(EyeControlle
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5983;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5983 = { sizeof(U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B), -1, sizeof(U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5984;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5984 = { sizeof(U3CU3Ec__DisplayClass70_0_t524A33FEF2678B40F83B6AF85427FBA5EC7D4D3B), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5984 = { sizeof(U3CU3Ec__DisplayClass68_0_t43D73FFD5881A79931713C2AC1AAAD6ABEE1CA52), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5985;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5985 = { sizeof(EyeController_main_t9043745D423F64C21BDB9E93F603723CF5F5D334), -1, sizeof(EyeController_main_t9043745D423F64C21BDB9E93F603723CF5F5D334_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5986;
