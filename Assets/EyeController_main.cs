@@ -12,6 +12,7 @@ public class EyeController_main : MonoBehaviour
     public Toggle sillyMode;
     public CubismParameter eyeballXL, eyeballYL, eyeballXR, eyeballYR, eyeOpenL, eyeOpenR, eyeSmileL, eyeSmileR, eyeDeform, browYL, browYR, browAngleL, browAngleR, activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
     public CubismRenderer mask_esclera1, mask_esclera2;
+    public GameObject blinkA1, blinkA2, blinkB1, blinkB2, blinkG;
     public PostProcessProfile postProcessProfile;
     AutoExposure autoExposure;
 
@@ -120,7 +121,17 @@ public class EyeController_main : MonoBehaviour
         {
             eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.minValue, Time.deltaTime * SPEED);
             eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.minValue, Time.deltaTime * SPEED);
-            if (timer_blink < -BLINK_DURATION) { timer_blink = UnityEngine.Random.Range(0.0f, TIMER_BLINK_RAND_MAX); }
+            if (timer_blink < -BLINK_DURATION) {
+                if (activGears.Value > AVG_SLIDER) { blinkG.SetActive(false); blinkG.SetActive(true); }
+                else if (sillyMode.isOn) {
+                    if (UnityEngine.Random.Range(0, 2) == 0) { blinkB1.SetActive(false); blinkB1.SetActive(true); }
+                    else { blinkB2.SetActive(false); blinkB2.SetActive(true); }
+                } else {
+                    if (UnityEngine.Random.Range(0, 2) == 0) { blinkA1.SetActive(false); blinkA1.SetActive(true); }
+                    else { blinkA2.SetActive(false); blinkA2.SetActive(true); }
+                }
+                timer_blink = UnityEngine.Random.Range(0.0f, TIMER_BLINK_RAND_MAX); 
+            }
         }
         else
         {
