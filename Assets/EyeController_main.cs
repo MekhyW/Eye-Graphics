@@ -8,7 +8,7 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class EyeController_main : MonoBehaviour
 {
-    public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider, angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider, hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider, mischievousSlider, autoExposureSlider;
+    public Slider xSlider, ySlider, leftEyeClosenessSlider, rightEyeClosenessSlider, angrySlider, disgustedSlider, happySlider, neutralSlider, sadSlider, surprisedSlider, hypnoticSlider, heartSlider, rainbowSlider, nightmareSlider, gearsSlider, sansSlider, mischievousSlider, autoExposureSlider, analogGlitch, digitalGlitch;
     public Toggle sillyMode;
     public CubismParameter eyeballXL, eyeballYL, eyeballXR, eyeballYR, eyeOpenL, eyeOpenR, eyeSmileL, eyeSmileR, eyeDeform, browYL, browYR, browAngleL, browAngleR, activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
     public CubismRenderer mask_esclera1, mask_esclera2;
@@ -20,6 +20,7 @@ public class EyeController_main : MonoBehaviour
     const float TIMER_IDLE_RAND_MAX = 1.5f;
     const float TIMER_YMOVE_RAND_MAX = 6.0f;
     const float TIMER_BLINK_RAND_MAX = 16.0f;
+    const float TIMER_GLITCH_RAND_MAX = 60.0f;
     const float BLINK_DURATION = 0.1f;
     const float AVG_SLIDER = 0.5f;
     static double[] X_SET = { -1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 };
@@ -30,6 +31,10 @@ public class EyeController_main : MonoBehaviour
     static float timer_idle = 0;
     static float timer_ymove = 0;
     static float timer_blink = 0;
+    static float timer_glitch = 0;
+    static float glitchAnimationTimer = 0;
+    static bool isGlitchAnimating = false;
+    static bool useAnalogGlitch = false;
     static float offsetX_idle = 0;
     static float offsetY_idle = 0;
 
@@ -130,7 +135,7 @@ public class EyeController_main : MonoBehaviour
                     if (UnityEngine.Random.Range(0, 2) == 0) { blinkA1.SetActive(false); blinkA1.SetActive(true); }
                     else { blinkA2.SetActive(false); blinkA2.SetActive(true); }
                 }
-                timer_blink = UnityEngine.Random.Range(0.0f, TIMER_BLINK_RAND_MAX); 
+                timer_blink = RandomGaussian(1.0f, TIMER_BLINK_RAND_MAX);
             }
         }
         else
@@ -195,6 +200,42 @@ public class EyeController_main : MonoBehaviour
         autoExposure.keyValue.value = autoExposureSlider.value;
     }
 
+    private void GlitchEffect()
+    {
+        if (isGlitchAnimating)
+        {
+            float progress = glitchAnimationTimer * SPEED / 120.0f;
+            if (progress < 1f)
+            {
+                if (useAnalogGlitch)
+                {
+                    if (progress <= 0.5f) { analogGlitch.value = Mathf.Lerp(0f, 1f, progress * 2f); }
+                    else { analogGlitch.value = Mathf.Lerp(1f, 0f, (progress - 0.5f) * 2f); }
+                }
+                else
+                {
+                    if (progress <= 0.5f) { digitalGlitch.value = Mathf.Lerp(0f, 0.5f, progress * 2f); }
+                    else { digitalGlitch.value = Mathf.Lerp(0.5f, 0f, (progress - 0.5f) * 2f); }
+                }
+                glitchAnimationTimer += Time.deltaTime;
+            }
+            else
+            {
+                isGlitchAnimating = false;
+                analogGlitch.value = 0f;
+                digitalGlitch.value = 0f;
+                timer_glitch = RandomGaussian(1.0f, TIMER_GLITCH_RAND_MAX);
+            }
+        }
+        else if (timer_glitch <= 0)
+        {
+            isGlitchAnimating = true;
+            glitchAnimationTimer = 0f;
+            useAnalogGlitch = UnityEngine.Random.Range(0, 2) == 0;
+        }
+        else { timer_glitch -= Time.deltaTime; }
+    }
+
     private void Start()
     {
         autoExposure = postProcessProfile.GetSetting<AutoExposure>();
@@ -206,5 +247,6 @@ public class EyeController_main : MonoBehaviour
         MoveEyelids();
         ApplyExpressions();
         UpdateAutoExposure();
+        GlitchEffect();
     }
 }
