@@ -8,6 +8,7 @@ public class ActivateAllDisplays : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 30;
         Debug.Log("displays connected: " + Display.displays.Length);
         for (int i = 0; i < Display.displays.Length; i++) {
             Display.displays[i].Activate();

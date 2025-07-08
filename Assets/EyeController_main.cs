@@ -16,7 +16,7 @@ public class EyeController_main : MonoBehaviour
     public PostProcessProfile postProcessProfile;
     AutoExposure autoExposure;
 
-    const float SPEED = 35;
+    const float SPEED = 18;
     const float TIMER_IDLE_RAND_MAX = 1.5f;
     const float TIMER_YMOVE_RAND_MAX = 6.0f;
     const float TIMER_BLINK_RAND_MAX = 16.0f;
@@ -204,7 +204,7 @@ public class EyeController_main : MonoBehaviour
     {
         if (isGlitchAnimating)
         {
-            float progress = glitchAnimationTimer * SPEED / 120.0f;
+            float progress = glitchAnimationTimer * SPEED / 60.0f;
             if (progress < 1f)
             {
                 if (useAnalogGlitch)
