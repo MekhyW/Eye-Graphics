@@ -2803,7 +2803,7 @@ struct U3CU3Ec_tB74E998116FFDE2919C1EF6E8B35AB3798461A28  : public RuntimeObject
 struct U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B  : public RuntimeObject
 {
 };
-struct U3CU3Ec__DisplayClass81_0_tB316903F0D933301B1D04E69507BB6725754DD32  : public RuntimeObject
+struct U3CU3Ec__DisplayClass84_0_t1FF69E592BA4EEF1A78EF7F1B1352D74802080B0  : public RuntimeObject
 {
 	double ___val;
 };
@@ -21698,11 +21698,11 @@ struct EyeController_main_t9043745D423F64C21BDB9E93F603723CF5F5D334  : public Mo
 	CubismParameter_tD90802B9BB451735498CBBAF28B92CE9CCACB1F1* ___activSans;
 	CubismRenderer_t0EED3DD1105B0F9004C0A95E2582D50AB9BBF72F* ___mask_esclera1;
 	CubismRenderer_t0EED3DD1105B0F9004C0A95E2582D50AB9BBF72F* ___mask_esclera2;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___blinkA1;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___blinkA2;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___blinkB1;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___blinkB2;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___blinkG;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___glitchSounds;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___robotSounds;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___normalBlinkSounds;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___sillyBlinkSounds;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gearBlinkSound;
 	PostProcessProfile_t5AC205759572A2CBFE65B0D7D93ED70DA5CFAEEA* ___postProcessProfile;
 	AutoExposure_t3DC0981C2B844D7B8E12CE9C8C731F4387846F5C* ___autoExposure;
 	double ___X_DELTA_LIMIT;
@@ -23810,7 +23810,7 @@ struct U3CU3Ec_tB74E998116FFDE2919C1EF6E8B35AB3798461A28_StaticFields
 struct U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B_StaticFields
 {
 	U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B* ___U3CU3E9;
-	Func_3_t6222A59C885E2C8638BA802DB264974FADE0C371* ___U3CU3E9__81_0;
+	Func_3_t6222A59C885E2C8638BA802DB264974FADE0C371* ___U3CU3E9__84_0;
 };
 struct U3CU3Ec_tE3434A696CF5060D63A69C93A84379DBF90E9948_StaticFields
 {
@@ -24406,6 +24406,7 @@ struct EyeController_main_t9043745D423F64C21BDB9E93F603723CF5F5D334_StaticFields
 	float ___timer_ymove;
 	float ___timer_blink;
 	float ___timer_glitch;
+	float ___timer_gears;
 	float ___glitchAnimationTimer;
 	bool ___isGlitchAnimating;
 	bool ___useAnalogGlitch;
@@ -25650,7 +25651,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize5979 = { sizeof(ActivateAllD
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5980;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5980 = { sizeof(U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B), -1, sizeof(U3CU3Ec_tB57432C307FD299FEE852B200F472FF3E943D70B_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5981;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5981 = { sizeof(U3CU3Ec__DisplayClass81_0_tB316903F0D933301B1D04E69507BB6725754DD32), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5981 = { sizeof(U3CU3Ec__DisplayClass84_0_t1FF69E592BA4EEF1A78EF7F1B1352D74802080B0), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5982;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5982 = { sizeof(EyeController_main_t9043745D423F64C21BDB9E93F603723CF5F5D334), -1, sizeof(EyeController_main_t9043745D423F64C21BDB9E93F603723CF5F5D334_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5983;

@@ -14,7 +14,6 @@ public class EyeController_main : MonoBehaviour
     public CubismRenderer mask_esclera1, mask_esclera2;
     public GameObject[] glitchSounds;
     public GameObject[] robotSounds;
-    public GameObject[] gearsSounds;
     public GameObject[] normalBlinkSounds;
     public GameObject[] sillyBlinkSounds;
     public GameObject gearBlinkSound;
@@ -26,6 +25,7 @@ public class EyeController_main : MonoBehaviour
     const float TIMER_YMOVE_RAND_MAX = 6.0f;
     const float TIMER_BLINK_RAND_MAX = 16.0f;
     const float TIMER_GLITCH_RAND_MAX = 60.0f;
+    const float TIMER_GEARS_RAND_MAX = 60.0f;
     const float BLINK_DURATION = 0.1f;
     const float AVG_SLIDER = 0.5f;
     static double[] X_SET = { -1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 };
@@ -37,6 +37,7 @@ public class EyeController_main : MonoBehaviour
     static float timer_ymove = 0;
     static float timer_blink = 0;
     static float timer_glitch = 0;
+    static float timer_gears = 0;
     static float glitchAnimationTimer = 0;
     static bool isGlitchAnimating = false;
     static bool useAnalogGlitch = false;
@@ -245,6 +246,18 @@ public class EyeController_main : MonoBehaviour
         else { timer_glitch -= Time.deltaTime; }
     }
 
+    private void RobotSound()
+    {
+        if (timer_gears <= 0 && robotSounds.Length > 0)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, robotSounds.Length);
+            robotSounds[randomIndex].SetActive(false);
+            robotSounds[randomIndex].SetActive(true);
+            timer_gears = RandomGaussian(5.0f, TIMER_GEARS_RAND_MAX);
+        }
+        else { timer_gears -= Time.deltaTime; }
+    }
+
     private void Start()
     {
         autoExposure = postProcessProfile.GetSetting<AutoExposure>();
@@ -257,5 +270,6 @@ public class EyeController_main : MonoBehaviour
         ApplyExpressions();
         UpdateAutoExposure();
         GlitchEffect();
+        RobotSound();
     }
 }
