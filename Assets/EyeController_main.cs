@@ -12,7 +12,12 @@ public class EyeController_main : MonoBehaviour
     public Toggle sillyMode;
     public CubismParameter eyeballXL, eyeballYL, eyeballXR, eyeballYR, eyeOpenL, eyeOpenR, eyeSmileL, eyeSmileR, eyeDeform, browYL, browYR, browAngleL, browAngleR, activSpace, activCry, activHypno, activHeart, activRainbow, activNightmare, activGears, activFire, activSans;
     public CubismRenderer mask_esclera1, mask_esclera2;
-    public GameObject blinkA1, blinkA2, blinkB1, blinkB2, blinkG;
+    public GameObject[] glitchSounds;
+    public GameObject[] robotSounds;
+    public GameObject[] gearsSounds;
+    public GameObject[] normalBlinkSounds;
+    public GameObject[] sillyBlinkSounds;
+    public GameObject gearBlinkSound;
     public PostProcessProfile postProcessProfile;
     AutoExposure autoExposure;
 
@@ -127,13 +132,13 @@ public class EyeController_main : MonoBehaviour
             eyeOpenL.Value = Mathf.Lerp(eyeOpenL.Value, leftEyeClosenessSlider.minValue, Time.deltaTime * SPEED);
             eyeOpenR.Value = Mathf.Lerp(eyeOpenR.Value, rightEyeClosenessSlider.minValue, Time.deltaTime * SPEED);
             if (timer_blink < -BLINK_DURATION) {
-                if (activGears.Value > AVG_SLIDER) { blinkG.SetActive(false); blinkG.SetActive(true); }
-                else if (sillyMode.isOn) {
-                    if (UnityEngine.Random.Range(0, 2) == 0) { blinkB1.SetActive(false); blinkB1.SetActive(true); }
-                    else { blinkB2.SetActive(false); blinkB2.SetActive(true); }
-                } else {
-                    if (UnityEngine.Random.Range(0, 2) == 0) { blinkA1.SetActive(false); blinkA1.SetActive(true); }
-                    else { blinkA2.SetActive(false); blinkA2.SetActive(true); }
+                GameObject selectedBlinkSound = null;
+                if (activGears.Value > AVG_SLIDER) { selectedBlinkSound = gearBlinkSound; }
+                else if (sillyMode.isOn && sillyBlinkSounds.Length > 0) { selectedBlinkSound = sillyBlinkSounds[UnityEngine.Random.Range(0, sillyBlinkSounds.Length)]; } 
+                else if (normalBlinkSounds.Length > 0) { selectedBlinkSound = normalBlinkSounds[UnityEngine.Random.Range(0, normalBlinkSounds.Length)]; }
+                if (selectedBlinkSound != null) {
+                    selectedBlinkSound.SetActive(false);
+                    selectedBlinkSound.SetActive(true);
                 }
                 timer_blink = RandomGaussian(1.0f, TIMER_BLINK_RAND_MAX);
             }
@@ -232,6 +237,10 @@ public class EyeController_main : MonoBehaviour
             isGlitchAnimating = true;
             glitchAnimationTimer = 0f;
             useAnalogGlitch = UnityEngine.Random.Range(0, 2) == 0;
+            int randomIndex = UnityEngine.Random.Range(0, glitchSounds.Length);
+            glitchSounds[randomIndex].GetComponent<AudioSource>().volume = 0.1f;
+            glitchSounds[randomIndex].SetActive(false);
+            glitchSounds[randomIndex].SetActive(true);
         }
         else { timer_glitch -= Time.deltaTime; }
     }
